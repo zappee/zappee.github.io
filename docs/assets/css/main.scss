@@ -5,7 +5,8 @@
 /* assets/css/main.scss */
 
 /* automatically loads all original layout rules, fonts, and structures */
-
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
 @include breakpoint($large) {
   /* center the author avatar container and layout elements */
