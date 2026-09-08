@@ -1,0 +1,29 @@
+# the main top header navbar links
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Projects"
+    url: /about/
+
+  - title: "AI-Agents"
+    url: /setup/
+
+  - title: "Publications"
+    url: /setup/
+
+  - title: "About me"
+    url: /portfolio/
+
+# sidebar definition for Portfolio page
+portfolio_sidebar:
+  - title: "Portfolio"
+    children:
+      - title: "Portfolio Home"
+        url: /portfolio/
+
+      - title: "Installation"
+        url: /portfolio/installation/
+
+      - title: "Configuration"
+        url: /portfolio/configuration/

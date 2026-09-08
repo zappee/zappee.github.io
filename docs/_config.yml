@@ -1,0 +1,40 @@
+# site settings
+url: "https://zappee.github.io"
+baseurl: "remal-services"
+repository: "zappee/remal-services"
+
+title: "Project Documentation"
+subtitle: "Version 2.0"
+description: "A short catchphrase or description of your project."
+title_separator: "|"
+site_navigation: main
+
+# theme settings
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
+nav_sort: page_order
+
+# required plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# array tells Jekyll to compile specific files
+include:
+  - _pages
+  - _includes
+
+# company logo configuration
+logo: "assets/images/remal-logo.jpg"
+og_image: "assets/images/remal-logo.jpg" # The fallback branding card used for link sharing
+
+# when you set author_profile: true, the theme pulls data directly from this block
+author:
+  name: "Arnold Somogyi"
+  avatar: "assets/images/avatars/arnold.somogyi-profile.jpg"
+  bio: "Developer, writer, and creator."
+  location: "Copenhagen, Denmark"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zappee"

@@ -1,0 +1,39 @@
+---
+# this two lines of triple-dashes tell Jekyll to process this file
+---
+
+/* assets/css/main.scss */
+
+/* automatically loads all original layout rules, fonts, and structures */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+@include breakpoint($large) {
+  /* center the author avatar container and layout elements */
+  .author__avatar {
+    display: block !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* ensure the image block itself uses automatic centering margins */
+  .author__avatar img {
+    width: 200px !important;       /* Increased from default ~150px-200px */
+    height: 200px !important;      /* Must match the width exactly for a perfect circle */
+    max-width: 100% !important;    /* Prevents the image from overflowing on smaller mobile screens */
+    margin: 0 auto !important;     /* Keeps it perfectly centered */
+    object-fit: cover !important;  /* Center-crops your image without stretching it */
+    border-radius: 50% !important; /* Forces the perfect symmetric circle shape */
+  }
+  
+  /* optional: Center your name and bio text underneath the photo */
+  .author__content {
+    text-align: center !important;
+  }
+  
+  /* keeps your social link bullet points aligned nicely */
+  .author__urls-wrapper {
+    text-align: left !important;
+  }
+}
