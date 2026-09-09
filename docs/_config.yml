@@ -1,6 +1,6 @@
 # site settings
 url: "https://zappee.github.io"
-baseurl: /
+baseurl: "remal-services"
 repository: "zappee/remal-services"
 
 title: "Project Documentation"
@@ -10,7 +10,7 @@ title_separator: "|"
 site_navigation: main
 
 # theme settings
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.28.1
 minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
 nav_sort: page_order
 

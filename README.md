@@ -1,2 +1,2 @@
-# zappee.github.io
-Personal portfolio featuring my resume, project documentation, and custom AI agents.
+# remal-services
+A collection of scalable, reusable REST services designed to accelerate backend development and integrate seamlessly into larger application architectures.
