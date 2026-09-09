@@ -5,15 +5,6 @@ permalink: /
 author_profile: true
 ---
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7B4N6EQKN2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7B4N6EQKN2');
-</script>
-
 # Fuit quartusque cornua miserarum ok 13
 
 ## Abest illi cumulemus ab

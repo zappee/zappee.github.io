@@ -5,7 +5,6 @@
         <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
         {% endif %}
 
-
         <!-- GitHub Link -->
         {% if site.github.username %}
         <li><a href="https://github.com/{{ site.github.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -48,3 +47,11 @@
 <div class="page__footer-copyright">
     {{ site.footer_text | markdownify }}
 </div>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7B4N6EQKN2');
+</script>
