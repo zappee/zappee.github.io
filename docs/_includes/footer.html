@@ -1,15 +1,7 @@
 <div class="page__footer-copyright">
-    <strong>
-        Feel free to check out my profiles below or reach out directly via <a href="mailto:{{ site.email }}">email</a>
-        or <a href="https://calendar.app.google/a1UcL3objMWDQNqV6" target="_blank">schedule a meeting</a>.
-    </strong>
-</div>
-
-<div class="page__footer-copyright">
     Feel free to check out my profiles below or reach out directly via <strong><a href="mailto:{{ site.email }}">email</a></strong>
     or <strong><a href="https://calendar.app.google/a1UcL3objMWDQNqV6" target="_blank">schedule a meeting</a></strong>.
 </div>
-
 
 <div class="page__footer-follow">
     <ul class="social-icons">
@@ -31,12 +23,12 @@
 </div>
 
 <div class="page__footer-copyright">
-    {{ site.name | default: site.title }}<br>
-    Last updated: {{ site.time | date: "%B %d, %Y" }}.
+    {{ site.footer_text | markdownify }}
 </div>
 
 <div class="page__footer-copyright">
-    {{ site.footer_text | markdownify }}
+    {{ site.name | default: site.title }}<br>
+    Last updated: {{ site.time | date: "%B %d, %Y" }}.
 </div>
 
 <!-- Google Analytics configuration -->
@@ -47,8 +39,3 @@
 
     gtag('config', 'G-7B4N6EQKN2');
 </script>
-
-<!-- Google Calendar meeting scheduler -->
-<div class="page__footer-copyright">
-    <a href="https://calendar.app.google/a1UcL3objMWDQNqV6" target="_blank">Schedule a Meeting</a>
-</div>
