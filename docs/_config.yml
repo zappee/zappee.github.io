@@ -6,15 +6,8 @@ repository: "zappee/zappee.github.io"
 title: "Remal Software"
 subtitle: "Software Engineering Portfolio"
 description: "Portfolio featuring my resume, projects, and AI agents."
-tagline: "0.0.1"
 title_separator: "|"
 site_navigation: main
-
-header:
-  overlay_color: "#333" # Adds a dark background banner
-  subtitle: "Personal portfolio, resume, and project documentation."
-  excerpt: "Developing and deploying custom AI agents."
-
 
 # theme settings
 remote_theme: mmistakes/minimal-mistakes
