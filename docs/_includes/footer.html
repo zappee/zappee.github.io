@@ -1,6 +1,7 @@
 <div class="page__footer-follow">
     <ul class="social-icons">
         {% if site.data.ui-text[site.locale].follow_label %}
+        Feel free to check out my profiles below or reach out directly via email
         <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
         {% endif %}
         {% if site.twitter.username %}
@@ -17,3 +18,7 @@
     {{ site.name | default: site.title }}<br>
     Last updated: {{ site.time | date: "%B %d, %Y" }}.
 </div>
+
+<p style="margin-top: 15px; margin-bottom: 15px; font-size: 0.85em; color: #666;">
+    {{ site.footer_text | markdownify }}
+</p>

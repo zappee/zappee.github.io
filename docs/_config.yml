@@ -9,10 +9,6 @@ description: "Portfolio featuring my resume, projects, and AI agents."
 title_separator: "|"
 site_navigation: main
 
-  # footer settings
-follow_label: "Feel free to check out my profiles below or reach out directly via email."
-name: "Copyright &copy 2020-2026 Remal Software and Arnold SOMOGYI All rights reserved"
-
 # theme settings
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
@@ -42,3 +38,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zappee"
+
+# footer settings
+name: "Copyright &copy 2020-2026 Remal Software and Arnold SOMOGYI All rights reserved"
+# Put this in your _config.yml file
+footer_text: "Feel free to check out my profiles below or reach out directly via <a href='mailto:your.email@domain.com' style='text-decoration: underline;'>email</a>."
