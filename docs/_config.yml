@@ -32,7 +32,7 @@ og_image: "assets/images/remal-logo.jpg" # The fallback branding card used for l
 
 # when you set author_profile: true, the theme pulls data directly from this block
 author:
-  name: "Arnold Somogyi"
+  name: "ARNOLD Somogyi"
   avatar: "assets/images/avatars/arnold.somogyi-profile.jpg"
   bio: "Developer, writer, and creator."
   location: "Hungary, Budapest"
