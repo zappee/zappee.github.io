@@ -4,7 +4,8 @@ baseurl: ""
 repository: "zappee/zappee.github.io"
 
 title: "Remal Software"
-subtitle: "Portfolio featuring my resume, projects, and AI agents."
+subtitle: "Software Engineering Portfolio"
+tagline: "0.0.1"
 description: "Portfolio featuring my resume, projects, and AI agents."
 title_separator: "|"
 site_navigation: main
