@@ -1,7 +1,7 @@
 # site settings
 url: "https://zappee.github.io"
-baseurl: "remal-services"
-repository: "zappee/remal-services"
+baseurl: "zappee.github.io"
+repository: "zappee/zappee.github.io"
 
 title: "Project Documentation"
 subtitle: "Version 2.0"
