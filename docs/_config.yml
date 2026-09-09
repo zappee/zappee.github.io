@@ -6,6 +6,7 @@ repository: "zappee/zappee.github.io"
 title: "Remal Software"
 subtitle: "Software Engineering Portfolio"
 description: "Portfolio featuring my resume, projects, and AI agents."
+name: "Remal Software and Arnold SOMOGYI"
 title_separator: "|"
 site_navigation: main
 
