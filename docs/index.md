@@ -21,4 +21,4 @@ I also listen to music often, it really helps me clear my mind.
 
 ## Let’s build something great together! 🤝
 Are you looking for an experienced developer to build your next Java system, integrate AI capabilities, or document your technical ecosystem?
-Get in Touch with Me.
+Get in touch with Me.
