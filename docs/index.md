@@ -15,7 +15,8 @@ I can handle everything from initial whiteboard sketch to deployment as a self-e
 I treat AI agents as my virtual teammates, an advanced AI assistant that works right alongside me to help me do my job faster and smarter.
 I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.
 
-When I am not writing code, I am usually documenting it or helping other developers figure out Linux configurations.
+When I’m not writing code, I love spending time with my family. You can also find me hiking outdoors, traveling to new places, or reading books to keep learning and expanding my mind.
+I also listen to music often, it really helps me clear my mind.
 
 
 ## Let’s build something great together! 🤝
