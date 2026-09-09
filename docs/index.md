@@ -9,8 +9,9 @@ author_profile: true
 
 You might already know me from my extensive work around the Java and Linux communities.
 I am an independent _Software Engineer_, _Full-Stack Developer_, and _Technical Writer_.
-Essentially, I am a one-stop shop for software development—handling everything from the initial whiteboard sketch to final deployment.
-What I bring to the table: rock-solid solutions. I can handle everything from initial design to deployment as a self-employed developer.
+Essentially, I am a one-stop shop for software development.
+What I bring to the table: rock-solid solutions.
+I can handle everything from initial design to deployment as a self-employed developer.
 I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.
 
 When I'm not writing code, I'm usually documenting it or helping other developers figure out Linux configurations.
