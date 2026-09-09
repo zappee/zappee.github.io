@@ -13,7 +13,7 @@ Essentially, I am a one-stop shop for software development.
 What I bring to the table: rock-solid solutions.
 I can handle everything from initial whiteboard sketch to deployment as a self-employed developer.
 I treat AI agents as my virtual teammates, an assistant that works right alongside me to help me do my job faster and smarter.
-I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.
+I love translating complicated software architecture into clean, friendly and actionable guides, bridging the gap between complex code and customer understanding.
 
 When I’m not writing code, I love spending time with my family. You can also find me hiking outdoors, traveling to new places, or reading books to keep learning and expanding my mind.
 I also listen to music often, it really helps me clear my mind.
