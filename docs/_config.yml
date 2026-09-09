@@ -53,5 +53,5 @@ github:
 
 markdown: kramdown
 kramdown:
-  input: GFM
-  hard_wrap: false
+  input: gfm
+  gfm_quirks: []
