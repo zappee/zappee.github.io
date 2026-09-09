@@ -50,3 +50,8 @@ footer_text: "Feel free to check out my profiles below or reach out directly via
 # social media usernames (do not include the full url or @ symbol, just the raw username)
 github:
   username: "zappee"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
