@@ -43,3 +43,9 @@ author:
 name: "Copyright &copy 2020-2026 Remal Software and Arnold SOMOGYI All rights reserved"
 # Put this in your _config.yml file
 footer_text: "Feel free to check out my profiles below or reach out directly via <a href='mailto:your.email@domain.com' style='text-decoration: underline;'>email</a>."
+
+# Social Media Usernames (Do not include the full URL or @ symbol, just the raw username)
+twitter:
+  username: "YourTwitterHandle"
+github:
+  username: "zappee"
