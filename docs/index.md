@@ -10,7 +10,7 @@ author_profile: true
 My name is Arnold Somogyi.
 
 
-Many of you may recognize me from my work primarily in the Java and Linux areas.
+You may recognize me from my extensive work in Java development and Linux systems.
 Hi, I am a Independent Software Engineer, Software Architect, Full-Stack Developer and Technical Writer.
 I build robost, scalable, maintainable, and high-performance backend systems, intelligent AI agents, and write clear documentation to bridge the gap between complex code and user understanding.
 Designing autonomous, intelligent AI agents to automate workflows and data processing.
