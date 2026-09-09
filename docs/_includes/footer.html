@@ -4,12 +4,38 @@
         Feel free to check out my profiles below or reach out directly via email
         <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
         {% endif %}
-        {% if site.twitter.username %}
-        <li><a href="https://twitter.com{{ site.twitter.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        {% endif %}
+
+
+        <!-- GitHub Link -->
         {% if site.github.username %}
         <li><a href="https://github.com/{{ site.github.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
         {% endif %}
+
+        <!-- Twitter Link -->
+        {% if site.twitter.username %}
+        <li><a href="https://twitter.com{{ site.twitter.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        {% endif %}
+
+        <!-- LinkedIn Link -->
+        {% if site.author.linkedin %}
+        <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        {% endif %}
+
+        <!-- Stack Overflow Link -->
+        {% if site.author.stackoverflow %}
+        <li><a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a></li>
+        {% endif %}
+
+        xxx
+
+        {% if site.twitter.username %}
+        <li><a href="https://twitter.com{{ site.twitter.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        {% endif %}
+
+        {% if site.github.username %}
+        <li><a href="https://github.com/{{ site.github.username }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        {% endif %}
+
         <li><a href="{{ site.feed.path | default: '/feed.xml' | relative_url }}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
     </ul>
 </div>
