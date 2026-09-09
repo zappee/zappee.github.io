@@ -25,3 +25,7 @@ legi scire aer audita quotiens strepitus opaca et deferre sanguis. Dolore
 volucrum iners lilia maius quos ramis ducitur vidit modo dare faciebat
 signataque suae. Quae tibi durastis dextram saetis; semper fonti inornatos
 furenti legebantur torrem matris, est nudare Hyacinthe prius.
+
+## Let's Work Together
+Are you looking for an experienced developer to build your next Java system, integrate AI capabilities, or document your technical ecosystem?
+Get in Touch with Me.
