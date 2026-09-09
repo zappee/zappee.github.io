@@ -16,6 +16,14 @@ I love translating complicated software architecture into clean, friendly, and a
 
 When I'm not writing code, I'm usually documenting it or helping other developers figure out Linux configurations.
 
+xxxxxxxxxxxxxxxxxxxxx
+
+<div>
+    You might already know me from my extensive work around the Java and Linux communities.
+    I am an independent _Software Engineer_, _Full-Stack Developer_, and _Technical Writer_.
+    Essentially, I am a one-stop shop for software development.
+</div>
+
 
 Intelligent AI Agents: I design smart, autonomous agents to automate complex workflows.
 
