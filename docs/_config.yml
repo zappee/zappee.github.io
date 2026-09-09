@@ -1,6 +1,6 @@
 # site settings
-url: ""
-baseurl: "zappee.github.io"
+url: "https://zappee.github.io"
+baseurl: ""
 repository: "zappee/zappee.github.io"
 
 title: "Project Documentation"
