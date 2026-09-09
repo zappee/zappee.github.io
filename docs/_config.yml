@@ -32,7 +32,7 @@ og_image: "assets/images/remal-logo.jpg" # The fallback branding card used for l
 
 # when you set author_profile: true, the theme pulls data directly from this block
 author:
-  name: "ARNOLD Somogyi"
+  name: "Arnold Somogyi"
   avatar: "assets/images/avatars/arnold.somogyi-profile.jpg"
   bio: "Developer, writer, and creator."
   location: "Hungary, Budapest"
@@ -43,7 +43,7 @@ author:
       url: "https://github.com/zappee"
 
 # footer settings
-name: "Copyright &copy 2020-2026 Remal Software and Arnold SOMOGYI All rights reserved"
+name: "Copyright &copy 2020-2026 Remal Software and Arnold Somogyi All rights reserved"
 # Put this in your _config.yml file
 footer_text: "Feel free to check out my profiles below or reach out directly via <a href='mailto:your.email@domain.com' style='text-decoration: underline;'>email</a>."
 
