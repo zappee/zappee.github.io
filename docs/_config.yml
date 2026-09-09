@@ -3,9 +3,9 @@ url: "https://zappee.github.io"
 baseurl: ""
 repository: "zappee/zappee.github.io"
 
-title: "Project Documentation"
-subtitle: "Version 2.0"
-description: "A short catchphrase or description of your project."
+title: "Remal Software"
+subtitle: "Portfolio featuring my resume, projects, and AI agents."
+description: "Portfolio featuring my resume, projects, and AI agents."
 title_separator: "|"
 site_navigation: main
 
