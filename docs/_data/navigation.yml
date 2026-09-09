@@ -3,14 +3,17 @@ main:
   - title: "Home"
     url: /
 
-  - title: "About"
+  - title: "About me"
     url: /about/
 
-  - title: "Setup"
+  - title: "Projects"
     url: /setup/
     
-  - title: "Portfolio"
+  - title: "AI-Agents"
     url: /portfolio/
+
+  - title: "Publications"
+    url: /about/
 
 # sidebar definition for Portfolio page
 portfolio_sidebar:
