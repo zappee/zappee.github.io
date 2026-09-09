@@ -1,13 +1,14 @@
 ---
 layout: single
-title: "Home"
+title: "Hey there! 👋"
 permalink: /
 author_profile: true
 ---
 
-## Hey there! 👋:wave:
+## Hey there! 👋
 
-👋You might already know me from my work around the Java and Linux communities.I’m an Independent Software Engineer, Software Architect, Full-Stack Developer, and Technical Writer. Essentially, I’m a one-stop shop for software development—handling everything from the initial whiteboard sketch to final deployment.What I bring to the table:Rock-solid Backends: I build robust, scalable, and high-performance systems that don't break.Intelligent AI Agents: I design smart, autonomous agents to automate complex workflows.Clear Documentation: I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.When I'm not writing code, I'm usually documenting it or helping other developers figure out Linux configurations. Let's build something great together!
+👋You might already know me from my extensive work in around the Java and Linux communities.
+I’m an Independent Software Engineer, Software Architect, Full-Stack Developer, and Technical Writer. Essentially, I’m a one-stop shop for software development—handling everything from the initial whiteboard sketch to final deployment.What I bring to the table:Rock-solid Backends: I build robust, scalable, and high-performance systems that don't break.Intelligent AI Agents: I design smart, autonomous agents to automate complex workflows.Clear Documentation: I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.When I'm not writing code, I'm usually documenting it or helping other developers figure out Linux configurations. Let's build something great together!
 
 
 
