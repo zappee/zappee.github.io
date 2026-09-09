@@ -9,7 +9,7 @@ subtitle: "Software Engineering Portfolio"
 description: "Portfolio featuring my resume, projects, and AI agents."
 title_separator: "|"
 site_navigation: main
-google_analytics: G-7B4N6EQKN2
+email: arnold.somogyi@gmail.com
 
 # theme settings
 remote_theme: mmistakes/minimal-mistakes
