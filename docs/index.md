@@ -1,9 +1,11 @@
 ---
 layout: single
-title: "Hey there! 👋"
+title: "Home"
 permalink: /
 author_profile: true
 ---
+
+## Hey there! 👋
 
 You might already know me from my extensive work around the Java and Linux communities.
 I am an independent _Software Engineer_, _Full-Stack Developer_, and _Technical Writer_.
