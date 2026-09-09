@@ -11,7 +11,7 @@ title_separator: "|"
 site_navigation: main
 
 # theme settings
-remote_theme: mmistakes/minimal-mistakes@4.28.1
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
 nav_sort: page_order
 
