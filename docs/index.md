@@ -15,9 +15,7 @@ I can handle everything from initial whiteboard sketch to deployment as a self-e
 A treat AI as my colleague.
 I love translating complicated software architecture into clean, friendly, and actionable guides, bridging the gap between complex code and user understanding.
 
-When I'm not writing code, I'm usually documenting it or helping other developers figure out Linux configurations.
-
-Intelligent AI Agents: I design smart, autonomous agents to automate complex workflows.
+When I am not writing code, I am usually documenting it or helping other developers figure out Linux configurations.
 
 
 ## Let’s build something great together! 🤝
