@@ -13,7 +13,7 @@ email: arnold.somogyi@gmail.com
 
 # theme settings
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
+minimal_mistakes_skin: "sunrise" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
 nav_sort: page_order
 
 # required plugins
