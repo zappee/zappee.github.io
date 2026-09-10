@@ -4,9 +4,6 @@
 
 /* assets/css/main.scss */
 
-$content-width: 1300px; // Default is 800px. Increase this as much as you like.
-$on-large: 1200px;
-
 /* automatically loads all original layout rules, fonts, and structures */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -39,8 +36,4 @@ $on-large: 1200px;
   .author__urls-wrapper {
     text-align: left !important;
   }
-}
-
-.wrapper {
-  max-width: 1150px;
 }
