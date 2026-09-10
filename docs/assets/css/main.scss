@@ -40,11 +40,11 @@
 
 .smaller-text-page {
   .page__content p {
-    font-size: 0.9rem;    // Scales the main paragraph text down
+    font-size: 0.8rem;    // Scales the main paragraph text down
     line-height: 1.5;     // Adjusts spacing for readability
   }
 
   // Optional: Make headings slightly smaller on this page too
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.25rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1.0rem; }
 }
