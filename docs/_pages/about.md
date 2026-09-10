@@ -24,12 +24,12 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 * Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
 * Software Architecture: Enterprise middleware, microservices architecture, and design patterns
 * AI Systems: AI-assisted software engineering and building autonomous AI agents
-* DevOps & CI/CD: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning, and agile sprint tracking
+* DevOps & CI/CD: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning
 * Technical Writing & Architecture Design: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints
 * Operations: Production deployment, system configurations, Tier-3 support for business-critical applications
 * Systems Analysis & Delivery: Functional design, data structures, and end-to-end application ownership from sketch to deployment
 * Institutional Environments: Familiarity with the European Commission's technical environment, IT tools, and security standards
-* Agile Frameworks: Scrum and Kanban methodologies
+* Agile Frameworks: Scrum and Kanban methodologies, agile sprint tracking with Jira
 
 
 ## Personal Traits
