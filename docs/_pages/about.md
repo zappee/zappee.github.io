@@ -34,16 +34,16 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Personal Traits
 
-* Detail-oriented and forward-looking
-* Strong communication skills
-* Customer-centric approach
-* Proven ability to rapidly master new technologies and complex tasks
-* Ability to work well under pressure
-* Adaptable with a commitment to continuous learning
-* Strong analytical skills
-* Extensive background in the financial domain
+* Analytical & Detail-Oriented
+* Effective Communicator
+* Customer-Centric Mindset
+* Rapid Technology Adaptability
+* Work well under pressure
+* Continuous Learner
+* Financial Domain Expertise
 
 
 ## Education
+
 Information Specialist Engineer – Programmer
 Dennis Gabor University (DGU), Budapest, Hungary
