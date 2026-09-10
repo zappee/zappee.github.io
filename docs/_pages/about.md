@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "About Me"
+title: "About"
 permalink: /about/
 author_profile: true
 classes: "wide smaller-text"
