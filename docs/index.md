@@ -3,7 +3,7 @@ layout: single
 title: "Home"
 permalink: /
 author_profile: true
-classes: "wide smaller-text-page"
+classes: "wide smaller-text"
 ---
 
 ## Hey there! 👋
