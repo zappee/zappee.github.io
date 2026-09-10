@@ -16,11 +16,11 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Technical Skills
 
-* Back-end: Java, related technologies, and libraries, API design and development
-* Front-end: Angular, JavaScript, HTML, and CSS
-* Scripting: Unix Bash
-* Virtualization & Cloud: Docker and AWS
-* Messaging Systems: JMS, Topic, and Kafka
+* _Back-end_: Java, related technologies, and libraries, API design and development
+* _Front-end_: Angular, JavaScript, HTML, and CSS
+* _Scripting_: Unix Bash
+* _Virtualization & Cloud_: Docker and AWS
+* _Messaging Systems_: JMS, Topic, and Kafka
 * Databases: Proficiency in SQL and NoSQL,
 * Architecture: Middleware, Microservices, and related design patterns
 * Documentation: Expert in IT documentation and presentation tools
