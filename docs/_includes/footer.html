@@ -17,13 +17,14 @@
         <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         {% endif %}
 
-        <!-- Stack Overflow Link -->
-        {% if site.author.stackoverflow %}
-        <li><a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a></li>
-        <li>{% endif %}</li>
-
         <!-- mobile phone number -->
         <li><a href="tel:+36303126200" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-phone" aria-hidden="true"></i> +36 20 312 6200</a></li>
+
+
+        {% if site.phone_number %}
+        <li><a href="tel:{{ site.phone_number }}" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-phone" aria-hidden="true"></i> ++36 20 312 6200</a></li>
+        {% endif %}
+
     </ul>
 </div>
 
