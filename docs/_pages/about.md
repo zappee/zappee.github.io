@@ -43,3 +43,9 @@ My strong analytical skills and excellent problem solving abilities combined wit
 * Adaptable with a commitment to continuous learning
 * Strong analytical skills
 * Extensive background in the financial domain
+
+
+## Education
+Information Specialist Engineer – Programmer
+Dennis Gabor University (DGU), Budapest, Hungary
+Result: excellent
