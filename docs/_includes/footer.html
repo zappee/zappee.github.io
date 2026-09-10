@@ -33,6 +33,14 @@
     {{ site.name | default: site.title }}<br>
 </div>
 
+{% if site.phone_number %}
+<div class="footer-phone">
+    <i class="fas fa-fw fa-phone" aria-hidden="true"></i>
+    <a href="tel:{{ site.phone_callable }}">{{ site.phone_number }}</a>
+</div>
+{% endif %}
+
+
 <!-- Google Analytics configuration -->
 <script>
     window.dataLayer = window.dataLayer || [];
