@@ -38,18 +38,23 @@
   }
 }
 
+  /* custom styles */
 .smaller-text-page {
   .page__content p {
-    font-size: 0.8rem;    // Scales the main paragraph text down
-    line-height: 1.5;     // Adjusts spacing for readability
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
   .page__content li {
-    font-size: 0.8rem;    // Scales the main paragraph text down
-    line-height: 1.5;     // Adjusts spacing for readability
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
-  // Optional: Make headings slightly smaller on this page too
-  h2 { font-size: 1.2rem; }
-  h3 { font-size: 1.0rem; }
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  h3 {
+      font-size: 1.0rem;
+  }
 }
