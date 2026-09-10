@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-## OVERVIEW
+## Overview
 
 I am a results-driven IT professional with 10+ years of experience in designing and coding back-end and front-end software applications using Java and related technologies.
 I have an extensive experience in Java, Systems Integration, Application Servers, Cloud Solutions, SQL and Scripting Languages.
