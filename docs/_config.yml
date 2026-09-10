@@ -36,6 +36,7 @@ author:
   avatar: "assets/images/avatars/arnold.somogyi-profile.jpg"
   bio: "Developer, writer, and creator."
   location: "Hungary, Budapest"
+  phone: "+36 20 312 6200"
   linkedin: "arnold-somogyi"
   links:
     - label: "GitHub"
