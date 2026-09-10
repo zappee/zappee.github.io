@@ -8,9 +8,10 @@ classes: "wide smaller-text"
 
 ## Overview
 
-I am a results-driven IT professional with 10+ years of experience in designing and coding back-end and front-end software applications using Java and related technologies.
-I have an extensive experience in Java, Systems Integration, Application Servers, Cloud Solutions, SQL and Scripting Languages.
-My strong analytical skills and excellent problem solving abilities combined with my strong technical background make me a highly valuable employee and team member.
+I am a forward-thinking _Full-Stack Software Engineer_ specialized in crafting high-performance enterprise applications with modern technologies,
+Angular frontends, microservices, AI-Agents, and cloud environments.
+In my daily work, I treat AI as my virtual teammates—ter, that helps me to deliver rock-solid solutions ahead of schedule.
+Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
 
 
 ## Technical Skills
