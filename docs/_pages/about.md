@@ -12,6 +12,7 @@ I am a results-driven IT professional with 10+ years of experience in designing 
 I have an extensive experience in Java, Systems Integration, Application Servers, Cloud Solutions, SQL and Scripting Languages.
 My strong analytical skills and excellent problem solving abilities combined with my strong technical background make me a highly valuable employee and team member.
 
+
 ## Technical Skills
 
 * Back-end: Java, related technologies, and libraries, API design and development
@@ -30,3 +31,15 @@ My strong analytical skills and excellent problem solving abilities combined wit
 * AI & LLM: Expert in AI-assisted system design and professional software development using ChatGPT, Copilot,
 * and Gemini; skilled in building AI agent pipelines
 * EU: Familiar with the EU Commission's IT environment and tools
+
+
+## Personal Traits
+
+* Detail-oriented and forward-looking
+* Strong communication skills
+* Customer-centric approach
+* Proven ability to rapidly master new technologies and complex tasks
+* Ability to work well under pressure
+* Adaptable with a commitment to continuous learning
+* Strong analytical skills
+* Extensive background in the financial domain
