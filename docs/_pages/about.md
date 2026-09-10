@@ -34,13 +34,13 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Personal Traits
 
-* Analytical & Detail-Oriented
-* Effective Communicator
-* Customer-Centric Mindset
-* Rapid Technology Adaptability
+* Analytical & Detail-oriented
+* Effective communicator
+* Customer-centric mindset
+* Rapid technology adaptability
 * Work well under pressure
-* Continuous Learner
-* Financial Domain Expertise
+* Continuous learner
+* Financial domain expertise
 
 
 ## Education
