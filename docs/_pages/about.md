@@ -13,6 +13,7 @@ I have an extensive experience in Java, Systems Integration, Application Servers
 My strong analytical skills and excellent problem solving abilities combined with my strong technical background make me a highly valuable employee and team member.
 
 ## Technical Skills
+
 * Back-end: Java, related technologies, and libraries, API design and development
 * Front-end: Angular, JavaScript, HTML, and CSS
 * Scripting: Unix Bash
