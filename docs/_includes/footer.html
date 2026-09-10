@@ -18,13 +18,9 @@
         {% endif %}
 
         <!-- mobile phone number -->
-        <li><a href="tel:+36303126200" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-phone" aria-hidden="true"></i> +36 20 312 6200</a></li>
-
-
-        {% if site.phone_number %}
-        <li><a href="tel:{{ site.phone_number }}" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-phone" aria-hidden="true"></i> ++36 20 312 6200</a></li>
+        {% if site.author.phone %}
+        <li><a href="tel:{{ site.author.phone }}" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-phone" aria-hidden="true"></i> {{ site.author.phone }}</a></li>
         {% endif %}
-
     </ul>
 </div>
 
@@ -33,14 +29,6 @@
     <br>
     {{ site.name | default: site.title }}<br>
 </div>
-
-{% if site.phone_number %}
-<div class="footer-phone">
-    <i class="fas fa-fw fa-phone" aria-hidden="true"></i>
-    <a href="tel:{{ site.phone_callable }}">{{ site.phone_number }}</a>
-</div>
-{% endif %}
-
 
 <!-- Google Analytics configuration -->
 <script>
