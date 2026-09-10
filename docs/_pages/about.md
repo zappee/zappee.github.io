@@ -16,20 +16,20 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Technical Skills
 
-* _Back-end Development_: Java ecosystems, core libraries, enterprise frameworks, and REST API design
-* _Front-end Development_: Angular, JavaScript, HTML, and CSS
-* _Scripting_: Unix Bash, and automated shell scripting
-* _Cloud & Virtualization_: AWS cloud solutions, Docker containerization, and microservices deployment
-* _Messaging & Integration_: Apache Kafka, JMS, and event-driven architectures
-* _Database Engineering_: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
-* _Software Architecture_: Enterprise middleware, microservices architecture, and design patterns
-* _AI Systems_: AI-assisted software engineering (ChatGPT, GitHub Copilot, Gemini) and building autonomous AI agents
-* _DevOps & CI/CD_: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning, and agile sprint tracking
-* _Technical Writing & Architecture Design_: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints using UML, Draw.io, PowerPoint, Word, and Excel
-* _Operations_: Production deployment, system configurations, Tier-3 support for business-critical applications
-* _Systems Analysis & Delivery_: Functional design, data structures, and end-to-end application ownership from sketch to deployment
-* _Institutional Environments_: Familiarity with the European Commission's technical environment, IT tools, and security standards
-* _Agile Frameworks_: Scrum and Kanban methodologies
+* Back-end Development: Java ecosystems, core libraries, enterprise frameworks, and REST API design
+* Front-end Development: Angular, JavaScript, HTML, and CSS
+* Scripting: Unix Bash, and automated shell scripting
+* Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
+* Messaging & Integration: Apache Kafka, JMS, and event-driven architectures
+* Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
+* Software Architecture: Enterprise middleware, microservices architecture, and design patterns
+* AI Systems: AI-assisted software engineering (ChatGPT, GitHub Copilot, Gemini) and building autonomous AI agents
+* DevOps & CI/CD: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning, and agile sprint tracking
+* Technical Writing & Architecture Design: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints using UML, Draw.io, PowerPoint, Word, and Excel
+* Operations: Production deployment, system configurations, Tier-3 support for business-critical applications
+* Systems Analysis & Delivery: Functional design, data structures, and end-to-end application ownership from sketch to deployment
+* Institutional Environments: Familiarity with the European Commission's technical environment, IT tools, and security standards
+* Agile Frameworks: Scrum and Kanban methodologies
 
 
 ## Personal Traits
