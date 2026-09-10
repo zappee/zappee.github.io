@@ -16,20 +16,20 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Technical Skills
 
-* _Back-end_: Java, related technologies, and libraries, API design and development
-* _Front-end_: Angular, JavaScript, HTML, and CSS
-* _Scripting_: Unix Bash
-* _Virtualization & Cloud_: Docker and AWS
-* _Messaging Systems_: JMS, Topic, and Kafka
-* _Databases_: Proficiency in SQL and NoSQL,
-* _Architecture_: Middleware, Microservices, and related design patterns
-* _Documentation_: Expert in IT documentation and presentation tools
-* _Agile Methodologies_: Scrum and Kanban
-* _DevOps_: Strong CI/CD skills and ticket/task management
-* _Operations_: Production deployment and operations, Tier-3 technical support for business-critical systems
-* _Systems_: Application integration, System analysis, and Design
-* _AI & LLM_: Expert in AI-assisted system design and professional software development using ChatGPT, Copilot, and Gemini; skilled in building AI agent pipelines
-* _EU environment_: Familiar with the EU Commission's IT environment and tools
+* _Back-end Development_: Java ecosystems, core libraries, enterprise frameworks, and REST API design
+* _Front-end Development_: Angular, JavaScript, HTML, and CSS
+* _Scripting_: Unix Bash, and automated shell scripting
+* _Cloud & Virtualization_: AWS cloud solutions, Docker containerization, and microservices deployment
+* _Messaging & Integration_: Apache Kafka, JMS, and event-driven architectures
+* _Database Engineering_: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
+* _Software Architecture_: Enterprise middleware, microservices architecture, and design patterns
+* _AI Systems_: AI-assisted software engineering (ChatGPT, GitHub Copilot, Gemini) and building autonomous AI agents
+* _DevOps & CI/CD_: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning, and agile sprint tracking
+* _Technical Writing & Architecture Design_: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints using UML, Draw.io, PowerPoint, Word, and Excel
+* _Operations_: Production deployment, system configurations, Tier-3 support for business-critical applications
+* _Systems Analysis & Delivery_: Functional design, data structures, and end-to-end application ownership from sketch to deployment
+* _Institutional Environments_: Familiarity with the European Commission's technical environment, IT tools, and security standards
+* _Agile Frameworks_: Scrum and Kanban methodologies
 
 
 ## Personal Traits
