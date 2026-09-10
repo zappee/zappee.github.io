@@ -21,7 +21,7 @@ You can also find me hiking outdoors, traveling to new places, or reading books 
 I also listen to music often, it is the perfect way to clear my thoughts after a productive day.
 
 
-## Let’s build something great together!
+## Let’s build something great together! 🤝
 
 Are you looking for an experienced developer to build your next Java system, integrate AI capabilities, or document your technical ecosystem?
 Get in touch with Me.
