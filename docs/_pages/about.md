@@ -21,17 +21,16 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 * _Scripting_: Unix Bash
 * _Virtualization & Cloud_: Docker and AWS
 * _Messaging Systems_: JMS, Topic, and Kafka
-* Databases: Proficiency in SQL and NoSQL,
-* Architecture: Middleware, Microservices, and related design patterns
-* Documentation: Expert in IT documentation and presentation tools
-* Agile Methodologies: Scrum and Kanban
-* DevOps: Strong CI/CD skills and ticket/task management
-* Operations: Production deployment and operations, Tier-3 technical support for business-critical systems
-* Ownership: End-to-end application ownership
-* Systems: Application integration, System analysis, and Design
-* AI & LLM: Expert in AI-assisted system design and professional software development using ChatGPT, Copilot,
-* and Gemini; skilled in building AI agent pipelines
-* EU: Familiar with the EU Commission's IT environment and tools
+* _Databases_: Proficiency in SQL and NoSQL,
+* _Architecture_: Middleware, Microservices, and related design patterns
+* _Documentation_: Expert in IT documentation and presentation tools
+* _Agile Methodologies_: Scrum and Kanban
+* _DevOps_: Strong CI/CD skills and ticket/task management
+* _Operations_: Production deployment and operations, Tier-3 technical support for business-critical systems
+* _Ownership_: End-to-end application ownership
+* _Systems_: Application integration, System analysis, and Design
+* _AI & LLM_: Expert in AI-assisted system design and professional software development using ChatGPT, Copilot, and Gemini; skilled in building AI agent pipelines
+* _EU environment_: Familiar with the EU Commission's IT environment and tools
 
 
 ## Personal Traits
