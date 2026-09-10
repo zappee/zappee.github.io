@@ -47,4 +47,3 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 ## Education
 Information Specialist Engineer – Programmer
 Dennis Gabor University (DGU), Budapest, Hungary
-Result: excellent
