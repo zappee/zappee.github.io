@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Setuppppp"
-permalink: /setup/
+title: "Projects"
+permalink: /projects/
 author_profile: true
 ---
 

@@ -7,7 +7,7 @@ main:
     url: /about/
 
   - title: "Projects"
-    url: /setup/
+    url: /projects/
     
   - title: "AI-Agents"
     url: /portfolio/
