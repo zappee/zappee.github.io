@@ -37,3 +37,14 @@
     text-align: left !important;
   }
 }
+
+.smaller-text-page {
+  .page__content {
+    font-size: 0.9rem;    // Scales the main paragraph text down
+    line-height: 1.5;     // Adjusts spacing for readability
+  }
+
+  // Optional: Make headings slightly smaller on this page too
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
