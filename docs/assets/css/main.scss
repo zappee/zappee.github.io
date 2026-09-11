@@ -8,7 +8,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* custom styles */
 @include breakpoint($large) {
   /* center the author avatar container and layout elements */
   .author__avatar {
