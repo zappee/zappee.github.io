@@ -57,7 +57,7 @@ Sep 2019 – 2026 Apr
   <span style="float: right; font-weight: normal; font-size: 0.8em;">
       Sep 2019 – 2026 Apr
   </span>
-  Software Architect \| [EU Emissions Trading System (EU ETS)](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en)
+  Software Architect
 </h3>
 
 Brussels, Belgium
