@@ -46,20 +46,20 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Education
 
-<span class="text-right">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
+<span class="right-aligned-text">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
 
 
 ## Professional Career
 
-#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect, EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en" style="font-weight: normal;">Climate Action</a>
+#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect<span style="normal-text"> \| EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">Climate Action</a></span>
 
 Brussels, Belgium
 
-#### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect, Branch Banking System, Apollo team \| <a href="https://www.kh.hu" style="font-weight: normal;">KBC Group, K&H Bank</a>
+#### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span style="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
 Budapest, Hungary
 
-#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, <span style="font-weight: normal;">NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
+#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span style="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
 Prague, Czech Republic
 
