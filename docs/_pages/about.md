@@ -55,7 +55,7 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 Brussels, Belgium
 
-#### <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect | <a href="https://www.kh.hu">KBC Group, K&H Bank</a>, Apollo team (Branch Banking System)
+#### <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect | <a href="https://www.kh.hu">KBC Group, K&H Bank</a>, Branch Banking System, Apollo team
 
 Budapest, Hungary
 
