@@ -63,7 +63,7 @@ Budapest, Hungary
 
 Prague, Czech Republic
 
-#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">European Union Intellectual Property Office</a></span>
+#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">EU Intellectual Property Office</a></span>
 
 Alicante, Spain
 
