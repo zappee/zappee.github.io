@@ -15,7 +15,7 @@ main:
   - title: "Publications"
     url: /publications/
 
-# sidebar definition for AI-Agents pages
+# sidebar's page definitions
 ai-agents_sidebar:
   - title: "AI-Agents"
     children:
