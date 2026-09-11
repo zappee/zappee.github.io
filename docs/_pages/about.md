@@ -54,10 +54,10 @@ Software Architect \| [EU Emissions Trading System (EU ETS)](https://climate.ec.
 Sep 2019 – 2026 Apr
 
 
-### <span class="heading-right">Jan 2026 1</span>Left Aligned Title Text
+### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | EU Emissions Trading System (EU ETS)
 
 
-#### <span class="heading-right">Jan 2026 2</span>Left Aligned Title Text
+#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">EU Emissions Trading System (EU ETS)</a>
 
 
 Brussels, Belgium
