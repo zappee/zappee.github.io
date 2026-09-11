@@ -60,6 +60,15 @@ Sep 2019 – 2026 Apr
   Software Architect
 </h3>
 
+
+<h3>
+  <span style="display: flex; justify-content: space-between; width: 100%;">
+    <span>Left Aligned Title Text</span>
+    <span>Right Aligned Text</span>
+  </span>
+</h3>
+
+
 Brussels, Belgium
 Responsibilities
 • Designed and developed full-stack IT applications and services
