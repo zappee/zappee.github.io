@@ -51,7 +51,7 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Professional Career
 
-#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect, EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">Climate Action</a>
+#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect, EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en" style="font-weight: normal;">Climate Action</a>
 
 Brussels, Belgium
 
@@ -59,7 +59,7 @@ Brussels, Belgium
 
 Budapest, Hungary
 
-#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a>
+#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about" style="font-weight: normal;">Commerzbank</a>
 
 Prague, Czech Republic
 
