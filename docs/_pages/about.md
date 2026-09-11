@@ -45,22 +45,12 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Education
 
-Information Specialist Engineer – Programmer \| Dennis Gabor University (DGU) \| Budapest, Hungary
-
 #### <span class="heading-right">Budapest, Hungary</span>Information Specialist Engineer – Programmer | Dennis Gabor University (DGU)
 
 
 ## Professional Career
 
-Software Architect \| [EU Emissions Trading System (EU ETS)](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en)
-Sep 2019 – 2026 Apr
-
-
-### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | EU Emissions Trading System (EU ETS)
-
-
 #### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">EU Emissions Trading System (EU ETS)</a>
-
 
 Brussels, Belgium
 Responsibilities
