@@ -67,6 +67,10 @@ Prague, Czech Republic
 
 Alicante, Spain
 
+#### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration and Systems Development Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
+
+Budapest, Hungary
+
 
 ## Xxxx
 
