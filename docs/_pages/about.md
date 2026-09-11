@@ -57,7 +57,7 @@ Brussels, Belgium
 #### <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect, Branch Banking System, Apollo team \|<a href="https://www.kh.hu">KBC Group, K&H Bank</a>
 Budapest, Hungary
 
-#### <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect, Branch Banking System, Apollo team \|<a href="https://www.kh.hu">KBC Group, K&H Bank</a>
+#### <span class="heading-right">Feb 2017 – 2019 Aug</span>Application Integration Specialist, NYC Investment Bank Division \|<a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a>
 Budapest, Hungary
 
 
