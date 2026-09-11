@@ -50,9 +50,17 @@ v1:
 
 <span class="heading-right">Budapest, Hungary1</span>Information Specialist Engineer – Programmer | Dennis Gabor University (DGU)
 
+v1.1:
+
+<span class="heading-right">Budapest, Hungary1</span>Information Specialist Engineer – Programmer, Dennis Gabor University (DGU)
+
 v2:
 
 #### <span class="heading-right">Budapest, Hungary2</span>Information Specialist Engineer – Programmer | Dennis Gabor University (DGU)
+
+v2.1:
+
+#### <span class="heading-right">Budapest, Hungary2</span>Information Specialist Engineer – Programmer, Dennis Gabor University (DGU)
 
 v3:
 
