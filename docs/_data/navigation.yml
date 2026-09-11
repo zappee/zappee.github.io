@@ -27,3 +27,15 @@ ai-agents_sidebar:
 
       - title: "Portfoio"
         url: /ai-agents/portfolio-agent/
+
+projects_sidebar:
+  - title: "Projects"
+    children:
+      - title: "Projects"
+        url: /projects/
+
+      - title: "FIPS Checker"
+        url: /projects/fips-scecker/
+
+      - title: "Spiral"
+        url: /projects/spiral/

@@ -1,8 +1,8 @@
 ---
 layout: single
+parent: AI-Agents Overview
 title: Portfolio Agent Guide
 permalink: /ai-agents/portfolio-agent/
-parent: AI-Agents Overview
 author_profile: false
 sidebar:
   nav: "ai-agents_sidebar"

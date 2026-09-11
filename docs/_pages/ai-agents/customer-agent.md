@@ -1,8 +1,8 @@
 ---
 layout: single
+parent: AI-Agents Overview
 title: Customer Agent Guide
 permalink: /ai-agents/customer-agent/
-parent: AI-Agents Overview
 author_profile: false
 sidebar:
   nav: "ai-agents_sidebar"
