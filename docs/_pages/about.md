@@ -21,7 +21,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Front-end Development: Angular, JavaScript, HTML, and CSS
 * Scripting: Unix Bash, and automated shell scripting
 * Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
-* Messaging & Integration: Apache Kafka, JMS, and event-driven architectures
+* Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic and event-driven architectures
 * Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
 * Software Architecture: Enterprise middleware, microservices architecture, and design patterns
 * AI Systems: AI-assisted software engineering and building autonomous AI agents
