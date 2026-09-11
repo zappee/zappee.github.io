@@ -61,7 +61,7 @@ Budapest, Hungary
 
 <span class="text-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a>
 
-Budapest, Hungary
+Prague, Czech Republic
 
 
 ## Xxxx
