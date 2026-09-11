@@ -8,6 +8,7 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+  /* custom styles */
 @include breakpoint($large) {
   /* center the author avatar container and layout elements */
   .author__avatar {
@@ -27,34 +28,48 @@
     border-radius: 50% !important; /* Forces the perfect symmetric circle shape */
   }
   
-  /* optional: Center your name and bio text underneath the photo */
+  /* center your name and bio text underneath the photo */
   .author__content {
-    text-align: center !important;
+      text-align: center !important;
   }
   
   /* keeps your social link bullet points aligned nicely */
   .author__urls-wrapper {
-    text-align: left !important;
+      text-align: left !important;
   }
 }
 
-  /* custom styles */
+  /* smaller text used in Jekyll headers */
 .smaller-text {
   .page__content p {
-    font-size: 0.8rem;
-    line-height: 1.5;
+      font-size: 0.8rem;
+       line-height: 1.5;
   }
-
   .page__content li {
-    font-size: 0.8rem;
-    line-height: 1.4;
+      font-size: 0.8rem;
+       line-height: 1.4;
   }
-
   h2 {
       font-size: 1.2rem;
   }
-
   h3 {
       font-size: 1.0rem;
   }
+  h4 {
+      font-size: 9.9rem;
+  }
 }
+
+./* split heading layouts */
+ .split-heading {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+ }
+
+ .split-heading-right {
+     font-weight: normal;
+      font-size: 0.85em;
+       color: var(--muted-text-color, #666);
+ }
