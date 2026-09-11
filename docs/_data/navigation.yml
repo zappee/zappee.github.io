@@ -22,8 +22,8 @@ ai-agents_sidebar:
       - title: "AI-Agents"
         url: /ai-agents/
 
-      - title: "Installation"
-        url: /ai-agents/installation/
+      - title: "Customer"
+        url: /ai-agents/customer-agent/
 
-      - title: "Configuration"
-        url: /ai-agents/configuration/
+      - title: "Portfoio"
+        url: /ai-agents/portfolio-agent/
