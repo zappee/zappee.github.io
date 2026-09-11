@@ -55,17 +55,6 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 Brussels, Belgium
 
-Responsibilities
+#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">EU Emissions Trading System (EU ETS)</a>
 
-* Designed and developed full-stack IT applications and services
-* Managed the deployment of new builds and execute production release cycles
-* Designed and developed full-stack IT solutions for the ETS department
-* Designed and implemented a customized SQL databases to organize complex client data, improving lookup efficiency by 30%
-* Managed server configurations and performance tuning to maximize operational efficiency
-* Identified and resolved high-impact technical challenges
-* Orchestrated communication between cross-functional stakeholders, including IT operators, developers, and the help desk.
-* Drive technical innovation by researching new technologies, create proof-of-concepts (PoC)
-* Executed full-stack production infrastructure migrations, including database, application server, and Unix layers
-* Implemented new business-critical features within the ETS
-* Designed a robust CI/CD infrastructure on Amazon Cloud for the ETS
-* Accelerated the Software Development Life Cycle (SDLC) by containerizing core ETS components with Docker, resulting in significantly faster development, testing, and release cycles
+Brussels, Belgium
