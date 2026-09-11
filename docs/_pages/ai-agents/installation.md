@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Installation
-permalink: /portfolio/installation/
-parent: Portfolio Overview
+permalink: /ai-agents/installation/
+parent: AI-Agents Overview
 author_profile: false
 sidebar:
-  nav: "portfolio_sidebar"
+  nav: "ai-agents_sidebar"
 ---
 
 ## Advanced System Setup

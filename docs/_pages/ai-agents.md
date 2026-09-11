@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "My Portfolio"
-permalink: /portfolio/
+title: "AI-Agents"
+permalink: /ai-agents/
 author_profile: false
 sidebar:
-  nav: "portfolio_sidebar"
+  nav: "ai-agents_sidebar"
 ---
 
 Showcase your projects here...

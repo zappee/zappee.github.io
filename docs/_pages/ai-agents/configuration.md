@@ -1,11 +1,11 @@
 ---
 layout: single
 title: Configuration Guide
-permalink: /portfolio/configuration/
-parent: Portfolio Overview
+permalink: /ai-agents/configuration/
+parent: AI-Agents Overview
 author_profile: false
 sidebar:
-  nav: "portfolio_sidebar"
+  nav: "ai-agents_sidebar"
 ---
 
 ## How to configure 
