@@ -62,9 +62,4 @@ Budapest, Hungary
 ## Xxxx
 
 * <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">EU Emissions Trading System, EU ETS</a>
-
-Brussels, Belgium
-
 * <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect | <a href="https://www.kh.hu">KBC Group, K&H Bank</a>, Apollo team (Branch Banking System)
-
-Budapest, Hungary
