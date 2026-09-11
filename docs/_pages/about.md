@@ -51,15 +51,15 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 ## Professional Career
 
-#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect<span style="normal-text"> \| EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">Climate Action</a></span>
+#### <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect<span class="normal-text"> \| EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">Climate Action</a></span>
 
 Brussels, Belgium
 
-#### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span style="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
+#### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
 Budapest, Hungary
 
-#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span style="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
+#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span class="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
 Prague, Czech Republic
 
