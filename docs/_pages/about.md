@@ -55,17 +55,19 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 Brussels, Belgium
 
-* blabla
-* blabla
-* blabla
+* Lorem ipsum dolor sit amet: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+* Ut enim ad minim veniam: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+* Duis aute irure dolor in reprehenderit: In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 #### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
 Budapest, Hungary
 
-* blabla
-* blabla
-* blabla
+* Lorem ipsum dolor sit amet: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+* Ut enim ad minim veniam: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+* Duis aute irure dolor in reprehenderit: In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+* Sed ut perspiciatis unde omnis iste natus error sit voluptatem: Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.
+* Excepteur sint occaecat cupidatat non proident: Sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 #### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span class="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
