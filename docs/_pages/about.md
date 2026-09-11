@@ -47,6 +47,8 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 Information Specialist Engineer – Programmer \| Dennis Gabor University (DGU) \| Budapest, Hungary
 
+#### <span class="heading-right">Budapest, Hungary</span>Information Specialist Engineer – Programmer | Dennis Gabor University (DGU)
+
 
 ## Professional Career
 
