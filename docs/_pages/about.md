@@ -51,9 +51,14 @@ Information Specialist Engineer – Programmer \| Dennis Gabor University (DGU) 
 ## Professional Career
 
 Software Architect \| [EU Emissions Trading System (EU ETS)](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en)
-Sept 2019 –2026 April
+Sept 2019 –2026 Apr
 
-
+<h3>
+  <span style="float: right; font-weight: normal; font-size: 0.8em;">
+      Sept 2019 –2026 Apr
+  </span>
+  Software Architect \| [EU Emissions Trading System (EU ETS)](https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en)
+</h3>
 
 Brussels, Belgium
 Responsibilities
