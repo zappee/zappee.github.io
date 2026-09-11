@@ -52,12 +52,15 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 ## Professional Career
 
 <span class="text-right">Sep 2019 – 2026 Apr</span>Software Architect, EU Emissions Trading System \| <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">Climate Action</a>
+
 Brussels, Belgium
 
 <span class="text-right">Apr 2017 – 2019 Aug</span>Software Architect, Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a>
+
 Budapest, Hungary
 
 <span class="text-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a>
+
 Budapest, Hungary
 
 
