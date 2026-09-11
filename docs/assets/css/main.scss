@@ -59,15 +59,8 @@
 }
 
 /* split heading layouts */
- .split-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.split-heading-right {
+.heading-right {
+  float: right;
   font-weight: normal;
   font-size: 0.85em;
-  color: var(--muted-text-color, #666);
 }
