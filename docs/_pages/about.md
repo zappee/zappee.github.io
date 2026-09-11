@@ -59,7 +59,7 @@ Brussels, Belgium
 
 Budapest, Hungary
 
-#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about" style="font-weight: normal;">Commerzbank</a>
+#### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist, <span style="font-weight: normal;">NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
 Prague, Czech Republic
 
