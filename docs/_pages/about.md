@@ -72,6 +72,9 @@ Sep 2019 – 2026 Apr
 
 #### <span class="heading-right">Jan 2026 2</span>Left Aligned Title Text
 
+proba:
+
+### Left Aligned Title Text <span>Jan 2026 1</span> {: .split-heading}
 
 Brussels, Belgium
 Responsibilities
