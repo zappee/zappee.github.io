@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Customer Agent Guide
-permalink: /ai-agents/customer/
+permalink: /ai-agents/customer-agent/
 parent: AI-Agents Overview
 author_profile: false
 sidebar:

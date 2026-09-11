@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Portfolio Agent Guide
-permalink: /ai-agents/portfolio/
+permalink: /ai-agents/portfolio-agent/
 parent: AI-Agents Overview
 author_profile: false
 sidebar:
