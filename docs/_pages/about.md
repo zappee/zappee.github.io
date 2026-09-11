@@ -63,7 +63,7 @@ Budapest, Hungary
 
 Prague, Czech Republic
 
-#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">EU Intellectual Property Office</a></span>
+#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">European Union Intellectual Property Office</a></span>
 
 Alicante, Spain
 
@@ -72,7 +72,9 @@ Alicante, Spain
 Budapest, Hungary
 
 
-## Xxxx
+## Volunteer Experience
 
-* <span class="heading-right">Sep 2019 – 2026 Apr</span>Software Architect | <a href="https://climate.ec.europa.eu/areas-action/carbon-markets/eu-emissions-trading-system-eu-ets_en">EU Emissions Trading System, EU ETS</a>
-* <span class="heading-right">Feb 2017 – 2019 Aug</span>Software Architect | <a href="https://www.kh.hu">KBC Group, K&H Bank</a>, Apollo team (Branch Banking System)
+* Technical Developer: maintaining a personal website and independent study projects
+* Local Community Volunteer: tree planting, event coordinator, etc.
+* Open Source Contributor
+* Travel Blogger
