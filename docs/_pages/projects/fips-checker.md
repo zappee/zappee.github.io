@@ -8,4 +8,4 @@ sidebar:
   nav: "projects_sidebar"
 ---
 
-## FIPS Cecker
+## FIPS Checker
