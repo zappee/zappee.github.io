@@ -1,8 +1,11 @@
 ---
-layout: archive
-title: "Projects"
+layout: single
+title: "Projects Overview"
 permalink: /projects/
-author_profile: true
+author_profile: false
+classes: "wide smaller-text"
+sidebar:
+  nav: "projects_sidebar"
 ---
 
 

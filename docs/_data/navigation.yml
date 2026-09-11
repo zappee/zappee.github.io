@@ -13,7 +13,7 @@ main:
     url: /ai-agents/
 
   - title: "Publications"
-    url: /about/
+    url: /publications/
 
 # sidebar definition for AI-Agents pages
 ai-agents_sidebar:

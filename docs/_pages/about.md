@@ -73,11 +73,11 @@ Budapest, Hungary
 
 Prague, Czech Republic
 
-#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">European Union Intellectual Property Office</a></span>
+#### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">EU Intellectual Property Office</a></span>
 
 Alicante, Spain
 
-#### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration and Systems Development Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
+#### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
 
 Budapest, Hungary
 
