@@ -70,7 +70,7 @@ Budapest, Hungary
 * _Technical Delivery:_ Directed cross-functional development, mentored junior engineers, and ensured high-quality project delivery.
 * _Core EU PSD2 Infrastructure_: Designed the bank’s EU PSD2-compliant architecture and co-developed the backend RESTful API endpoints.
 * _Mobile Push Notification:_ Designed the backend architecture and core messaging services for the bank’s mobile application.
-* _R&D:_ Conducted PoC research to validate cutting-edge technologies and introduced Behaviour-Driven Development (BDD) to enhance automated testing and bridge the gap with business customers.
+* _R&D:_ Executed PoC research to validate cutting-edge technologies and introduced Behaviour-Driven Development (BDD) to enhance automated testing and bridge the gap with business customers.
 * _Governance:_ Maintained the global Enterprise Data Model (EDM), and cataloged the bank’s core software services for enterprise reuse.
 
 
