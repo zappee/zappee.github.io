@@ -67,6 +67,13 @@ Designed and developed full-stack IT applications and services
 
 Budapest, Hungary
 
+* _Technical Delivery:_ Directed cross-functional development, mentored junior engineers, and ensured high-quality project delivery.
+* _Core EU PSD2 Infrastructure_: Designed the bank’s EU PSD2-compliant architecture and co-developed the backend RESTful API endpoints.
+* _Mobile Push Notification:_ Designed the backend architecture and core messaging services for the bank’s mobile application.
+* _Drove R&D_: Conducted PoC research to validate emerging technologies and introduced Behaviour-Driven Development (BDD) to enhance automated testing.
+* _Governance:_ Maintained the global Enterprise Data Model (EDM), authored architectural blueprints, and managed reusable core software components.
+
+
 * Led agile development teams in IT development projects, ensured timely delivery and technical excellence
 * Developed Proof of Concept applications and executed R&D activities to validate new technologies
 * Managed the lifecycle of technologies and tools
