@@ -58,7 +58,7 @@ Brussels, Belgium
 * _Engineered Full-Stack IT Solutions:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
 * _Optimized DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
 * _Infrastructure Migrations_: Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
-* _Release Management_: Verified builds and its documentations, executed the deployment, and production release cycles, and resolved high-impact technical challenges.
+* _Release Management_: Verified builds and its documentations, executed the deployments, and production release cycles, and resolved high-impact technical challenges.
 * _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
 
 
