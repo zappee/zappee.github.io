@@ -58,7 +58,11 @@ Brussels, Belgium
 Designed and developed full-stack IT applications and services
 * _Engineered Full-Stack IT Solutions:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
 * _Optimized DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
-* _Led Production & Infrastructure Migrations_: Executed complex, full-stack infrastructure migrations across database, application server, and Unix layers while managing server configurations and performance tuning.
+* _Infrastructure Migrations_: Executed complex, full-stack infrastructure migrations across database (Oracle Database 19 to 21), application server (WebLogic 12c to 14c and Java 8 to 17), and Unix layers (RHEL 7 to 8) while managing server configurations, secutity tuning and PKI key renewals.
+                               Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
+
+
+
 * Directed Release & Release Management: Managed the deployment of new builds, executed production release cycles, and identified and resolved high-impact technical challenges to maximize operational efficiency.
 * Spearheaded Innovation & Collaboration: Drove technical innovation through PoC research while orchestrating seamless communication between cross-functional stakeholders, including developers, IT operators, and the help desk.
 
