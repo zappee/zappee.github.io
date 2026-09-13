@@ -8,4 +8,4 @@ sidebar:
   nav: "publications_sidebar"
 ---
 
-Showcase your Publications here...
+No publications to display just yet. Content will be uploaded soon.
