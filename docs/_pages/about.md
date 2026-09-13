@@ -55,9 +55,28 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 
 Brussels, Belgium
 
-* Lorem ipsum dolor sit amet: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* Ut enim ad minim veniam: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
-* Duis aute irure dolor in reprehenderit: In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Designed and developed full-stack IT applications and services
+* _Engineered Full-Stack IT Solutions:_ Designed, developed, and implemented business-critical features and customized SQL databases for the ETS department, improving data lookup efficiency by 30%.
+* _Optimized DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
+* Led Production & Infrastructure Migrations: Executed complex, full-stack infrastructure migrations across database, application server, and Unix layers while managing server configurations and performance tuning.
+* Directed Release & Release Management: Managed the deployment of new builds, executed production release cycles, and identified and resolved high-impact technical challenges to maximize operational efficiency.
+* Spearheaded Innovation & Collaboration: Drove technical innovation through PoC research while orchestrating seamless communication between cross-functional stakeholders, including developers, IT operators, and the help desk.
+
+
+
+* Managed the deployment of new builds and execute production release cycles
+* Designed and developed full-stack IT solutions for the ETS department
+* Designed and implemented a customized SQL databases to organize complex client data, improving lookup efficiency by 30%
+* Managed server configurations and performance tuning to maximize operational efficiency
+* Identified and resolved high-impact technical challenges
+* Orchestrated communication between cross-functional stakeholders, including IT operators, developers, and the help desk.
+* Drive technical innovation by researching new technologies, create proof-of-concepts (PoC)
+* Executed full-stack production infrastructure migrations, including database, application server, and Unix layers
+* Implemented new business-critical features within the ETS
+* Designed a robust CI/CD infrastructure on Amazon Cloud for the ETS
+* Accelerated the Software Development Life Cycle (SDLC) by containerizing core ETS components with Docker, resulting in significantly faster development, testing, and release cycles
+
+
 
 #### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
