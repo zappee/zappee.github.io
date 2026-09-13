@@ -60,33 +60,24 @@ Designed and developed full-stack IT applications and services
 * _Optimized DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
 * _Infrastructure Migrations_: Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
 * _Release Management_: Verified mew builds and its documentations, executed the deployment, and production release cycles, and resolved high-impact technical challenges.
-* _Innovation & Collaboration_: Drove technical innovation through PoC research while orchestrating seamless communication between cross-functional stakeholders, including developers, IT operators, and the help desk.
-
-
-
-* Managed the deployment of new builds and execute production release cycles
-* Designed and developed full-stack IT solutions for the ETS department
-* Designed and implemented a customized SQL databases to organize complex client data, improving lookup efficiency by 30%
-* Managed server configurations and performance tuning to maximize operational efficiency
-* Identified and resolved high-impact technical challenges
-* Orchestrated communication between cross-functional stakeholders, including IT operators, developers, and the help desk.
-* Drive technical innovation by researching new technologies, create proof-of-concepts (PoC)
-* Executed full-stack production infrastructure migrations, including database, application server, and Unix layers
-* Implemented new business-critical features within the ETS
-* Designed a robust CI/CD infrastructure on Amazon Cloud for the ETS
-* Accelerated the Software Development Life Cycle (SDLC) by containerizing core ETS components with Docker, resulting in significantly faster development, testing, and release cycles
-
+* _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
 
 
 #### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
 Budapest, Hungary
 
-* Lorem ipsum dolor sit amet: Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* Ut enim ad minim veniam: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
-* Duis aute irure dolor in reprehenderit: In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-* Sed ut perspiciatis unde omnis iste natus error sit voluptatem: Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.
-* Excepteur sint occaecat cupidatat non proident: Sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Led agile development teams in IT development projects, ensured timely delivery and technical excellence
+* Developed Proof of Concept applications and executed R&D activities to validate new technologies
+* Managed the lifecycle of technologies and tools
+* Maintained the global Enterprise Data Model (EDM) via XSDs, ensuring data consistency across distributed systems
+* Authored and updated technical documentation, including architectural blueprints and system specifications
+* Mentored and coached junior developers
+* Maintained of reusable software components, e.g. message router, notification senders, logging solutions, etc.
+* Designed and developed the bank's PSD2-compliant (Payment Services Directive, EU) solution
+* Collaborated on the end-to-end development of the mobile push notification service, integrating it with core banking infrastructure
+* Introduced Behaviour-Driven Development methodology, improving the quality of automated testing and business alignment
+
 
 #### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span class="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
