@@ -12,7 +12,7 @@ I am a forward-thinking _Full-Stack Software Engineer_ specialized in building h
 Angular frontends, microservices, AI-Agents deployed inside containerized environments.
 In my daily work, I treat AI as my virtual teammates, which helps me to deliver rock-solid solutions ahead of schedule.
 Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
-My advanced knowledge of Linux systems and scripting allows me to collaborate seamlessly with infrastructure and operations teams.
+My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
 
 
 ## Technical Skills
@@ -21,9 +21,9 @@ My advanced knowledge of Linux systems and scripting allows me to collaborate se
 * Front-end Development: Angular, JavaScript, HTML, and CSS
 * Scripting: Unix Bash, and automated shell scripting
 * Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
-* Messaging & Integration: Apache Kafka, JMS, and event-driven architectures
+* Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic and event-driven architectures
 * Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
-* Software Architecture: Enterprise middleware, microservices architecture, and design patterns
+* Software Architecture: Enterprise middlewares, microservice architecture, and design patterns
 * AI Systems: AI-assisted software engineering and building autonomous AI agents
 * DevOps & CI/CD: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning
 * Technical Writing & Architecture Design: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints
