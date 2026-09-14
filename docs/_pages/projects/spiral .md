@@ -36,7 +36,7 @@ Fills out the structural perimeter framework first before stepping inbound.
 The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
 * Dictionary Sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
 
-### 3. Snake Spiral
+#### 3. Snake Spiral
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
 * Dictionary Sequence: `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
 
