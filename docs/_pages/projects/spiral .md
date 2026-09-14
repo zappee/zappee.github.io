@@ -4,6 +4,7 @@ parent: Projects Overview
 title: Spiral
 permalink: /projects/spiral/
 author_profile: false
+classes: "wide smaller-text"
 sidebar:
   nav: "projects_sidebar"
 ---
