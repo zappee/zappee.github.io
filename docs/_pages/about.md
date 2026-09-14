@@ -77,19 +77,10 @@ Budapest, Hungary
 
 Prague, Czech Republic
 
-* _Settlement system Development:_ Designed and implemented a critical financial settlement systems using MQ Seeries Message Queues.
-* _AML Development:_ Built an Anti-Money Laundering application to detect 'smurfing' transactions and report suspicious cases to the compliance team.
-* _Operation:_ Managed international rollouts and cross-functional operations outside peak hours to maximize system uptime.
-* _Compliance Development:_ Engineered a high-precision AML application specifically designed to detect structured transactions and maintain regulatory compliance.
-
-
-* Delivered mission-critical IT services to the New York based Investment Banking division
-* Collaborated cross-functionally with the Munich-based operations team to execute deployments and provide Tier-3 technical support for business-critical systems.
-* Engineered cross-continental integration solutions as a Lead Integration Specialist, bridging disparate banking systems to ensure seamless global data synchronization
-* Designed software components and data structures based on business requirements
-* Designed and implemented standardized interfaces between various settlement systems
-* Orchestrated integration testing and global rollout processes outside of the working hours with as less downtime as possible
-* Developed a high-precision AML (Anti-Money Laundering) application specifically designed to detect 'smurfing' transactions and ensure regulatory compliance
+* _Development_: Delivered mission-critical IT services to the New York based Investment Banking division
+* _Settlement system:_ Designed and implemented a critical financial settlement systems using MQ Seeries Message Queues.
+* _AML:_ Built and developed Anti-Money Laundering application to detect 'smurfing' transactions and report suspicious cases to the compliance team.
+* _Operation:_ Managed international rollouts and cross-functional operations outside peak hours.
 
 
 #### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">EU Intellectual Property Office</a></span>
