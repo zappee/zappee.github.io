@@ -70,7 +70,7 @@ Budapest, Hungary
 * _Core EU PSD2 Infrastructure_: Designed the bank’s EU PSD2-compliant architecture and co-developed the backend RESTful API endpoints.
 * _Mobile Push Notification:_ Designed and implemented the core push messaging services for the bank’s mobile applications.
 * _R&D:_ Executed PoC research to validate cutting-edge technologies and introduced Behaviour-Driven Development (BDD) to enhance automated testing and bridge the gap with business customers.
-* _Governance:_ Maintained the global Enterprise Data Model (EDM), and cataloged the bank’s core software services for enterprise reuse.
+* _Governance:_ Maintained the global Enterprise Data Model, and cataloged the bank’s core software services for enterprise reuse.
 
 
 #### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span class="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
