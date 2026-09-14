@@ -87,6 +87,17 @@ Prague, Czech Republic
 
 Alicante, Spain
 
+* Directed the back-end development team, providing technical leadership and architectural guidance
+* Collaborated closely with Project Managers, Business Analysts, and IT Architects to translate complex requirements into scalable technical roadmaps
+* Managed resource allocation, project timelines, and Work Breakdown Structures (WBS) to ensure predictable and on-time release cycles.
+* Co-authored project documentation, including Functional Architecture Designs (FAD), Software Requirement Specifications (SRS), and detailed Database Designs
+* Managed the Change Request (CR) lifecycle, prioritizing development efforts based business value to optimize resource allocation
+* Enforced code quality standards by establishing code reviews
+* Managed project tasks and task distribution, sprint planning, and progress tracking for the team in JIRA
+* Managed end-to-end integration testing and global rollout processes
+ *Designed the logical and physical database for the Back-Office application
+
+
 #### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
 
 Budapest, Hungary
