@@ -31,7 +31,7 @@ The flow of characters into the grid boundaries is fully dictated by your chosen
 #### (1) Frame Spiral
 Fills out the structural perimeter framework first before stepping inbound.
 * Dictionary Sequence: `a b c d e f t g s h r i q j p o n m l k`
-
+* Output:
 ```text
 a b c d e f
 t         g
