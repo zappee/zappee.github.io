@@ -58,9 +58,17 @@ q 4 3 2 1 j
 p o n m l k
 ```
 
-#### (3) Snake Spiral
+#### 3) Snake Spiral
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
 * Dictionary Sequence: `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
+* Output:
+```text
+a b c d e f
+l k j i h g
+m n o p q r
+x w v u t s
+y z 1 2 3 4
+0 9 8 7 6 5```
 
 ## 🛠️ Architecture & Project Structure
 
