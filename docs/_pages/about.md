@@ -87,24 +87,11 @@ Prague, Czech Republic
 
 Alicante, Spain
 
-* _Technical Leadership & Architecture_: Led back-end development team, Delivered and keep updated logical/physical database design,
+* _Technical Leadership:_ Guided the back-end engineering team, managed sprints and Change Requests in Jira, and co-authored critical release documentation, including Functional Architecture Design and Software Requirement Specifications.
+* _Architecture_: Delivered and keep updated logical/physical database design,
 * _Cross-Functional Collaboration:_ Translated complex business requirements into scalable technical roadmaps through close collaboration with PMs, BAs, and IT Architects.
 * _Agile Project Delivery:_ Owned delivery and release cycles, managing Jira sprint planning, and resource allocation to ensure predictable, on-time release cycles.
 * _Quality & Governance:_ Enforced engineering excellence by co-authoring core documentation (FAD/SRS), establishing strict code reviews, and supervising integration testing.
-
-* Owned the system lifecycle and quality, driving comprehensive documentation (FAD/SRS), prioritizing Change Requests by business value, and enforcing strict code reviews.
-
-xxx
-
-* Directed the back-end development team, providing technical leadership and architectural guidance
-* Collaborated closely with Project Managers, Business Analysts, and IT Architects to translate complex requirements into scalable technical roadmaps
-* Managed resource allocation, project timelines, and Work Breakdown Structures (WBS) to ensure predictable and on-time release cycles.
-* Co-authored project documentation, including Functional Architecture Designs (FAD), Software Requirement Specifications (SRS), and detailed Database Designs
-* Managed the Change Request (CR) lifecycle, prioritizing development efforts based business value to optimize resource allocation
-* Enforced code quality standards by establishing code reviews
-* Managed project tasks and task distribution, sprint planning, and progress tracking for the team in JIRA
-* Managed end-to-end integration testing and global rollout processes
- *Designed the logical and physical database for the Back-Office application
 
 
 #### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
