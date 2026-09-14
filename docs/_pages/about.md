@@ -94,6 +94,7 @@ Alicante, Spain
 
 * Owned the system lifecycle and quality, driving comprehensive documentation (FAD/SRS), prioritizing Change Requests by business value, and enforcing strict code reviews.
 
+xxx
 
 * Directed the back-end development team, providing technical leadership and architectural guidance
 * Collaborated closely with Project Managers, Business Analysts, and IT Architects to translate complex requirements into scalable technical roadmaps
