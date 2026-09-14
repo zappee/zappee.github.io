@@ -32,6 +32,15 @@ The flow of characters into the grid boundaries is fully dictated by your chosen
 Fills out the structural perimeter framework first before stepping inbound.
 * Dictionary Sequence: `a b c d e f t g s h r i q j p o n m l k`
 
+```text
+a b c d e f
+t         g
+s         h
+r         i
+q         j
+p o n m l k
+```
+
 #### (2) Clockwise Spiral
 The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
 * Dictionary Sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
