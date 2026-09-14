@@ -11,7 +11,7 @@ classes: "wide smaller-text"
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
 Angular frontends, microservices, AI-Agents deployed inside containerized environments.
 In my daily work, I treat AI as my virtual teammates, which helps me to deliver rock-solid solutions ahead of schedule.
-Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me [a highly valuable asset to any team | a developer who actually builds things that work].
+Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
 My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
 
 
