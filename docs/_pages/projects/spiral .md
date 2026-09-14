@@ -118,6 +118,8 @@ src/
 
 Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
 
+[View Spiral Project](https://github.com/zappee/spiral)
+
 1. Fork the Repository.
 2. Create a Feature Branch: `git checkout -b feature/AmazingPattern`
 3. Commit your Changes: `git commit -m 'Add some AmazingPattern'`
