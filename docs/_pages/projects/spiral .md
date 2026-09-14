@@ -8,11 +8,10 @@ sidebar:
   nav: "projects_sidebar"
 ---
 
-A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
-Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
-
 ## 💡 Overview
 
+A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
+Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
 The _Spiral Matrix Printer_ takes an input string and show it into a row-and-column matrix grid.
 The exact path, direction, and sequence of the string injection are dynamically controlled by a dictionary.
 This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
