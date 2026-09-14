@@ -9,8 +9,8 @@ classes: "wide smaller-text"
 ## Overview
 
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
-Angular frontends, microservices, AI-Agents deployed inside containerized environments.
-In my daily work, I treat AI as my virtual teammates, which helps me to deliver rock-solid solutions ahead of schedule.
+Angular front-ends, microservices, AI-Agents deployed inside containerized environments.
+In my daily work, I treat AI agents as my virtual teammate, which helps me to deliver rock-solid solutions ahead of schedule.
 Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
 My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
 
@@ -21,7 +21,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Front-end Development: Angular, JavaScript, HTML, and CSS
 * Scripting: Unix Bash, and automated shell scripting
 * Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
-* Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic and event-driven architectures
+* Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic, and event-driven architectures
 * Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
 * Software Architecture: Enterprise middlewares, microservice architecture, and design patterns
 * AI Systems: AI-assisted software engineering and building autonomous AI agents
@@ -58,7 +58,7 @@ Brussels, Belgium
 * _Development:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
 * _DevOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
 * _Infrastructure Migrations_: Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
-* _Release Management_: Verified builds and their documentations, executed the deployments, and production release cycles, and resolved high-impact technical challenges.
+* _Release Management_: Verified builds and their documentation, executed the deployments, and production release cycles, and resolved high-impact technical challenges.
 * _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
 
 
@@ -79,7 +79,7 @@ Prague, Czech Republic
 
 * _Development_: Delivered mission-critical IT services to the New York based Investment Banking division.
 * _Application Integration:_ Designed and implemented a critical financial settlement system using MQ Series Message Queues, ensuring the seamless flow of millions of trades between the trading and settlement systems.
-* _Anti-Money Laundering Application:_ Built and developed AML application to detect 'smurfing' transactions and report suspicious cases to the compliance team.
+* _Anti-Money Laundering Application:_ Built and developed the platform to detect 'smurfing' transactions and report suspicious cases to the compliance team.
 * _Operation:_ Managed international rollouts and cross-functional operations outside peak hours.
 
 

@@ -10,7 +10,7 @@ classes: "wide smaller-text"
 
 You might already know me from my extensive work around the Java and Linux communities.
 I am an independent _Software Engineer_, _Full-Stack Developer_, and _Technical Writer_.
-Essentially, I am a one-stop shop for software development.
+Essentially, I am a one-stop shop for software engineering.
 What do I bring to the table? Rock-solid solutions.
 I handle everything from the initial whiteboard sketch to final deployment.
 I treat AI agents as my virtual teammates, an advanced assistant right alongside me to help me do my job smarter and deliver faster.
