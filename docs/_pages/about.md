@@ -62,15 +62,6 @@ Brussels, Belgium
 * _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
 
 
-* Delivered mission-critical IT services to the New York based Investment Banking division
-* Collaborated cross-functionally with the Munich-based operations team to execute deployments and provide Tier-3 technical support for business-critical systems.
-* Engineered cross-continental integration solutions as a Lead Integration Specialist, bridging disparate banking systems to ensure seamless global data synchronization
-* Designed software components and data structures based on business requirements
-* Designed and implemented standardized interfaces between various settlement systems
-* Orchestrated integration testing and global rollout processes outside of the working hours with as less downtime as possible
-* Developed a high-precision AML (Anti-Money Laundering) application specifically designed to detect 'smurfing' transactions and ensure regulatory compliance
-
-
 #### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
 
 Budapest, Hungary
