@@ -9,3 +9,96 @@ sidebar:
 ---
 
 ## Spiral
+
+[![Java Version](https://shields.io)](https://oracle.com)
+[![License](https://shields.io)](LICENSE)
+
+A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts. Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
+
+---
+
+## 💡 Overview
+
+The **Spiral Matrix Printer** takes an input string and projects it into a row-and-column matrix grid. The exact path, direction, and sequence of the string injection are dynamically controlled by a traversal dictionary. This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
+
+### Key Use Cases
+* **Data Visualization:** Mapping serial data streams into structured multi-dimensional paths.
+* **Algorithmic Modeling:** Understanding grid traversal strategies and index mapping patterns.
+* **Game Development Mechanics:** Modeling custom snake, spiral, or coordinate boundary movements.
+
+---
+
+## 🗺️ Supported Traversal Patterns
+
+The flow of characters into the grid boundaries is fully dictated by your chosen tracking configuration:
+
+### 1. Frame Spiral
+Fills out the structural perimeter framework first before stepping inbound.
+* **Dictionary Sequence:** `a b c d e f t g s h r i q j p o n m l k`
+
+### 2. Clockwise Spiral
+The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
+* **Dictionary Sequence:** `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
+
+### 3. Snake Spiral
+Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
+* **Dictionary Sequence:** `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
+
+---
+
+## 🛠️ Architecture & Project Structure
+
+The project relies on clean separation of concerns, decoupling the underlying coordinate mapping logic from the stream output rendering layer:
+
+```text
+src/
+└── com/
+    └── remal/
+        └── spiral/
+            ├── Engine.java       # Core coordinates processor & grid builder
+            ├── Dictionary.java   # Matrix index and sequence lookup models
+            └── Main.java         # Driver entry point with runtime parameters
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Java Development Kit (JDK) 8 or higher.
+
+### Installation & Execution
+
+1. Clone the repository into your local directory:
+   ```bash
+   git clone https://github.com
+   cd spiral
+   ```
+
+2. Compile the source code files:
+   ```bash
+   javac src/com/remal/spiral/*.java -d bin
+   ```
+
+3. Run the application:
+   ```bash
+   java -cp bin com.remal.spiral.Main
+   ```
+
+---
+
+## 🤝 Contributing
+
+Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
+
+1. Fork the Repository.
+2. Create a Feature Branch (`git checkout -b feature/AmazingPattern`).
+3. Commit your Changes (`git commit -m 'Add some AmazingPattern'`).
+4. Push to the Branch (`git push origin feature/AmazingPattern`).
+5. Open a Pull Request.
+
+---
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
