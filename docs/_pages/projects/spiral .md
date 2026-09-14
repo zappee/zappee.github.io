@@ -8,25 +8,20 @@ sidebar:
   nav: "projects_sidebar"
 ---
 
-## Spiral
-
-[![Java Version](https://shields.io)](https://oracle.com)
-[![License](https://shields.io)](LICENSE)
-
-A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts. Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
-
----
+A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
+Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
 
 ## 💡 Overview
 
-The **Spiral Matrix Printer** takes an input string and projects it into a row-and-column matrix grid. The exact path, direction, and sequence of the string injection are dynamically controlled by a traversal dictionary. This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
+The _Spiral Matrix Printer_ takes an input string and show it into a row-and-column matrix grid.
+The exact path, direction, and sequence of the string injection are dynamically controlled by a dictionary.
+This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
 
 ### Key Use Cases
 * **Data Visualization:** Mapping serial data streams into structured multi-dimensional paths.
 * **Algorithmic Modeling:** Understanding grid traversal strategies and index mapping patterns.
 * **Game Development Mechanics:** Modeling custom snake, spiral, or coordinate boundary movements.
 
----
 
 ## 🗺️ Supported Traversal Patterns
 
