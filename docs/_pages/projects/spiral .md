@@ -49,9 +49,11 @@ src/
 └── com/
     └── remal/
         └── spiral/
-            ├── Engine.java       # Core coordinates processor & grid builder
-            ├── Dictionary.java   # Matrix index and sequence lookup models
-            └── Main.java         # Driver entry point with runtime parameters
+            └── Test.java                  # Entry point with runtime parameters
+            ├── Spiral.java                # Core coordinates processor & grid builder
+            ├── dictionary/
+                ├── Dictionary.java        # Core functions for dictionaries
+                ├── FrameDictionary.java   # A dictionary implementation
 ```
 
 
