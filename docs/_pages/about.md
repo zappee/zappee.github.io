@@ -55,12 +55,20 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 Brussels, Belgium
 
-Designed and developed full-stack IT applications and services
 * _Development:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
-* _DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
+* _DevOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
 * _Infrastructure Migrations_: Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
-* _Release Management_: Verified mew builds and its documentations, executed the deployment, and production release cycles, and resolved high-impact technical challenges.
+* _Release Management_: Verified builds and its documentations, executed the deployments, and production release cycles, and resolved high-impact technical challenges.
 * _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
+
+
+* Delivered mission-critical IT services to the New York based Investment Banking division
+* Collaborated cross-functionally with the Munich-based operations team to execute deployments and provide Tier-3 technical support for business-critical systems.
+* Engineered cross-continental integration solutions as a Lead Integration Specialist, bridging disparate banking systems to ensure seamless global data synchronization
+* Designed software components and data structures based on business requirements
+* Designed and implemented standardized interfaces between various settlement systems
+* Orchestrated integration testing and global rollout processes outside of the working hours with as less downtime as possible
+* Developed a high-precision AML (Anti-Money Laundering) application specifically designed to detect 'smurfing' transactions and ensure regulatory compliance
 
 
 #### <span class="heading-right">Apr 2017 – 2019 Aug</span>Software Architect<span class="normal-text"> \| Branch Banking System, Apollo team \| <a href="https://www.kh.hu">KBC Group, K&H Bank</a></span>
