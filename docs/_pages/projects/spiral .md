@@ -20,7 +20,7 @@ This structural abstraction allows you to print matrix outputs in completely dif
 ### Key Use Cases
 * _Data Visualization:_ Mapping serial data streams into structured multi-dimensional paths.
 * _Algorithmic Modeling:_ Understanding grid traversal strategies and index mapping patterns.
-* _Game Development Mechanics:_ Modeling custom snake, spiral, or coordinate boundary movements.
+* _Game Development:_ Modeling custom snake, spiral, or coordinate boundary movements.
 
 
 ## Supported Patterns
@@ -39,8 +39,6 @@ The classic matrix spiral pattern. Moves from top-left, tracks inward via tightl
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
 * **Dictionary Sequence:** `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
 
----
-
 ## 🛠️ Architecture & Project Structure
 
 The project relies on clean separation of concerns, decoupling the underlying coordinate mapping logic from the stream output rendering layer:
@@ -55,7 +53,6 @@ src/
             └── Main.java         # Driver entry point with runtime parameters
 ```
 
----
 
 ## 🚀 Getting Started
 
