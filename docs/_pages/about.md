@@ -56,8 +56,8 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 Brussels, Belgium
 
 Designed and developed full-stack IT applications and services
-* _Engineered Full-Stack IT Solutions:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
-* _Optimized DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
+* _Development:_ Designed, developed, and implemented business-critical features for the ETS system, optimizing SQL queries to improve data lookup efficiency by 30%.
+* _DevSecOps & CI/CD:_ Built a robust AWS CI/CD infrastructure and containerized the core components using Docker, significantly accelerating the SDLC across development, testing, and release cycles.
 * _Infrastructure Migrations_: Executed zero-downtime, full-stack migrations by upgrading legacy databases (Oracle 19c to 21c), application tiers (WebLogic 12c to 14c, Java 8 to 17), and operating systems (RHEL 7 to 8). Optimized environment configurations and enhanced security, and managed the PKI lifecycle.
 * _Release Management_: Verified mew builds and its documentations, executed the deployment, and production release cycles, and resolved high-impact technical challenges.
 * _Innovation & Collaboration_: Evaluated new technologies through PoC research. Coordinated with developers, operations, and support teams to ensure smooth rollouts.
@@ -77,6 +77,21 @@ Budapest, Hungary
 #### <span class="heading-right">Feb 2015 – 2017 Mar</span>Application Integration Specialist<span class="normal-text"> \| NYC Investment Bank Division \| <a href="https://www.linkedin.com/company/commerz-systems-gmbh/about">Commerzbank</a></span>
 
 Prague, Czech Republic
+
+* _System Integration:_ Led cross-continental engineering projects to bridge disparate banking platforms and ensure seamless global data synchronization.
+* _Software Architecture:_ Designed and implemented robust data structures and standardized interfaces for critical financial settlement systems.
+* _Compliance Development:_ Engineered a high-precision AML application specifically designed to detect structured transactions and maintain regulatory compliance.
+* _Deployment & Tier-3 Support:_ Managed international rollouts and cross-functional operations outside peak hours to maximize system uptime.
+
+
+* Delivered mission-critical IT services to the New York based Investment Banking division
+* Collaborated cross-functionally with the Munich-based operations team to execute deployments and provide Tier-3 technical support for business-critical systems.
+* Engineered cross-continental integration solutions as a Lead Integration Specialist, bridging disparate banking systems to ensure seamless global data synchronization
+* Designed software components and data structures based on business requirements
+* Designed and implemented standardized interfaces between various settlement systems
+* Orchestrated integration testing and global rollout processes outside of the working hours with as less downtime as possible
+* Developed a high-precision AML (Anti-Money Laundering) application specifically designed to detect 'smurfing' transactions and ensure regulatory compliance
+
 
 #### <span class="heading-right">Sep 2013 – 2015 Jan</span>Software Development Team Lead<span class="normal-text"> \| IP Registry team \| <a href="https://euipo.europa.eu">EU Intellectual Property Office</a></span>
 
