@@ -87,11 +87,11 @@ Prague, Czech Republic
 
 Alicante, Spain
 
-* _Technical Leadership:_ Guided the back-end development team, managed sprints and Change Requests in Jira, and co-authored critical release documentation, including Functional Architecture Design and Software Requirement Specifications.
-* _Architecture_: Delivered and keep updated logical/physical database design,
+* _Technical Leadership:_ Led the back-end development team, managed sprints and Change Requests in Jira to align efforts with business priorities.
+* _Architecture_: Delivered and maintained the logical and physical database designs for core back-office systems to ensure data integrity and scalability.
 * _Cross-Functional Collaboration:_ Translated complex business requirements into scalable technical roadmaps through close collaboration with PMs, BAs, and IT Architects.
-* _Agile Project Delivery:_ Owned delivery and release cycles, managing Jira sprint planning, and resource allocation to ensure predictable, on-time release cycles.
-* _Quality & Governance:_ Enforced engineering excellence by co-authoring core documentation (FAD/SRS), establishing strict code reviews, and supervising integration testing.
+* _Agile Project Delivery:_ Owned release cycles, executed sprint planning meetings, managed tasks in Jira, and optimized resource allocation.
+* _Quality & Governance:_ Co-authored critical release documentation, including Functional Architecture Design and Software Requirement Specification, and organized code review sessions.
 
 
 #### <span class="heading-right">Oct 2008 – 2012 Aug</span>Application Integration Expert<span class="normal-text"> \| Application Integration team \| <a href="https://mol.hu">MOL Group Plc.</a></span>
