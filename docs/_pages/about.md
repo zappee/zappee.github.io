@@ -87,7 +87,7 @@ Prague, Czech Republic
 
 Alicante, Spain
 
-* _Technical Leadership:_ Guided the back-end engineering team, managed sprints and Change Requests in Jira, and co-authored critical release documentation, including Functional Architecture Design and Software Requirement Specifications.
+* _Technical Leadership:_ Guided the back-end development team, managed sprints and Change Requests in Jira, and co-authored critical release documentation, including Functional Architecture Design and Software Requirement Specifications.
 * _Architecture_: Delivered and keep updated logical/physical database design,
 * _Cross-Functional Collaboration:_ Translated complex business requirements into scalable technical roadmaps through close collaboration with PMs, BAs, and IT Architects.
 * _Agile Project Delivery:_ Owned delivery and release cycles, managing Jira sprint planning, and resource allocation to ensure predictable, on-time release cycles.
