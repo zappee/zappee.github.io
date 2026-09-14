@@ -78,7 +78,7 @@ Budapest, Hungary
 Prague, Czech Republic
 
 * _System Integration:_ Led cross-continental engineering projects to bridge disparate banking platforms and ensure seamless global data synchronization.
-* _Software Architecture:_ Designed and implemented robust data structures and standardized interfaces for critical financial settlement systems.
+* _Software Architecture:_ Designed and implemented a critical financial settlement systems using MQ Seeries Message Queues.
 * _Compliance Development:_ Engineered a high-precision AML application specifically designed to detect structured transactions and maintain regulatory compliance.
 * _Deployment & Tier-3 Support:_ Managed international rollouts and cross-functional operations outside peak hours to maximize system uptime.
 
