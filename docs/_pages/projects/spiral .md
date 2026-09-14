@@ -18,21 +18,21 @@ The _Spiral Matrix Printer_ takes an input string and show it into a row-and-col
 The exact path, direction, and sequence of the string injection are dynamically controlled by a dictionary.
 This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
 
-### Key Use Cases
+### Use cases
 
 * _Data Visualization:_ Mapping serial data streams into structured multi-dimensional paths.
 * _Algorithmic Modeling:_ Understanding grid traversal strategies and index mapping patterns.
 * _Game Development:_ Modeling custom snake, spiral, or coordinate boundary movements.
 
 
-## Supported Patterns
+## Supported patterns
 
 The flow of characters into the grid boundaries is fully dictated by your chosen tracking configuration:
 
-#### 1) Frame Spiral
+#### 1) Frame spiral
 Fills out the structural perimeter framework first before stepping inbound.
 
-* Dictionary Sequence: `a b c d e f t g s h r i q j p o n m l k`
+* Dictionary sequence: `a b c d e f t g s h r i q j p o n m l k`
 * Output:
 ```text
 a b c d e f
@@ -43,11 +43,11 @@ q         j
 p o n m l k
 ```
 
-#### 2) Clockwise Spiral
+#### 2) Clockwise spiral
 
 The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
 
-* Dictionary Sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
+* Dictionary sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
 * Output:
 ```text
 a b c d e f
@@ -58,11 +58,11 @@ q 4 3 2 1 j
 p o n m l k
 ```
 
-#### 3) Snake Spiral
+#### 3) Snake spiral
 
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
 
-* Dictionary Sequence: `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
+* Dictionary sequence: `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
 * Output:
 ```text
 a b c d e f
@@ -74,7 +74,7 @@ y z 1 2 3 4
 ```
 
 
-## 🛠️ Architecture & Project Structure
+## 🛠️ Architecture & Project structure
 
 The project relies on clean separation of layers, decoupling the underlying mapping logic from the stream output rendering layer:
 
@@ -91,7 +91,7 @@ src/
 ```
 
 
-## 🚀 Getting Started
+## 🚀 Getting started
 
 ### Prerequisites
 * Java Development Kit (JDK) 8 or higher.
