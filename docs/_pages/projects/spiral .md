@@ -72,6 +72,7 @@ x w v u t s
 y z 1 2 3 4
 0 9 8 7 6 5```
 
+
 ## 🛠️ Architecture & Project Structure
 
 The project relies on clean separation of layers, decoupling the underlying mapping logic from the stream output rendering layer:
