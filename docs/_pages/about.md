@@ -87,6 +87,14 @@ Prague, Czech Republic
 
 Alicante, Spain
 
+* _Technical Leadership & Architecture_: Led back-end development team, Delivered and keep updated logical/physical database design,
+* _Cross-Functional Collaboration:_ Translated complex business requirements into scalable technical roadmaps through close collaboration with PMs, BAs, and IT Architects.
+* _Agile Project Delivery:_ Owned delivery and release cycles, managing Jira sprint planning, and resource allocation to ensure predictable, on-time release cycles.
+* _Quality & Governance:_ Enforced engineering excellence by co-authoring core documentation (FAD/SRS), establishing strict code reviews, and supervising integration testing.
+
+* Owned the system lifecycle and quality, driving comprehensive documentation (FAD/SRS), prioritizing Change Requests by business value, and enforcing strict code reviews.
+
+
 * Directed the back-end development team, providing technical leadership and architectural guidance
 * Collaborated closely with Project Managers, Business Analysts, and IT Architects to translate complex requirements into scalable technical roadmaps
 * Managed resource allocation, project timelines, and Work Breakdown Structures (WBS) to ensure predictable and on-time release cycles.
