@@ -78,7 +78,7 @@ Budapest, Hungary
 Prague, Czech Republic
 
 * _Development_: Delivered mission-critical IT services to the New York based Investment Banking division.
-* _Application Integration:_ Designed and implemented a critical financial settlement system using MQ Seeries Message Queues.
+* _Application Integration:_ Designed and implemented a critical financial settlement system using MQ Series Message Queues, ensuring the seamless flow of millions of trades between the trading and settlement systems.
 * _Anti-Money Laundering Application:_ Built and developed AML application to detect 'smurfing' transactions and report suspicious cases to the compliance team.
 * _Operation:_ Managed international rollouts and cross-functional operations outside peak hours.
 
