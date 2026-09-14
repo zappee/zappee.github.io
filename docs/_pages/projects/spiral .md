@@ -19,6 +19,7 @@ The exact path, direction, and sequence of the string injection are dynamically 
 This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
 
 ### Key Use Cases
+
 * _Data Visualization:_ Mapping serial data streams into structured multi-dimensional paths.
 * _Algorithmic Modeling:_ Understanding grid traversal strategies and index mapping patterns.
 * _Game Development:_ Modeling custom snake, spiral, or coordinate boundary movements.
@@ -28,8 +29,9 @@ This structural abstraction allows you to print matrix outputs in completely dif
 
 The flow of characters into the grid boundaries is fully dictated by your chosen tracking configuration:
 
-#### (1) Frame Spiral
+#### 1) Frame Spiral
 Fills out the structural perimeter framework first before stepping inbound.
+
 * Dictionary Sequence: `a b c d e f t g s h r i q j p o n m l k`
 * Output:
 ```text
@@ -41,9 +43,20 @@ q         j
 p o n m l k
 ```
 
-#### (2) Clockwise Spiral
+#### 2) Clockwise Spiral
+
 The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
+
 * Dictionary Sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
+* Output:
+```text
+a b c d e f
+t u v w x g
+s 6 7 8 y h
+r 5 0 9 z i
+q 4 3 2 1 j
+p o n m l k
+```
 
 #### (3) Snake Spiral
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
