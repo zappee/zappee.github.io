@@ -78,9 +78,9 @@ Budapest, Hungary
 Prague, Czech Republic
 
 * _Development:_ Designed and implemented a critical financial settlement systems using MQ Seeries Message Queues.
-* _Development:_ Built an application to detect 'smurfing' transactions and report suspicious cases to the compliance team, making money launderers work significantly harder.
+* _Development:_ Built an AML (Anti-Money Laundering) application to detect 'smurfing' transactions and report suspicious cases to the compliance team.
+* _Operation:_ Managed international rollouts and cross-functional operations outside peak hours to maximize system uptime.
 * _Compliance Development:_ Engineered a high-precision AML application specifically designed to detect structured transactions and maintain regulatory compliance.
-* _Deployment & Tier-3 Support:_ Managed international rollouts and cross-functional operations outside peak hours to maximize system uptime.
 
 
 * Delivered mission-critical IT services to the New York based Investment Banking division
