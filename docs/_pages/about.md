@@ -8,6 +8,11 @@ classes: "wide smaller-text"
 
 ![Lst update](https://img.shields.io/github/last-commit/zappee/zappee.github.io?label=last%20update)
 
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="drop" data-white_label="true" data-identifier="item_1" data-dislike_enabled="false" data-voting_cancelable="false" data-counter_frmt="comma" data-popup_disabled="true" data-site_id="553442104"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
+
 ## Overview
 
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
