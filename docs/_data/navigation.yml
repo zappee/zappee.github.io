@@ -3,27 +3,39 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Projects"
+  - title: "About"
     url: /about/
 
+  - title: "Projects"
+    url: /projects/
+    
   - title: "AI-Agents"
-    url: /setup/
+    url: /ai-agents/
 
   - title: "Publications"
-    url: /setup/
+    url: /publications/
 
-  - title: "About me"
-    url: /portfolio/
-
-# sidebar definition for Portfolio page
-portfolio_sidebar:
-  - title: "Portfolio"
+# sidebar's page definitions
+projects_sidebar:
+  - title: "Projects"
     children:
-      - title: "Portfolio Home"
-        url: /portfolio/
+      - title: "Projects"
+        url: /projects/
 
-      - title: "Installation"
-        url: /portfolio/installation/
+      - title: "FIPS Checker"
+        url: /projects/fips-checker/
 
-      - title: "Configuration"
-        url: /portfolio/configuration/
+      - title: "Spiral"
+        url: /projects/spiral/
+
+ai-agents_sidebar:
+  - title: "AI-Agents"
+    children:
+      - title: "AI-Agents"
+        url: /ai-agents/
+
+      - title: "Customer"
+        url: /ai-agents/customer-agent/
+
+      - title: "Portfoio"
+        url: /ai-agents/portfolio-agent/

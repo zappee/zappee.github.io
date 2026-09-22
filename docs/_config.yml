@@ -1,16 +1,18 @@
 # site settings
 url: "https://zappee.github.io"
-baseurl: "remal-services"
-repository: "zappee/remal-services"
+baseurl: ""
+repository: "zappee/zappee.github.io"
 
-title: "Project Documentation"
-subtitle: "Version 2.0"
-description: "A short catchphrase or description of your project."
+# header configuration
+title: "Remal Software"
+subtitle: "Software Engineering Portfolio"
+description: "Portfolio featuring my resume, projects, and AI agents."
 title_separator: "|"
 site_navigation: main
+email: arnold.somogyi@gmail.com
 
 # theme settings
-remote_theme: mmistakes/minimal-mistakes@4.28.1
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air" # air | contrast | dark | dirt | mint | sunrise | aqua | neon | plum | catppuccin_latte | catppuccin_mocha
 nav_sort: page_order
 
@@ -33,8 +35,19 @@ author:
   name: "Arnold Somogyi"
   avatar: "assets/images/avatars/arnold.somogyi-profile.jpg"
   bio: "Developer, writer, and creator."
-  location: "Copenhagen, Denmark"
+  location: "🇭🇺 Hungary, Budapest"
+  phone: "+36 20 312 6200"
+  linkedin: "arnold-somogyi"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zappee"
+
+# footer settings
+name: "Copyright &copy 2020-2026 Remal Software and Arnold Somogyi All rights reserved"
+# Put this in your _config.yml file
+footer_text: "Feel free to check out my profiles below or reach out directly via <a href='mailto:your.email@domain.com' style='text-decoration: underline;'>email</a>."
+
+# social media usernames (do not include the full url or @ symbol, just the raw username)
+github:
+  username: "zappee"

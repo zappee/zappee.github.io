@@ -16,24 +16,64 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
-  
-  /* ensure the image block itself uses automatic centering margins */
+
   .author__avatar img {
-    width: 200px !important;       /* Increased from default ~150px-200px */
-    height: 200px !important;      /* Must match the width exactly for a perfect circle */
-    max-width: 100% !important;    /* Prevents the image from overflowing on smaller mobile screens */
-    margin: 0 auto !important;     /* Keeps it perfectly centered */
-    object-fit: cover !important;  /* Center-crops your image without stretching it */
-    border-radius: 50% !important; /* Forces the perfect symmetric circle shape */
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
   }
-  
-  /* optional: Center your name and bio text underneath the photo */
+
+  /* center your name and bio text underneath the photo */
   .author__content {
     text-align: center !important;
   }
-  
+
   /* keeps your social link bullet points aligned nicely */
   .author__urls-wrapper {
     text-align: left !important;
   }
+}
+
+/* smaller text used in Jekyll headers */
+.smaller-text {
+  .page__content p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .page__content li {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.0rem;
+  }
+
+  h4 {
+    font-size: 0.85rem;
+  }
+}
+
+/* split heading layouts */
+.heading-right {
+  float: right;
+  font-weight: bold;
+}
+
+/* text styles */
+.right-aligned-text {
+  float: right;
+  font-weight: normal;
+}
+
+.normal-text {
+  font-weight: normal;
 }
