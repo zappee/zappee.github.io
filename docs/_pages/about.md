@@ -6,6 +6,8 @@ author_profile: true
 classes: "wide smaller-text"
 ---
 
+![Updated](https://img.shields.io/github/last-commit/zappee/zappee.github.io)
+
 ## Overview
 
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
