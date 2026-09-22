@@ -6,7 +6,8 @@ author_profile: true
 classes: "wide smaller-text"
 ---
 
-![Updated](https://img.shields.io/github/last-commit/zappee/zappee.github.io)
+![Last update](https://img.shields.io/github/last-commit/zappee/zappee.github.io?style=for-the-badge&label=last%20update)
+
 
 ## Overview
 
