@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /infrastructure/java/
+permalink: /infrastructure/weblogic/
 author_profile: false
 sidebar:
   nav: "infrastructure_sidebar"
 ---
 
-## ☁ Containerized Java Runtime Environment
+## ☁ Containerized Weblogic Environment

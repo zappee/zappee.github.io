@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /infrastructure/java/
+permalink: /infrastructure/spring-boot/
 author_profile: false
 sidebar:
   nav: "infrastructure_sidebar"
 ---
 
-## ☁ Containerized Java Runtime Environment
+## ☁ Containerized Spring Boot Runtime Environment
