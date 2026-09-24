@@ -1,7 +1,7 @@
 ---
 layout: single
 parent: Open Source
-title:
+title: ""
 permalink: /opensource/spiral/
 author_profile: false
 classes: "wide smaller-text"
