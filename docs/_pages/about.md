@@ -10,7 +10,7 @@ classes: "wide smaller-text"
 
 {% include like-button.html %}
 
-## 🎯 Overview
+## 🎯 About me
 
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
 Angular front-ends, microservices, AI-Agents deployed inside containerized environments.
