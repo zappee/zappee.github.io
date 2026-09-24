@@ -32,7 +32,7 @@ opensource_sidebar:
         url: /opensource/spiral/
 
 products_sidebar:
-  - title: "Products"
+  - title: "Products Home"
     children:
       - title: "Products"
         url: /products/
