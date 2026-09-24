@@ -1,11 +1,11 @@
 ---
 layout: single
-parent: Products Overview
-title: Portfolio Agent Guide
+parent: Products
+title: ""
 permalink: /products/portfolio-agent/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
 ---
 
-## Portfolio AI-Agent Guide
+## 🚀 Portfolio AI-Agent Guide

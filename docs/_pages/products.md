@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Ready For Use Products"
+title: ""
 permalink: /products/
 author_profile: false
 classes: "wide smaller-text"
@@ -8,4 +8,4 @@ sidebar:
   nav: "products_sidebar"
 ---
 
-Showcase your AI-Agents here...
+## 🚀 Discover Remal Software Products
