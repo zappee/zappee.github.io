@@ -19,7 +19,7 @@ main:
     url: /publications/
 
 # sidebar's page definitions
-projects_sidebar:
+opensource_sidebar:
   - title: "Open Source"
     children:
       - title: "Open Source Overview"

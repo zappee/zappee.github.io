@@ -1,11 +1,11 @@
 ---
 layout: single
-parent: Projects Overview
+parent: Open Source Overview
 title: FIPS Checker
-permalink: /projects/fips-checker/
+permalink: /opensource/fips-checker/
 author_profile: false
 sidebar:
-  nav: "projects_sidebar"
+  nav: "opensource_sidebar"
 ---
 
 ## FIPS Checker

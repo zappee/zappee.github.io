@@ -1,12 +1,12 @@
 ---
 layout: single
-parent: Projects Overview
+parent: Open Source Overview
 title: Spiral
-permalink: /projects/spiral/
+permalink: /opensource/spiral/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
-  nav: "projects_sidebar"
+  nav: "opensource_sidebar"
 ---
 
 ## 💡 Overview
