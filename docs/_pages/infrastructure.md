@@ -5,7 +5,7 @@ permalink: /infrastructure/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
-  nav: "opensource_sidebar"
+  nav: "infrastructure_sidebar"
 ---
 
 ## ☁️ Containerized Production Infrastructure
