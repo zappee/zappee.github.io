@@ -22,7 +22,7 @@ main:
 opensource_sidebar:
   - title: "Open Source"
     children:
-      - title: ""
+      - title: "Open Source Home"
         url: /opensource/
 
       - title: "FIPS Checker"
