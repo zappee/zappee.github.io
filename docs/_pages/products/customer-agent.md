@@ -1,11 +1,11 @@
 ---
 layout: single
-parent: AI-Agents Overview
+parent: Products Overview
 title: Customer Agent Guide
-permalink: /ai-agents/customer-agent/
+permalink: /products/customer-agent/
 author_profile: false
 sidebar:
-  nav: "ai-agents_sidebar"
+  nav: "products_sidebar"
 ---
 
 ## Customer AI-Agent Guide

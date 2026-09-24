@@ -1,11 +1,11 @@
 ---
 layout: single
-title: "AI-Agents Overview"
-permalink: /ai-agents/
+title: "Ready For Use Products"
+permalink: /products/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
-  nav: "ai-agents_sidebar"
+  nav: "products_sidebar"
 ---
 
 Showcase your AI-Agents here...

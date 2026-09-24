@@ -1,11 +1,11 @@
 ---
 layout: single
-parent: AI-Agents Overview
+parent: Products Overview
 title: Portfolio Agent Guide
-permalink: /ai-agents/portfolio-agent/
+permalink: /products/portfolio-agent/
 author_profile: false
 sidebar:
-  nav: "ai-agents_sidebar"
+  nav: "products_sidebar"
 ---
 
 ## Portfolio AI-Agent Guide

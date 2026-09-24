@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Projects Overview"
+title: "My Open Source Projects"
 permalink: /projects/
 author_profile: false
 classes: "wide smaller-text"
