@@ -1,6 +1,6 @@
 ---
 layout: single
-parent: Open Source Overview
+parent: Open Source
 title: FIPS Checker
 permalink: /opensource/fips-checker/
 author_profile: false
