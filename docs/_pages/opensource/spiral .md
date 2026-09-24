@@ -1,7 +1,7 @@
 ---
 layout: single
 parent: Open Source
-title: Spiral
+title:
 permalink: /opensource/spiral/
 author_profile: false
 classes: "wide smaller-text"
@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 💡 Overview
+## 💡 Spiral
 
 A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
 Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
