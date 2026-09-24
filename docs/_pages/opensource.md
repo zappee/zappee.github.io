@@ -1,11 +1,11 @@
 ---
 layout: single
 title: "My Open Source Projects"
-permalink: /projects/
+permalink: /opensource/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
-  nav: "projects_sidebar"
+  nav: "opensource_sidebar"
 ---
 
 ## ℹ️ Welcome to my project documentation hub
