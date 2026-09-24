@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Home"
+title: ""
 permalink: /
 author_profile: true
 classes: "wide smaller-text"
