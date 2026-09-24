@@ -8,4 +8,4 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## FIPS Checker
+## 🐧 FIPS Checker
