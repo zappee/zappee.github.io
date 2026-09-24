@@ -1,4 +1,4 @@
-# the main top header navbar links
+# #####  MAIN top menu  ####################################
 main:
   - title: "Home"
     url: /
@@ -13,12 +13,12 @@ main:
     url: /products/
 
   - title: "Infrastructure"
-    url: /publications/
+    url: /infrastructure/
 
   - title: "Publications"
     url: /publications/
 
-# sidebar's page definitions
+# #####  OPEN SOURCE sidebar definitions  ##################
 opensource_sidebar:
   - title: "Open Source"
     children:
@@ -31,6 +31,7 @@ opensource_sidebar:
       - title: "Spiral"
         url: /opensource/spiral/
 
+# #####  PRODUCTS sidebar definitions  #####################
 products_sidebar:
   - title: "Products"
     children:
@@ -42,3 +43,19 @@ products_sidebar:
 
       - title: "Portfoio"
         url: /products/portfolio-agent/
+
+# #####  INFRASTRUCTURE sidebar definitions  ###############
+infrastructure_sidebar:
+  - title: "Infrastructure"
+    children:
+      - title: "Infrastructure Home"
+        url: /infrastructure/
+
+      - title: "Java"
+        url: /infrastructure/java/
+
+      - title: "Spring Boot"
+        url: /infrastructure/spring-boot/
+
+      - title: "WebLogic"
+        url: /infrastructure/weblogic/
