@@ -1,5 +1,6 @@
 ---
 layout: single
+title: ""
 permalink: /opensource/
 author_profile: false
 classes: "wide smaller-text"
