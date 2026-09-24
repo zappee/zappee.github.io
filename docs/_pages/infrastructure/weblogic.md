@@ -8,4 +8,4 @@ sidebar:
   nav: "infrastructure_sidebar"
 ---
 
-## ☁ Containerized Weblogic Environment
+## ☁️ Containerized Weblogic Environment

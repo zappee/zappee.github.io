@@ -8,4 +8,4 @@ sidebar:
   nav: "infrastructure_sidebar"
 ---
 
-## ☁ Containerized Java Runtime Environment
+## ☁️ Containerized Java Runtime Environment

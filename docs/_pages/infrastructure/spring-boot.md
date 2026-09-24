@@ -8,4 +8,4 @@ sidebar:
   nav: "infrastructure_sidebar"
 ---
 
-## ☁ Containerized Spring Boot Runtime Environment
+## ☁️ Containerized Spring Boot Runtime Environment
