@@ -1,6 +1,6 @@
 ---
 layout: single
-parent: Products Overview
+parent: Products
 title: Customer Agent Guide
 permalink: /products/customer-agent/
 author_profile: false
