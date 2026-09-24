@@ -1,6 +1,6 @@
 ---
 layout: single
-parent: Open Source Overview
+parent: Open Source
 title: Spiral
 permalink: /opensource/spiral/
 author_profile: false
