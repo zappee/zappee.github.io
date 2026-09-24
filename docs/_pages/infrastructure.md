@@ -8,7 +8,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## ☁️ Infrastructure components
+## ☁️ Containerized Production Infrastructure
 
 This space serves as the central directory for my open-source software projects and technical experiments. Here, you will find comprehensive setup guides, architectural overviews, and API references for the tools I actively maintain on GitHub.
 
