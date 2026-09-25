@@ -19,6 +19,11 @@ Combining my strong technical background and sharp analytical mindset with a pas
 My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
 
 
+## Education
+
+<span class="right-aligned-text">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
+
+
 ## Technical Skills
 
 * Back-end Development: Java ecosystems, core libraries, enterprise frameworks, and REST API design
@@ -46,11 +51,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Work well under pressure
 * Continuous learner
 * Financial domain expertise
-
-
-## Education
-
-<span class="right-aligned-text">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
 
 
 ## Professional Career
