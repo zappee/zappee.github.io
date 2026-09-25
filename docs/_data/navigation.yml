@@ -22,6 +22,9 @@ main:
 opensource_sidebar:
   - title: "Open Source"
     children:
+      - title: "Open Source Home"
+        url: /opensource/
+
       - title: "FIPS Checker"
         url: /opensource/fips-checker/
 
@@ -32,6 +35,9 @@ opensource_sidebar:
 products_sidebar:
   - title: "Products"
     children:
+      - title: "Products Home"
+        url: /products/
+
       - title: "Customer"
         url: /products/customer-agent/
 
@@ -42,6 +48,9 @@ products_sidebar:
 infrastructure_sidebar:
   - title: "Infrastructure"
     children:
+      - title: "Infrastructure Home"
+        url: /infrastructure/
+
       - title: "Java"
         url: /infrastructure/java/
 
@@ -55,6 +64,9 @@ infrastructure_sidebar:
 publications_sidebar:
   - title: "Publications"
     children:
+      - title: "Publications Home"
+        url: /publications/
+
       - title: "<span class='sidebar-label'>Java</span>"
         url: ""
 
