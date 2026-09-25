@@ -74,7 +74,7 @@ y z 1 2 3 4
 ```
 
 
-## 🛠️ Architecture & Project structure
+## Architecture & Project structure
 
 The project relies on clean separation of layers, decoupling the underlying mapping logic from the stream output rendering layer:
 
@@ -91,7 +91,7 @@ src/
 ```
 
 
-## 🚀 Getting started
+## Getting started
 
 ### Prerequisites
 * Java Development Kit (JDK) 8 or higher.
@@ -115,7 +115,7 @@ src/
    ```
 
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
 
@@ -128,6 +128,6 @@ Contributions, feature requests, and custom dictionary pattern submissions are a
 5. Open a Pull Request.
 
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
