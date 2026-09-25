@@ -62,9 +62,25 @@ infrastructure_sidebar:
 
 # #####  PUBLICATIONS sidebar definitions  ###############
 publications_sidebar:
-  - title: "<span style='color: #cc0000; font-weight: bold;'>Publications</span>"
+  - title: "Publications"
     children:
-      - title: "<span style='color: #cc0000; font-weight: bold;'>Travel Guides</span>"
-
       - title: "Publications Home"
         url: /publications/
+
+      - title: "<span style='color: #cc0000; font-weight: bold;'>Travel Guides</span>"
+        url: ""
+
+      - title: "Sri Lanka"
+        url: /publications/sri-lanka/
+
+      - title: "Indonesia"
+        url: /publications/indonesia/
+
+      - title: "Japan"
+        url: /publications/japan/
+
+      - title: "<span style='color: #cc0000; font-weight: bold;'>Java</span>"
+        url: ""
+
+      - title: "How to make something"
+        url: /publications/java/
