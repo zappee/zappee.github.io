@@ -15,5 +15,5 @@ Whether you are looking for deep dives into software engineering or inspiration 
 
 Explore the main sections below:
 
-* _IT Technical Guides:_ Deep dives into software architecture, programming tutorials, and modern infrastructure practices built from years of hands-on software engineering.
-* _Travel Stories:_ Personal experiences, tips, and itineraries from my journeys across Japan, Indonesia, Sri Lanka, and beyond.
+* **IT Technical Guides:** Deep dives into software architecture, programming tutorials, and modern infrastructure practices built from years of hands-on software engineering.
+* **Travel Stories:** Personal experiences, tips, and itineraries from my journeys across Japan, Indonesia, Sri Lanka, and beyond.
