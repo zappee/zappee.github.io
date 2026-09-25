@@ -59,16 +59,16 @@ publications_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>How to make something</span>"
-        url: /publications/java/whatewer/
+        url: /publications/it/whatewer/
 
       - title: "<span class='sidebar-label'>Travel Guides</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>Sri Lanka</span>"
-        url: /publications/sri-lanka/
+        url: /publications/travel-guides/sri-lanka/
 
       - title: "<span class='sidebar-bullet'>Indonesia</span>"
-        url: /publications/indonesia/
+        url: /publications/travel-guides/indonesia/
 
       - title: "<span class='sidebar-bullet'>Japan</span>"
-        url: /publications/japan/
+        url: /publications/travel-guides/japan/
