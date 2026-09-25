@@ -8,6 +8,12 @@ sidebar:
   nav: "publications_sidebar"
 ---
 
-## 🌐 Publications
+## 🌐 Welcome to my digital notebook!
 
-No publications to display just yet. Content will be uploaded soon.
+Here, I share a mix of my professional expertise and personal passions.
+Whether you are looking for deep dives into software engineering or inspiration for your next adventure, you are in the right place.
+Explore the main sections below:
+
+Java & IT Technical Guides: 
+* _Java & IT Technical Guides:_Deep dives into software architecture, programming tutorials, and modern infrastructure practices built from years of hands-on software engineering.
+* _Travel Stories & Guides:_ Personal experiences, tips, and itineraries from my journeys across Japan, Indonesia, Sri Lanka, and beyond.
