@@ -13,7 +13,7 @@ classes: "wide smaller-text"
 ## 🎯 About me
 
 I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
-Angular front-ends, Java microservices v, AI-Agents deployed inside containerized environments.
+Angular front-ends, Java microservices ☕, AI-Agents deployed inside containerized environments.
 In my daily work, I treat AI agents as my virtual teammate, which helps me to deliver rock-solid solutions ahead of schedule.
 Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
 My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
