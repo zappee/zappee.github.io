@@ -70,17 +70,17 @@ publications_sidebar:
       - title: "<span class='sidebar-group'>Travel Guides</span>"
         url: ""
 
-      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Sri Lanka</span>"
+      - title: "<span class='sidebar-bullet'>Sri Lanka</span>"
         url: /publications/sri-lanka/
 
-      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Indonesia</span>"
+      - title: "<span class='sidebar-bullet'>Indonesia</span>"
         url: /publications/indonesia/
 
-      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Japan</span>"
+      - title: "<span class='sidebar-bullet'>Japan</span>"
         url: /publications/japan/
 
       - title: "<span class='sidebar-group'>Java</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet-item'>How to make something</span>"
+      - title: "<span class='sidebar-bullet'>How to make something</span>"
         url: /publications/java/
