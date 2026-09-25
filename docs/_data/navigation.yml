@@ -55,6 +55,12 @@ infrastructure_sidebar:
 publications_sidebar:
   - title: "Publications"
     children:
+      - title: "<span class='sidebar-label'>Java</span>"
+        url: ""
+
+      - title: "<span class='sidebar-bullet'>How to make something</span>"
+        url: /publications/java/whatewer/
+
       - title: "<span class='sidebar-label'>Travel Guides</span>"
         url: ""
 
@@ -66,9 +72,3 @@ publications_sidebar:
 
       - title: "<span class='sidebar-bullet'>Japan</span>"
         url: /publications/japan/
-
-      - title: "<span class='sidebar-label'>Java</span>"
-        url: ""
-
-      - title: "<span class='sidebar-bullet'>How to make something</span>"
-        url: /publications/java/
