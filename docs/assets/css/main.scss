@@ -85,9 +85,9 @@
 }
 
 .sidebar-bullet-item {
-  padding-left: 1ch;
+  padding-left: 0.5rem;
 }
 .sidebar-bullet-item::before {
-  content: "• ";
-  padding-right: 1ch;
+  content: "•";
+  padding-right: 0.2rem;
 }
