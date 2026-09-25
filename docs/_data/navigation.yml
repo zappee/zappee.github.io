@@ -67,20 +67,20 @@ publications_sidebar:
       - title: "Publications Home"
         url: /publications/
 
-      - title: "<span class='sidebar-label'>Java</span>"
+      - title: "<span class='sidebar-label'>IT Technical Guides</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>How to make something</span>"
         url: /publications/it/whatewer/
 
-      - title: "<span class='sidebar-label'>Travel Guides</span>"
+      - title: "<span class='sidebar-label'>Travel Stories</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>Sri Lanka</span>"
-        url: /publications/travel-guides/sri-lanka/
+        url: /publications/travel-stories/sri-lanka/
 
       - title: "<span class='sidebar-bullet'>Indonesia</span>"
-        url: /publications/travel-guides/indonesia/
+        url: /publications/travel-stories/indonesia/
 
       - title: "<span class='sidebar-bullet'>Japan</span>"
-        url: /publications/travel-guides/japan/
+        url: /publications/travel-stories/japan/

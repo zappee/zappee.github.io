@@ -2,7 +2,7 @@
 layout: single
 parent: Publications
 title: ""
-permalink: /publications/travel-guides/sri-lanka/
+permalink: /publications/travel-stories/sri-lanka/
 author_profile: false
 sidebar:
   nav: "publications_sidebar"
