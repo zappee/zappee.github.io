@@ -8,6 +8,6 @@ sidebar:
   nav: "publications_sidebar"
 ---
 
-## 🌐 Not ready yet
+## 🌐 🧭 Not ready yet
 
 Content is on the way!
