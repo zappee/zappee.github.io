@@ -73,14 +73,14 @@ publications_sidebar:
       - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Sri Lanka</span>"
         url: /publications/sri-lanka/
 
-      - title: "Indonesia"
+      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Indonesia</span>"
         url: /publications/indonesia/
 
-      - title: "Japan"
+      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;Japan</span>"
         url: /publications/japan/
 
       - title: "<span style='color: #263238; font-weight: bold;'>Java</span>"
         url: ""
 
-      - title: "How to make something"
+      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;How to make something</span>"
         url: /publications/java/
