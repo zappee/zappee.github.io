@@ -83,3 +83,12 @@
   color: #263238;
   font-weight: bold;
 }
+
+.sidebar-bullet-item {
+  padding-left: 1ch;
+}
+
+.sidebar-bullet-item::before {
+  content: "• ";    /* Injects the bullet point automatically */
+  padding-right: 1ch; /* Adds a clean, natural space after the bullet */
+}

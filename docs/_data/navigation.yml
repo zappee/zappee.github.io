@@ -82,5 +82,5 @@ publications_sidebar:
       - title: "<span class='sidebar-group'>Java</span>"
         url: ""
 
-      - title: "<span>&nbsp;&nbsp;&bull;&nbsp;How to make something</span>"
+      - title: "<span class='sidebar-bullet-item'>How to make something</span>"
         url: /publications/java/
