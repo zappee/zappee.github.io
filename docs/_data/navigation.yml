@@ -67,10 +67,10 @@ publications_sidebar:
       - title: "Publications Home"
         url: /publications/
 
-      - title: "<span style='color: #cc0000; font-weight: bold;'>Travel Guides</span>"
+      - title: "<span style='color: #CFD8DC; font-weight: bold;'>Travel Guides</span>"
         url: ""
 
-      - title: "Sri Lanka"
+      - title: "<span style='color: #CFD8DC; font-weight: bold;'>;&nbsp;&nbsp;&bull&nbsp;Sri Lanka</span>"
         url: /publications/sri-lanka/
 
       - title: "Indonesia"
@@ -79,7 +79,7 @@ publications_sidebar:
       - title: "Japan"
         url: /publications/japan/
 
-      - title: "<span style='color: #cc0000; font-weight: bold;'>Java</span>"
+      - title: "<span style='color: #B0BEC5; font-weight: bold;'>Java</span>"
         url: ""
 
       - title: "How to make something"
