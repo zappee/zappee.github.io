@@ -11,6 +11,8 @@ sidebar:
 
 ## 🐧 Spiral
 
+![GitHub Issues](https://img.shields.io/github/issues/zappee/spiral)
+
 A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
 Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
 
