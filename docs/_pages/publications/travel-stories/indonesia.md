@@ -8,6 +8,6 @@ sidebar:
   nav: "publications_sidebar"
 ---
 
-## 🌐 Indonesia travel guide 🇮🇩
+## 🌐 🇮🇩 Indonesia travel guide
 
 Content is on the way!
