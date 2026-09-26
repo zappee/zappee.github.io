@@ -127,7 +127,3 @@ Contributions, feature requests, and custom dictionary pattern submissions are a
 
 ### 7) Source core
 [https://github.com/zappee/web-scraper](https://github.com/zappee/spiral)
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
