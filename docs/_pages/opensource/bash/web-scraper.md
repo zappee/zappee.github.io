@@ -11,6 +11,7 @@ sidebar:
 
 ## 🐧 Web Scraper for AI
 
+### 1) Overview
 This web scraper is a software tool designed to extract textual data from websites and convert it into structured text content.
 This clean data can then be used to feed AI models and ask questions about the content.
 
@@ -18,7 +19,7 @@ You need a web scraper because AI models cannot directly read a website URL and 
 Instead, they require raw text or structured data to process information.
 While humans see visual layouts, images, and buttons in a browser, an AI needs clean text stripped of code and styling to understand and analyze it.
 
-### The main reasons you need a scraper
+### 2) The main reasons you need a scraper
 
 1. **Cleaning the noise**
 
@@ -37,7 +38,7 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
    If your website has dozens of pages, manually copying and pasting every link is inefficient.
    A scraper can act as a crawler, automatically following internal links and gather all the text into a single file for instant AI processing.
 
-### How to use
+### 3) How to use
 The _Remal Web Scraper for AI_ is a Linux tool written in Bash.
 Getting started is simple: just copy the script to your machine, grant execution permissions, and run it.
 
@@ -51,3 +52,6 @@ $ ./remal_scraper.sh <url> <output-file>
 # example
 $ ./web-scraper.sh https://zappee.github.io zappee.github.io.txt
 ```
+
+### 4) Source core
+[https://github.com/zappee/web-scraper](https://github.com/zappee/web-scraper)
