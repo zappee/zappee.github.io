@@ -1,4 +1,4 @@
-# Remal Softwares
+# Remal Software
 
 Welcome to the repository for my personal website and portfolio, hosted globally via [GitHub Pages](https://zappee.github.io/). This site serves as a central hub to showcase my professional background, technical projects, skills, and writing.
 
