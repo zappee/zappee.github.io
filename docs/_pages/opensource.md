@@ -16,4 +16,10 @@ My development work focuses heavily on building clean, efficient, and well-docum
 
 ![GitHub User's stars](https://img.shields.io/github/stars/zappee?style=for-the-badge&label=github%20stars)
 
-<img src="https://ghchart.rshah.org/409ba5/zappee" alt="Arnold Somogyi - GitHub commits" />
+<img src="https://ghchart.rshah.org/0277BD/zappee" alt="GitHub commits" />
+
+xx
+
+<div class="github-chart-container">
+  <img src="https://ghchart.rshah.org/0277BD/zappee" alt="GitHub commits" />
+</div>

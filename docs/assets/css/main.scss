@@ -107,3 +107,20 @@
   content: "•";
   padding-right: 0.2rem;
 }
+
+/* GitHub chart */
+.github-chart-container {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+  border: 2px solid #0277BD;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+.github-chart-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
