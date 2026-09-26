@@ -12,8 +12,8 @@ main:
   - title: "Products"
     url: /products/
 
-  - title: "Infrastructure"
-    url: /infrastructure/
+  - title: "Virtualization"
+    url: /virtualization/
 
   - title: "Publications"
     url: /publications/
@@ -60,21 +60,21 @@ products_sidebar:
       - title: "Portfoio"
         url: /products/portfolio-agent/
 
-# #####  INFRASTRUCTURE sidebar definitions  ###############
-infrastructure_sidebar:
-  - title: "Infrastructure"
+# #####  VIRTUALIZATION sidebar definitions  ###############
+virtualization_sidebar:
+  - title: "Virtualization"
     children:
-      - title: "Infrastructure Home"
-        url: /infrastructure/
+      - title: "Virtualization Home"
+        url: /virtualization/
 
       - title: "Java"
-        url: /infrastructure/java/
+        url: /virtualization/java/
 
       - title: "Spring Boot"
-        url: /infrastructure/spring-boot/
+        url: /virtualization/spring-boot/
 
       - title: "WebLogic"
-        url: /infrastructure/weblogic/
+        url: /virtualization/weblogic/
 
 # #####  PUBLICATIONS sidebar definitions  ###############
 publications_sidebar:
