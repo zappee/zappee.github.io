@@ -25,8 +25,18 @@ opensource_sidebar:
       - title: "Open Source Home"
         url: /opensource/
 
+      - title: "<span class='sidebar-label'>Bash tools</span>"
+        url: ""
+
+
+      - title: "<span class='sidebar-label'>Java tools</span>"
+        url: ""
+
       - title: "FIPS Checker"
         url: /opensource/fips-checker/
+
+      - title: "<span class='sidebar-label'>Research and Development</span>"
+        url: ""
 
       - title: "Spiral"
         url: /opensource/spiral/
