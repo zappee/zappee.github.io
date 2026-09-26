@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /infrastructure/weblogic/
+permalink: /virtualization/weblogic/
 author_profile: false
 sidebar:
-  nav: "infrastructure_sidebar"
+  nav: "virtualization_sidebar"
 ---
 
 ## ☁️ Containerized Weblogic Environment

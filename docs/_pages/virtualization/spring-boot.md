@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /infrastructure/spring-boot/
+permalink: /virtualization/spring-boot/
 author_profile: false
 sidebar:
-  nav: "infrastructure_sidebar"
+  nav: "virtualization_sidebar"
 ---
 
 ## ☁️ Containerized Spring Boot Runtime Environment

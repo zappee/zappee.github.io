@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /infrastructure/java/
+permalink: /virtualization/java/
 author_profile: false
 sidebar:
-  nav: "infrastructure_sidebar"
+  nav: "virtualization_sidebar"
 ---
 
 ## ☁️ Containerized Java Runtime Environment
