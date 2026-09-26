@@ -8,6 +8,18 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* light mode colors, defaults */
+:root {
+  --sidebar-label-color: #0277BD;
+}
+
+/* dark mode colors overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sidebar-label-color: #0277BD;
+  }
+}
+
 @include breakpoint($large) {
   /* center the author avatar container and layout elements */
   .author__avatar {
@@ -76,4 +88,22 @@
 
 .normal-text {
   font-weight: normal;
+}
+
+/* sidebar styles */
+.sidebar-label {
+  color: var(--sidebar-label-color);
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.sidebar-bullet {
+  padding-left: 0.5rem;
+}
+.sidebar-bullet::before {
+  content: "•";
+  padding-right: 0.2rem;
 }

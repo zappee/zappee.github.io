@@ -1,18 +1,27 @@
 ---
 layout: single
-title: "About"
+title: ""
 permalink: /about/
 author_profile: true
 classes: "wide smaller-text"
 ---
 
-## Overview
+![Lst update](https://img.shields.io/github/last-commit/zappee/zappee.github.io?label=last%20update)
 
-I am a forward-thinking _Full-Stack Software Engineer_ specialized in building high-performance enterprise applications with modern technologies,
-Angular front-ends, microservices, AI-Agents deployed inside containerized environments.
+{% include like-button.html %}
+
+## 🎯 About me
+
+I am a forward-thinking _Full-Stack Software Engineer 🧩_ specialized in building high-performance enterprise applications with modern technologies,
+Angular front-ends 🛡️, Java microservices ☕, AI-Agents 🧬 deployed inside containerized environments.
 In my daily work, I treat AI agents as my virtual teammate, which helps me to deliver rock-solid solutions ahead of schedule.
 Combining my strong technical background and sharp analytical mindset with a passion for finance and technical writing makes me a highly valuable asset to any team.
 My advanced knowledge of Linux systems and scripting languages allows me to collaborate seamlessly with infrastructure and operations teams.
+
+
+## Education
+
+<span class="right-aligned-text">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
 
 
 ## Technical Skills
@@ -42,11 +51,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Work well under pressure
 * Continuous learner
 * Financial domain expertise
-
-
-## Education
-
-<span class="right-aligned-text">Budapest, Hungary</span>Information Specialist Engineer – Programmer \| Dennis Gabor University
 
 
 ## Professional Career
