@@ -31,7 +31,6 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
    Without a scraper, a single webpage's source code can be massive, easily exhausting the AI's limit.
    A scraper compresses the content into pure text, allowing you to feed the AI significantly more information at a lower cost.
 
-
 3. Handling multipage sites
 
    If your website has dozens of pages, manually copying and pasting every link is inefficient.
