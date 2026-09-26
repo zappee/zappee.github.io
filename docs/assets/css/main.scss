@@ -10,13 +10,13 @@
 
 /* light mode colors, defaults */
 :root {
-  --sidebar-label-color: #333333;
+  --sidebar-label-color: #0277BD;
 }
 
 /* dark mode colors overrides */
 @media (prefers-color-scheme: dark) {
   :root {
-    --sidebar-label-color: #333333;
+    --sidebar-label-color: #0277BD;
   }
 }
 

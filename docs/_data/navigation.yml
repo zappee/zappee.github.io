@@ -29,7 +29,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-label'>Site Copy</span>"
+      - title: "<span class='sidebar-bullet'>Site Copy</span>"
         url: /opensource/bash/site-copy/
 
 
