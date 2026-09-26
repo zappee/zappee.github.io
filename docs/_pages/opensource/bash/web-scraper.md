@@ -4,6 +4,7 @@ parent: Open Source
 title: ""
 permalink: /opensource/bash/web-scraper/
 author_profile: false
+classes: "wide smaller-text"
 sidebar:
   nav: "opensource_sidebar"
 ---
