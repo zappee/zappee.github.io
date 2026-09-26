@@ -1,13 +1,13 @@
 ---
 layout: single
 title: ""
-permalink: /infrastructure/
+permalink: /virtualization/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
-  nav: "infrastructure_sidebar"
+  nav: "virtualization_sidebar"
 ---
 
-## ☁️ Containerized Production Infrastructure
+## ☁️ Runtime Environments and Deployments
 
 Content is on the way!
