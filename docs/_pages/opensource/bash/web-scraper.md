@@ -11,6 +11,9 @@ sidebar:
 
 ## 🐧 Web Scraper for AI
 
+![GitHub top language](https://img.shields.io/github/languages/top/zappee/web-scraper)
+![GitHub Issues](https://img.shields.io/github/issues/zappee/web-scraper)
+
 ### 1) Overview
 This web scraper is a software tool designed to extract textual data from websites and convert it into structured text content.
 This clean data can then be used to feed AI models and ask questions about the content.
