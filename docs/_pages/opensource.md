@@ -15,3 +15,5 @@ This space serves as the central directory for my open-source software projects 
 My development work focuses heavily on building clean, efficient, and well-documented code designed to solve practical, real-world problems. Explore the project links to view detailed documentation, deployment instructions, and full source code repositories.
 
 ![GitHub User's stars](https://img.shields.io/github/stars/zappee?style=for-the-badge&label=github%20stars)
+
+<img src="https://ghchart.rshah.org/409ba5/zappee" alt="Arnold Somogyi - GitHub commits" />
