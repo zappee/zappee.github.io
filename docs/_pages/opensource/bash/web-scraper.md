@@ -10,27 +10,29 @@ sidebar:
 
 ## 🐧 Web Scraper for AI
 
-This web scraper is a software tool used to extract textual data from websites and convert it into structured text content that you can use to feed AI and ask questions about the content.
+This web scraper is a software tool designed to extract textual data from websites and convert it into structured text content.
+This clean data can then be used to feed AI models and ask questions about the content.
 
-You need a web scraper to feed an AI because AI models cannot directly read a website URL, and they usualy have no direct access to Internet.
-So they require raw text or structured data to process information.
-While you see visual layouts, images, and buttons on your browser, an AI needs the clean, underlying textual data stripped of code and styling to answer questions about it.
+You need a web scraper because AI models cannot directly read a website URL and usually do not have internet access.
+Instead, they require raw text or structured data to process information.
+While humans see visual layouts, images, and buttons in a browser, an AI needs clean text stripped of code and styling to understand and analyze it.
 
-The main reasons you need a scraper
+**The main reasons you need a scraper**
 
 1. Cleaning the noise
 
-    Webpages are filled with stile definitions, code, images, scripts  navigation bars, footers, and cookie banners.
-    If you pass a raw website to an AI, it will waste your tokens trying to read code instead of your content. 
-    A scraper extracts only the relevant text (like the blog body, product description, or article text).
+   Webpages are filled with style definitions, code, images, scripts, navigation bars, etc.
+   If you pass a raw webpage to an AI, you will waste valuable tokens trying to read code instead of your content.
+   A scraper extracts only the relevant text, such as a blog body, product description, or article text.
 
 
-2. AI prompt size limit
-   AI models have a _context window_ (a maximum limit of text they can read at one time).
-   Without a scraper, a single webpage's raw source code can be massive, easily exhausting the AI's limit.
-   With a scraper the webpage content is compressed into pure text, allowing you to feed the AI significantly more information at a lower cost.
+2. AI prompt size limits
+   AI models operate within a context window (the maximum amount of text they can process at once).
+   Without a scraper, a single webpage's source code can be massive, easily exhausting the AI's limit.
+   A scraper compresses the content into pure text, allowing you to feed the AI significantly more information at a lower cost.
 
 
 3. Handling multipage sites
-   If your website has 20 pages, you cannot manually copy and paste every link. 
-   A scraper can act as a crawler, automatically following internal links, mapping out your entire website, and gathering all the text into a single text file that the AI can instantly process.
+
+   If your website has dozens of pages, manually copying and pasting every link is inefficient.
+   A scraper can act as a crawler, automatically following internal links and gather all the text into a single file for instant AI processing.
