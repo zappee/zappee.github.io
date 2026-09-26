@@ -29,8 +29,8 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>Site Copy</span>"
-        url: /opensource/bash/site-copy/
+      - title: "<span class='sidebar-bullet'>Web Scraper for AI</span>"
+        url: /opensource/bash/web-scraper/
 
 
       # java tools

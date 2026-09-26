@@ -2,10 +2,10 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/bash/site-copy/
+permalink: /opensource/bash/web-scraper/
 author_profile: false
 sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 FIPS Checker
+## 🐧 Web Scraper for AI
