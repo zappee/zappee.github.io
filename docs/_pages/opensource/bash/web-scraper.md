@@ -41,7 +41,13 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
 The _Remal Web Scraper for AI_ is a Linux tool written in Bash.
 Getting started is simple: just copy the script to your machine, grant execution permissions, and run it.
 
->Grant execution permissions: `chmod +x remal_scraper.sh`
-> 
->Run the script: `./remal_scraper.sh <url> <output-file>`
+```
+# grant execution permissions
+$ chmod +x remal_scraper.sh
 
+run the script
+$ ./remal_scraper.sh <url> <output-file>
+
+# example
+$ ./web-scraper.sh https://zappee.github.io zappee.github.io.txt
+```
