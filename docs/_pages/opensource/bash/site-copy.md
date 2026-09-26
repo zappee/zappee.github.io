@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/fips-checker/
+permalink: /opensource/bash/site-copy/
 author_profile: false
 sidebar:
   nav: "opensource_sidebar"

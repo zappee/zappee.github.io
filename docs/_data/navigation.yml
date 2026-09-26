@@ -25,21 +25,27 @@ opensource_sidebar:
       - title: "Open Source Home"
         url: /opensource/
 
+      # bash-tools
       - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
+      - title: "<span class='sidebar-label'>Site Copy</span>"
+        url: /opensource/bash/site-copy/
 
+
+      # java tools
       - title: "<span class='sidebar-label'>Java tools</span>"
         url: ""
 
-      - title: "FIPS Checker"
-        url: /opensource/fips-checker/
+      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
+        url: /opensource/java/fips-checker/
 
+      # research and development
       - title: "<span class='sidebar-label'>Research and Development</span>"
         url: ""
 
-      - title: "Spiral"
-        url: /opensource/spiral/
+      - title: "<span class='sidebar-bullet'>Spiral</span>"
+        url: /opensource/r-and-d/spiral/
 
 # #####  PRODUCTS sidebar definitions  #####################
 products_sidebar:

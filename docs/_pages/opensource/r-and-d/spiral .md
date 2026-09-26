@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/spiral/
+permalink: /opensource/r-and-d/spiral/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
