@@ -36,3 +36,11 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
 
    If your website has dozens of pages, manually copying and pasting every link is inefficient.
    A scraper can act as a crawler, automatically following internal links and gather all the text into a single file for instant AI processing.
+
+### How to use
+The _Remal Web Scraper for AI_ is a Linux tool written in Bash.
+Getting started is simple: just copy the script to your machine, grant execution permissions, and run it.
+
+>Grant execution permissions: `chmod +x remal_scraper.sh`
+>Run the script: `./remal_scraper.sh <url> <output-file>`
+
