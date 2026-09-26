@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 Web Scraper for AI
+## 🐧 Web-Scraper for AI
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/web-scraper)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/web-scraper)
@@ -42,7 +42,7 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
    A scraper can act as a crawler, automatically following internal links and gather all the text into a single file for instant AI processing.
 
 ### 3) How to use
-The _Remal Web Scraper for AI_ is a Linux tool written in Bash.
+The _Remal Web-Scraper for AI_ is a Linux tool written in Bash.
 Getting started is simple: just copy the script to your machine, grant execution permissions, and run it.
 
 ```

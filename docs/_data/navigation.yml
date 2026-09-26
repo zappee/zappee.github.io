@@ -29,7 +29,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>Web Scraper for AI</span>"
+      - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/bash/web-scraper/
 
 
