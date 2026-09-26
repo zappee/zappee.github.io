@@ -25,8 +25,8 @@ While humans see visual layouts, images, and buttons in a browser, an AI needs c
    If you pass a raw webpage to an AI, you will waste valuable tokens trying to read code instead of your content.
    A scraper extracts only the relevant text, such as a blog body, product description, or article text.
 
-
 2. **AI prompt size limits**
+
    AI models operate within a context window (the maximum amount of text they can process at once).
    Without a scraper, a single webpage's source code can be massive, easily exhausting the AI's limit.
    A scraper compresses the content into pure text, allowing you to feed the AI significantly more information at a lower cost.
