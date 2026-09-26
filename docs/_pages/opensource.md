@@ -18,6 +18,6 @@ My development work focuses heavily on building clean, efficient, and well-docum
 
 
 <div class="github-chart-container">
-  GitHub contributions in the last year
+  <p>GitHub contributions in the last year</p>
   <img src="https://ghchart.rshah.org/0277BD/zappee" alt="GitHub commits" />
 </div>
