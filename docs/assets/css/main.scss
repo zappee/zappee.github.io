@@ -103,7 +103,32 @@
 .sidebar-bullet {
   padding-left: 0.5rem;
 }
+
 .sidebar-bullet::before {
   content: "•";
   padding-right: 0.2rem;
+}
+
+/* GitHub chart */
+.github-chart-container {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+  border: 2px solid #0277BD;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.github-chart-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.github-chart-container span {
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-align: center;
+  display: block;
 }

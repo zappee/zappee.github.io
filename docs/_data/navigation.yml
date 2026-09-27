@@ -22,12 +22,8 @@ main:
 opensource_sidebar:
   - title: "Open Source"
     children:
-      - title: "Open Source Home"
-        url: /opensource/
-
-      # bash-tools
-      - title: "<span class='sidebar-label'>Bash tools</span>"
-        url: ""
+      - title: "Projects"
+        url: /projects/
 
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/bash/web-scraper/
@@ -37,7 +33,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Java tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
+      - title: "<span class='sidebar-bullet'>FIPS-Checker</span>"
         url: /opensource/java/fips-checker/
 
       # research and development
