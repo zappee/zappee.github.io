@@ -16,6 +16,10 @@ My development work focuses heavily on building clean, efficient, and well-docum
 
 ![GitHub User's stars](https://img.shields.io/github/stars/zappee?style=for-the-badge&label=github%20stars)
 
+<div style="display: block; text-align: center;">
+  <img alt="GitHub User's stars" src="https://img.shields.io/github/stars/zappee">
+</div>
+
 <div class="github-chart-container">
   <span>GitHub contributions in the last year</span>
   <img src="https://ghchart.rshah.org/0277BD/zappee" alt="GitHub commits" />
