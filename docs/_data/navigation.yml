@@ -22,8 +22,8 @@ main:
 opensource_sidebar:
   - title: "Open Source"
     children:
-      - title: "Projects"
-        url: /projects/
+      - title: "Open Source Home"
+        url: /opensource/
 
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/bash/web-scraper/
