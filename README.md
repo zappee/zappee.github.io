@@ -10,4 +10,4 @@ Welcome to the repository for my personal website and portfolio, hosted globally
 
 ### 🤝 Contributing
 
-Contributions, feature requests, and bug reports are always welcome! For more information, please visit my [homepage](https://zappee.github.io/opensource/).
+Contributions, feature requests, and bug reports are always welcome! For more information, please visit my [homepage](https://zappee.github.io).
