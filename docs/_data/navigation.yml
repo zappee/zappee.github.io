@@ -26,7 +26,7 @@ opensource_sidebar:
         url: /opensource/
 
         # bash tools
-      - title: "<span class='sidebar-label'>Bash</span>"
+      - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
