@@ -29,7 +29,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Bash tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>File Backup-Restore tool</span>"
+      - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
         url: /opensource/bash/file-backup-and-restore/
 
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
