@@ -120,7 +120,7 @@ When you start a backup or recovery job, the tool enforces an explicit workflow:
    `Comparing the SOURCE and TARGET directories and show the difference. Continue? [y/n]`
 
 
-3. Second prompt: If you approve, it flashes a final warning before rewriting bits on the destination storage medium:
+3. Second prompt: If you approve, it flashes a final warning before rewriting files on the destination storage medium:
 
    `Do you want to copy files from SOURCE to TARGET?`
 
