@@ -64,7 +64,7 @@ Once deployed and running, the utility exposes a web interface to report the ser
 
 ### 5) Contributing
 
-Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
+Contributions, feature requests, optimization, and bug reports are always welcome!
 
 
 ### 6) Source core

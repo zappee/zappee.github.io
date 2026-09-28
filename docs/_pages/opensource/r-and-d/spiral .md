@@ -120,11 +120,11 @@ src/
    ```
 
 
-### 6) Contributing
-
-Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
-
-
-### 7) Source core
+### 6) Source core
 
 [https://github.com/zappee/web-scraper](https://github.com/zappee/spiral)
+
+
+### 7) Contributing
+
+Contributions, feature requests, and optimization are always welcome!

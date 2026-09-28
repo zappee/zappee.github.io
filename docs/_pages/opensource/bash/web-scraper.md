@@ -65,4 +65,4 @@ $ ./web-scraper.sh https://zappee.github.io zappee.github.io.txt
 
 ### 5) Contributing
 
-Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
+Contributions, feature requests, optimization, and bug reports are always welcome!
