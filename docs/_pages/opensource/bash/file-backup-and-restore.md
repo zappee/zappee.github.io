@@ -59,7 +59,7 @@ It handles adding, deleting, and renaming files and directories seamlessly. It a
 
 ### 5) Engine Script Usage
 
-The engine script `sync-engine.sh` handles individual directory streams directly:
+The engine script `sync-engine.sh` handles individual directory copy directly:
 
 ```console
 $ ./backup.sh <source-directory> <target-directory> [mode]
