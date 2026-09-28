@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 File Backup & Restore Tool
+## 🐧 File Backup & Restore
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/web-scraper)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/web-scraper)
@@ -47,7 +47,7 @@ It handles adding, deleting, and renaming files and directories seamlessly. It a
 ### 3) What's inside the box?
 
 * `sync-engine.sh`: The core execution engine containing script arguments validation, double-prompt safeguards, and the main rsync orchestration logic. You don't need to change this file.
-* `sync-backup-hp-to-hdd1.sh`: A configuration script illustrating how to list the local folders you want to save to your external hard drive.
+* `sync-backup-hp-to-hdd1.sh`: A configuration script illustrating how to back up local folders to your external hard drive.
 * `sync-restore-hp-from-hdd1.sh`: A corresponding profile showing how to quickly reverse the flow to copy your files back from your external drive to your laptop (perfect for setting up a new computer or recovering from a crash).
 
 
