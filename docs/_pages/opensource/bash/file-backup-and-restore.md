@@ -98,7 +98,7 @@ do_backup "3/3" software-installers keep
 ```
 
 
-#### 5.2) Configure a machine to testore
+#### 5.2) Configure a machine to restore
 
 Copy the restore template file (`sync-restore-hp-from-hdd1.sh`) to your machine (e.g. `sync-backup-hp-spectre-from-hdd1.sh`) and edit your paths and directories:
 ```console
@@ -109,7 +109,7 @@ do_backup "1/2" projects delete-during
 do_backup "2/2" documents delete-during
 ```
 
-### 6) How It Works (Safety Gates)
+### 6) How it works
 When you start a backup or recovery job, the tool enforces an explicit workflow:
 
 1. Dry-Run Analysis: The script simulates the task.
