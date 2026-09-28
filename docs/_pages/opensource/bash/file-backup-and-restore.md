@@ -66,12 +66,12 @@ $ ./backup.sh <source-directory> <target-directory> [mode]
 ```
 
 **Arguments:**
-* source-directory: The directory containing files to back up.
-* target-directory: The target backup destination.
-* mode (optional): Decides how target-only files are handled:
-   * keep (default): Never delete files from the target directory.
-   * delete-before: Deletes target-only files before transferring new files (ideal for low-capacity target drives).
-   * delete-during: Deletes target-only files incrementally during the transfer window.
+* `source-directory`: The directory containing files to back up.
+* `target-directory`: The target backup destination.
+* `mode` (optional): Decides how target-only files are handled:
+   * `keep` (default): Never delete files from the target directory.
+   * `delete-before`: Deletes target-only files before transferring new files (ideal for low-capacity target drives).
+   * `delete-during`: Deletes target-only files incrementally during the transfer window.
 
 **Example:**
 ```console
