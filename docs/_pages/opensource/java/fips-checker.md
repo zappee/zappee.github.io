@@ -46,8 +46,7 @@ As a standard Maven-based Java web application, the general deployment lifecycle
    ```
 
 
-3. Deployment
-Deploy the generated WAR file to your server environment.
+3. Deploy the generated WAR file to your server environment.
 
 
 ### 4. How to use the tool
