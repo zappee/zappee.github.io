@@ -129,7 +129,7 @@ When you start a backup or recovery job, the tool enforces an explicit workflow:
    `Continue [y/n]`
 
 
-### 7) Understanding Rsync Itemized Outputs
+### 7) Understanding `rsync` outputs
 When review tables scroll during step 1, read the structural shortcodes (`YXcstpoguax`) using this reference pattern:
 
 * First character (`Y`): The action type, e.g., `>` file received, `<` file sent, `c` local creation, `.` metadata-only change.
