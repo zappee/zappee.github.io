@@ -112,7 +112,7 @@ do_backup "2/2" documents delete-during
 ### 6) How it works
 When you start a backup or recovery job, the tool enforces an explicit workflow:
 
-1. Dry-Run Analysis: The script simulates the task.
+1. Dry-run analysis: The script simulates the task.
 
 
 2. First prompt: It displays the raw changes and pauses:
