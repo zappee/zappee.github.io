@@ -36,7 +36,7 @@ Because these configurations are complex, the fips-checker application functions
 ### 3. How to Build and Deploy the Tool
 As a standard Maven-based Java web application, the general deployment lifecycle involves compiling the code into a web archive (WAR file) and deploying it to your target application server.
 
-1. Clone the project code to your local machine or build server
+1. Clone the project code to your local machine or build server.
 
 
 2. Use Maven to package the application. This compiles the Java classes and generates a deployable .war file:
@@ -47,7 +47,7 @@ As a standard Maven-based Java web application, the general deployment lifecycle
 
 
 3. Deployment
-Deploy the generated WAR file to your server environment
+Deploy the generated WAR file to your server environment.
 
 
 ### 4. How to use the tool
