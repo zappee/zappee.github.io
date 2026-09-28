@@ -54,6 +54,7 @@ It handles adding, deleting, and renaming files and directories seamlessly. It a
 ### 4) Prerequisites
 
 Ensure you are using a Unix-like environment with `rsync` installed.
+
 Check if rsync is available: `rsync --version`
 
 
