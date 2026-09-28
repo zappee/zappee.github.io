@@ -32,7 +32,7 @@ Because these configurations are complex, the fips-checker application functions
 * Deployment targets: Oracle WebLogic Admin and/or Managed Servers, or any compatible Java application servers
 * Build tool: Maven
 
-------------------------------
+
 ### 3. How to Build and Deploy the Tool
 As a standard Maven-based Java web application, the general deployment lifecycle involves compiling the code into a web archive (WAR file) and deploying it to your target application server.
 
