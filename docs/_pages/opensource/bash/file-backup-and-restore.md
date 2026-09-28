@@ -11,9 +11,9 @@ sidebar:
 
 ## 🐧 File Backup & Restore
 
-![GitHub top language](https://img.shields.io/github/languages/top/zappee/web-scraper)
-![GitHub Issues](https://img.shields.io/github/issues/zappee/web-scraper)
-![GitHub Release](https://img.shields.io/github/v/release/zappee/web-scraper)
+![GitHub top language](https://img.shields.io/github/languages/top/zappee/file-backup-restore)
+![GitHub Issues](https://img.shields.io/github/issues/zappee/file-backup-restore)
+![GitHub Release](https://img.shields.io/github/v/release/zappee/file-backup-restore)
 
 ### 1) Overview
 
