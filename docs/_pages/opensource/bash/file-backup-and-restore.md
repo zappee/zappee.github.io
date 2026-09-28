@@ -139,7 +139,7 @@ When review tables scroll during step 1, read the structural shortcodes (`YXcstp
 
 ### 8) Source core
 
-[https://github.com/zappee/file-backup-restore](https://github.com/zappee/web-scraper)
+[https://github.com/zappee/file-backup-restore](https://github.com/zappee/file-backup-restore)
 
 
 ### 9) Contributing
