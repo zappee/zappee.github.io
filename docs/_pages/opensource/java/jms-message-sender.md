@@ -38,11 +38,89 @@ It is cross-platform and suitable for automated DevOps pipelines, shell scripts,
 * **SAF communication test:** A SAF (Store-and-Forward) communication test verifies the end-to-end reliability and high availability of messages sent across distributed application servers or distinct cluster domains.
 
 
-### 7) Source code
+### 4) Quick Start
+
+
+#### 4.1) Preparation
+Collect your JMS endpoint configurations:
+* hosts
+* ports
+* connection factory JNDI name
+* targets
+
+
+#### 4.2) Text message transmission
+
+```console
+$ java -jar jms-sender-0.2.2-with-dependencies.jar \
+   --protocol t3 \
+   --host localhost \
+   --port 7001 \
+   --cf jms/QueueConnectionFactory \
+   --queue jms/incomingQueue \
+   --user weblogic \
+   --password password \
+   --message "Hello wordl!" \
+   --verbose
+```
+
+
+#### 4.3) Text message transmission using password and payload file
+
+```console
+$ java -jar jms-sender-0.2.2-with-dependencies.jar \
+   -T t3 \
+   -H host.domain.com \
+   -P 7001 \
+   -c jms/QueueConnectionFactory \
+   -q jms/LogQueue \
+   -u admin \
+   -i \
+   -f payloads/invoice_payload.json \
+   -o "CORR-ID-99882"
+```
+
+
+### 5) Summary of exit codes
+
+* **`0`** : Successful program execution and message publishing.
+* **`1`** : Usage configuration error or incorrect user input.
+* **`2`** : Unexpected internal runtime failure or connection error.
+
+
+### 6) CLI Reference & Command syntax
+
+#### 6.1) Global context
+
+Run this command to print the comprehensive application usage guidelines, available parameters, and error exit codes:
+
+```console
+$ java -jar jms-sender-0.2.2-with-dependencies.jar --help
+```
+
+
+### 7) Build
+
+1. Register required WebLogic thin-client driver locally before building the project:
+```bash
+mvn install:install-file \
+  -Dfile=libraries/wlthint3client.jar \
+  -DgroupId=com.oracle.weblogic \
+  -DartifactId=wlthint3client \
+  -Dversion=12.2.1.4.0 \
+  -Dpackaging=jar
+```
+2. run the package command to build the artifact:
+```bash
+mvn clean package
+```
+
+
+### 8) Source code
 
 [https://github.com/zappee/jms-message-sender](https://github.com/zappee/jms-message-sender)
 
 
-### 8) Contributing
+### 9) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
