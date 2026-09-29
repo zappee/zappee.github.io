@@ -39,14 +39,14 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Java tools</span>"
         url: ""
 
+      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
+        url: /opensource/java/fips-checker/
+
       - title: "<span class='sidebar-bullet'>JCEKS Keystore Tool</span>"
         url: /opensource/java/jceks-tool/
 
       - title: "<span class='sidebar-bullet'>JMS Message Sender</span>"
         url: /opensource/java/jms-message-sender/
-
-      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
-        url: /opensource/java/fips-checker/
 
       - title: "<span class='sidebar-bullet'>SQL Runner</span>"
         url: /opensource/java/sql-runner/
