@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/portfolio-agent/
+permalink: /products/rest-apis/crm/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 Portfolio AI-Agent Guide
+## 🚀 Customer AI-Agent Guide

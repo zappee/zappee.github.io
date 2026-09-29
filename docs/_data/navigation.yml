@@ -59,11 +59,22 @@ products_sidebar:
       - title: "Products Home"
         url: /products/
 
-      - title: "Customer"
-        url: /products/customer-agent/
+        # REST APIs
+      - title: "<span class='sidebar-label'>REST APIs</span>"
+        url: ""
 
-      - title: "Portfoio"
-        url: /products/portfolio-agent/
+      - title: "CRM"
+        url: /products/rest-apis/crm/
+
+      - title: "Portfolio"
+        url: /products/rest-apis/portfolio/
+
+        # AI Agents
+      - title: "<span class='sidebar-label'>AI Agents</span>"
+        url: ""
+
+      - title: "CRM"
+        url: /products/ai-agents/crm/
 
 # #####  VIRTUALIZATION sidebar definitions  ###############
 virtualization_sidebar:
