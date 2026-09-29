@@ -15,7 +15,6 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/sql-runner)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/sql-runner)
 
-
 ### 1) Overview
 **SQL-Runner** is a lightweight, cross-platform command-line (CLI) utility written in Java.
 It is designed to execute SQL queries directly from the terminal and stream the results to the standard output.
