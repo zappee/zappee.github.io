@@ -103,7 +103,7 @@ $ java -jar jms-sender-0.2.2-with-dependencies.jar --help
 
 1. Register required WebLogic thin-client driver locally before building the project:
 ```bash
-mvn install:install-file \
+$ mvn install:install-file \
   -Dfile=libraries/wlthint3client.jar \
   -DgroupId=com.oracle.weblogic \
   -DartifactId=wlthint3client \
@@ -112,7 +112,7 @@ mvn install:install-file \
 ```
 2. run the package command to build the artifact:
 ```bash
-mvn clean package
+$ mvn clean package
 ```
 
 
