@@ -15,25 +15,19 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/jceks-tool)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/jceks-tool)
 
-
 ### 1) Overview
-
 The **JCEKS Keystore Tool** is a specialized, enterprise-ready Java command-line interface (CLI) utility designed to manage, inspect, and manipulate _Java Cryptography Extension KeyStore (JCEKS)_ repositories.
 While standard Java platforms provide the default `keytool` utility, native tools lack the flexibility to directly read or securely clone symmetric secret keys (such as AES or 3DES keys used for encryption and payload signing) between separated keystore files.
 
 This tool fills that structural gap, allowing engineers to work with secret keys without writing custom Java boilerplate.
 It is lightweight, cross-platform, and designed explicitly to integrate with Linux shell scripts.
 
-
 ### 2) Key Features
-
 The tool focuses on two primary operational modes:
 1. **Secret key inspection:** Securely decrypts and outputs the raw, underlying byte values of a secret key entry directly into your terminal.
 2. **Secret key migration:** Pulls a secret key payload from a source keystore and safely inserts it into an existing or new target keystore, handling alias renaming and password updates on-the-fly.
 
-
 ### 3) Key use cases
-
 * **View secret keys:** Inspect and print the raw value of any secret key entry.
 * **Key migration:** Copy secret key entries securely between separate keystores.
 * **Script automation:** Native support for seamless integration into DevOps and automated shell scripts.
@@ -71,13 +65,10 @@ $ java -jar jceks-tool.jar copy \
 * **`-q`, `--quiet`** : Silent operational mode that suppresses standard terminal logging output. Ideal for crontab or automatated execution.
 
 ### 5) Summary of exit codes
-
 The tool returns standardized exit codes to ensure robust error handling:
 * **`0`** : Successful program execution.
 * **`1`** : An unexpected internal runtime error occurred.
 * **`2`** : Invalid input parameters or command syntax error.
-
----
 
 ### 6) CLI reference & Command syntax
 
@@ -159,11 +150,9 @@ Please report issues at arnold.somogyi@gmail.com.
 Documentation, source code: https://github.com/zappee/jceks-tool.git
 ```
 
-
 ### 7) Source code
 
 [https://github.com/zappee/jceks-tool](https://github.com/zappee/jceks-tool)
-
 
 ### 8) Contributing
 

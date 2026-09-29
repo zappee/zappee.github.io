@@ -57,11 +57,9 @@ $ ./remal_scraper.sh <url> <output-file>
 $ ./web-scraper.sh https://zappee.github.io zappee.github.io.txt
 ```
 
-
 ### 4) Source core
 
 [https://github.com/zappee/web-scraper](https://github.com/zappee/web-scraper)
-
 
 ### 5) Contributing
 
