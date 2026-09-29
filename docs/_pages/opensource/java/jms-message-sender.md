@@ -97,8 +97,9 @@ Run this command to print the comprehensive application usage guidelines, availa
 ```console
 $ java -jar jms-sender-0.2.2-with-dependencies.jar --help
 
-Usage: JMS Message Sender [-?v] -c=<connectionFactoryJndi> [-H=<host>] [-I=<initialContextFactory>]
-                          [-P=<port>] -q=<queueJndi> [-T=<protocol>] [-u=<user>]
+Usage: JMS Message Sender [-?v] -c=<connectionFactoryJndi> [-H=<host>]
+                          [-I=<initialContextFactory>] [-P=<port>]
+                           -q=<queueJndi> [-T=<protocol>] [-u=<user>]
                           [-o=<correlationId>] (-p=<password> | -i) (-m=<message> |
                           -f=<pathToMessageFile>)
 JMS message sender command-line tool. This tool can send messages to the given JMS queue.
