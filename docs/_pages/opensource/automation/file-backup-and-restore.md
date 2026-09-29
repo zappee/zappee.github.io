@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/bash/file-backup-and-restore/
+permalink: /opensource/automation/file-backup-and-restore/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:

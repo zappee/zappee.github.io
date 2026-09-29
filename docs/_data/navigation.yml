@@ -25,15 +25,15 @@ opensource_sidebar:
       - title: "Open Source Home"
         url: /opensource/
 
-        # bash tools
-      - title: "<span class='sidebar-label'>Bash tools</span>"
+        # automation Tools
+      - title: "<span class='sidebar-label'>Automation Tools</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
-        url: /opensource/bash/file-backup-and-restore/
+        url: /opensource/automation/file-backup-and-restore/
 
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
-        url: /opensource/bash/web-scraper/
+        url: /opensource/automation/web-scraper/
 
       # java tools
       - title: "<span class='sidebar-label'>Java tools</span>"
