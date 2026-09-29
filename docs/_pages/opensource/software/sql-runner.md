@@ -167,11 +167,9 @@ Please report issues at arnold.somogyi@gmail.com.
 Documentation, source code: https://github.com/zappee/sql-runner.git
 ```
 
-
 ### 8) Source code
 
 [https://github.com/zappee/sql-runner](https://github.com/zappee/sql-runner)
-
 
 ### 9) Contributing
 
