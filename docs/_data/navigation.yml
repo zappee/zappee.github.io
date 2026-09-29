@@ -40,7 +40,7 @@ opensource_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>JCEKS-Tool</span>"
-        url: /opensource/bash/jceks-tool/
+        url: /opensource/java/jceks-tool/
 
       - title: "<span class='sidebar-bullet'>FIPS-Checker</span>"
         url: /opensource/java/fips-checker/
