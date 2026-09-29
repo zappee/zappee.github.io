@@ -48,6 +48,9 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
         url: /opensource/java/fips-checker/
 
+      - title: "<span class='sidebar-bullet'>SQL Runner</span>"
+        url: /opensource/java/sql-runner/
+
       # research and development
       - title: "<span class='sidebar-label'>Research and Development</span>"
         url: ""
