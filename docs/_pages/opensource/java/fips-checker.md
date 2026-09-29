@@ -62,11 +62,11 @@ Once deployed and running, the utility exposes a web interface to report the ser
 3. Interpret results: The web page will output a direct confirmation message indicating whether FIPS mode is enabled or disabled.
 
 
-### 5) Contributing
-
-Contributions, feature requests, optimization, and bug reports are always welcome!
-
-
-### 6) Source core
+### 5) Source core
 
 [https://github.com/zappee/fips-checker](https://github.com/zappee/fips-checker)
+
+
+### 6) Contributing
+
+Contributions, feature requests, optimization, and bug reports are always welcome!
