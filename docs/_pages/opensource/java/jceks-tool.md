@@ -18,11 +18,11 @@ sidebar:
 ### 1) Overview
 
 
-### 6) Source core
+### 5) Source core
 
-[https://github.com/zappee/fips-checker](https://github.com/zappee/jceks-tool)
+[https://github.com/zappee/jceks-tool](https://github.com/zappee/jceks-tool)
 
 
-### 5) Contributing
+### 6) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
