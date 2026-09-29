@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 JMS Message Sender
+## 🐧 SQL-Runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/sql-runner)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/sql-runner)
@@ -17,46 +17,28 @@ sidebar:
 
 
 ### 1) Overview
-**SQL-Runner** is a lightweight, cross-platform command-line (CLI)  utility written in Java.
+**SQL-Runner** is a lightweight, cross-platform command-line (CLI) utility written in Java.
 It is designed to execute SQL queries directly from the terminal and stream the results to the standard output.
-Because it is built for fast database interactions via the command line, it serves as an excellent utility for Linux shell scripts, and containerized deployment workflows (such as Docker initialization blocks).
+Because it is built for fast database interactions via the command line, it serves as an excellent utility for Linux shell scripts and containerized deployment workflows (such as Docker initialization blocks).
 
 
 ### 2) Key features
-
 * **Cross-platform compatibility:** Runs anywhere Java is installed.
-
-
 * **Script integration:** Designed explicitly to pass parameters and run queries inside Bash scripts.
+* **Flexible input:** Supports raw SQL text strings directly in the terminal or path to a complex `.sql` file.
+* **Automation ready:** Stops execution and throws distinct exit codes on failures to cleanly halt deployment pipelines if an error occurs.
+* **Database driver support:** Connects via standard JDBC drivers, currently optimized for Oracle Database servers.
 
-
-* **Flexible Input:** Supports raw SQL text strings directly in the terminal or paths to complex *.sql file.
-
-
-* **Automation Ready:** Stops execution and throws distinct exit codes on failures to cleanly halt deployment pipelines if an error occurs.
-
-
-* **Database Driver Support:** Connects via standard JDBC drivers, currently optimized for Oracle Database servers.
-
-
-### 3) Key use cases
-
-* **Docker container orchestration:** Delay container startups inside a Docker environment until the database container is fully initialized and listening for incoming connections.
-  Can be used to block the startup of application server containers (e.g., Spring Boot, Oracle WebLogic Managed Server) and wait for the database container to be ready, preventing uninitialized connection pools and datasource failures in the application containers.
-
-
+### 3) Use cases
+* **Docker container orchestration:** Delay container startups inside a Docker environment until the database container is fully initialized and listening for incoming connections. It can be used to block the startup of application server containers (e.g., Spring Boot, Oracle WebLogic Managed Server) and wait for the database container to be ready, preventing uninitialized connection pools and datasource failures in the application containers.
 * **Automated application deployment:** Run automated initialization routines, create or patch database schemas, and insert mandatory default data directly during CI/CD deployment pipelines.
-
 * **Automated administrative tasks:** Schedule and run background database maintenance scripts, data cleanups, or daily reporting queries using the native Linux cron scheduler.
-
 * **Shell script data ingestion:** Safely pass variables from shell scripts or CI/CD environments directly into SQL commands to insert, update, or manipulate database records dynamically during automated deployment workflows.
 
-
-### 4) Quick Start
-
+### 4) Quick start
 Before executing the tool, ensure your environment meets the following requirements:
-* Java Runtime Environment (JRE) must be installed and globally configured in your system path.
-* Network access to your target database instance.
+* The Java Runtime Environment (JRE) must be installed and globally configured in your system path.
+* Stable network access to your target database instance.
 
 The application is executed as a standalone JAR file using specific command-line arguments.
 
@@ -66,7 +48,7 @@ $ java -jar sql-runner.jar \
     -U=<user> \
     -P=<password> \
     j=<jdbcUrl> \
-     -s=<sqlStatements>
+    -s=<sqlStatements>
 ```
 
 **Using explicit host, port, and database parameters:**
@@ -79,7 +61,6 @@ $ java -jar sql-runner.jar \
     -d=<database> \
     -s=<sqlStatements>
 ```
-
 
 ### 5) Usage examples
 
@@ -128,14 +109,12 @@ $ java -jar sql-runner.jar \
         COMMIT;"
 ```
 
-
 ### 6) Summary of exit codes
 Automated pipelines can track status using standard exit codes:
 * **`0`:** The SQL statement or script executed completely without errors.
 * **`1`:** The execution failed due to a database connection timeout, invalid credentials, or incorrect SQL syntax.
 * **`2`:** The execution failed because required arguments were missing, misspelled, or formatted incorrectly.
-* **`3`:**  An unexpected runtime failure occurred within the application.
-
+* **`3`:** An unexpected runtime failure occurred within the application.
 
 ### 7) CLI Reference & Command syntax
 
