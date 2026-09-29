@@ -24,6 +24,7 @@ It is cross-platform and suitable for automated DevOps pipelines, shell scripts,
 
 ### 2) Key features
 
+* **Cross-platform compatibility:** Runs anywhere Java is installed.
 * **Direct message publishing:** Directly sends text messages into targeted enterprise JMS queues.
 * **Flexible payload selection:** Read raw message contents from an inline string or read payloads from a local file.
 * **Header manipulation:** Inject native JMS metadata attributes like custom `Correlation-ID` parameters.
@@ -39,7 +40,6 @@ It is cross-platform and suitable for automated DevOps pipelines, shell scripts,
 
 
 ### 4) Quick Start
-
 
 #### 4.1) Preparation
 Collect your JMS endpoint configurations:
@@ -83,14 +83,12 @@ $ java -jar jms-sender-0.2.2-with-dependencies.jar \
 
 ### 5) Summary of exit codes
 
-* **`0`** : Successful program execution and message publishing.
-* **`1`** : Usage configuration error or incorrect user input.
-* **`2`** : Unexpected internal runtime failure or connection error.
+* **`0`:** Successful program execution and message publishing.
+* **`1`:** Usage configuration error or incorrect user input.
+* **`2`:** Unexpected internal runtime failure or connection error.
 
 
 ### 6) CLI Reference & Command syntax
-
-#### 6.1) Global context
 
 Run this command to print the comprehensive application usage guidelines, available parameters, and error exit codes:
 
