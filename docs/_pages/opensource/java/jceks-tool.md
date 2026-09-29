@@ -28,7 +28,7 @@ It is lightweight, cross-platform, and designed explicitly to integrate with Lin
 ### 2) Key Features
 
 The tool focuses on two primary operational modes:
-1. **Secret key inspection:** Securely decrypts and outputs the raw, underlying byte values of an isolated secret key entry directly into your terminal stream.
+1. **Secret key inspection:** Securely decrypts and outputs the raw, underlying byte values of a secret key entry directly into your terminal.
 2. **Secret key migration:** Pulls a target secret key payload from a source keystore and safely inserts it into an existing or new target keystore, handling alias renaming and password updates on-the-fly.
 
 
