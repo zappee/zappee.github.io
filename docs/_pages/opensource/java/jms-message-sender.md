@@ -17,7 +17,9 @@ sidebar:
 
 
 ### 1) Overview
-
+The **JMS Message Sender** is a flexible, lightweight Java command-line interface (CLI) utility designed to transmit text payloads to Java Message Service (JMS) queues or topics.
+It bypasses enterprise integration overhead, allowing developers to interact directly with queues via command-line prompts.
+It is cross-platform and suitable for automated DevOps pipelines, shell scripts, or Docker orchestration.
 
 
 ### 7) Source code
