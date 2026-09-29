@@ -17,7 +17,7 @@ sidebar:
 
 ### 1) Overview
 
-The _FIPS-Checker_ repository is a specialized Java-based web utility designed to verify if Federal Information Processing Standards (FIPS) mode is actively running on an application server.
+The **FIPS-Checker** repository is a specialized Java-based web utility designed to verify if Federal Information Processing Standards (FIPS) mode is actively running on an application server.
 
 Federal Information Processing Standards (FIPS 140-2) are US government security standards that specify the security requirements for cryptographic modules.
 Organizations handling sensitive or government data must ensure their environments run in compliance with these standards.
