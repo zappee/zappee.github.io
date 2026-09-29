@@ -68,7 +68,7 @@ $ java -jar jceks-tool.jar copy \
 
 #### 4.3) Global options
 * **`?`, `--help`** : Displays the comprehensive help syntax and command parameters.
-* **`-q`, `--quiet`** : Silent operational mode that suppresses standard terminal logging output; ideal for crontab or automatated execution.
+* **`-q`, `--quiet`** : Silent operational mode that suppresses standard terminal logging output. Ideal for crontab or automatated execution.
 
 ### 5) Summary of exit codes
 
@@ -132,7 +132,8 @@ Duplicates a secret key entry from a source keystore file into a target keystore
 ```console
 $ java -jar target/jceks-tool-0.1.0.jar copy
 
-Usage: jceks-tool copy [-q] -a=<sourceAlias> -l=<targetAlias> -s=<sourceKeystoreLocation> -t=<targetKeystoreLocation>
+Usage: jceks-tool copy [-q] -a=<sourceAlias> -l=<targetAlias>
+                            -s=<sourceKeystoreLocation> -t=<targetKeystoreLocation>
                        (-p=<sourceKeystorePassword> | -f=<sourceKeystorePasswordFile>)
                        (-e=<sourceEntryPassword> | -n=<sourceEntryPasswordFile>)
                        (-o=<targetKeystorePassword> | -u=<targetKeystorePasswordFile>)
