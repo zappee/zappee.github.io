@@ -25,7 +25,7 @@ opensource_sidebar:
       - title: "Open Source Home"
         url: /opensource/
 
-        # automation Tools
+        # automation tools
       - title: "<span class='sidebar-label'>Automation Tools</span>"
         url: ""
 
@@ -35,21 +35,21 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/automation/web-scraper/
 
-      # java tools
-      - title: "<span class='sidebar-label'>Java tools</span>"
+      #  software tools
+      - title: "<span class='sidebar-label'>Software Tools</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
-        url: /opensource/java/fips-checker/
+        url: /opensource/software/fips-checker/
 
       - title: "<span class='sidebar-bullet'>JCEKS Keystore Tool</span>"
-        url: /opensource/java/jceks-tool/
+        url: /opensource/software/jceks-tool/
 
       - title: "<span class='sidebar-bullet'>JMS Message Sender</span>"
-        url: /opensource/java/jms-message-sender/
+        url: /opensource/software/jms-message-sender/
 
       - title: "<span class='sidebar-bullet'>SQL Runner</span>"
-        url: /opensource/java/sql-runner/
+        url: /opensource/software/sql-runner/
 
       # research and development
       - title: "<span class='sidebar-label'>Research and Development</span>"

@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/java/jms-message-sender/
+permalink: /opensource/software/jms-message-sender/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:

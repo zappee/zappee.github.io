@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/java/fips-checker/
+permalink: /opensource/software/fips-checker/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:

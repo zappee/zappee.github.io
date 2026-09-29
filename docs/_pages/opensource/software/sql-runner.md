@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/java/sql-runner/
+permalink: /opensource/software/sql-runner/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:

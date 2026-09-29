@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/java/jceks-tool/
+permalink: /opensource/software/jceks-tool/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
