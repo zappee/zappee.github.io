@@ -15,34 +15,33 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/jceks-tool)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/jceks-tool)
 
+
 ### 1) Overview
 
-The _JCEKS Keystore Tool_ is a specialized, enterprise-ready Java command-line interface (CLI) utility designed to manage, inspect, and manipulate Java Cryptography Extension KeyStore (JCEKS) repositories.
-Standard Java platforms offer the default `keytool` utility.
-However, native tools lack the flexibility to directly read or securely clone Symmetric Secret Keys (such as AES or 3DES keys used for encryption, payload signing) between separated keystore files.
+The **JCEKS Keystore Tool** is a specialized, enterprise-ready Java command-line interface (CLI) utility designed to manage, inspect, and manipulate _Java Cryptography Extension KeyStore (JCEKS)_ repositories.
+While standard Java platforms provide the default `keytool` utility, native tools lack the flexibility to directly read or securely clone symmetric secret keys (such as AES or 3DES keys used for encryption and payload signing) between separated keystore files.
 
-This tool fills that structural gap, providing a way for engineers to work with secret keys without writing custom Java boilerplate.
+This tool fills that structural gap, allowing engineers to work with secret keys without writing custom Java boilerplate.
+It is lightweight, cross-platform, and designed explicitly to integrate with Linux shell scripts.
 
 
 ### 2) Key Features
 
-The tool focuses on two primary capabilities: viewing key values and copying entries between keystores:
-1. **Secret key inspection:** Securely decrypts and outputs the raw underlying byte values of an isolated secret key alias directly into your runtime terminal stream.
-2. **Secret key migration:** Pulls a target secret key payload from a designated source keystore and safely inserts it into an existing or fresh target keystore container—handling cross-alias naming or individual entries password updates on-the-fly.
+The tool focuses on two primary operational modes:
+1. **Secret key inspection:** Securely decrypts and outputs the raw, underlying byte values of an isolated secret key entry directly into your terminal stream.
+2. **Secret key migration:** Pulls a target secret key payload from a source keystore and safely inserts it into an existing or new target keystore, handling alias renaming and password updates on-the-fly.
 
 
 ### 3) Key use cases
 
-* **View Secret Keys:** Inspect and display the raw value of any secret key entry.
-* **Key Migration:** Copy secret key entries securely between separate keystores.
-* **Script Automation:** Native support for Linux shell scripts (.sh).
-* **Auditing a key using password file:** This prevents system logs or command history streams from capturing the plaintext password entries:
-
+* **View secret keys:** Inspect and print the raw value of any secret key entry.
+* **Key migration:** Copy secret key entries securely between separate keystores.
+* **Script automation:** Native support for seamless integration into DevOps and automated shell scripts.
+* **Auditing a key using password file:** Read passphrases from password files instead of plaintext parameters to prevent system logs or command histories from capturing raw secrets.
 
 ### 4) Quick start
 
 #### 4.1) Display an entry value
-
 ```console
 $ java -jar jceks-tool.jar show \
    --keystore transportkey.jceks \
@@ -51,9 +50,9 @@ $ java -jar jceks-tool.jar show \
    --entry-password-file .keypass
 ```
 
-#### 4.2) The copy command
-The command requires source and target keystore paths, aliases, and associated source/target password arguments or files.
-For full parameter lists, please check the documentation: `java -jar jceks-tool.jar --help`.
+#### 4.2) Clone a key entry
+The `copy` command requires source and target keystore paths, aliases, and associated credentials.
+For a full parameter reference list, execute `java -jar jceks-tool.jar --help`.
 
 ```console
 $ java -jar jceks-tool.jar copy \
@@ -67,21 +66,22 @@ $ java -jar jceks-tool.jar copy \
    --target-entry-password changeit
 ```
 
-General Flags:
-* **?, --help:** Displays the comprehensive help syntax and command parameters.
-* **-q, --quiet:** Silent operational mode to suppresses standard terminal logging output. Ideal for production crontabs or background execution.
+#### 4.3) Global options
+* **`?`, `--help`** : Displays the comprehensive help syntax and command parameters.
+* **`-q`, `--quiet`** : Silent operational mode that suppresses standard terminal logging output; ideal for crontab or automatated execution.
 
 ### 5) Summary of exit codes
 
-* **0:** for success
-* **1:** for unexpected internal errors
-* **2:** for invalid input arguments
+The tool returns standardized exit codes to ensure robust error handling:
+* **`0`** : Successful program execution.
+* **`1`** : An unexpected internal runtime error occurred.
+* **`2`** : Invalid input parameters or command syntax error.
 
+---
 
-### 6) CLI Reference & Command Syntax
+### 6) CLI reference & Command syntax
 
-#### 6.1) Global Context
-
+#### 6.1) Global context
 ```console
 $ java -jar jceks-tool-0.1.0.jar
 
@@ -109,8 +109,8 @@ Extracts and prints the raw value of a designated secret key entry.
 ```console
 $ java -jar target/jceks-tool-0.1.0.jar show
 
-Usage: jceks-tool show [-q] -a=<alias> -k=<keystoreLocation> (-p=<keystorePassword> 
-                       | -f=<keystorePasswordFile>) (-e=<entryPassword> | -n=<entryPasswordFile>)
+Usage: jceks-tool show [-q] -a=<alias> -k=<keystoreLocation> (-p=<keystorePassword> |
+                            -f=<keystorePasswordFile>) (-e=<entryPassword> | -n=<entryPasswordFile>)
 
 Show the value of a secret key.
 
@@ -127,7 +127,6 @@ Documentation, source code: https://github.com/zappee/jceks-tool.git
 ```
 
 #### 6.3) The `copy` command
-
 Duplicates a secret key entry from a source keystore file into a target keystore file.
 
 ```console
@@ -160,7 +159,7 @@ Documentation, source code: https://github.com/zappee/jceks-tool.git
 ```
 
 
-### 7) Source core
+### 7) Source code
 
 [https://github.com/zappee/jceks-tool](https://github.com/zappee/jceks-tool)
 
