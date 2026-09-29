@@ -39,10 +39,10 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Java tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>JCEKS-Tool</span>"
+      - title: "<span class='sidebar-bullet'>JCEKS Keystore Tool</span>"
         url: /opensource/java/jceks-tool/
 
-      - title: "<span class='sidebar-bullet'>FIPS-Checker</span>"
+      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
         url: /opensource/java/fips-checker/
 
       # research and development
