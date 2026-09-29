@@ -2,14 +2,14 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/java/fips-checker/
+permalink: /opensource/java/jceks-tool/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 FIPS-Checker
+## 🐧 JCEKS-Tool
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/jceks-tool)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/jceks-tool)
