@@ -19,7 +19,7 @@ sidebar:
 
 ### 9) Source code
 
-[https://github.com/zappee/file-backup-restore](https://github.com/zappee/file-backup-restore)
+[https://github.com/zappee/shrinkit](https://github.com/zappee/shrinkit)
 
 ### 10) Contributing
 
