@@ -32,6 +32,9 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
         url: /opensource/automation/file-backup-and-restore/
 
+      - title: "<span class='sidebar-bullet'>Shrinkit</span>"
+        url: /opensource/automation/shrinkit/
+
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/automation/web-scraper/
 
