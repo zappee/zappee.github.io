@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 File Backup & Restore
+## 🐧 Shrinkit - Image and video optimizer
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/shrinkit)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/shrinkit)
