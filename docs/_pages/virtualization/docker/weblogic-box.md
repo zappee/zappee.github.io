@@ -26,7 +26,7 @@ It eliminates manual configuration bottlenecks by packaging the server environme
 In today’s software development landscape, teams heavily favor lightweight, cloud-native frameworks like **Spring Boot** over traditional Java EE application servers.
 However, large enterprise environments (especially within the financial, governmental, and corporate sectors) still rely extensively on **Oracle WebLogic Server** to run core, business-critical applications.
 
-The primary objective of **WebLogic Box** is not merely to package a legacy runtime, but to serve as a reference architecture.
+The primary objective of **WebLogic Box** is not merely to build a legacy runtime environment, but to serve as a reference architecture.
 While the framework itself belongs to an older generation of technology, the containerization mechanisms engineered into this image are entirely **timeless and framework-agnostic**.
 
 The entrypoint blueprints and automation scripting can be directly applied to modern stacks (including Spring Boot) to solve complex container orchestration challenges.
