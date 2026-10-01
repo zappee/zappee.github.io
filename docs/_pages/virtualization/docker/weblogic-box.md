@@ -9,3 +9,5 @@ sidebar:
 ---
 
 ## ☁️ Containerized WebLogic Environment
+
+Content is on the way!
