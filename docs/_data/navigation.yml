@@ -95,13 +95,10 @@ virtualization_sidebar:
       - title: "Virtualization Home"
         url: /virtualization/
 
-      - title: "Java 21 + database Docker Image"
-        url: /virtualization/java21/
+      - title: "SpringBox 21"
+        url: /virtualization/spring-box-21/
 
-      - title: "Spring Boot"
-        url: /virtualization/spring-boot/
-
-      - title: "WebLogic Docker Images"
+      - title: "WebLogic Containers"
         url: /virtualization/weblogic/
 
 # #####  PUBLICATIONS sidebar definitions  ###############

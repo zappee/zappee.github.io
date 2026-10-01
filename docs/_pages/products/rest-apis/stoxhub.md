@@ -2,7 +2,7 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/rest-apis/portfolio/
+permalink: /products/rest-apis/stoxhub/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
