@@ -27,7 +27,7 @@ In today’s software development landscape, teams heavily favor lightweight, cl
 However, large enterprise environments (especially within the financial, governmental, and corporate sectors) still rely extensively on **Oracle WebLogic Server** to run core, business-critical applications.
 
 The primary objective of **WebLogic Box** is not merely to build a legacy runtime environment, but to serve as a reference architecture.
-While the framework itself belongs to an older generation of technology, the containerization mechanisms engineered into this image are entirely **timeless and framework-agnostic**.
+While the framework itself belongs to an older generation of technology, the containerization mechanisms engineered into these images are entirely **timeless and framework-agnostic**.
 
 The entrypoint blueprints and automation scripting can be directly applied to modern stacks (including Spring Boot) to solve complex container orchestration challenges.
 
