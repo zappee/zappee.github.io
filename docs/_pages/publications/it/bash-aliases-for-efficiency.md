@@ -4,6 +4,7 @@ parent: Publications
 title: ""
 permalink: /publications/it/bash-aliases-for-efficiency/
 author_profile: false
+classes: "wide smaller-text"
 sidebar:
   nav: "publications_sidebar"
 ---
