@@ -38,6 +38,10 @@ By analyzing the source code, you can discover enterprise-grade patterns for:
 
 Whether you are modernizing a legacy system or designing a complex architecture from scratch, this repository serves as a practical, reusable guide for bulletproof container design.
 
+### 3) Docker image hierarchy
+
+![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
+
 ### 5) Source core
 
 [https://github.com/zappee/weblogic-box](https://github.com/zappee/weblogic-box)
