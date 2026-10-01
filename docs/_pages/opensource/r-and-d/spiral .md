@@ -90,10 +90,10 @@ src/
 
 ### 5) Getting started
 
-### Prerequisites
+#### Prerequisites
 * Java Development Kit (JDK) 8 or higher.
 
-### Installation & Execution
+#### Installation & Execution
 
 1. Clone the repository into your local directory:
    ```bash
@@ -113,7 +113,7 @@ src/
 
 ### 6) Source core
 
-[https://github.com/zappee/web-scraper](https://github.com/zappee/spiral)
+[https://github.com/zappee/spiral](https://github.com/zappee/spiral)
 
 ### 7) Contributing
 
