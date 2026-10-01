@@ -90,10 +90,10 @@ src/
 
 ### 5) Getting started
 
-#### Prerequisites
+#### 5.1) Prerequisites
 * Java Development Kit (JDK) 8 or higher.
 
-#### Build & Execution
+#### 5.2) Build & Execution
 
 1. Clone the repository into your local directory:
    ```bash
