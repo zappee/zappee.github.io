@@ -41,7 +41,7 @@ Whether you are modernizing a legacy system or designing a complex architecture 
 
 ### 3) Image hierarchy
 
-**The project provides the following Docker images:**
+The project provides the following Docker images:
 * Java 8
 * Apache Tomcat 10.0
 * Oracle Database Enterprise 12.2.0.1
