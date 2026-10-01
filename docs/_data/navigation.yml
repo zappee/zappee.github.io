@@ -98,8 +98,8 @@ virtualization_sidebar:
       - title: "Spring Box"
         url: /virtualization/spring-box/
 
-      - title: "WebLogic Containers"
-        url: /virtualization/weblogic/
+      - title: "WebLogic box"
+        url: /virtualization/weblogic-box/
 
 # #####  PUBLICATIONS sidebar definitions  ###############
 publications_sidebar:
