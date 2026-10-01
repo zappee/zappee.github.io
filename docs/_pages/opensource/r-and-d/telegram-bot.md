@@ -50,7 +50,7 @@ Whether you want to build an automated notification system, manage your group ch
 
 ### 3.1) Commands
 * `/start`:
-  ![/start](/assets/menu/opensource/r-and-d/telegram-bot/start.png)
+  ![/start](https://zappee.github.io/assets/images/menu/opensource/r-and-d/telegram-bot/start.png)
 
 
 
