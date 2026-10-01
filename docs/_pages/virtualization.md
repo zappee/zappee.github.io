@@ -19,5 +19,5 @@ Whether you need to spin up standard container clusters, deploy Java microservic
 
 #### Explore the ecosystem:
 - **Java Box:** A lightweight Java runtime environment designed to execute compiled JAR files instantly.
-- **Spring Box:** A pre-configured development stack built for rapid Spring Boot engineering. It bundles the Java runtime, supports a _Database-per-Container_ deployment pattern, and includes built-in _Prometheus_ monitoring with real-time tracking making it suitable for both development and production environments.
+- **Spring Box:** A pre-configured development stack built for rapid Spring Boot engineering. It bundles the Java runtime, supports a _Database-per-Container_ deployment pattern, and includes built-in _Prometheus_ monitoring with real-time tracking. Additionally, it features an integrated PKI server to dynamically issue and revoke server keys, enabling secure, encrypted HTTPS communication between containers right out of the box. Suitable for both development and production environments. making it suitable for both development and production environments.
 - **WebLogic Box:** A completely isolated environment designed to deploy and test Java EE applications on Oracle WebLogic without complex, manual server installations.
