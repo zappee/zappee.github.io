@@ -5,7 +5,6 @@ title: ""
 permalink: /publications/it/bash-aliases-for-efficiency/
 author_profile: false
 classes: "wide smaller-text"
-tags: [docker, terminal, devops]
 sidebar:
   nav: "publications_sidebar"
 ---
@@ -43,16 +42,3 @@ What are the lifesaver aliases you can't live without?
 
 Feel free to reach out, drop your favorites, or suggest more useful aliases to add to this list.
 Let’s make our command lines faster together!
-
-
-{% if page.tags.size > 0 %}
-  <div class="post-tags">
-    <span>Tags: </span>
-    {% for tag in page.tags %}
-      <!-- Links directly to the anchor on your central tags page -->
-      <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">
-        #{{ tag }}
-      </a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </div>
-{% endif %}
