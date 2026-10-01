@@ -76,10 +76,10 @@ products_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>CRM Rest</span>"
-        url: /products/rest-apis/crm/
+        url: /products/rest-apis/crm-rest/
 
-      - title: "<span class='sidebar-bullet'>Stox Hub Rest</span>"
-        url: /products/rest-apis/stoxhub/
+      - title: "<span class='sidebar-bullet'>Stox-Hub Rest</span>"
+        url: /products/rest-apis/stox-hub-rest/
 
         # AI Agents
       - title: "<span class='sidebar-label'>AI Agents</span>"
