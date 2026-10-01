@@ -93,8 +93,8 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>CRM AI</span>"
         url: /products/ai-agents/crm-ai/
 
-      - title: "<span class='sidebar-bullet'>Stox Hub AI</span>"
-        url: /products/rest-apis/stox-hub-ai/
+      - title: "<span class='sidebar-bullet'>Stox-Hub AI</span>"
+        url: /products/ai-agents/stox-hub-ai/
 
 # (5) VIRTUALIZATION
 virtualization_sidebar:
