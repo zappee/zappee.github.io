@@ -41,7 +41,7 @@ Whether you are modernizing a legacy system or designing a complex architecture 
 
 ### 3) Docker image hierarchy
 
-![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
+  ![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
 
 ### 5) Source core
 
