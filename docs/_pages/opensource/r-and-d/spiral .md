@@ -15,7 +15,6 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spiral)
 
 ### 1) Overview
-
 A flexible, dictionary-driven Java utility designed to map and print strings into multi-dimensional matrix layouts.
 Unlike static matrix printers, this project uses customizable tracking dictionaries to control the precise layout sequence, supporting frame, clockwise, and snake-like patterns.
 
@@ -24,14 +23,11 @@ The exact path, direction, and sequence of the string injection are dynamically 
 This structural abstraction allows you to print matrix outputs in completely different structural geometries simply by altering the input dictionary.
 
 ### 2) Use cases
-
 * _Data Visualization:_ Mapping serial data streams into structured multi-dimensional paths.
 * _Algorithmic Modeling:_ Understanding grid traversal strategies and index mapping patterns.
 * _Game Development:_ Modeling custom snake, spiral, or coordinate boundary movements.
 
-
 ### 3) Supported patterns
-
 The flow of characters into the grid boundaries is fully dictated by your chosen tracking configuration:
 
 #### Frame spiral
@@ -49,7 +45,6 @@ p o n m l k
 ```
 
 #### Clockwise spiral
-
 The classic matrix spiral pattern. Moves from top-left, tracks inward via tightly winding concentric rings until it reaches the dead center.
 
 * Dictionary sequence: `a b c d e f t u v w x g s 6 7 8 y h r 5 0 9 z i q 4 3 2 1 j p o n m l k`
@@ -64,7 +59,6 @@ p o n m l k
 ```
 
 #### Snake spiral
-
 Tracks across rows using an alternating bidirectional path, turning back on itself at the boundary edge of each level.
 
 * Dictionary sequence: `a b c d e f l k j i h g m n o p q r x w v u t s y z 1 2 3 4 0 9 8 7 6 5`
@@ -78,9 +72,7 @@ y z 1 2 3 4
 0 9 8 7 6 5
 ```
 
-
 ### 4) Architecture & Project structure
-
 The project relies on clean separation of layers, decoupling the underlying mapping logic from the stream output rendering layer:
 
 ```text
@@ -98,14 +90,14 @@ src/
 
 ### 5) Getting started
 
-### Prerequisites
+#### 5.1) Prerequisites
 * Java Development Kit (JDK) 8 or higher.
 
-### Installation & Execution
+#### 5.2) Build & Execution
 
 1. Clone the repository into your local directory:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/zappee/spiral.git
    cd spiral
    ```
 
@@ -119,11 +111,10 @@ src/
    java -cp bin com.remal.spiral.Main
    ```
 
+### 6) Source core
 
-### 6) Contributing
+[https://github.com/zappee/spiral](https://github.com/zappee/spiral)
 
-Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
+### 7) Contributing
 
-
-### 7) Source core
-[https://github.com/zappee/web-scraper](https://github.com/zappee/spiral)
+Contributions, feature requests, and optimization are always welcome!

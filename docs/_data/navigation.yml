@@ -22,19 +22,37 @@ main:
 opensource_sidebar:
   - title: "Open Source"
     children:
-      - title: "Projects"
-        url: /projects/
+      - title: "Open Source Home"
+        url: /opensource/
 
-      - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
-        url: /opensource/bash/web-scraper/
-
-
-      # java tools
-      - title: "<span class='sidebar-label'>Java tools</span>"
+        # automation tools
+      - title: "<span class='sidebar-label'>Automation Tools</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>FIPS-Checker</span>"
-        url: /opensource/java/fips-checker/
+      - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
+        url: /opensource/automation/file-backup-and-restore/
+
+      - title: "<span class='sidebar-bullet'>Shrinkit</span>"
+        url: /opensource/automation/shrinkit/
+
+      - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
+        url: /opensource/automation/web-scraper/
+
+      #  software tools
+      - title: "<span class='sidebar-label'>Software Tools</span>"
+        url: ""
+
+      - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
+        url: /opensource/software/fips-checker/
+
+      - title: "<span class='sidebar-bullet'>JCEKS Keystore Tool</span>"
+        url: /opensource/software/jceks-tool/
+
+      - title: "<span class='sidebar-bullet'>JMS Message Sender</span>"
+        url: /opensource/software/jms-message-sender/
+
+      - title: "<span class='sidebar-bullet'>SQL Runner</span>"
+        url: /opensource/software/sql-runner/
 
       # research and development
       - title: "<span class='sidebar-label'>Research and Development</span>"
@@ -43,6 +61,9 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Spiral</span>"
         url: /opensource/r-and-d/spiral/
 
+      - title: "<span class='sidebar-bullet'>Telegram Bot</span>"
+        url: /opensource/r-and-d/telegram-bot/
+
 # #####  PRODUCTS sidebar definitions  #####################
 products_sidebar:
   - title: "Products"
@@ -50,11 +71,22 @@ products_sidebar:
       - title: "Products Home"
         url: /products/
 
-      - title: "Customer"
-        url: /products/customer-agent/
+        # REST APIs
+      - title: "<span class='sidebar-label'>REST APIs</span>"
+        url: ""
 
-      - title: "Portfoio"
-        url: /products/portfolio-agent/
+      - title: "CRM"
+        url: /products/rest-apis/crm/
+
+      - title: "Portfolio"
+        url: /products/rest-apis/portfolio/
+
+        # AI Agents
+      - title: "<span class='sidebar-label'>AI Agents</span>"
+        url: ""
+
+      - title: "CRM"
+        url: /products/ai-agents/crm/
 
 # #####  VIRTUALIZATION sidebar definitions  ###############
 virtualization_sidebar:

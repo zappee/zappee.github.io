@@ -2,7 +2,7 @@
 layout: single
 parent: Open Source
 title: ""
-permalink: /opensource/bash/web-scraper/
+permalink: /opensource/automation/web-scraper/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
@@ -57,11 +57,10 @@ $ ./remal_scraper.sh <url> <output-file>
 $ ./web-scraper.sh https://zappee.github.io zappee.github.io.txt
 ```
 
-
 ### 4) Source core
-[https://github.com/zappee/web-scraper](https://github.com/zappee/web-scraper)
 
+[https://github.com/zappee/web-scraper](https://github.com/zappee/web-scraper)
 
 ### 5) Contributing
 
-Contributions, feature requests, and custom dictionary pattern submissions are always welcome!
+Contributions, feature requests, optimization, and bug reports are always welcome!
