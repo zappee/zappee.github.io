@@ -75,17 +75,17 @@ products_sidebar:
       - title: "<span class='sidebar-label'>REST APIs</span>"
         url: ""
 
-      - title: "CRM"
+      - title: "<span class='sidebar-bullet'>CRM</span>"
         url: /products/rest-apis/crm/
 
-      - title: "Stox Hub"
+      - title: "<span class='sidebar-bullet'>Stox Hub</span>"
         url: /products/rest-apis/stoxhub/
 
         # AI Agents
       - title: "<span class='sidebar-label'>AI Agents</span>"
         url: ""
 
-      - title: "CRM"
+      - title: "<span class='sidebar-bullet'>CRM</span>"
         url: /products/ai-agents/crm/
 
 # #####  VIRTUALIZATION sidebar definitions  ###############
