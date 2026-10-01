@@ -24,20 +24,57 @@ Whether you want to build an automated notification system, manage your group ch
 
 #### 2.1) Prerequisites
 * Java Development Kit (JDK) 21 or higher.
+* Active internet access on the machine so the application can connect to the Telegram API.
 
 #### 2.2) Build & Execution
 
-1. Clone the repository into your local directory:
+1. **Clone the repository into your local directory**
    ```bash
    $ git clone https://github.com/zappee/telegram-bot.git
    $ cd telegram-bot
    ```
 
-2. **Configure environment variables:**
+2. **Configure environment variables**
+
    Open the `src/main/resources/application.properties` file and update the following data:
    * **telegram.botToken=** Your bot's unique secret password. It authenticates your application with Telegram's servers. You get this key from `@BotFather` when creating the bot.
    * **telegram.botName=** Your bot's exact username on Telegram (e.g., MyCoolBot). The code uses this to identify your bot during initial setup and registration.
-   * **telegram.myUserId=** • Your personal Telegram account ID number. The script uses this to ensure the bot only responds to you (or sends notifications directly to your chat), locking out unauthorized users.
+   * **telegram.myUserId=** Your personal Telegram account ID number. The script uses this to ensure the bot only responds to you (or sends notifications directly to your chat), locking out unauthorized users.
+
+3. **Build and run the project**
+
+### 3) Supported Telegram commands
+* Send images directly to your chat.
+* Send regular text messages.
+* Push external notifications to your Telegram chat using a REST endpoint.
+
+### 3.1) Commands
+* `/start`:
+  ![/start](/assets/menu/opensource/r-and-d/telegram-bot/start.png)
+
+
+
+* `help`:
+  ![help](docs/help.png "help")
+
+* `help chuck`:
+  ![help chuck](docs/help-chuck.png "help chuck")
+
+* Rest endpoint url:
+  [push message to user Rest endpoint](http://localhost:8080/api/push)
+  ![rest](docs/rest-push.png "rest")
+
+### 3) Configuration
+
+Update the values in the `application.properties` file.
+
+
+
+
+
+
+
+
 
 ### 6) Source core
 
