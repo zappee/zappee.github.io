@@ -2,7 +2,7 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/ai-agents/crm/
+permalink: /products/ai-agents/crm-ai/
 author_profile: false
 sidebar:
   nav: "products_sidebar"

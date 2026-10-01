@@ -86,10 +86,10 @@ products_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>CRM AI</span>"
-        url: /products/ai-agents/crm/
+        url: /products/ai-agents/crm-ai/
 
       - title: "<span class='sidebar-bullet'>Stox Hub AI</span>"
-        url: /products/rest-apis/stoxhub/
+        url: /products/rest-apis/stox-hub-ai/
 
 # #####  VIRTUALIZATION sidebar definitions  ###############
 virtualization_sidebar:
