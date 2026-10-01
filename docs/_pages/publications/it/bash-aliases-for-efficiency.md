@@ -42,3 +42,8 @@ What are the lifesaver aliases you can't live without?
 
 Feel free to reach out, drop your favorites, or suggest more useful aliases to add to this list.
 Let’s make our command lines faster together!
+
+
+<a href="{{ '/assets/downloads/aliases.sh' | relative_url }}" download="aliases.sh">
+  📥 Download Markdown File
+</a>
