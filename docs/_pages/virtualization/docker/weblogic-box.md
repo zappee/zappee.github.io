@@ -16,7 +16,8 @@ sidebar:
 
 ### 1) Overview
 
-
+**WebLogic Box** is a pre-configured, isolated runtime environment designed to simplify Java EE application deployment on Oracle WebLogic Server without requiring complex local installations.
+It eliminates manual configuration bottlenecks by packaging the server environment inside a reproducible container blueprint.
 
 ### 5) Source core
 

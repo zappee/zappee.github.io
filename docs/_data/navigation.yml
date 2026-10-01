@@ -127,7 +127,7 @@ publications_sidebar:
       - title: "<span class='sidebar-label'>IT Technical Guides</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>How to make something</span>"
+      - title: "<span class='sidebar-bullet'>Bash aliases for efficiency</span>"
         url: /publications/it/whatewer/
 
     # (6.2) PUBLICATIONS > TRAVEL STORIES
