@@ -18,7 +18,8 @@ sidebar:
 **Telegram-Bot** is a simple proof of concept **Java Spring Boot** application designed to get your custom Telegram bot up and running in minutes.
 Instead of dealing with confusing setup files and complex integrations, this project handles the basic connection and event tracking right out of the box.
 
-Whether you want to build an automated notification system, manage your group chats, or set up custom alerts for your phone, this repository gives you a clean starting point to quickly add your own logic and expand your bot's capabilities.
+The project can be used to build automated notification systems, manage group chats, or set up custom mobile alerts.
+This repository gives you a clean baseline to add your own logic and expand capabilities.
 
 ### 2) Getting started
 
