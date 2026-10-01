@@ -61,6 +61,9 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Spiral</span>"
         url: /opensource/r-and-d/spiral/
 
+      - title: "<span class='sidebar-bullet'>Telegram-Bot</span>"
+        url: /opensource/r-and-d/telegram-bot/
+
 # #####  PRODUCTS sidebar definitions  #####################
 products_sidebar:
   - title: "Products"
