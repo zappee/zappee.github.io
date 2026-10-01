@@ -1,31 +1,36 @@
-# TOP MENU
 main:
+  # (1) HOME
   - title: "Home"
     url: /
 
+# (2) ABOUT
   - title: "About"
     url: /about/
 
+# (3) OPEN SOURCE
   - title: "Open Source"
     url: /opensource/
 
+# (4) PRODUCTS
   - title: "Products"
     url: /products/
 
+  # (5) VIRTUALIZATION
   - title: "Virtualization"
     url: /virtualization/
 
+  # (6) PUBLICATIONS
   - title: "Publications"
     url: /publications/
 
-# OPEN SOURCE SIDEBAR
+# (3) OPEN SOURCE
 opensource_sidebar:
   - title: "Open Source"
     children:
       - title: "Open Source Home"
         url: /opensource/
 
-    # AUTOMATION TOOLS
+    # (3.1) OPEN SOURCE > AUTOMATION TOOLS
       - title: "<span class='sidebar-label'>Automation Tools</span>"
         url: ""
 
@@ -38,7 +43,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/automation/web-scraper/
 
-    # SOFTWARE TOOLS
+    # (3.2) OPEN SOURCE > SOFTWARE TOOLS
       - title: "<span class='sidebar-label'>Software Tools</span>"
         url: ""
 
@@ -54,7 +59,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>SQL Runner</span>"
         url: /opensource/software/sql-runner/
 
-    # RESEARCH AND DEVELOPMENT
+    #(3.3)  OPEN SOURCE > RESEARCH AND DEVELOPMENT
       - title: "<span class='sidebar-label'>Research and Development</span>"
         url: ""
 
@@ -64,14 +69,14 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Telegram Bot</span>"
         url: /opensource/r-and-d/telegram-bot/
 
-# PRODUCTS SIDEBAR
+# (4) PRODUCTS
 products_sidebar:
   - title: "Products"
     children:
       - title: "Products Home"
         url: /products/
 
-    # REST API
+    # (4.1) PRODUCTS > REST API
       - title: "<span class='sidebar-label'>REST API</span>"
         url: ""
 
@@ -81,7 +86,7 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>Stox-Hub Rest</span>"
         url: /products/rest-apis/stox-hub-rest/
 
-    # AI AGENTS
+    # (4.2) PRODUCTS > AI AGENTS
       - title: "<span class='sidebar-label'>AI Agents</span>"
         url: ""
 
@@ -91,14 +96,14 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>Stox Hub AI</span>"
         url: /products/rest-apis/stox-hub-ai/
 
-# VIRTUALIZATION SIDEBAR
+# (5) VIRTUALIZATION
 virtualization_sidebar:
   - title: "Virtualization"
     children:
       - title: "Virtualization Home"
         url: /virtualization/
 
-    # DOCKER
+    # (5.1) VIRTUALIZATION > DOCKER
       - title: "<span class='sidebar-label'>Docker</span>"
         url: ""
 
@@ -108,21 +113,21 @@ virtualization_sidebar:
       - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
         url: /virtualization/weblogic-box/
 
-# PUBLICATIONS SIDEBAR
+# (6) PUBLICATIONS
 publications_sidebar:
   - title: "Publications"
     children:
       - title: "Publications Home"
         url: /publications/
 
-    # IT TECHNICAL GUIDES
+    # (6.1) PUBLICATIONS > IT TECHNICAL GUIDES
       - title: "<span class='sidebar-label'>IT Technical Guides</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>How to make something</span>"
         url: /publications/it/whatewer/
 
-    # TRAVEL STORIES
+    # (6.2) PUBLICATIONS > TRAVEL STORIES
       - title: "<span class='sidebar-label'>Travel Stories</span>"
         url: ""
 
