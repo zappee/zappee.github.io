@@ -5,6 +5,7 @@ title: ""
 permalink: /publications/it/bash-aliases-for-efficiency/
 author_profile: false
 classes: "wide smaller-text"
+tags: [docker, terminal, devops]
 sidebar:
   nav: "publications_sidebar"
 ---
