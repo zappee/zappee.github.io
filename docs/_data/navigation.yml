@@ -72,7 +72,7 @@ products_sidebar:
         url: /products/
 
         # REST APIs
-      - title: "<span class='sidebar-label'>REST APIs</span>"
+      - title: "<span class='sidebar-label'>REST API</span>"
         url: ""
 
       - title: "<span class='sidebar-bullet'>CRM</span>"
