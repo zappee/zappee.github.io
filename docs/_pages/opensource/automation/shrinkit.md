@@ -17,7 +17,7 @@ sidebar:
 
 ### 1) Overview
 
-**Shrinkit** is a collection of lightweight automation tools designed to drastically reduce the media file size (images and videos) taken on your mobile phone, making them easier to store, share, and back up without sacrificing noticeable quality.
+**Shrinkit** is a collection of lightweight automation tools designed to drastically reduce the size of media files (images and videos) taken on your mobile phone, making them easier to store, share, and back up without sacrificing noticeable quality.
 
 ### 2) Features
 
