@@ -8,4 +8,6 @@ sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 AI-Agent Guide
+## 🚀 CRM AI Agent
+
+Content is on the way!

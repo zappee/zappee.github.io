@@ -8,4 +8,7 @@ sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 REST API
+## 🚀 CRM API
+
+Content is on the way!
+
