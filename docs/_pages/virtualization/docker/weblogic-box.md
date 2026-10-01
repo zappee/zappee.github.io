@@ -29,7 +29,7 @@ However, large enterprise environments (especially within the financial, governm
 The primary objective of **WebLogic Box** is not merely to build a legacy runtime environment, but to serve as a reference architecture.
 While the framework itself belongs to an older generation of technology, the containerization mechanisms engineered into these images are entirely **timeless and framework-agnostic**.
 
-The entrypoint blueprints and automation scripting can be directly applied to modern stacks (including Spring Boot) to solve complex container orchestration challenges.
+The architectural design and automation scripting can be directly applied to modern stacks (including Spring Boot) to solve complex container orchestration challenges.
 
 By analyzing the source code, you can discover enterprise-grade patterns for:
 * **Determining first-time Initialization:** Intelligent state checking that detects whether a container is booting up for the very first time or performing a routine restart, executing completely different execution paths dynamically.
