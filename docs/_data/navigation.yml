@@ -108,10 +108,10 @@ virtualization_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>Spring Box</span>"
-        url: /virtualization/spring-box/
+        url: /virtualization/docker/spring-box/
 
       - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
-        url: /virtualization/weblogic-box/
+        url: /virtualization/docker/weblogic-box/
 
 # (6) PUBLICATIONS
 publications_sidebar:

@@ -2,10 +2,10 @@
 layout: single
 parent: Products
 title: ""
-permalink: /virtualization/spring-box-21/
+permalink: /virtualization/docker/weblogic-box/
 author_profile: false
 sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Containerized Java Runtime Environment
+## ☁️ Containerized WebLogic Environment
