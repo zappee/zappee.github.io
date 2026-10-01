@@ -2,12 +2,12 @@
 layout: single
 parent: Publications
 title: ""
-permalink: /publications/it/whatewer/
+permalink: /publications/it/bash-aliases-for-efficiency/
 author_profile: false
 sidebar:
   nav: "publications_sidebar"
 ---
 
-## 🌐 🧭 Not ready yet
+## 🌐 🧭 Bash aliases for efficiency
 
 Content is on the way!

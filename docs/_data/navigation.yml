@@ -128,7 +128,7 @@ publications_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>Bash aliases for efficiency</span>"
-        url: /publications/it/whatewer/
+        url: /publications/it/bash-aliases-for-efficiency/
 
     # (6.2) PUBLICATIONS > TRAVEL STORIES
       - title: "<span class='sidebar-label'>Travel Stories</span>"
