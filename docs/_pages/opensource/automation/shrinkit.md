@@ -105,28 +105,10 @@ $ ./jpg-shrinker.sh <directory> [overwrite]
     Overwrite originals: false
   ```
 
-## 🤝 Contributing
-
-Feel free to open an issue or submit a pull request if you want to add image-specific scripts, improve compression ratios, or optimize multi-threading performance!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 9) Source code
+### 5) Source code
 
 [https://github.com/zappee/shrinkit](https://github.com/zappee/shrinkit)
 
-### 10) Contributing
+### 6) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
