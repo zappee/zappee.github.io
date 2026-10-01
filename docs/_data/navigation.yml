@@ -95,8 +95,8 @@ virtualization_sidebar:
       - title: "Virtualization Home"
         url: /virtualization/
 
-      - title: "SpringBox 21"
-        url: /virtualization/spring-box-21/
+      - title: "Spring Box"
+        url: /virtualization/spring-box/
 
       - title: "WebLogic Containers"
         url: /virtualization/weblogic/
