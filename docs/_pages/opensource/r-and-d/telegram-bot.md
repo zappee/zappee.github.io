@@ -22,10 +22,10 @@ Whether you want to build an automated notification system, manage your group ch
 
 ### 2) Getting started
 
-#### Prerequisites
+#### 2.1) Prerequisites
 * Java Development Kit (JDK) 21 or higher.
 
-#### Build & Execution
+#### 2.2) Build & Execution
 
 1. Clone the repository into your local directory:
    ```bash
