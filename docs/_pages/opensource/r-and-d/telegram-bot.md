@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 Spiral
+## 🐧 Telegram-Bot
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/telegram-bot)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/telegram-bot)
@@ -20,7 +20,7 @@ sidebar:
 
 ### 6) Source core
 
-[https://github.com/zappee/web-scraper](https://github.com/zappee/telegram-bot)
+[https://github.com/zappee/telegram-bot](https://github.com/zappee/telegram-bot)
 
 ### 7) Contributing
 
