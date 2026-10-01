@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 SQL-Runner
+## 🐧 SQL Runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/sql-runner)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/sql-runner)

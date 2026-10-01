@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 FIPS-Checker
+## 🐧 FIPS Checker
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/fips-checker)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/fips-checker)

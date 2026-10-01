@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 Telegram-Bot
+## 🐧 Telegram Bot
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/telegram-bot)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/telegram-bot)
