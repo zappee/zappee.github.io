@@ -13,38 +13,31 @@ sidebar:
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/telegram-bot)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/telegram-bot)
-![GitHub Release](https://img.shields.io/github/v/release/zappee/telegram-bot)
 
 ### 1) Overview
-**Telegram-Bot** is a simple proof of concept Java Spring Boot application designed to get your custom Telegram bot up and running in minutes.
+**Telegram-Bot** is a simple proof of concept **Java Spring Boot** application designed to get your custom Telegram bot up and running in minutes.
 Instead of dealing with confusing setup files and complex integrations, this project handles the basic connection and event tracking right out of the box.
 
 Whether you want to build an automated notification system, manage your group chats, or set up custom alerts for your phone, this repository gives you a clean starting point to quickly add your own logic and expand your bot's capabilities.
 
-### 2) Installation & Setup
+### 2) Getting started
 
 #### Prerequisites
-Make sure you have **[Python 3.x / Node.js / etc.]** installed on your system.
+* Java Development Kit (JDK) 21 or higher.
 
-1. **Clone the repository:**
+#### Build & Execution
+
+1. Clone the repository into your local directory:
    ```bash
    $ git clone https://github.com
    $ cd telegram-bot
    ```
 
-2. **Install dependencies:**
-   ```bash
-   $ [pip install -r requirements.txt / npm install]
-   ```
-
-3. **Configure Environment Variables:**
-   Create a `.env` file in the root directory and add your Telegram credentials:
-   ```text
-   TELEGRAM_BOT_TOKEN="your_bot_token_here"
-   CHAT_ID="your_chat_id_here"
-   ```
-   > 💡 *Need a token? Talk to [@BotFather](https://t.me) on Telegram to create a bot and get an API key.*
-
+2. **Configure environment variables:**
+   Open the `src/main/resources/application.properties` file and update the following data:
+   * **telegram.botToken=** Your bot's unique secret password. It authenticates your application with Telegram's servers. You get this key from `@BotFather` when creating the bot.
+   * **telegram.botName=** Your bot's exact username on Telegram (e.g., MyCoolBot). The code uses this to identify your bot during initial setup and registration.
+   * **telegram.myUserId=** • Your personal Telegram account ID number. The script uses this to ensure the bot only responds to you (or sends notifications directly to your chat), locking out unauthorized users.
 
 ### 6) Source core
 

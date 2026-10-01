@@ -93,7 +93,7 @@ src/
 #### Prerequisites
 * Java Development Kit (JDK) 8 or higher.
 
-#### Installation & Execution
+#### Build & Execution
 
 1. Clone the repository into your local directory:
    ```bash
