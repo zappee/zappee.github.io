@@ -98,10 +98,10 @@ virtualization_sidebar:
       - title: "Virtualization Home"
         url: /virtualization/
 
-      - title: "Spring Box"
+      - title: "<span class='sidebar-bullet'>Spring Box</span>"
         url: /virtualization/spring-box/
 
-      - title: "WebLogic box"
+      - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
         url: /virtualization/weblogic-box/
 
 # #####  PUBLICATIONS sidebar definitions  ###############
