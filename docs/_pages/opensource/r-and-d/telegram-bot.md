@@ -58,9 +58,8 @@ Whether you want to build an automated notification system, manage your group ch
 * `help chuck`:
   ![help chuck](/assets/images/menu/opensource/r-and-d/telegram-bot/help-chuck.png)
 
-* Rest endpoint url:
-  [push message to user Rest endpoint](http://localhost:8080/api/push)
-  ![rest](docs/rest-push.png "rest")
+* Rest endpoint url for send text message to user: [http://localhost:8080/api/push](http://localhost:8080/api/push)
+  ![push message API](/assets/images/menu/opensource/r-and-d/telegram-bot/rest-push.png "rest")
 
 ### 3) Configuration
 
