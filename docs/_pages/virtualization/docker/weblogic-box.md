@@ -4,6 +4,7 @@ parent: Products
 title: ""
 permalink: /virtualization/docker/weblogic-box/
 author_profile: false
+classes: "wide smaller-text"
 sidebar:
   nav: "virtualization_sidebar"
 ---
