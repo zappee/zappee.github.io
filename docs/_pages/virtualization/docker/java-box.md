@@ -2,12 +2,12 @@
 layout: single
 parent: Products
 title: ""
-permalink: /virtualization/docker/spring-box/
+permalink: /virtualization/docker/java-box/
 author_profile: false
 sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Java container with embedded database
+## ☁️ Containerized Java Runtime Environment
 
 Content is on the way!

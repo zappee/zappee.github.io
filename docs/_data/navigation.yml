@@ -80,6 +80,9 @@ virtualization_sidebar:
       - title: "<span class='sidebar-label'>Docker</span>"
         url: ""
 
+      - title: "<span class='sidebar-bullet'>Java Box</span>"
+        url: /virtualization/docker/java-box/
+
       - title: "<span class='sidebar-bullet'>Spring Box</span>"
         url: /virtualization/docker/spring-box/
 
