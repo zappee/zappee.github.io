@@ -97,7 +97,7 @@ src/
 
 1. Clone the repository into your local directory:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/zappee/spiral.git
    cd spiral
    ```
 
