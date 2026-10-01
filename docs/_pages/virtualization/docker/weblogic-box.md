@@ -24,7 +24,7 @@ It eliminates manual configuration bottlenecks by packaging the server environme
 ### 2) A note on timeless architecture
 
 In today’s software development landscape, teams heavily favor lightweight, cloud-native frameworks like **Spring Boot** over traditional Java EE application servers.
-However, large enterprise environments—especially within the financial, governmental, and corporate sectors—still rely extensively on **Oracle WebLogic Server** to run core, business-critical applications.
+However, large enterprise environments (especially within the financial, governmental, and corporate sectors) still rely extensively on **Oracle WebLogic Server** to run core, business-critical applications.
 
 The primary objective of **WebLogic Box** is not merely to package a legacy runtime, but to serve as a reference architecture.
 While the framework itself belongs to an older generation of technology, the containerization mechanisms engineered into this image are entirely **timeless and framework-agnostic**.
@@ -41,7 +41,7 @@ Whether you are modernizing a legacy system or designing a complex architecture 
 
 ### 3) Docker image hierarchy
 
-  ![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
+![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
 
 ### 5) Source core
 
