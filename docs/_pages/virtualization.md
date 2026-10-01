@@ -15,7 +15,7 @@ This section acts as a central repository for pre-configured runtime environment
 
 Managing local runtime dependencies can be a major bottleneck in development.
 To solve this, the projects hosted here focus on packaging complex server architectures and application runtimes into isolated, lightweight container environments.
-Whether you need to spin up standard container clusters, deploy optimized microservices, or execute legacy enterprise servers locally, these tools deliver reproducible environments that run seamlessly right out of the box.
+Whether you need to spin up standard container clusters, deploy Java microservices, or execute legacy enterprise servers locally, these tools deliver reproducible environments that run seamlessly right out of the box.
 
 #### Explore the ecosystem:
 - **Java Box:** A lightweight Java runtime environment designed to execute compiled JAR files instantly.
