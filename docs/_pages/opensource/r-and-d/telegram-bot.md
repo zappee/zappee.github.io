@@ -15,7 +15,7 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/telegram-bot)
 
 ### 1) Overview
-**Telegram-Bot** is a simple proof of concept **Java Spring Boot** application designed to get your custom Telegram bot up and running in minutes.
+**Telegram-Bot** is a simple proof of concept **Java Spring Boot** application designed to get your custom _Telegram Bot_ up and running in minutes.
 Instead of dealing with confusing setup files and complex integrations, this project handles the basic connection and event tracking right out of the box.
 
 The project can be used to build automated notification systems, manage group chats, or set up custom mobile alerts.
