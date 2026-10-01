@@ -39,7 +39,14 @@ By analyzing the source code, you can discover enterprise-grade patterns for:
 
 Whether you are modernizing a legacy system or designing a complex architecture from scratch, this repository serves as a practical, reusable guide for bulletproof container design.
 
-### 3) Docker image hierarchy
+### 3) Image hierarchy
+
+**The project provides the following Docker images:**
+* Java 8
+* Apache Tomcat 10.0
+* Oracle Database Enterprise 12.2.0.1
+* Oracle WebLogic 12.2.1.4 dmin and managed servers
+* Splunk 8.2 server
 
 ![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
 
