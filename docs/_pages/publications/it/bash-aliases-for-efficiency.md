@@ -10,7 +10,7 @@ sidebar:
   nav: "publications_sidebar"
 ---
 
-## 🌐 🧭 Bash aliases for efficiency
+## 🧭 Bash aliases for efficiency
 
 ### 1) Overview
 
