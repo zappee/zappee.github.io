@@ -8,6 +8,6 @@ sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 Portfolio API
+## 🚀 Stox Hub API
 
 Content is on the way!

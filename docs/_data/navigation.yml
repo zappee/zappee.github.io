@@ -78,8 +78,8 @@ products_sidebar:
       - title: "CRM"
         url: /products/rest-apis/crm/
 
-      - title: "Portfolio"
-        url: /products/rest-apis/portfolio/
+      - title: "Stox Hub"
+        url: /products/rest-apis/stoxhub/
 
         # AI Agents
       - title: "<span class='sidebar-label'>AI Agents</span>"
@@ -95,13 +95,13 @@ virtualization_sidebar:
       - title: "Virtualization Home"
         url: /virtualization/
 
-      - title: "Java"
-        url: /virtualization/java/
+      - title: "Java 21 + database Docker Image"
+        url: /virtualization/java21/
 
       - title: "Spring Boot"
         url: /virtualization/spring-boot/
 
-      - title: "WebLogic"
+      - title: "WebLogic Docker Images"
         url: /virtualization/weblogic/
 
 # #####  PUBLICATIONS sidebar definitions  ###############
