@@ -3,21 +3,21 @@ main:
   - title: "Home"
     url: /
 
-# (2) ABOUT
+  # (2) ABOUT
   - title: "About"
     url: /about/
 
-# (3) OPEN SOURCE
+  # (3) OPEN SOURCE
   - title: "Open Source"
     url: /opensource/
 
-# (4) PRODUCTS
-  - title: "Products"
-    url: /products/
-
-  # (5) VIRTUALIZATION
+  # (4) VIRTUALIZATION
   - title: "Virtualization"
     url: /virtualization/
+
+  # (54) PRODUCTS
+  - title: "Products"
+    url: /products/
 
   # (6) PUBLICATIONS
   - title: "Publications"
@@ -69,14 +69,31 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Telegram Bot</span>"
         url: /opensource/r-and-d/telegram-bot/
 
-# (4) PRODUCTS
+# (4) VIRTUALIZATION
+virtualization_sidebar:
+  - title: "Virtualization"
+    children:
+      - title: "Virtualization Home"
+        url: /virtualization/
+
+      # (4.1) VIRTUALIZATION > DOCKER
+      - title: "<span class='sidebar-label'>Docker</span>"
+        url: ""
+
+      - title: "<span class='sidebar-bullet'>Spring Box</span>"
+        url: /virtualization/docker/spring-box/
+
+      - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
+        url: /virtualization/docker/weblogic-box/
+
+# (5) PRODUCTS
 products_sidebar:
   - title: "Products"
     children:
       - title: "Products Home"
         url: /products/
 
-    # (4.1) PRODUCTS > REST API
+    # (5.1) PRODUCTS > REST API
       - title: "<span class='sidebar-label'>REST API</span>"
         url: ""
 
@@ -86,7 +103,7 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>Stox-Hub Rest</span>"
         url: /products/rest-apis/stox-hub-rest/
 
-    # (4.2) PRODUCTS > AI AGENTS
+    # (5.2) PRODUCTS > AI AGENTS
       - title: "<span class='sidebar-label'>AI Agents</span>"
         url: ""
 
@@ -95,23 +112,6 @@ products_sidebar:
 
       - title: "<span class='sidebar-bullet'>Stox-Hub AI</span>"
         url: /products/ai-agents/stox-hub-ai/
-
-# (5) VIRTUALIZATION
-virtualization_sidebar:
-  - title: "Virtualization"
-    children:
-      - title: "Virtualization Home"
-        url: /virtualization/
-
-    # (5.1) VIRTUALIZATION > DOCKER
-      - title: "<span class='sidebar-label'>Docker</span>"
-        url: ""
-
-      - title: "<span class='sidebar-bullet'>Spring Box</span>"
-        url: /virtualization/docker/spring-box/
-
-      - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
-        url: /virtualization/docker/weblogic-box/
 
 # (6) PUBLICATIONS
 publications_sidebar:
