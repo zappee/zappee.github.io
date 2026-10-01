@@ -50,13 +50,13 @@ Whether you want to build an automated notification system, manage your group ch
 
 ### 3.1) Telegram commands
 * `/start`:
-  ![/start](https://zappee.github.io/assets/images/menu/opensource/r-and-d/telegram-bot/start.png)
+  ![/start](/assets/images/menu/opensource/r-and-d/telegram-bot/start.png)
 
 * `help`:
   ![help](/assets/images/menu/opensource/r-and-d/telegram-bot/help.png)
 
 * `help chuck`:
-  ![help chuck](assets/images/menu/opensource/r-and-d/telegram-bot/help-chuck.png)
+  ![help chuck](/assets/images/menu/opensource/r-and-d/telegram-bot/help-chuck.png)
 
 * Rest endpoint url:
   [push message to user Rest endpoint](http://localhost:8080/api/push)
