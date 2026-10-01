@@ -86,8 +86,8 @@ virtualization_sidebar:
       - title: "<span class='sidebar-bullet'>Spring Box</span>"
         url: /virtualization/docker/spring-box/
 
-      - title: "<span class='sidebar-bullet'>WebLogic Box</span>"
-        url: /virtualization/docker/weblogic-box/
+      - title: "<span class='sidebar-bullet'>Oracle WebLogic Box</span>"
+        url: /virtualization/docker/oracle-weblogic-box/
 
 # (5) PRODUCTS
 products_sidebar:

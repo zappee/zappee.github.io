@@ -2,7 +2,7 @@
 layout: single
 parent: Products
 title: ""
-permalink: /virtualization/docker/weblogic-box/
+permalink: /virtualization/docker/oracle-weblogic-box/
 author_profile: false
 classes: "wide smaller-text"
 sidebar:
