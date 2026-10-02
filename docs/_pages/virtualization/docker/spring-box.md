@@ -64,7 +64,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ### 5) Docker containers
 
-![Remal Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
+![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 #### 5.1) Java
 supporting Java 11, 17, 21, and 25.
