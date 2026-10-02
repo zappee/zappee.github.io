@@ -15,6 +15,10 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/web-scraper)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/web-scraper)
 
+#### ⭐⭐ Like this project? Support my work by giving it a star on [GitHub](https://github.com/zappee/web-scraper/) ⭐⭐
+
+![GitHub Repo stars](https://img.shields.io/github/stars/zappee/web-scraper?style=flat)
+
 ### 1) Overview
 This web scraper is a software tool designed to extract textual data from websites and convert it into structured text content.
 This clean data can then be used to feed AI models and ask questions about the content.
