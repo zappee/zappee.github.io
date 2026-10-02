@@ -20,3 +20,16 @@ sidebar:
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
 ### 1) Overview
+
+The **Spring Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
+It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases, data streaming, service discovery, security, and real-time operational metrics.
+
+
+
+### 5) Source core
+
+[https://github.com/zappee/spring-box](https://github.com/zappee/spring-box)
+
+### 6) Contributing
+
+Contributions, feature requests, optimization, and bug reports are always welcome!
