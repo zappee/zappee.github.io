@@ -53,7 +53,6 @@ The **Remal Spring Box** bridges this gap by providing a containerized pre-confi
 By abstracting away complex structural infrastructure, it enables start-ups and small-to-medium teams to eliminate configuration overhead and focus entirely on delivering features at high velocity.
 
 ### 4) Key benefits
-
 * **Production-Identical local dev:** Eliminates environmental mismatches entirely. By using the exact same containerized runtime building blocks on local machines and production clusters, if it works on your laptop, it will work in production.
 * **Instant feature delivery:** Saves weeks of foundational engineering. Startups and small teams can skip the tedious process of configuring Kafka brokers, security certificates, and service registries, and start writing business logic on day one.
 * **Plug-and-Play security:** Automates complex network security. The built-in _Private CA Infrastructure_ automatically manages certificates, giving you enterprise-grade, secure service-to-service communication out of the box without manual intervention.
@@ -63,35 +62,32 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 * **Distributed Caching:** Integrated, cluster-wide **Distributed Cache** topologies drastically reduce database load, guarantee lightning-fast REST responses during heavy traffic spikes, and maintain request context across separate instances whenever necessary.
 
+### 5) Docker containers
 
-------------------------------
-## 🛠 Features & Architecture Components
-The platform consolidates a production-grade stack into one manageable lifecycle:
-## Core Runtimes & Databases
+#### 5.1) Java
+supporting Java 11, 17, 21, and 25.
 
-* Multi-Version Java Containers: Out-of-the-box pre-configured runtimes supporting Java 11, 17, 21, and 23.
-* Isolated Data Layer: Embedded runtime container databases tailored specifically for the Database per Service design pattern.
+#### 5.2) Java 21 and 25 with embedded Postgres Database
+to support the database-per-service** pattern.
 
-## Security & Identity Management
+#### 5.3) Apache Tomcat 1⁰
 
-* Platform-Wide Private CA: A dedicated Private Certificate Authority (PKI) server to automatically issue, renew, and revoke internal server certificates signed by your organization's root CA.
-* High-Performance Distributed LDAP: Centralized, high-speed directory services for user and system management.
-* Open Source Access Management: Complete authentication and authorization solution supporting SSO (Single Sign-On), OAuth, federation, and social self-registration (Google, Facebook, GitHub, X/Twitter, etc.).
+#### 5.4) Private Certificate Authority (PKI)
+to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 
-## Cluster Traffic & Data Management
+##### 5.5) Hazelcast cash platform
+to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
 
-* Codeless Service Discovery: A distributed Service Registry that registers application instances seamlessly without manual network configuration.
-* Dynamic Configuration Store: A distributed Key-Value store supporting centralized and real-time application configuration management.
-* 3-Tier Distributed Cache: Flexible caching topologies supporting embedded cache, client-server cache, and low-latency near-cache structures.
-* Event Streaming & Handling: Full stream processing and event management backed natively by Apache Kafka.
+#### 5.6) distributed service registry and key-value store
+based on Hashicorp Vault.
+Cluster wide
 
-## Analytics & Observability
+##### 5.7) Prometheus time-series database server
+containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
 
-* Real-Time Telemetry: Automatically collects and visualizes platform-wide metrics, including user clicks, service call metrics, and request/response durations.
-* Customizable Analytics Dashboards: Built-in charts displaying REST endpoint call frequencies and serving times.
-* Stream Monitoring: Real-time traffic and message flow auditing for Kafka topic message streams.
+#### 5.8) Grafana
 
-
+#### 5.9) LDAP server
 
 ### 5) Source core
 
