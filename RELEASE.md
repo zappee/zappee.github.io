@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.2.1] - 02/Oct/2026
+
+### Changed
+* **Documentation:** Integrated GitHub Star badges onto all product pages and synchronized the readme files in the repositories.
+
 ## [0.2.0] - 01/Oct/2026
 
 ### Changed
