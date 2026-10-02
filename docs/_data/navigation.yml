@@ -103,8 +103,8 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>CRM Rest</span>"
         url: /products/rest-apis/crm-rest/
 
-      - title: "<span class='sidebar-bullet'>Stox-Hub Rest</span>"
-        url: /products/rest-apis/stox-hub-rest/
+      - title: "<span class='sidebar-bullet'>Stocks Rest</span>"
+        url: /products/rest-apis/stocks-rest/
 
     # (5.2) PRODUCTS > AI AGENTS
       - title: "<span class='sidebar-label'>AI Agents</span>"
@@ -113,8 +113,8 @@ products_sidebar:
       - title: "<span class='sidebar-bullet'>CRM AI</span>"
         url: /products/ai-agents/crm-ai/
 
-      - title: "<span class='sidebar-bullet'>Stox-Hub AI</span>"
-        url: /products/ai-agents/stox-hub-ai/
+      - title: "<span class='sidebar-bullet'>Stocks AI</span>"
+        url: /products/ai-agents/stocks-ai/
 
 # (6) PUBLICATIONS
 publications_sidebar:

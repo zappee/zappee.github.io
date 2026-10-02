@@ -2,12 +2,12 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/ai-agents/stox-hub-ai/
+permalink: /products/ai-agents/stocks-ai/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 Stock-Hub AI Agent
+## 🚀 Stocks AI Agent
 
 Content is on the way!

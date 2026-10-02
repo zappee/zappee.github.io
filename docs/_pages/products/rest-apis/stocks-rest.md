@@ -2,12 +2,12 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/rest-apis/stox-hub-rest/
+permalink: /products/rest-apis/stocks-rest/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 Stox-Hub Rest Service
+## 🚀 Stocks Rest Service
 
 Content is on the way!
