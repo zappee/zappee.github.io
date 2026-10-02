@@ -1,31 +1,36 @@
-# #####  MAIN top menu  ####################################
 main:
+  # (1) HOME
   - title: "Home"
     url: /
 
+  # (2) ABOUT
   - title: "About"
     url: /about/
 
+  # (3) OPEN SOURCE
   - title: "Open Source"
     url: /opensource/
 
-  - title: "Products"
-    url: /products/
-
+  # (4) VIRTUALIZATION
   - title: "Virtualization"
     url: /virtualization/
 
+  # (54) PRODUCTS
+  - title: "Products"
+    url: /products/
+
+  # (6) PUBLICATIONS
   - title: "Publications"
     url: /publications/
 
-# #####  OPEN SOURCE sidebar definitions  ##################
+# (3) OPEN SOURCE
 opensource_sidebar:
   - title: "Open Source"
     children:
       - title: "Open Source Home"
         url: /opensource/
 
-        # automation tools
+    # (3.1) OPEN SOURCE > AUTOMATION TOOLS
       - title: "<span class='sidebar-label'>Automation Tools</span>"
         url: ""
 
@@ -38,7 +43,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Web-Scraper for AI</span>"
         url: /opensource/automation/web-scraper/
 
-      #  software tools
+    # (3.2) OPEN SOURCE > SOFTWARE TOOLS
       - title: "<span class='sidebar-label'>Software Tools</span>"
         url: ""
 
@@ -54,7 +59,7 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>SQL Runner</span>"
         url: /opensource/software/sql-runner/
 
-      # research and development
+    #(3.3)  OPEN SOURCE > RESEARCH AND DEVELOPMENT
       - title: "<span class='sidebar-label'>Research and Development</span>"
         url: ""
 
@@ -64,59 +69,68 @@ opensource_sidebar:
       - title: "<span class='sidebar-bullet'>Telegram Bot</span>"
         url: /opensource/r-and-d/telegram-bot/
 
-# #####  PRODUCTS sidebar definitions  #####################
-products_sidebar:
-  - title: "Products"
-    children:
-      - title: "Products Home"
-        url: /products/
-
-        # REST APIs
-      - title: "<span class='sidebar-label'>REST APIs</span>"
-        url: ""
-
-      - title: "CRM"
-        url: /products/rest-apis/crm/
-
-      - title: "Portfolio"
-        url: /products/rest-apis/portfolio/
-
-        # AI Agents
-      - title: "<span class='sidebar-label'>AI Agents</span>"
-        url: ""
-
-      - title: "CRM"
-        url: /products/ai-agents/crm/
-
-# #####  VIRTUALIZATION sidebar definitions  ###############
+# (4) VIRTUALIZATION
 virtualization_sidebar:
   - title: "Virtualization"
     children:
       - title: "Virtualization Home"
         url: /virtualization/
 
-      - title: "Java"
-        url: /virtualization/java/
+      # (4.1) VIRTUALIZATION > DOCKER
+      - title: "<span class='sidebar-label'>Docker</span>"
+        url: ""
 
-      - title: "Spring Boot"
-        url: /virtualization/spring-boot/
+      - title: "<span class='sidebar-bullet'>Java Box</span>"
+        url: /virtualization/docker/java-box/
 
-      - title: "WebLogic"
-        url: /virtualization/weblogic/
+      - title: "<span class='sidebar-bullet'>Spring Box</span>"
+        url: /virtualization/docker/spring-box/
 
-# #####  PUBLICATIONS sidebar definitions  ###############
+      - title: "<span class='sidebar-bullet'>Oracle WebLogic Box</span>"
+        url: /virtualization/docker/oracle-weblogic-box/
+
+# (5) PRODUCTS
+products_sidebar:
+  - title: "Products"
+    children:
+      - title: "Products Home"
+        url: /products/
+
+    # (5.1) PRODUCTS > REST API
+      - title: "<span class='sidebar-label'>REST API</span>"
+        url: ""
+
+      - title: "<span class='sidebar-bullet'>CRM Rest</span>"
+        url: /products/rest-apis/crm-rest/
+
+      - title: "<span class='sidebar-bullet'>Stocks Rest</span>"
+        url: /products/rest-apis/stocks-rest/
+
+    # (5.2) PRODUCTS > AI AGENTS
+      - title: "<span class='sidebar-label'>AI Agents</span>"
+        url: ""
+
+      - title: "<span class='sidebar-bullet'>CRM AI</span>"
+        url: /products/ai-agents/crm-ai/
+
+      - title: "<span class='sidebar-bullet'>Stocks AI</span>"
+        url: /products/ai-agents/stocks-ai/
+
+# (6) PUBLICATIONS
 publications_sidebar:
   - title: "Publications"
     children:
       - title: "Publications Home"
         url: /publications/
 
+    # (6.1) PUBLICATIONS > IT TECHNICAL GUIDES
       - title: "<span class='sidebar-label'>IT Technical Guides</span>"
         url: ""
 
-      - title: "<span class='sidebar-bullet'>How to make something</span>"
-        url: /publications/it/whatewer/
+      - title: "<span class='sidebar-bullet'>Shell aliases for efficiency</span>"
+        url: /publications/it/shell-aliases-for-efficiency/
 
+    # (6.2) PUBLICATIONS > TRAVEL STORIES
       - title: "<span class='sidebar-label'>Travel Stories</span>"
         url: ""
 

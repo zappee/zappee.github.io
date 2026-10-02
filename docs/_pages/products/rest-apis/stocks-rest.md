@@ -2,10 +2,12 @@
 layout: single
 parent: Products
 title: ""
-permalink: /products/rest-apis/crm/
+permalink: /products/rest-apis/stocks-rest/
 author_profile: false
 sidebar:
   nav: "products_sidebar"
 ---
 
-## 🚀 REST API
+## 🚀 Stocks Rest Service
+
+Content is on the way!

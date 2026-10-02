@@ -4,6 +4,7 @@ parent: Publications
 title: ""
 permalink: /publications/travel-stories/sri-lanka/
 author_profile: false
+classes: "wide smaller-text"
 sidebar:
   nav: "publications_sidebar"
 ---
