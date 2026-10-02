@@ -64,6 +64,8 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ### 5) Docker containers
 
+![Remal Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
+
 #### 5.1) Java
 supporting Java 11, 17, 21, and 25.
 
@@ -89,10 +91,10 @@ containers and data scraper container** that periodically pulls (scrapes) the fo
 
 #### 5.9) LDAP server
 
-### 5) Source core
+### 6) Source core
 
 [https://github.com/zappee/spring-box](https://github.com/zappee/spring-box)
 
-### 6) Contributing
+### 7) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
