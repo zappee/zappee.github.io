@@ -24,7 +24,7 @@ sidebar:
 The **Remal Spring Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
 It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, service discovery, security, and real-time operational metrics.
 
-### 2) Context & Problem Statement
+### 2) Context & Problem statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
 * Service registries
 * Load balancers
@@ -42,15 +42,17 @@ Building a modern microservices architecture with Spring Boot requires stitching
 * etc.
 
 Setting this up consistently across local development and production environments often leads to:
-* **Configuration Drift:** Features working perfectly on a local developer machine but unexpectedly failing in production environments.
-* **Architecture Overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key-Value stores) rather than writing core business logic.
-* **Distributed State Challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
-* **"Works on My Machine" Dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
+* **Configuration drift:** Features working perfectly on a local developer machine but unexpectedly failing in production environments.
+* **Architecture overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key-Value stores) rather than writing core business logic.
+* **Distributed state challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
+* **"Works on my machine" dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
 
-## The Gombi Solution
-The Gombi Platform bridges this gap by providing an identical, mirror runtime for both local development and production environments. It abstracts away the structural infrastructure so start-ups and small-to-medium teams can focus solely on delivering high-velocity features.
-------------------------------
-## 🚀 Key Benefits
+### 3) The Remal solution
+The **Remal Spring Box** bridges this gap by providing a containerized pre-configured runtime building blocks for both local development and production environments.
+
+By abstracting away complex structural infrastructure, it enables start-ups and small-to-medium teams to eliminate configuration overhead and focus entirely on delivering features at high velocity.
+
+### 4) Key benefits
 
 * Environment Parity: Run the exact same containerized environment locally as you do in production, ensuring behavior is predictable and bugs are caught early.
 * Zero-Downtime Adaptability: Designed with structural modularity, allowing application services to be upgraded or swapped seamlessly as business demands grow.
