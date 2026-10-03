@@ -65,30 +65,17 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ### 5) Docker containers in the _Spring Box_ ecosystem
 
-<style>
-.img-modal-link { display: inline-block; cursor: zoom-in; }
-.gh-image-modal {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(13, 16, 23, 0.94); display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none; transition: opacity 0.25s ease; z-index: 99999;
-}
-.gh-image-modal:target { opacity: 1; pointer-events: auto; }
-.gh-modal-dismiss { position: absolute; width: 100%; height: 100%; cursor: zoom-out; }
-.gh-modal-wrapper { position: relative; max-width: 90%; max-height: 90%; transform: scale(0.96); transition: transform 0.25s ease; }
-.gh-image-modal:target .gh-modal-wrapper { transform: scale(1); }
-.gh-modal-wrapper img { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 6px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); cursor: zoom-out; }
-</style>
-
-<!-- IMAGE INSTANCE 1 -->
-<a href="#pic1" class="img-modal-link"><img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" width="400" alt="Diagram 1"></a>
-<div id="pic1" class="gh-image-modal">
-  <a href="#close" class="gh-modal-dismiss"></a>
-  <div class="gh-modal-wrapper">
-    <a href="#close">
-      <img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" alt="Diagram 1">
-    </a>
-  </div>
-</div>
+<details style="cursor: pointer;">
+  <summary style="display: block; list-style: none;">
+    <!-- The normal preview image displayed on the page -->
+    <img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" width="400" alt="Click to zoom Diagram 1">
+    <br><small style="color: #666;">🔍 Click image to zoom / hide</small>
+  </summary>
+  <!-- The original uncompressed image inside the toggle block -->
+  <a href="#close">
+    <img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" style="max-width: 100%; height: auto; margin-top: 15px; border: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+  </a>
+</details>
 
 
 
