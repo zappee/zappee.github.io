@@ -136,7 +136,11 @@ my-service:
 
 
 * **Override the container's entrypoint:**
-
+  To orchestra the containers startup order, you can use the ready for use `wait-for-container.sh` script. 
+  This script expect only one parameter: the hostname of the dependent container.
+  It checks the `Readiness signal port` of the given container in a loop (with 0.5 secund wait time) and blocks the container startup.
+  
+  Usage: `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`
 
 
 #### 5.2) Java 21 and 25 with embedded Postgres Database
