@@ -67,7 +67,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
-#### 5.1) Java containers
+### 6) Java containers
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
 These core `Java` images provide your Spring Boot applications a reliable, high-performance execution environment in the _Spring Box_ ecosystem.
 
@@ -180,7 +180,7 @@ my-service:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 
-#### 5.2) Java 21 and 25 with an rembedded PostgreSQL database
+### 7) Java 21 and 25 with an rembedded PostgreSQL database
 to support the database-per-service** pattern.
 
 #### 5.3) Apache Tomcat 1⁰
