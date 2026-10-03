@@ -69,7 +69,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 #### 5.1) Java containers
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
-These core `Java` images provide your Spring Boot applications a reliable, high-performance execution environment for your Spring Boot application in the _Spring Box_ ecosystem.
+These core `Java` images provide your Spring Boot applications a reliable, high-performance execution environment in the _Spring Box_ ecosystem.
 
 Here is a typical `springbox-java` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
@@ -109,7 +109,6 @@ my-service:
 **Configuration highlights**
 
 * **Containers naming convention:**
-
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
   That way domain name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
   This strategy provides massive advantages when working with a _Container Runtime_ system that dynamically manages the execution and lifecycle of Docker containers.
@@ -133,6 +132,8 @@ my-service:
     As seen in the example above, the `wait-for-container.sh` script queries this port to block `my-service` container from launching until the HashiCorp Consul container is fully ready.
     Passing this check triggers the container's original image entrypoint scripts.
 
+
+* **Override the container's entrypoint:**
 
 
 
