@@ -65,21 +65,6 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ### 5) Docker containers in the _Spring Box_ ecosystem
 
-<details style="cursor: pointer;">
-  <summary style="display: block; list-style: none;">
-    <!-- The normal preview image displayed on the page -->
-    <img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" width="400" alt="Click to zoom Diagram 1">
-    <br><small style="color: #666;">🔍 Click image to zoom / hide</small>
-  </summary>
-  <!-- The original uncompressed image inside the toggle block -->
-  <a href="#close">
-    <img src="/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png" style="max-width: 100%; height: auto; margin-top: 15px; border: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  </a>
-</details>
-
-
-
-
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 ### 6) Java runtime containers
