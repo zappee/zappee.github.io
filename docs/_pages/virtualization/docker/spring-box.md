@@ -157,9 +157,9 @@ my-service:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * PKI_HOST: Specifies the hostname of the internal **Private PKI Management** container within the _Spring Box_ network.
-  * CONSUL_SERVER_HOSTNAME: Defines the hostname of the **HashiCorp Consul** container inside the platform.
-  * JAVA_OPTS: A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
+  * **PKI_HOST:** Specifies the hostname of the internal **Private PKI Management** container within the _Spring Box_ network.
+  * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the **HashiCorp Consul** container inside the platform.
+  * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
 
 
 * **Container memory limit:**
@@ -180,7 +180,7 @@ my-service:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 
-#### 5.2) Java 21 and 25 with embedded Postgres Database
+#### 5.2) Java 21 and 25 with an rembedded PostgreSQL database
 to support the database-per-service** pattern.
 
 #### 5.3) Apache Tomcat 1⁰
