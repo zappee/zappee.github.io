@@ -109,27 +109,29 @@ my-service:
 **Configuration highlights**
 
 * **Containers naming convention:**
+
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
-  That way domain name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
-  This strategy provides massive advantages when working with a _Container Runtime_ system that dynamically manages the execution and lifecycle of Docker containers.
+  That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
+  This strategy provides massive advantages when working with a _Container Runtime System_ that dynamically manages the execution and lifecycle of Docker containers.
 
   The `${DOMAIN_NAME}` variable can be defined in a dedicated environment file, or as a shell variable, or CI/CD pipeline can provide.
   ```properties
-  # remal.com.env file
+  # arnold.com.env file
   DOMAIN_NAME=arnold.com
   ```
-  You can then spin up the stack using the following command: `docker compose --env-file=remal.com.env -f <compose-file> up`
+  You can then spin up the stack using the following command: `docker compose --env-file=arnold.com.env -f <compose-file> up`
 
 
-* **Ports used by this container:**
-  * **SSH Port (default: 22):** The embedded SSH server listens on the default port `22` for safe, remote shell management.
+* **Ports used by the container:**
+  * **SSH Port (default: 22):** The embedded SSH server listens on the default port 22 for safe, remote shell management.
     * **User:** `root`
     * **Password:** `password`
     * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>` *(where the port is mapped to `14012` in the example above).*
   * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
   * **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
     It functions as a health indicator to orchestrate the startup dependency order of your containers.
-    As seen in the example above, the `wait-for-container.sh` script queries this port to block `my-service` container from launching until the HashiCorp Consul container is fully ready.
+    As seen in the example above, the `wait-for-container.sh` script queries this port to block the `my-service` container from launching until the HashiCorp Consul container is fully ready.
+    Without this check, the Spring Boot application would fail immediately, as it strictly requires an active configuration Key-Value store during its startup phase.
     Passing this check triggers the container's original image entrypoint scripts.
 
 
