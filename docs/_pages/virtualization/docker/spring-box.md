@@ -135,14 +135,17 @@ my-service:
     Passing this check triggers the container's original image entrypoint scripts.
 
 
-* **Override the container's entrypoint:**
-  To orchestra the containers startup order, you can use the ready for use `wait-for-container.sh` script. 
-  This script expect only one parameter: the hostname of the dependent container.
-  It checks the `Readiness signal port` of the given container in a loop (with 0.5 secund wait time) and blocks the container startup.
+* **Override the container entrypoint:**
+  To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
+  This script expects exactly one parameter: the hostname of the target container that your service depends on.
+  It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your service's startup until the dependency is fully online.
   
-  Usage: `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`
+  Usage example:
+  ```yaml
+  entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+  ```
 
-
+  
 #### 5.2) Java 21 and 25 with embedded Postgres Database
 to support the database-per-service** pattern.
 
