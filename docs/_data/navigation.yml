@@ -81,7 +81,7 @@ virtualization_sidebar:
         url: ""
 
       - title: "<span class='sidebar-bullet'>Java Box</span>"
-        url: /virtualization/docker/spring-box#6-java-runtime-containers
+        url: /virtualization/docker/java-box/
 
       - title: "<span class='sidebar-bullet'>Spring Box</span>"
         url: /virtualization/docker/spring-box/
