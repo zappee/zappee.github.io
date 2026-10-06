@@ -9,7 +9,7 @@ sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Java Box: Spring Boot runner Docker container
+## ☁️ Java Box: the ultimate Spring Boot runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/spring-box)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
