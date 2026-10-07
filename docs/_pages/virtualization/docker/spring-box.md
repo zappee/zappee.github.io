@@ -204,7 +204,7 @@ Its advanced design accelerates development velocity by providing pre-configured
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
 * **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
-**How to spin up the image**
+**How to run the container**
   ```yaml
     counter-service-1:
         image: springbox-java-25-runner:0.8.0
