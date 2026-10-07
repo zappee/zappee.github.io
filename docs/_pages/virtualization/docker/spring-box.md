@@ -197,7 +197,7 @@ Its advanced design accelerates development velocity by providing pre-configured
 
 > Use this container to deploy and run your Java applications as executable JARs.
 
-Features:
+**Features**
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
 * **Cluster-wide HashiCorp Consul integration:** Provides Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
 * **Cluster-wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
