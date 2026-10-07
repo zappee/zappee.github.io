@@ -63,6 +63,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 * **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring Box_ simplifies the implementation of lightning-fast REST services and it can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The architecture supports three distinct caching mechanisms: Embedded Cache, Client-Server topology, and Near-Cache:
+
   ![Supported caching architectures](bbbbb)
 
 
