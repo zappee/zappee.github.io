@@ -183,7 +183,7 @@ The following diagram illustrates the JVM memory structure and its corresponding
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 
-### 7) 
+### 7) Java runtime with PostgreSQL containers
 
 
 ### 6) Private Certificate Authority (PKI)
