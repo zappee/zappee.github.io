@@ -61,7 +61,8 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 * **Architecture evolution:** Designed for zero-downtime scalability. The platform’s modular nature allows you to easily scale services horizontally or vertically, or swap out infrastructure components entirely as your application traffic and business needs grow.
 * **Configuration management:** The integrated _Distributed Key-Value Registry_ acts as a single source of truth for runtime configurations, making it effortless to manage environment states and synchronize changes across all active instances.
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
-* **Distributed Caching:** Integrated, cluster-wide Distributed Cache topologies drastically reduce database load, guarantee lightning-fast REST responses during heavy traffic spikes, and maintain request context across separate instances whenever necessary.
+* **Distributed Caching:** The built-in integrated, cluster-wide Hazelcast based distributed cache solution that Spring Box offers simplifies the implementation of lightning-fast REST service, maintain persistent request context across separate instances. You can reduce database load by using different cache strategy. By pairing the Spring Box with the Bucket4j library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
+
 
 ### 5) Docker containers in the _Spring Box_ ecosystem
 
