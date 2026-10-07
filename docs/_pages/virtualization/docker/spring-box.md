@@ -75,12 +75,12 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
 These core `Java` images provide your Spring Boot applications a reliable, high-performance execution environment in the _Spring Box_ ecosystem.
 
-Here is a typical `springbox-java` container configuration.
+Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
 
 ```yaml
 my-service:
-    image: springbox-java-25:0.8.0
+    image: springbox-openjdk-25:0.8.0
     container_name: my-service.${DOMAIN_NAME}
     hostname: my-service.${DOMAIN_NAME}
     ports:
