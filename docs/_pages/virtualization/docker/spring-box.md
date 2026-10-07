@@ -71,8 +71,12 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
-### 6) Java runtime containers
+### 6) Java runtime containers - _springbox-openjdk_
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
+
+>These core images are designed to serve as a parent image for custom builds and is not recommended for running Java applications (*.jar) directly.
+>To execute your Java applications, we highly recommend using the Java Runner containers.
+
 These core `Java` images provide your Spring Boot applications a reliable, high-performance execution environment in the _Spring Box_ ecosystem.
 
 Here is a typical `springbox-openjdk` container configuration.
@@ -187,13 +191,18 @@ my-service:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 
-### 7) Java runtime with PostgreSQL containers
+### 7) Java Runner containers - _springbox-java-runner_
+The Java Runner is an optimized Docker image designed specifically for running containerized Java applications, particularly Spring Boot executable JAR files. It features advanced runtime environment management, multi-stage configuration flags, and built-in integration support for enterprise services like HashiCorp Consul and Hazelcast.
 
 
-### 6) Private Certificate Authority (PKI)
+
+### 8) Java runtime with PostgreSQL containers
 
 
-### 7) Hashicorp Consul integration
+### 9) Private Certificate Authority (PKI)
+
+
+### 10) Hashicorp Consul integration
 
 
 
