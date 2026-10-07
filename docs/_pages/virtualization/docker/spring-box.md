@@ -192,7 +192,17 @@ my-service:
 
 
 ### 7) Java Runner containers - _springbox-java-runner_
-The Java Runner is an optimized Docker image designed specifically for running containerized Java applications, particularly Spring Boot executable JAR files. It features advanced runtime environment management, multi-stage configuration flags, and built-in integration support for enterprise services like HashiCorp Consul and Hazelcast.
+The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
+Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
+
+> Use this container to deploy and run your Java applications as executable JARs.
+
+* **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
+* **Cluster wide HashiCorp Consul integration:** Providing Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
+* **Cluster wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
+* **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
+* **Grafana analytics and visualization platform:** It is a visualization dashboards, transforming raw metrics collected by Prometheus into real-time, beautiful, easy-to-read charts.
+
 
 
 
@@ -202,7 +212,7 @@ The Java Runner is an optimized Docker image designed specifically for running c
 ### 9) Private Certificate Authority (PKI)
 
 
-### 10) Hashicorp Consul integration
+### 10) HashiCorp Consul integration
 
 
 
@@ -228,7 +238,7 @@ to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
 
 #### 5.6) Distributed service registry and key-value store
-based on Hashicorp Consul.
+based on HashiCorp Consul.
 Cluster wide
 
 ##### 5.7) Prometheus time-series database server
