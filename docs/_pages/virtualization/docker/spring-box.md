@@ -161,9 +161,9 @@ my-service:
   * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the **HashiCorp Consul** container inside the platform.
   * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
 
-The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
+  The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
-![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
+  ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
 
 * **Container memory limit:**
 
