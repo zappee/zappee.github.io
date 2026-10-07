@@ -204,6 +204,42 @@ Its advanced design accelerates development velocity by providing pre-configured
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
 * **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
+**How to spin up the image**
+  ```yaml
+    counter-service-1:
+        image: springbox-java-25-runner:0.8.0
+        container_name: counter-service-1.${DOMAIN_NAME}
+        hostname: counter-service-1.${DOMAIN_NAME}
+        entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+        ports:
+            - "14012:22"   # SSH
+            - "14013:8000" # JVM debug
+            - "14014:8443" # HTTPS
+        environment:
+            PKI_HOST: pki.${DOMAIN_NAME}
+            CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
+            HAZELCAST_CLUSTER_NAME: springbox-dev
+            HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
+            JAVA_OPTS: >
+                -XX:+UseContainerSupport
+                -XX:MaxRAMPercentage=75.0
+                -XX:+UseG1GC
+                -XX:MaxGCPauseMillis=100
+                -XX:+ParallelRefProcEnabled
+                -XX:+UseStringDeduplication
+                -XX:+HeapDumpOnOutOfMemoryError
+                -XX:+ExitOnOutOfMemoryError
+                -XX:HeapDumpPath=/heap-dump
+        deploy:
+            resources:
+                limits:
+                    memory: 256M
+        volumes:
+            - $HOME/springbox/volumes/counter-service-1/jar-to-run:/jar-to-run
+            - $HOME/springbox/volumes/counter-service-1/logs:/logs
+            - $HOME/springbox/volumes/counter-service-1/heap-dump:/heap-dump
+  ```
+
 
 ### 8) Java runtime with PostgreSQL containers
 
