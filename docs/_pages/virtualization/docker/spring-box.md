@@ -71,11 +71,87 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
-### 6) Java runtime containers - _springbox-openjdk_
+### 6) The Base image - _springbox-base_
+This ultra-minimal base image serves as the foundation for the entire **Remal Spring Box** ecosystem.
+It contains only essential system utilities and bootstrap configurations.
+
+* System & Access Utilities:
+  * Lightweight Linux tools and common shell functions.
+  * An SSH server, fully installed and configured.
+* Environment Configurations:
+  * System-wide shell configurations.
+  * A pre-configured Docker entrypoint script.
+* Container Orchestration:
+  * `wait-for-container.sh` (for service dependency sequencing).
+  * `docker.init` and `docker.startup` directory preparation.
+
+We keep this layer footprint as small as possible.
+This serves as the parent layer for all subsequent images, any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of your production Spring Box images.
+
+_⚠️ **Important:**_
+_Modifying this layer directly impacts every image downstream in the ecosystem._
+_Please modify it with caution and only introduce changes that are globally required._
+
+**Ports used by the container:**
+
+* **SSH Port (default: 22):** The embedded SSH server listens on the default port 22 for safe, remote shell management.
+  * **User:** `root`
+  * **Password:** `password`
+  * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>` *(where the port is mapped to `14012` in the example above).*
+* **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
+  It functions as a health indicator to orchestrate the startup dependency order of your containers.
+  As seen in the example above, the `wait-for-container.sh` script queries this port to block the `my-service` container from launching until the HashiCorp Consul container is fully ready.
+  Without this check, the Spring Boot application would fail immediately, as it strictly requires an active configuration Key-Value store during its startup phase.
+  Passing this check triggers the container's original image entrypoint scripts.#
+
+  Use this feature with caution, as misconfiguration can result in an infinite loop and your container will not start.
+
+* **Override the container entrypoint:**
+
+  To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
+  This script expects exactly one parameter: the hostname of the target container that your service depends on.
+  It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your service's startup until the dependency is fully online.
+
+  Usage example:
+  ```yaml
+  entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+  ```
+
+
+### 7) Java runtime environment - _springbox-openjdk_
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
 
 _**Note:** These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly.
 To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
+
+This layer only installs the specific OpenJDK versions into the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 8) Java Runner containers - _springbox-java-runner_
+
+
+
+
+
+
+
 
 Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
@@ -132,30 +208,9 @@ my-service:
 
 * **Ports used by the container:**
 
-  * **SSH Port (default: 22):** The embedded SSH server listens on the default port 22 for safe, remote shell management.
-    * **User:** `root`
-    * **Password:** `password`
-    * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>` *(where the port is mapped to `14012` in the example above).*
-  * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
-  * **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
-    It functions as a health indicator to orchestrate the startup dependency order of your containers.
-    As seen in the example above, the `wait-for-container.sh` script queries this port to block the `my-service` container from launching until the HashiCorp Consul container is fully ready.
-    Without this check, the Spring Boot application would fail immediately, as it strictly requires an active configuration Key-Value store during its startup phase.
-    Passing this check triggers the container's original image entrypoint scripts.#
-
-    Use this feature with caution, as misconfiguration can result in an infinite loop and your container will not start.
+* **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
 
 
-* **Override the container entrypoint:**
-
-  To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
-  This script expects exactly one parameter: the hostname of the target container that your service depends on.
-  It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your service's startup until the dependency is fully online.
-  
-  Usage example:
-  ```yaml
-  entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
-  ```
 
 
 * **Container environment variables:**
@@ -187,6 +242,13 @@ my-service:
   * **/jar-to-run:** Host to container, input. The executable Java application `.jar` file must be placed in this folder to be passed into the container for execution. This folder must contain exactly one `.jar` file, as each individual Java container in the _Spring Box_ ecosystem is designed to execute a single application.
   - **/logs:** Container to host, output. Application and server log files generated by the active processes inside the container are streamed out the host machine via this shared folder.
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
+
+
+
+
+
+
+
 
 
 ### 7) Java Runner containers - _springbox-java-runner_
