@@ -193,7 +193,7 @@ my-service:
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
 
-> Use this container to deploy and run your Java applications as executable JARs.
+_**Note:** Use this container to deploy and run your Java applications as executable JARs._
 
 **Features**
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
