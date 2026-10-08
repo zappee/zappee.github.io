@@ -86,7 +86,7 @@ It contains only essential system utilities and bootstrap configurations.
 We keep this layer footprint as small as possible.
 This serves as the parent layer for all subsequent images, any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of your production Spring Box images.
 
-_⚠️ **Important:**_
+⚠️ _**Important:**_
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
@@ -125,7 +125,7 @@ _Please modify it with caution and only introduce changes that are globally requ
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
 This Docker image layer only supports specific OpenJDK installations and OpenSSL to deal with keystores.
 
-_⚠️ **Important:**_
+⚠️ _**Important:**_
 _These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly._
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
 
