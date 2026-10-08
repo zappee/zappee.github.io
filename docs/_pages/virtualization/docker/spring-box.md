@@ -210,10 +210,6 @@ Don't worry, we will break down the entire Docker Compose setup in the next sect
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 ### 8) Java Runner containers - _springbox-java-runner_
-
-
-
-### 7) Java Runner containers - _springbox-java-runner_
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
 
