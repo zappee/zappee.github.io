@@ -98,17 +98,14 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example above.
 * **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
-  The `wait-for-container.sh` script queries this port to block the `hello-service` [Java Runner container](#8-java-runner-containers---springbox-java-runner) from launching until the HashiCorp Consul container is fully ready.
-  Without this check, the Spring Boot application would fail immediately, as it strictly requires an active configuration Key-Value store during its startup phase.
-  Passing this check triggers the container's original image entrypoint scripts.
+  The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
+  Without this check, the Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
+  Once this check passes, the container triggers the original image entrypoint scripts.
 
-  Use this feature with caution, as misconfiguration can result in an infinite loop and your container will not start.
-
-* **Override the container entrypoint:**
-
-  To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
+  Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
+* **Override the container entrypoint:** To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
-  It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your service's startup until the dependency is fully online.
+  It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your container's startup until the dependency is fully online.
 
   Usage example:
   ```yaml
