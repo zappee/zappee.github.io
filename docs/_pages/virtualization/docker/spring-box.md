@@ -74,8 +74,8 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 ### 6) Java runtime containers - _springbox-openjdk_
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
 
->**Note:** These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly.
-> To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers.
+_**Note:** These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly.
+To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
 
 Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
