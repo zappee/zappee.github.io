@@ -66,9 +66,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 
   ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
 
-
 ### 5) Docker containers in the _Spring Box_ ecosystem
-
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 ### 6) The Base image - _springbox-base_
