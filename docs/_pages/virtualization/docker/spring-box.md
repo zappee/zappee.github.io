@@ -91,19 +91,21 @@ _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
 **Ports used by the container:**
-
-* **SSH Port (default: 22):** The embedded SSH server listens on the default port 22 for safe, remote shell management.
+* **SSH Port (default: 22):**
+  The embedded SSH server listens on the default port 22 for safe, remote shell management.
   * **User:** `root`
   * **Password:** `password`
   * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example above.
-* **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
+* **Readiness signal port (default: 1331):**
+  This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
   The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
   Without this check, the Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
   Once this check passes, the container triggers the original image entrypoint scripts.
 
   Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
-* **Override the container entrypoint:** To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
+* **Override the container entrypoint:**
+  To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
   It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your container's startup until the dependency is fully online.
 
@@ -167,7 +169,6 @@ Don't worry, we will break down the entire Docker Compose setup in the next sect
 **Configuration highlights**
 
 * **Containers naming convention:**
-
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
   That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
   This strategy provides massive advantages when working with a _Container Runtime System_ that dynamically manages the execution and lifecycle of Docker containers.
@@ -178,38 +179,29 @@ Don't worry, we will break down the entire Docker Compose setup in the next sect
   DOMAIN_NAME=arnold.com
   ```
   You can then spin up the stack using the following command: `docker compose --env-file=arnold.com.env -f <compose-file> up`
-
-
 * **Ports used by the container:**
-
-* **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
-
-
-
+  * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
+  * **HTTPS port (default: 8443):** The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
 
 * **Container environment variables:**
-
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
   * **PKI_HOST:** Specifies the hostname of the **Private PKI Management** container within the _Spring Box_ network.
   * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the **HashiCorp Consul** container inside the platform.
+  * **HAZELCAST_CLUSTER_NAME:** Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
+  * **HAZELCAST_CLUSTER_MEMBERS:** Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
   * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
 
   The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
   ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
-
 * **Container memory limit:**
-
   In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `docker-compose.yml` file.
   This helps prevent containers from consuming excessive resources, which can lead to system instability.
   
   The container memory limits defined here must align precisely with the internal JVM configurations.
-
-
 * **Docker volume configuration:**
-
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
   _Spring Box_ uses Docker volumes to share files between the host machine and the container.
 
