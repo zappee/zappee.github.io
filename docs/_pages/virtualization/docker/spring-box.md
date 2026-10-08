@@ -234,7 +234,7 @@ Here is a typical `springbox-openjdk-postgres-runner` container configuration:
 
 ```yaml
 hello-service-1:
-    image: springbox-java-25-postgres-runner:0.8.0
+    image: springbox-openjdk-25-postgres-runner:0.8.0
     container_name: hello-service-1.${DOMAIN_NAME}
     hostname: hello-service-1.${DOMAIN_NAME}
     entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
