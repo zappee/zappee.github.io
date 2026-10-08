@@ -230,8 +230,7 @@ Because it runs both the Java application and the database server inside the sam
 
 We recommend using this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
 
-Here is a typical `springbox-openjdk-postgres-runner` container configuration.
-Don't worry, we will break down the entire Docker Compose setup in the next section.
+Here is a typical `springbox-openjdk-postgres-runner` container configuration:
 
 ```yaml
 hello-service-1:
