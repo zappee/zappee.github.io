@@ -146,40 +146,40 @@ Its advanced design accelerates development velocity by providing pre-configured
 Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
 
-  ```yaml
-    hello-service-1:
-        image: springbox-java-25-runner:0.8.0
-        container_name: hello-service-1.${DOMAIN_NAME}
-        hostname: hello-service-1.${DOMAIN_NAME}
-        entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
-        ports:
-            - "14012:22"   # SSH
-            - "14013:8000" # JVM debug
-            - "14014:8443" # HTTPS
-        environment:
-            PKI_HOST: pki.${DOMAIN_NAME}
-            CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
-            HAZELCAST_CLUSTER_NAME: springbox-dev
-            HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
-            JAVA_OPTS: >
-                -XX:+UseContainerSupport
-                -XX:MaxRAMPercentage=75.0
-                -XX:+UseG1GC
-                -XX:MaxGCPauseMillis=100
-                -XX:+ParallelRefProcEnabled
-                -XX:+UseStringDeduplication
-                -XX:+HeapDumpOnOutOfMemoryError
-                -XX:+ExitOnOutOfMemoryError
-                -XX:HeapDumpPath=/heap-dump
-        deploy:
-            resources:
-                limits:
-                    memory: 256M
-        volumes:
-            - $HOME/springbox/volumes/hello-service-1/jar-to-run:/jar-to-run
-            - $HOME/springbox/volumes/hello-service-1/logs:/logs
-            - $HOME/springbox/volumes/hello-service-1/heap-dump:/heap-dump
-  ```
+```yaml
+hello-service-1:
+    image: springbox-java-25-runner:0.8.0
+    container_name: hello-service-1.${DOMAIN_NAME}
+    hostname: hello-service-1.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+    ports:
+        - "14012:22"   # SSH
+        - "14013:8000" # JVM debug
+        - "14014:8443" # HTTPS
+    environment:
+        PKI_HOST: pki.${DOMAIN_NAME}
+        CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
+        HAZELCAST_CLUSTER_NAME: springbox-dev
+        HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
+        JAVA_OPTS: >
+            -XX:+UseContainerSupport
+            -XX:MaxRAMPercentage=75.0
+            -XX:+UseG1GC
+            -XX:MaxGCPauseMillis=100
+            -XX:+ParallelRefProcEnabled
+            -XX:+UseStringDeduplication
+            -XX:+HeapDumpOnOutOfMemoryError
+            -XX:+ExitOnOutOfMemoryError
+            -XX:HeapDumpPath=/heap-dump
+    deploy:
+        resources:
+            limits:
+                memory: 256M
+    volumes:
+        - $HOME/springbox/volumes/hello-service-1/jar-to-run:/jar-to-run
+        - $HOME/springbox/volumes/hello-service-1/logs:/logs
+        - $HOME/springbox/volumes/hello-service-1/heap-dump:/heap-dump
+```
 
 **Configuration highlights**
 
@@ -225,7 +225,52 @@ Don't worry, we will break down the entire Docker Compose setup in the next sect
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 ### 9) Java runtime with PostgreSQL containers
+The only difference between this image and the standard [Java Runner](#8-java-runner-containers---springbox-java-runner) containers is its embedded PostgreSQL database server.
+Because it runs both the Java application and the database server inside the same container, this image requires higher memory and CPU allocations.
 
+We recommend using this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
+
+Here is a typical `springbox-openjdk-postgres-runner` container configuration.
+Don't worry, we will break down the entire Docker Compose setup in the next section.
+
+```yaml
+hello-service-1:
+    image: springbox-java-25-postgres-runner:0.8.0
+    container_name: hello-service-1.${DOMAIN_NAME}
+    hostname: hello-service-1.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+    ports:
+        - "14012:22"   # SSH
+        - "14013:8000" # JVM debug
+        - "14014:8443" # HTTPS
+        - "14015:5432" # PostgreSQL
+    environment:
+        PKI_HOST: pki.${DOMAIN_NAME}
+        CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
+        START_DB: true
+        DB_APP_DATABASE: default_db
+        DB_APP_USER: application
+        DB_APP_PASSWORD: password
+        JAVA_OPTS: >
+            -XX:+UseContainerSupport
+            -XX:MaxRAMPercentage=65.0
+            -XX:+UseG1GC
+            -XX:MaxGCPauseMillis=100
+            -XX:+ParallelRefProcEnabled
+            -XX:+UseStringDeduplication
+            -XX:+HeapDumpOnOutOfMemoryError
+            -XX:+ExitOnOutOfMemoryError
+            -XX:HeapDumpPath=/heap-dump
+    deploy:
+        resources:
+            limits:
+                memory: 512M
+    volumes:
+        - $HOME/Java/springbox/volumes/hello-service-1/jar-to-run:/jar-to-run
+        - $HOME/Java/springbox/volumes/hello-service-1/logs:/logs
+        - $HOME/Java/springbox/volumes/hello-service-1/heap-dump:/heap-dump
+        - $HOME/Java/springbox/volumes/hello-service-1/data:/var/lib/postgresql/data
+ ```
 
 ### 10) Private Certificate Authority (PKI)
 
