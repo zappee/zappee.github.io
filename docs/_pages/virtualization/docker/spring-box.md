@@ -70,7 +70,7 @@ By abstracting away complex structural infrastructure, it enables start-ups and 
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 ### 6) The Base image - _springbox-base_
-This ultra-minimal base image serves as the foundation for the entire **Remal Spring Box** ecosystem.
+This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
 * System & Access Utilities:
@@ -119,7 +119,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
 ### 7) Java core runtime - _springbox-openjdk_
-The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
+The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
 This Docker image layer only supports specific OpenJDK installations and OpenSSL to deal with keystores.
 
 ⚠️ _**Important:**_
