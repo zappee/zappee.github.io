@@ -80,7 +80,7 @@ It contains only essential system utilities and bootstrap configurations.
   * System-wide shell configurations.
   * A pre-configured Docker entrypoint script.
 * Container Orchestration:
-  * `wait-for-container.sh` (for service dependency sequencing).
+  * `wait-for-container.sh` for service dependency sequencing.
   * `docker.init` and `docker.startup` directory preparation.
 
 We keep this layer footprint as small as possible.
