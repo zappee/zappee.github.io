@@ -98,9 +98,9 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>` *(where the port is mapped to `14012` in the example above).*
 * **Readiness signal port (default: 1331):** This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
-  As seen in the example above, the `wait-for-container.sh` script queries this port to block the `my-service` container from launching until the HashiCorp Consul container is fully ready.
+  The `wait-for-container.sh` script queries this port to block the `hello-service` [Java Runner container](#8-java-runner-containers---springbox-java-runner) from launching until the HashiCorp Consul container is fully ready.
   Without this check, the Spring Boot application would fail immediately, as it strictly requires an active configuration Key-Value store during its startup phase.
-  Passing this check triggers the container's original image entrypoint scripts.#
+  Passing this check triggers the container's original image entrypoint scripts.
 
   Use this feature with caution, as misconfiguration can result in an infinite loop and your container will not start.
 
@@ -114,17 +114,20 @@ _Please modify it with caution and only introduce changes that are globally requ
   ```yaml
   entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
   ```
+* **Container lifecycle management:**
+  The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
+  Using the Linux `run-parts` tool, the container executes initialization and startup scripts sequentially without hardcoded filenames.
+  While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
+  * **Initialization:** Scripts in `docker.init` directory run only _ONCE_ during the container's very first boot. They will be skipped on subsequent container restarts.
+  * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
-
-### 7) Java runtime environment - _springbox-openjdk_
+### 7) Java core runtime - _springbox-openjdk_
 The platform supports production-ready runtimes for **OpenJDK 11, 17, 21, and 25**.
+This Docker image layer only supports specific OpenJDK installations and OpenSSL to deal with keystores.
 
-_**Note:** These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly.
-To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
-
-This layer only installs the specific OpenJDK versions into the 
-
-
+_⚠️ **Important:**_
+_These core images are designed to serve as base layers for custom builds and are not recommended for running Java applications (*.jar) directly._
+_To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
 
 
 
@@ -138,11 +141,6 @@ This layer only installs the specific OpenJDK versions into the
 
 
 
-
-
-
-
-### 8) Java Runner containers - _springbox-java-runner_
 
 
 
@@ -246,6 +244,14 @@ my-service:
 
 
 
+
+
+
+
+
+
+
+### 8) Java Runner containers - _springbox-java-runner_
 
 
 
