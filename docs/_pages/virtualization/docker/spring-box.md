@@ -141,7 +141,7 @@ Its advanced design accelerates development velocity by providing pre-configured
 
 ⚠️ _**Note:** Use this container to deploy and run your Java applications as executable JARs._
 
-**Features**
+#### 8.1) Features
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
 * **Cluster-wide HashiCorp Consul integration:** Provides Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
 * **Cluster-wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
@@ -191,8 +191,7 @@ hello-service-1:
         - $HOME/springbox/volumes/hello-service-1/heap-dump:/heap-dump
 ```
 
-**Configuration highlights**
-
+#### 8.2) Configuration highlights
 * **Containers naming convention:**
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
   That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
