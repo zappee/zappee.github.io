@@ -25,6 +25,7 @@ sidebar:
 
 ## 📖 Variable Glossary
 
+---
 {% assign headings = page.content | split: '<h3 id="' %}
 {% for heading in headings %}
   {% if forloop.first %}{% continue %}{% endif %}
@@ -38,7 +39,6 @@ sidebar:
 
   - [{{ visible_text }}](#{{ html_id }})
 {% endfor %}
-
 ---
 
 
