@@ -21,7 +21,6 @@ sidebar:
 
 ## Table of Contents
 {: style="list-style-type: none; padding-left: 25px;"}
-
 * This list will become the styled glossary
 {:toc}
 ---
