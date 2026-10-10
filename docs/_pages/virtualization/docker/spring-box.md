@@ -21,17 +21,15 @@ sidebar:
 
 
 
-
-
-
 ## 📖 Glossary
+
+<div style="font-size: 10px; margin: 2px 0; line-height: 2.0; letter-spacing: 0.2px;">
+
 * This list will become the glossary
 {:toc}
-{: style="font-size: 10px;margin: 2px 0; line-height: 2.0; letter-spacing: 0.2px;"}
+</div>
 
 ---
-
-
 
 ### 1) Overview
 
