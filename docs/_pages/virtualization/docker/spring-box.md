@@ -154,7 +154,7 @@ Don't worry, we will break down the entire Docker Compose setup in the next sect
 
 ```yaml
 hello-service-1:
-    image: springbox-java-25-runner:0.8.0
+    image: springbox-openjdk-25-runner:0.8.0
     container_name: hello-service-1.${DOMAIN_NAME}
     hostname: hello-service-1.${DOMAIN_NAME}
     entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
@@ -165,7 +165,7 @@ hello-service-1:
     environment:
         PKI_HOST: pki.${DOMAIN_NAME}
         CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
-        HAZELCAST_CLUSTER_NAME: springbox-dev
+        HAZELCAST_CLUSTER_NAME: renal-dev
         HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
         JAVA_OPTS: >
             -XX:+UseContainerSupport
@@ -253,7 +253,7 @@ hello-service-1:
         PKI_HOST: pki.${DOMAIN_NAME}
         CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
         START_DB: true
-        HAZELCAST_CLUSTER_NAME: springbox-dev
+        HAZELCAST_CLUSTER_NAME: renal-dev
         HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
         DB_APP_DATABASE: default_db
         DB_APP_USER: application
