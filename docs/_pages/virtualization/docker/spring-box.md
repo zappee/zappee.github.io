@@ -41,13 +41,20 @@ sidebar:
 ---
 
 
+## 📖 Glossary 33
+{: style="font-size: 11px; margin: 0px; line-height: 2.0; letter-spacing: 0.2px;"}
+
+* This list will become the styled glossary
+{:toc}
+
+---
 
 
 
 
 
 
-## 📖 Glossary 3
+## 📖 Glossary 4
 
 <div style="font-size: 10px; margin: 2px 0; line-height: 2.0; letter-spacing: 0.2px;">
 
