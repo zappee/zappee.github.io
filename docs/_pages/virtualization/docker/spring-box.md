@@ -107,6 +107,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   Once this check passes, the container triggers the original image entrypoint scripts.
 
   Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
+
 **Override the container entrypoint:**
   To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
@@ -116,6 +117,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   ```yaml
   entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
   ```
+
 **Container lifecycle management:**
   The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
   Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
