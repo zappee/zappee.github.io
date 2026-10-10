@@ -139,7 +139,8 @@ _To deploy and execute your Java applications, we highly recommend using our spe
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
 
-⚠️ _**Note:** Use this container to deploy and run your Java applications as executable JARs._
+⚠️ _**Important:**_
+_Use this container to deploy and run your Java applications as executable JARs._
 
 #### 8.1) Features
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
@@ -246,10 +247,13 @@ hello-service-1:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 ### 9) Java runtime with PostgreSQL images - _springbox-openjdk-25-postgres-runner_
-The only difference between this image and the standard [Java Runner](#8-java-runner-containers---springbox-java-runner) containers is its embedded PostgreSQL database server.
-Because it runs both the Java application and the database server inside the same container, this image requires higher memory and CPU allocations.
+This image is an extends of our base [Java Runner containers](#8-java-runner-containers---springbox-openjdk-runner) layers by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
+While everything detailed in the _Java Runner containers_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
 
-We recommend using this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
+It is recommended to usie this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
+
+⚠️ _**Important:**_
+_Because this image runs both the Java application and the database server inside a single container, it may require higher memory and CPU allocations._
 
 Here is a typical `springbox-openjdk-postgres-runner` container configuration:
 
@@ -294,49 +298,29 @@ hello-service-1:
         - $HOME/Java/springbox/volumes/hello-service-1/data:/var/lib/postgresql/data
  ```
 
-### 10) Private Certificate Authority (PKI)
-
-
-### 11) HashiCorp Consul integration
-
-
-
-
-
-
-
-
-
-
-### 7) Java 21 and 25 with an embedded PostgreSQL database
-This image extends our core [Java Containers](#6-java-containers) layers by adding a pre-installed, and ready-to-use PostgreSQL database server on top of the original image.
-While everything detailed in the [Java Containers](#6-java-containers) section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
-
-
-
-#### 5.3) Apache Tomcat 1⁰
-
-#### 5.4) Private Certificate Authority (PKI)
-to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
-
-##### 5.5) Hazelcast cash platform
-to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
-
-#### 5.6) Distributed service registry and key-value store
-based on HashiCorp Consul.
+### 10) HashiCorp Consul integration image- _springbox-consul-for-openjdk_
+Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
-##### 5.7) Prometheus time-series database server
+### 11) Hazelcast cache platform image - _springbox-hazelcast_
+to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
+
+### 12) Private Certificate Authority (PKI) - _springbox-private-ca_
+to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
+
+### 13) Apache Tomcat 10
+
+### 14) Prometheus time-series database server
 containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
 
-#### 5.8) Grafana
+### 15) Grafana
 
-#### 5.9) LDAP server
+### 16) LDAP server
 
-### 6) Source core
+### 20) Source core
 
 [https://github.com/zappee/spring-box](https://github.com/zappee/spring-box)
 
-### 7) Contributing
+### 21) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
