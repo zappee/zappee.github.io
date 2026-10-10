@@ -98,7 +98,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   The embedded SSH server listens on the default port 22 for safe, remote shell management.
   * **User:** `root`
   * **Password:** `password`
-  * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example above.
+  * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example below.
 * **Readiness signal port (default: 1331):**
   This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
