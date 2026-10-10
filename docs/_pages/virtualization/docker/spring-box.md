@@ -94,12 +94,12 @@ _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
 #### 6.1) Ports used by the container
-* **SSH Port (default: 22):**
+* **SSH Port** (default: 22):
   The embedded SSH server listens on the default port 22 for safe, remote shell management.
   * **User:** `root`
   * **Password:** `password`
   * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example below.
-* **Readiness signal port (default: 1331):**
+* **Readiness signal port** (default: 1331):
   This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
   The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
