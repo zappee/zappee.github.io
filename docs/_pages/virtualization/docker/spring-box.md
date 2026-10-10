@@ -26,7 +26,7 @@ sidebar:
 
 ## 📖 Glossary
 {:toc_levels="3..3"}
-{: style="font-family: 'Courier New', monospace; font-size: 8px; margin: 0px 0; line-height: 2.0; letter-spacing: 0.5px;"}
+{: style="font-size: 12px;"}
 {:toc}
 
 ---
