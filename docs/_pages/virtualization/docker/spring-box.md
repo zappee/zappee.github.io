@@ -20,6 +20,8 @@ sidebar:
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
 ## Table of Contents
+{: .custom-toc-title}
+
 {: .custom-toc-list}
 * This list will become the styled glossary
 {:toc}

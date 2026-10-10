@@ -153,7 +153,17 @@
   text-decoration: underline !important;
 }
 
+.custom-toc-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 0.3em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eaecef;
+}
+
 .custom-toc-list {
-    list-style-type: none !important;
-    padding-left: 25px !important;
+  list-style-type: none !important;
+  padding-left: 25px !important;
 }
