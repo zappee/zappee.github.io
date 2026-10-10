@@ -131,7 +131,7 @@ This Docker image layer only adds
 
 ⚠️ _**Important:**_
 _These core images are designed to serve as top layers for custom builds and are not recommended for running Java applications (*.jar) directly._
-_To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#7-java-runner-containers---springbox-java-runner) containers._
+_To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8-java-runner-containers---springbox-java-runner) containers._
 
 ### 8) Java Runner containers - _springbox-java-runner_
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
