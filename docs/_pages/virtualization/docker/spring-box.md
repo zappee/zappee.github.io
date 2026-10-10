@@ -39,11 +39,12 @@ Building a modern microservices architecture with Spring Boot requires stitching
 * Real-time application monitoring and log history
 * Historical infrastructure metrics (CPU load, memory consumption, connection pool sizes, stc.)
 * Automated horizontal and vertical scaling
+* Distributed cluster level cache
 * etc.
 
 Setting this up consistently across local development and production environments often leads to:
 * **Configuration drift:** Features working perfectly on a local developer machine but unexpectedly failing in production environments.
-* **Architecture overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key-Value stores) rather than writing core business logic.
+* **Architecture overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key-Value stores, database, service registry, cache, etc.) rather than writing core business logic.
 * **Distributed state challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
 * **"Works on my machine" dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
 
