@@ -31,7 +31,7 @@ sidebar:
 
 ## 📖 Glossary 2
 
-<div style="font-size: 8px; margin: 0px;">
+<div markdown="1" style="font-size: 8px; margin: 0px;">
 
 * This list will become the styled glossary
 {:toc}
