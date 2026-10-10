@@ -267,9 +267,9 @@ hello-service-1:
     environment:
         PKI_HOST: pki.${DOMAIN_NAME}
         CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
-        START_DB: true
         HAZELCAST_CLUSTER_NAME: renal-dev
         HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
+        START_DB: true
         DB_APP_DATABASE: default_db
         DB_APP_USER: application
         DB_APP_PASSWORD: password
