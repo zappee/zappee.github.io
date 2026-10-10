@@ -194,7 +194,7 @@ hello-service-1:
 * **Containers naming convention:**
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
   That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
-  This strategy provides massive advantages when working with a _Container Runtime System_ that dynamically manages the execution and lifecycle of Docker containers.
+  This strategy provides massive advantages when working with a _Central Container Runtime System_ that dynamically manages the execution and lifecycle of Docker containers.
 
   The `${DOMAIN_NAME}` variable can be defined in a dedicated environment file, or as a shell variable, or CI/CD pipeline can provide.
   ```properties
