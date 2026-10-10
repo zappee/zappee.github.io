@@ -87,7 +87,7 @@ It contains only essential system utilities and bootstrap configurations.
   * `docker.init` and `docker.startup` directory preparation.
 
 We keep this layer footprint as small as possible.
-This serves as the parent layer for all subsequent images, any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of the production _Spring Box_ images.
+This serves as the parent layer for all subsequent images in the ecosystem. Any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of the production _Spring Box_ images.
 
 ⚠️ _**Important:**_
 _Modifying this layer directly impacts every image downstream in the ecosystem._
