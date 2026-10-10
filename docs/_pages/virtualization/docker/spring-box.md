@@ -146,7 +146,7 @@ Its advanced design accelerates development velocity by providing pre-configured
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
 * **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
-<div style="display: flex; gap: 2%; margin-left: 24px; margin-top: 10px;">
+<div style="display: flex; gap: 2%; margin-left: 1.8rem; margin-top: 10px; margin-bottom: 10px;">
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png" alt="Prometheus chart" style="width: 49%;" />
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png" alt="Prometheus table" style="width: 49%;" />
 </div>
