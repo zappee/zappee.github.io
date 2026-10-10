@@ -25,7 +25,7 @@ sidebar:
 
 
 ## 📖 Glossary
-{:toc_levels="3"}
+{:toc_levels="3..3"}
 
 * This placeholder bullet turns into the list
 {:toc}
