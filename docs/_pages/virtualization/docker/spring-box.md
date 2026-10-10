@@ -229,9 +229,9 @@ hello-service-1:
   * **HAZELCAST_CLUSTER_MEMBERS:** Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
   * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
 
-  The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
+    The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
-  ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
+    ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
 * **Container memory limit:**
   In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `docker-compose.yml` file.
   This helps prevent containers from consuming excessive resources, which can lead to system instability.
