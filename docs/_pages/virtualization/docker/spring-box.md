@@ -147,12 +147,9 @@ Its advanced design accelerates development velocity by providing pre-configured
 * **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
 <p float="left">
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png" width="49%" />
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png" width="49%" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png" alt="Prometheus chart" width="49%" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png" alt="Prometheus table" width="49%" />
 </p>
-
-![Prometheus chart](/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png)
-![Prometheus table](/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png)
 
 Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
