@@ -19,7 +19,7 @@ sidebar:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
-## Table of Contents
+Table of Contents
 {: .custom-toc-title}
 
 {: .custom-toc-list}
