@@ -207,7 +207,7 @@ hello-service-1:
   ```bash
   $ docker compose --env-file=arnold.env -f <compose-file> up
   ```
-* **Container Orchestration:** Blocks container execution until pre-requirements and dependencies are fully ready. The `wait-for-container.sh` script expects exactly one parameter: the hostname of the target container your service depends on. It queries the Readiness Signal Port of that specified container in a loop, safely pausing your container's startup until the dependency is fully online.
+* **Container Orchestration:** Blocks container execution until pre-requirements and dependencies are fully ready. The `wait-for-container.sh` script expects exactly one parameter: the hostname of the target container your service depends on. It is the _Readiness Signal Port_ of that specified container in a loop, safely pausing your container's startup until the dependency is fully online.
 
   Example:
   ```bash
