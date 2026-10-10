@@ -20,50 +20,9 @@ sidebar:
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
 
-## 📖 Glossary 1xxxA1
+## Glossary
 
-{: style="font-size: 18px; font-weight: bold; margin: 150px; line-height: 2.0; letter-spacing: 0.2px;"}
-
-* This list will become the styled glossary
-{:toc}
-
----
-
-
-
-
-
-
-
-## 📖 Glossary 2
-
-<div markdown="1" style="font-size: 11px; margin: 0px;">
-
-* This list will become the styled glossary
-{:toc}
-
-</div>
-
----
-
-
-## 📖 Glossary 33a
-{: style="font-size: 11px; margin: 0px; line-height: 2.0; letter-spacing: 0.2px;"}
-
-* This list will become the styled glossary
-{:toc}
-
----
-
-## 📖 Glossary 33b
-
-* This list will become the styled glossary
-{:toc}
-
----
-
-## 📖 Glossary 33c
-{: style="font-size: 11px; margin: 0px;"}
+{: style="font-size: 11px; margin: -50px; letter-spacing: -5px;"}
 
 * This list will become the styled glossary
 {:toc}
@@ -73,21 +32,6 @@ sidebar:
 
 
 
-
-
-
-
-
-
-## 📖 Glossary 4
-
-<div style="font-size: 10px; margin: 2px 0; line-height: 2.0; letter-spacing: 0.2px;">
-
-* This list will become the glossary
-{:toc}
-</div>
-
----
 
 ### 1) Overview
 
