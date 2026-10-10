@@ -203,6 +203,7 @@ hello-service-1:
   DOMAIN_NAME=arnold.remal.com
   ```
   You can then spin up the stack using the following command:
+
   ```bash
   $ docker compose --env-file=arnold.env -f <compose-file> up
   ```
