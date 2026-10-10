@@ -202,6 +202,7 @@ hello-service-1:
   DOMAIN_NAME=arnold.remal.com
   ```
   You can then spin up the stack using the following command: `docker compose --env-file=arnold.env -f <compose-file> up`
+* **Container Orchestration:** Blocks container execution until pre-requirements and dependencies are fully ready. The `wait-for-container.sh` script expects exactly one parameter: the hostname of the target container your service depends on. It queries the Readiness Signal Port of that specified container in a loop, safely pausing your container's startup until the dependency is fully online. Example: `wait-for-container.sh "consul.remal.com"`
 * **Ports used by the container:**
   * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
   * **HTTPS port (default: 8443):** The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
