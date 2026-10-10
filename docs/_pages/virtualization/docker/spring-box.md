@@ -125,7 +125,7 @@ _Please modify it with caution and only introduce changes that are globally requ
 
 ### 7) Java core runtime images - _springbox-openjdk_
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
-This Docker image layer only supports
+This Docker image layer only adds
 * specific OpenJDK installations
 * OpenSSL to deal with keystores
 
