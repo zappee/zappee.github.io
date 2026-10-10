@@ -141,3 +141,10 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+/* table of content style */
+#markdown-toc a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
