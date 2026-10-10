@@ -19,16 +19,13 @@ sidebar:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
-
 ## Glossary
 
 {: style="font-size: 11px; font-family: sans-serif; list-style-type: none; padding-left: 0; margin-left: 0; margin-top: 5px; margin-bottom: 5px; line-height: 1.1; letter-spacing: -0.2px;"}
 
 * This list will become the styled glossary
 {:toc}
-
 ---
-
 
 ### 1) Overview
 
