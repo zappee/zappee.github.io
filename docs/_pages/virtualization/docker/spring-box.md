@@ -113,7 +113,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
   It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your container's startup until the dependency is fully online.
 
-  Usage example:
+  Usage:
   ```yaml
   entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
   ```
