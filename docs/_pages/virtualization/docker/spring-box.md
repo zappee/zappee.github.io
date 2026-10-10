@@ -93,7 +93,7 @@ This serves as the parent layer for all subsequent images in the ecosystem. Any 
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
-**Ports used by the container:**
+#### 6.1) Ports used by the container
 * **SSH Port (default: 22):**
   The embedded SSH server listens on the default port 22 for safe, remote shell management.
   * **User:** `root`
@@ -108,7 +108,7 @@ _Please modify it with caution and only introduce changes that are globally requ
 
   Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
 
-**Override the container entrypoint:**
+#### 6.2) Override the container entrypoint
   To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
   It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your container's startup until the dependency is fully online.
@@ -118,7 +118,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
   ```
 
-**Container lifecycle management:**
+#### 6.3) Container lifecycle management
   The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
   Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
