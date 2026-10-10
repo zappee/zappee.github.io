@@ -52,8 +52,7 @@ footer_text: "Feel free to check out my profiles below or reach out directly via
 github:
   username: "zappee"
 
-# xxx
+# kramdown configuration to generate glossary properly
 markdown: kramdown
 kramdown:
   toc_levels: 3..3
-  
