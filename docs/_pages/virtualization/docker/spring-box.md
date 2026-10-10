@@ -26,8 +26,7 @@ sidebar:
 
 ## 📖 Glossary
 {:toc_levels="3..3"}
-
-* This placeholder bullet turns into the list
+{: style="font-family: 'Courier New', monospace; font-size: 8px; margin: 0px 0; line-height: 2.0; letter-spacing: 0.5px;"}
 {:toc}
 
 ---
