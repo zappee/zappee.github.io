@@ -80,7 +80,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 ### 6) The Base image
->Image name: springbox-base
+**Image name: springbox-base**
 
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
@@ -135,7 +135,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
 ### 7) Java core runtime images
->Image name: springbox-openjdk
+**Image name: springbox-openjdk**
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
 This Docker image layer only adds
@@ -147,7 +147,7 @@ _These core images are designed to serve as top layers for custom builds and are
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8-java-runner-containers---springbox-openjdk-runner) containers._
 
 ### 8) Java Runner containers
->Image name: springbox-openjdk-runner
+**Image name: springbox-openjdk-runner**
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
@@ -265,7 +265,7 @@ hello-service-1:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 ### 9) Java runtime with PostgreSQL images
->Image name: springbox-openjdk-postgres-runner
+**Image name: springbox-openjdk-postgres-runner**
 
 This image is an extends of our base [Java Runner containers](#8-java-runner-containers---springbox-openjdk-runner) layers by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
 While everything detailed in the _Java Runner containers_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
@@ -348,23 +348,23 @@ hello-service-1:
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
 ### 10) Java Omni runtime images
->Image name: springbox-openjdk-omni-runner
+**Image name: springbox-openjdk-omni-runner**
 
 Ultimate rubber.
 
 ### 11) HashiCorp Consul integration image
->Image name: springbox-consul-for-openjdk
+**Image name: springbox-consul-for-openjdk**
 
 Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
 ### 12) Hazelcast cache platform image
->Image name: springbox-hazelcast
+**Image name: springbox-hazelcast**
 
 to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
 
 ### 13) Private Certificate Authority (PKI)
->Image name: springbox-private-ca
+**Image name: springbox-private-ca**
 
 to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 
