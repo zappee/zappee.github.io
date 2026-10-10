@@ -25,19 +25,11 @@ sidebar:
 
 
 ## 📖 Glossary
-{:toc_levels="3..3"}
-* This list will become the styled glossary
+* This list will become the glossary
 {:toc}
 {: style="font-size: 10px;margin: 2px 0; line-height: 2.0; letter-spacing: 0.2px;"}
 
-
-
 ---
-
-
-
-
-
 
 
 
