@@ -330,7 +330,7 @@ hello-service-1:
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
   _Spring Box_ uses three Docker volumes to share files between the host machine and the container.
 
-  * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs to your local machine. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
+  * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
 ### 10) HashiCorp Consul integration image- _springbox-consul-for-openjdk_
 Distributed service registry and key-value store based on HashiCorp Consul.
