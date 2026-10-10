@@ -201,7 +201,7 @@ hello-service-1:
   # arnold.env file
   DOMAIN_NAME=arnold.remal.com
   ```
-  You can then spin up the stack using the following command: `docker compose --env-file=arnold.com.env -f <compose-file> up`
+  You can then spin up the stack using the following command: `docker compose --env-file=arnold.env -f <compose-file> up`
 * **Ports used by the container:**
   * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
   * **HTTPS port (default: 8443):** The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
