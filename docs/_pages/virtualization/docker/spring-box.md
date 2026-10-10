@@ -118,7 +118,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   ```
 * **Container lifecycle management:**
   The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
-  Using the Linux `run-parts` tool, the container executes initialization and startup scripts sequentially without hardcoded filenames.
+  Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
   * **Initialization:** Scripts in `docker.init` directory run only _ONCE_ during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
