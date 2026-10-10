@@ -199,7 +199,7 @@ hello-service-1:
   The `${DOMAIN_NAME}` variable can be defined in a dedicated environment file, or as a shell variable, or CI/CD pipeline can provide.
   ```properties
   # arnold.com.env file
-  DOMAIN_NAME=arnold.com
+  DOMAIN_NAME=arnold.remal.com
   ```
   You can then spin up the stack using the following command: `docker compose --env-file=arnold.com.env -f <compose-file> up`
 * **Ports used by the container:**
