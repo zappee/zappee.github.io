@@ -20,7 +20,6 @@ sidebar:
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
 ## Table of Contents
-
 {: style="list-style-type: none; padding-left: 25px;"}
 
 * This list will become the styled glossary
