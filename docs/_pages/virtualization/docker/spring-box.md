@@ -323,7 +323,7 @@ hello-service-1:
   * **START_DB** (default: false): To trigger or bypass the PostgreSQL database server startup process.
   * **DB_ADMIN_USER** (default: postgres): Specifies the username of the PostgreSQL database superuser account.
   * **DB_ADMIN_PASSWORD** (default: password): Specifies the password for the PostgreSQL database superuser account.
-  * **DB_APP_DATABASE** (default: app): Specifies the password for the PostgreSQL database superuser account.
+  * **DB_APP_DATABASE** (default: app): Define the name of the application database created at startup.
   * **DB_APP_USER** (default: application): Specifies the username that the application layer uses to connect to the database.
   * **DB_APP_PASSWORD** (default: password): Specifies the password used by the application layer to authenticate against the database.
 * **Docker volume configuration:**
