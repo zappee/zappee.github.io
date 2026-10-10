@@ -19,6 +19,37 @@ sidebar:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
+
+
+
+
+## 📖 Variable Glossary
+
+{% assign headings = page.content | split: '<h3 id="' %}
+{% for heading in headings %}
+  {% if forloop.first %}{% continue %}{% endif %}
+  
+  {% comment %}Extract the anchor ID string{% endcomment %}
+  {% assign html_id = heading | split: '"' | first %}
+  
+  {% comment %}Extract the visible heading text text{% endcomment %}
+  {% assign text_temp = heading | split: '>' | offset: 1 | first %}
+  {% assign visible_text = text_temp | split: '</h3' | first %}
+
+  - [{{ visible_text }}](#{{ html_id }})
+{% endfor %}
+
+---
+
+
+
+
+
+
+
+
+
+
 ### 1) Overview
 
 The **Remal Spring Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
