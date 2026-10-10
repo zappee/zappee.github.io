@@ -167,7 +167,7 @@ hello-service-1:
     environment:
         PKI_HOST: pki.${DOMAIN_NAME}
         CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
-        HAZELCAST_CLUSTER_NAME: renal-dev
+        HAZELCAST_CLUSTER_NAME: remal-dev
         HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
         JAVA_OPTS: >
             -XX:+UseContainerSupport
