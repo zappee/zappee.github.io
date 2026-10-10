@@ -23,25 +23,14 @@ sidebar:
 
 
 
-## 📖 Variable Glossary
+
+## 📖 Glossary
+{:toc_levels="3"}
+
+* This placeholder bullet turns into the list
+{:toc}
 
 ---
-{% assign headings = page.content | split: '<h3 id="' %}
-{% for heading in headings %}
-  {% if forloop.first %}{% continue %}{% endif %}
-  
-  {% comment %}Extract the anchor ID string{% endcomment %}
-  {% assign html_id = heading | split: '"' | first %}
-  
-  {% comment %}Extract the visible heading text text{% endcomment %}
-  {% assign text_temp = heading | split: '>' | offset: 1 | first %}
-  {% assign visible_text = text_temp | split: '</h3' | first %}
-
-  - [{{ visible_text }}](#{{ html_id }})
-{% endfor %}
----
-
-
 
 
 
