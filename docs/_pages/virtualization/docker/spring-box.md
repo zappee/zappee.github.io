@@ -26,8 +26,9 @@ sidebar:
 
 ## 📖 Glossary
 {:toc_levels="3..3"}
-{: style="font-size: 12px;"}
+* This list will become the styled glossary
 {:toc}
+{: style="font-size: 12px;"}
 
 ---
 
