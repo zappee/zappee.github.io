@@ -310,7 +310,7 @@ hello-service-1:
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * _PostgreSQL port (default: 5432):_ The standard, default network port used by PostgreSQL relational database system.
+  * **PostgreSQL port (default: 5432):** The standard, default network port used by PostgreSQL relational database system.
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
