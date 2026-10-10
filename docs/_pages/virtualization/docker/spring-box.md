@@ -214,6 +214,8 @@ hello-service-1:
   $ wait-for-container.sh "consul.remal.com"
   ```
 * **Ports used by the container:**
+  The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
+
   * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
   * **HTTPS port (default: 8443):** The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
 
