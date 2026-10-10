@@ -20,9 +20,9 @@ sidebar:
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
 
-## 📖 Glossary 1xxx
+## 📖 Glossary 1xxxA1
 
-{: style="font-size: 18px; margin: 50px; line-height: 2.0; letter-spacing: 0.2px;"}
+{: style="font-size: 18px; font-weight: bold; margin: 150px; line-height: 2.0; letter-spacing: 0.2px;"}
 
 * This list will become the styled glossary
 {:toc}
