@@ -224,11 +224,16 @@ hello-service-1:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PKI_HOST:** Specifies the hostname of the _Private PKI Management_ container within the _Spring Box_ network.
-  * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the _HashiCorp Consul_ container inside the platform.
-  * **HAZELCAST_CLUSTER_NAME:** Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
-  * **HAZELCAST_CLUSTER_MEMBERS:** Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
-  * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
+  * **PKI_HOST (default: pki.remal.com):** Specifies the hostname of the _Private PKI Management_ container within the _Spring Box_ network.
+  * **CONSUL_SERVER_HOSTNAME (default: consul.remal.com):** Defines the hostname of the _HashiCorp Consul_ container inside the platform.
+  * **HAZELCAST_CLUSTER_NAME (default: springbox-dev):** Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
+  * **HAZELCAST_CLUSTER_MEMBERS (default: hazelcast-1.remal.com, hazelcast-2.remal.com):** Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
+  * **JAVA_OPTS (default: -Xms512m -Xmx512m -XX:+UseZGC):** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
+  * **JAVA_DEBUG (default: true):** If enabled, the `agentlib` JVM argument is automatically added during JVM startup.
+  * **JAVA_DEBUG_PORT (default: 5005):** Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
+  * **HEALTH_CHECK (default: true):** If it is true, a loop polls `HEALTH_CHECK_URI` every 0.5 seconds, blocks execution until the response matches `EXPECTED_HEALTH_CHECK_STATE`, ensuring the Java application is fully loaded before continuing.
+  * **HEALTH_CHECK_URI (default: https://localhost:8443/actuator/health):** Specifies the URL used to poll the application's status.
+  * **EXPECTED_HEALTH_CHECK_STATE (default: '\"status\":\"UP\"'):** Uused to define the specific string or status code the script looks for to confirm the application is healthy.
 
     The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
@@ -254,6 +259,9 @@ It is recommended to usie this image if your application requires a dedicated da
 
 ⚠️ _**Important:**_
 _Because this image runs both the Java application and the database server inside a single container, it may require higher memory and CPU allocations._
+
+#### 9.1) Features
+* **PostgreSQL database server ready:** Fully configured and ready for the application inside this container.
 
 Here is a typical `springbox-openjdk-postgres-runner` container configuration:
 
@@ -297,6 +305,32 @@ hello-service-1:
         - $HOME/Java/springbox/volumes/hello-service-1/heap-dump:/heap-dump
         - $HOME/Java/springbox/volumes/hello-service-1/data:/var/lib/postgresql/data
  ```
+
+#### 9.2) Configuration highlights
+* **Ports used by the container:**
+  The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
+
+  * _PostgreSQL port (default: 5432):_ The standard, default network port used by PostgreSQL relational database system.
+
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **POSTGRES_HOME (default: /var/lib/postgresql):** Standard environment variable used in containerized environments to define the installation path of the PostgreSQL database server. It serves as a central reference point for scripts, applications, and system paths.
+  * **POSTGRES_DATA (default: /var/lib/postgresql/data):** Used to specify the absolute path to the directory where the PostgreSQL database stores its actual data files, transaction logs, and configuration files.
+  * **POSTGRES_LOG_DIR (default: /var/log/postgresql):** Specifies the absolute path to the directory where PostgreSQL runtime logs, error entries, and query logs are stored. Isolating this directory allows for easier troubleshooting, integration with external log rotators, or mounting to high-performance log-aggregation storage.
+  * **POSTGRES_CONFIG (default: /var/lib/postgresql/data/postgresql.conf):** Specifies the absolute file path for the custom PostgreSQL configuration file.
+  * **START_DB (default: false):** To trigger or bypass the PostgreSQL database server startup process.
+  * **DB_ADMIN_USER (default: postgres):** Specifies the username of the PostgreSQL database superuser account.
+  * **DB_ADMIN_PASSWORD (default: password):** Defines the hostname of the _HashiCorp Consul_ container inside the platform.
+  * **DB_APP_DATABASE (default: app):** Specifies the password for the PostgreSQL database superuser account.
+  * **DB_APP_USER (default: application):** Specifies the username that the application layer uses to connect to the database.
+  * **DB_APP_PASSWORD (default: password):** Specifies the password used by the application layer to authenticate against the database.
+* **Docker volume configuration:**
+  Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
+  _Spring Box_ uses three Docker volumes to share files between the host machine and the container.
+
+  * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs to your local machine. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
 ### 10) HashiCorp Consul integration image- _springbox-consul-for-openjdk_
 Distributed service registry and key-value store based on HashiCorp Consul.
