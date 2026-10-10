@@ -216,15 +216,15 @@ hello-service-1:
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * **JVM debug port (default: 8000):** External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
-  * **HTTPS port (default: 8443):** The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
+  * _JVM debug port (default: 8000):_ External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
+  * _HTTPS port (default: 8443):_ The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PKI_HOST:** Specifies the hostname of the **Private PKI Management** container within the _Spring Box_ network.
-  * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the **HashiCorp Consul** container inside the platform.
+  * **PKI_HOST:** Specifies the hostname of the _Private PKI Management_ container within the _Spring Box_ network.
+  * **CONSUL_SERVER_HOSTNAME:** Defines the hostname of the _HashiCorp Consul_ container inside the platform.
   * **HAZELCAST_CLUSTER_NAME:** Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
   * **HAZELCAST_CLUSTER_MEMBERS:** Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
   * **JAVA_OPTS:** A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
