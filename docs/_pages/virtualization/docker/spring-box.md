@@ -332,7 +332,7 @@ hello-service-1:
 
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
-## 10) Java Omni runtime images - _springbox-openjdk-omni-runner_
+### 10) Java Omni runtime images - _springbox-openjdk-omni-runner_
 Ultimate rubber.
 
 
