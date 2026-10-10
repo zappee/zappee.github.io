@@ -146,6 +146,9 @@ Its advanced design accelerates development velocity by providing pre-configured
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
 * **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
+![Prometheus chart](/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png)
+![Prometheus table](/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png)
+
 Here is a typical `springbox-openjdk` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
 
