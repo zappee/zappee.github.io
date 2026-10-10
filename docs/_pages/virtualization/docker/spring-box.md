@@ -103,7 +103,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
   It functions as a health indicator to orchestrate the startup dependency order of your containers.
   The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
-  Without this check, the Spring Boot application would fail immediately during the startup, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
+  Without this check, the Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
   Once this check passes, the container triggers the original image entrypoint scripts.
 
   Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
