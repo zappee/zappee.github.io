@@ -132,3 +132,11 @@
   text-align: center;
   display: block;
 }
+
+/* Positioning images */
+.align-to-list {
+  display: flex;
+  gap: 2%; margin-left: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
