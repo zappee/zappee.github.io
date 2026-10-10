@@ -322,7 +322,7 @@ hello-service-1:
   * **POSTGRES_CONFIG (default: /var/lib/postgresql/data/postgresql.conf):** Specifies the absolute file path for the custom PostgreSQL configuration file.
   * **START_DB (default: false):** To trigger or bypass the PostgreSQL database server startup process.
   * **DB_ADMIN_USER (default: postgres):** Specifies the username of the PostgreSQL database superuser account.
-  * **DB_ADMIN_PASSWORD (default: password):** Defines the hostname of the _HashiCorp Consul_ container inside the platform.
+  * **DB_ADMIN_PASSWORD** (default: password): Specifies the password used by the superuser to authenticate against the database.
   * **DB_APP_DATABASE (default: app):** Specifies the password for the PostgreSQL database superuser account.
   * **DB_APP_USER (default: application):** Specifies the username that the application layer uses to connect to the database.
   * **DB_APP_PASSWORD (default: password):** Specifies the password used by the application layer to authenticate against the database.
