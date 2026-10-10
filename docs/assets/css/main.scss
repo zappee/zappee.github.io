@@ -133,7 +133,7 @@
   display: block;
 }
 
-/* Positioning images */
+/* positioning images */
 .align-to-list {
   display: flex;
   gap: 2%;
@@ -144,7 +144,16 @@
 
 /* table of content style */
 #markdown-toc a {
-    text-decoration: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+#markdown-toc a:hover {
+  text-decoration: underline !important;
+}
+
+.custom-toc-list {
+    list-style-type: none !important;
+    padding-left: 25px !important;
 }
