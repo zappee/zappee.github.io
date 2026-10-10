@@ -165,7 +165,7 @@ hello-service-1:
     entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
     ports:
         - "14012:22"   # SSH
-        - "14013:8000" # JVM debug
+        - "14013:5005" # JVM debug
         - "14014:8443" # HTTPS
     environment:
         PKI_HOST: pki.${DOMAIN_NAME}
@@ -273,7 +273,7 @@ hello-service-1:
     entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
     ports:
         - "14012:22"   # SSH
-        - "14013:8000" # JVM debug
+        - "14013:5005" # JVM debug
         - "14014:8443" # HTTPS
         - "14015:5432" # PostgreSQL
     environment:
