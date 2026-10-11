@@ -104,22 +104,23 @@ This serves as the parent layer for all subsequent images in the ecosystem. Any 
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
-#### 6.2) Ports used by the container
-* **SSH Port** (default: 22):
-  The embedded SSH server listens on the default port 22 for safe, remote shell management.
-  * **User:** `root`
-  * **Password:** `password`
-  * **Connection string:** `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example below.
-* **Readiness signal port** (default: 1331):
-  This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
-  It functions as a health indicator to orchestrate the startup dependency order of your containers.
-  The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
-  Without this check, the Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
-  Once this check passes, the container triggers the original image entrypoint scripts.
+#### 6.2) Configuration highlights
+* **Ports used by the container**
+  * **SSH Port** (default: 22):
+    The embedded SSH server listens on the default port 22 for safe, remote shell management.
+    * User: `root`
+    * Password: `password`
+    * Connection string: `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example below.
+  * **Readiness signal port** (default: 1331):
+    This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
+    It functions as a health indicator to orchestrate the startup dependency order of your containers.
+    The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
+    Without this check, the Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store during its startup phase.
+    Once this check passes, the container triggers the original image entrypoint scripts.
 
-  Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
+    Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
 
-#### 6.2) Override the container entrypoint
+* **Override the container entrypoint**
   To orchestrate your cluster's container startup order, you can utilize the built-in `wait-for-container.sh` utility script.
   This script expects exactly one parameter: the hostname of the target container that your service depends on.
   It queries the **Readiness Signal Port** of that specified container in a loop (polling every 0.5 seconds), safely blocking your container's startup until the dependency is fully online.
@@ -129,7 +130,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
   ```
 
-#### 6.3) Container lifecycle management
+* **Container lifecycle management**
   The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring-Box_ containers.
   Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
