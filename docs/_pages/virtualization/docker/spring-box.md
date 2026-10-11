@@ -353,6 +353,9 @@ Image name: springbox-openjdk-omni-runner
 This ultimate Omni image extends our [Java Runner with PostgreSQL image](#9-java-runtime-with-postgresql-images).
 It is our largest _Java Runner_ image, packed with additional tools and Linux packages required by specialized Java applications.
 
+⚠️ _**Important:**_
+_Due to its large size, you should only use this image if your Java application explicitly requires the additional tools and pre-installed packages._
+
 #### 10.1) Features
 * **fonts-dejavu Linux package:** This is a system-level TrueType fonts (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
