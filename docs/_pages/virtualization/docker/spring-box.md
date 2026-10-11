@@ -369,6 +369,20 @@ Image name: springbox-consul-for-openjdk
 Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
+⚠️ _**Important:**_
+_xxx_
+
+#### 11.1) Features
+* **Secured Consul server with HTTPS:** Pre-configured Consul to use HTTPS (TLS/SSL) to protects Secrets in transit, defends against Man-in-the-Middle attacks, and enables Secure Client Authentication (Mutual TLS / mTLS).
+* **:** Xxxx
+
+Here is a typical `springbox-consul-for-openjdk` container configuration.
+
+```yaml
+```
+
+#### 11.2) Configuration highlights
+
 ### 12) HashiCorp Vault Image
 Image name: springbox-vault
 
