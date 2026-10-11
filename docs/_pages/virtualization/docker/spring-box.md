@@ -369,6 +369,33 @@ Cluster wide
 ### 12) HashiCorp Vault Image
 Image name: springbox-vault
 
+HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
+It allows organizations to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
+
+#### 10.1) Features
+* **Secrets Management:** Securely stores static credentials (like database passwords or API keys) in a centrally encrypted key-value store.
+* **Dynamic Secrets:** Generates programmatic, on-demand credentials with tight time-to-live (TTL) limits (e.g., creating a temporary PostgreSQL user account that automatically expires after 15 minutes).
+* **Data Encryption:** Encrypts data in transit and at rest, allowing developers to encrypt application text without building custom cryptography pipelines.
+* **Leasing and Revocation:** Tracks every credential it hands out, allowing administrators to immediately revoke access keys sitewide if a security breach occurs.
+
+Here is a typical `springbox-vault` container configuration.
+
+```yaml
+    vault:
+      image: springbox-vault:0.8.0
+      container_name: vault.${DOMAIN_NAME}
+      hostname: vault.${DOMAIN_NAME}
+      entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
+      ports:
+        - "14012:22"   # SSH
+        - "14016:8200" # vault client API port
+      environment:
+        - PKI_HOST=pki.${DOMAIN_NAME}
+```
+
+#### 10.2) Configuration highlights
+
+
 ### 13) Hazelcast Cache Platform
 Image name: springbox-hazelcast
 
