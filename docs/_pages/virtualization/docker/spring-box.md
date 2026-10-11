@@ -244,6 +244,7 @@ hello-service-1:
   * **CONSUL_SERVER_HOSTNAME** (default: consul.remal.com): Defines the hostname of the _HashiCorp Consul_ container inside the platform.
   * **HAZELCAST_CLUSTER_NAME** (default: springbox-dev): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: hazelcast-1.remal.com, hazelcast-2.remal.com): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
+  * **JAVA_HOME** (default: /usr/lib/jvm/java-<version>-openjdk): One of the most critical environment variable in software development. It defines the absolute file system path to the directory where the Java Development Kit (JDK) or Java Runtime Environment (JRE) is installed.
   * **JAVA_OPTS** (default: -Xms512m -Xmx512m -XX:+UseZGC): A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
   * **JAVA_DEBUG** (default: true): If enabled, the `agentlib` JVM argument is automatically added during JVM startup.
   * **JAVA_DEBUG_PORT** (default: 5005): Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
@@ -366,15 +367,42 @@ _Due to its large size, you should only use this image if your Java application 
 ### 11) HashiCorp Consul Integration
 Image name: springbox-consul-for-openjdk
 
+HashiCorp Consul is an open-source, decentralized service networking platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
+In microservice architectures (like Spring Boot ecosystems), Consul acts as a central control plane.
+
+
+
+In the Spring-Box ecosystem Consul service can be 
+
+is packed into the Java Runner containers, so Remal provides a Spring-Box Consul for openJDK 21 and 25 too.
+
+
+Here is a breakdown of its four primary core functions:
+
 Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
+
+
 ⚠️ _**Important:**_
-_xxx_
+_Consul container must start before the Spring Boot applications in the OpenJDK Runner containers as Spring Boot applications require a ready for use Key/Value registry durint the startup to read configuration parameters from the Key-Value store. ensure you orchestra your docker environment accordingly._
+Consul must be fully operational before starting any Spring Boot applications in the _Java Runner_ containers. During startup, Spring Boot applications require a ready-to-use Service Registry to read vital configuration parameters from the Key-Value store. Ensure you orchestrate your Docker environment dependencies accordingly (e.g., using proper health check gates).
+
+
+
 
 #### 11.1) Features
-* **Secured Consul server with HTTPS:** Pre-configured Consul to use HTTPS (TLS/SSL) to protects Secrets in transit, defends against Man-in-the-Middle attacks, and enables Secure Client Authentication (Mutual TLS / mTLS).
-* **:** Xxxx
+
+* **Service Discovery:** Applications running within the Remal-Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
+
+* 
+* Microservices in the Remal-Box network dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime 
+* **Service Discovery:** Instead of hardcoding fixed IP addresses and ports for your microservices, applications register themselves with Consul upon startup. Then is someone wanna call the REST endpoint, then it gets the service URL from the cluster wide Service Registry.
+* **Automated Service Registration:** Integrates seamlessly with HashiCorp Consul to automatically discover and register your Spring Boot microservice endpoints at startup, eliminating the need for manual network configurations.
+* **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking an HTTP / Spring Boot Actuator / health endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
+* **Key-Value (KV) Store:** Consul includes a highly available, distributed key-value store. Teams use this to store dynamic application configurations centrally. Tools like Spring Cloud Consul Config can read these values at runtime, allowing you to update feature flags or database strings without restarting your containers.
+* **Service Mesh (Consul Connect):** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS) and sidecar proxies.
+
 
 Here is a typical `springbox-consul-for-openjdk` container configuration.
 
