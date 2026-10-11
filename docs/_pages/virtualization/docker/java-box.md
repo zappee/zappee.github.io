@@ -9,7 +9,7 @@ sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Java Box: the ultimate Spring Boot runner
+## ☁️ Java-Box: the ultimate Spring Boot runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/spring-box)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
@@ -21,11 +21,11 @@ sidebar:
 
 ### 1) Overview
 
-The Remal **Java Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
+The Remal **Java-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
 
 ### 2) Documentation
 
-For complete implementation details and guides, visit the [Spring Box](/virtualization/docker/spring-box/) documentation.
+For complete implementation details and guides, visit the [Spring-Box](/virtualization/docker/spring-box/) documentation.
 
 ### 3) Source core
 

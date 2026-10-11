@@ -9,7 +9,7 @@ sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Spring Box: the ultimate Spring Boot runner
+## ☁️ Spring-Box: Ultimate Spring Boot Runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/spring-box)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
@@ -28,10 +28,10 @@ sidebar:
 ---
 
 ### 1) Overview
-The **Remal Spring Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
+The **Remal Spring-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
 It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, service discovery, security, and real-time operational metrics.
 
-### 2) Context & Problem statement
+### 2) Context & Problem Statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
 * Service registries
 * Load balancers
@@ -55,14 +55,14 @@ Setting this up consistently across local development and production environment
 * **Distributed state challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
 * **"Works on my machine" dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
 
-### 3) The Remal solution
-That’s where the **Remal Spring Box** comes in.
+### 3) The Remal Solution
+That’s where the **Remal Spring-Box** comes in.
 It bridges this gap by offering a containerized pre-configured set of _Docker_ images that act as ready-to-go building blocks for both local development and production environment.
 
 By abstracting away complex infrastructure, it cuts out configuration overhead entirely.
 This lets start-ups and small-to-medium teams to eliminate configuration overhead, stop worrying about setup, and focus on what matters most: shipping features fast.
 
-### 4) Key benefits
+### 4) Key Benefits
 * **Embedded SSH server:** Offers standard secure access to active instances. Running containers can be connected to using native SSH clients, allowing to execute standard shell commands inside the container environments seamlessly.
 * **Production-Identical local dev:** Eliminates environmental mismatches entirely. By using the exact same containerized runtime building blocks on local machines and production clusters, if it works on your laptop, it will work in production.
 * **Instant feature delivery:** Saves weeks of foundational engineering. Startups and small teams can skip the tedious process of configuring Kafka brokers, security certificates, service registries, cache solutions, etc., and start writing business logic on day one.
@@ -71,18 +71,18 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Architecture evolution:** Designed for zero-downtime scalability. The platform’s modular nature allows you to easily scale services horizontally or vertically, or swap out infrastructure components entirely as your application traffic and business needs grow.
 * **Configuration management:** The integrated _Distributed Key-Value Registry_ acts as a single source of truth for runtime configurations, making it effortless to manage environment states and synchronize changes across all active instances.
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
-* **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
+* **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring-Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring-Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The Hazelcast-based architecture supports three different caching mechanisms: _Embedded Cache_, _Client-Server topology_, and _Near-Cache_:
 
   ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
 
-### 5) Docker containers in the _Spring Box_ ecosystem
-![Spring Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
+### 5) Docker Containers in the _Spring-Box_ Ecosystem
+![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
-### 6) The Base image
+### 6) The Spring-Box Base Image
 Image name: springbox-base
 
-This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
+This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring-Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
 * System & Access Utilities:
@@ -96,7 +96,7 @@ It contains only essential system utilities and bootstrap configurations.
   * `docker.init` and `docker.startup` directory preparation.
 
 We keep this layer footprint as small as possible.
-This serves as the parent layer for all subsequent images in the ecosystem. Any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of the production _Spring Box_ images.
+This serves as the parent layer for all subsequent images in the ecosystem. Any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of the production _Spring-Box_ images.
 
 ⚠️ _**Important:**_
 _Modifying this layer directly impacts every image downstream in the ecosystem._
@@ -128,13 +128,13 @@ _Please modify it with caution and only introduce changes that are globally requ
   ```
 
 #### 6.3) Container lifecycle management
-  The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
+  The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring-Box_ containers.
   Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
   * **Initialization:** Scripts in `docker.init` directory run only _ONCE_ during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
-### 7) Java core runtime images
+### 7) Java Core Runtime Images
 Image name: springbox-openjdk
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
@@ -143,10 +143,10 @@ This Docker image layer only adds
 * OpenSSL to deal with keystores
 
 ⚠️ _**Important:**_
-_These core images are designed to serve as top layers for custom builds and are not recommended for running Java applications (*.jar) directly._
+_These core images are designed to serve as top layer for custom builds and are not recommended for running Java applications (*.jar) directly._
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8-java-runner-containers---springbox-openjdk-runner) containers._
 
-### 8) Java Runner containers
+### 8) Java Runner Images
 Image name: springbox-openjdk-runner
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
@@ -237,7 +237,7 @@ hello-service-1:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PKI_HOST** (default: pki.remal.com): Specifies the hostname of the _Private PKI Management_ container within the _Spring Box_ network.
+  * **PKI_HOST** (default: pki.remal.com): Specifies the hostname of the _Private PKI Management_ container within the _Spring-Box_ network.
   * **CONSUL_SERVER_HOSTNAME** (default: consul.remal.com): Defines the hostname of the _HashiCorp Consul_ container inside the platform.
   * **HAZELCAST_CLUSTER_NAME** (default: springbox-dev): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: hazelcast-1.remal.com, hazelcast-2.remal.com): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
@@ -258,17 +258,17 @@ hello-service-1:
   The container memory limits defined here must align precisely with the internal JVM configurations.
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
-  _Spring Box_ uses three Docker volumes to share files between the host machine and the container.
+  _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
 
-  * **/jar-to-run:** Host to container, input. The executable Java application `.jar` file must be placed in this folder to be passed into the container for execution. This folder must contain exactly one `.jar` file, as each individual Java container in the _Spring Box_ ecosystem is designed to execute a single application.
+  * **/jar-to-run:** Host to container, input. The executable Java application `.jar` file must be placed in this folder to be passed into the container for execution. This folder must contain exactly one `.jar` file, as each individual Java container in the _Spring-Box_ ecosystem is designed to execute a single application.
   - **/logs:** Container to host, output. Application and server log files generated by the active processes inside the container are streamed out the host machine via this shared folder.
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
-### 9) Java runtime with PostgreSQL images
+### 9) Java Runtime with PostgreSQL Images
 Image name: springbox-openjdk-postgres-runner
 
-This image is an extends of our base [Java Runner containers](#8-java-runner-containers---springbox-openjdk-runner) layers by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
-While everything detailed in the _Java Runner containers_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
+This image is an extends of our base [Java Runner images](#8-java-runner-containers---springbox-openjdk-runner) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
+While everything detailed in the _Java Runner images_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
 
 It is recommended to usie this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
 
@@ -343,22 +343,27 @@ hello-service-1:
   * **DB_APP_PASSWORD** (default: password): Specifies the password used by the application layer to authenticate against the database.
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
-  _Spring Box_ uses three Docker volumes to share files between the host machine and the container.
+  _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
 
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
-### 10) Java Omni runtime images
+### 10) Java Omni Runtime Image
 Image name: springbox-openjdk-omni-runner
 
-Ultimate rubber.
+This ultimate Omni image extends our [Java Runner with PostgreSQL image](#9-java-runtime-with-postgresql-images).
+It is our largest _Java Runner_ image, packed with additional tools and Linux packages required by specialized Java applications.
 
-### 11) HashiCorp Consul integration image
+#### 10.1) Features
+* **fonts-dejavu Linux package:** This is a system-level TrueType fonts (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
+  If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
+
+### 11) HashiCorp Consul Integration
 Image name: springbox-consul-for-openjdk
 
 Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
-### 12) Hazelcast cache platform image
+### 12) Hazelcast Cache Platform
 Image name: springbox-hazelcast
 
 to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
@@ -368,14 +373,14 @@ Image name: springbox-private-ca
 
 to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 
-### 14) Apache Tomcat 10
+### 14) Apache Tomcat 10 Image
 
-### 15) Prometheus time-series database server
+### 15) Prometheus Time-Series Database Server
 containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
 
 ### 16) Grafana
 
-### 17) LDAP server
+### 17) LDAP Server
 
 ### 20) Source core
 
