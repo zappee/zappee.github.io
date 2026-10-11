@@ -373,6 +373,7 @@ HashiCorp Vault is an open-source, enterprise-grade identity-based secrets manag
 It allows organizations to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
 
 #### 12.1) Features
+* **Secured Vault server with HTTPS:** Pre-configured Vault to use HTTPS (TLS/SSL) to protects Secrets in transit, defends against Man-in-the-Middle attacks, and enables Secure Client Authentication (Mutual TLS / mTLS).
 * **Secrets Management:** Securely stores static credentials (like database passwords or API keys) in a centrally encrypted key-value store.
 * **Dynamic Secrets:** Generates programmatic, on-demand credentials with tight time-to-live (TTL) limits (e.g., creating a temporary PostgreSQL user account that automatically expires after 15 minutes).
 * **Data Encryption:** Encrypts data in transit and at rest, allowing developers to encrypt application text without building custom cryptography pipelines.
