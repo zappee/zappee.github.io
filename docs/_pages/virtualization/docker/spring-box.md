@@ -86,15 +86,16 @@ This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/d
 It contains only essential system utilities and bootstrap configurations.
 
 #### 6.1) Features
-* System & Access Utilities:
+* **System & Access Utilities:**
   * Lightweight Linux tools and common shell functions.
   * An SSH server, fully installed and configured.
-* Environment Configurations:
+* **Environment Configurations:**
   * System-wide shell configurations.
   * A pre-configured Docker entrypoint script.
-* Container Orchestration:
+* **Container Orchestration:**
   * `wait-for-container.sh` for service dependency sequencing.
   * `docker.init` and `docker.startup` directory preparation.
+* **Self-Provisioned TLS Certificates:** A dedicated server certificate is generated during the container's initial startup via the [Remal Private Certificate Authority (PKI) Infrastructure](#14-private-certificate-authority-pki). Applications running inside the container can immediately use this certificate to enable secure communication and data encryption.
 
 We keep this layer footprint as small as possible.
 This serves as the parent layer for all subsequent images in the ecosystem. Any package or file added here will cascade down the entire stack, unnecessarily increasing the final size of the production _Spring-Box_ images.
@@ -103,7 +104,7 @@ This serves as the parent layer for all subsequent images in the ecosystem. Any 
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
-#### 6.1) Ports used by the container
+#### 6.2) Ports used by the container
 * **SSH Port** (default: 22):
   The embedded SSH server listens on the default port 22 for safe, remote shell management.
   * **User:** `root`
