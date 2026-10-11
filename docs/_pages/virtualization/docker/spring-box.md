@@ -363,24 +363,27 @@ Image name: springbox-consul-for-openjdk
 Distributed service registry and key-value store based on HashiCorp Consul.
 Cluster wide
 
-### 12) Hazelcast Cache Platform
+### 12) HashiCorp Vault Image
+Image name: springbox-vault
+
+### 13) Hazelcast Cache Platform
 Image name: springbox-hazelcast
 
 to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
 
-### 13) Private Certificate Authority (PKI)
+### 14) Private Certificate Authority (PKI)
 Image name: springbox-private-ca
 
 to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 
-### 14) Apache Tomcat 10 Image
+### 15) Apache Tomcat 10 Image
 
-### 15) Prometheus Time-Series Database Server
+### 16) Prometheus Time-Series Database Server
 containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
 
-### 16) Grafana
+### 17) Grafana
 
-### 17) LDAP Server
+### 18) LDAP Server
 
 ### 20) Source core
 
