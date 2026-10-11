@@ -85,6 +85,7 @@ Image name: springbox-base
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring-Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
+#### 6.1) Features
 * System & Access Utilities:
   * Lightweight Linux tools and common shell functions.
   * An SSH server, fully installed and configured.
