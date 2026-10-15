@@ -28,7 +28,7 @@ Because it is built for fast database interactions via the command line, it serv
 ### 2) Key features
 * **Cross-platform compatibility:** Runs anywhere Java is installed.
 * **Script integration:** Designed explicitly to pass parameters and run queries inside Bash scripts.
-* **Flexible input:** Supports raw SQL text strings directly in the terminal or path to a complex `.sql` file.
+* **Flexible input:** Supports raw SQL text strings directly in the terminal or path to a complex `+.sql` file.
 * **Automation ready:** Stops execution and throws distinct exit codes on failures to cleanly halt deployment pipelines if an error occurs.
 * **Database driver support:** Connects via standard JDBC drivers, currently optimized for Oracle Database servers.
 
