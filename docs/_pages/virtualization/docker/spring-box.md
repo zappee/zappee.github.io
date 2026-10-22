@@ -80,7 +80,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
 ### 6) The Spring-Box Base Image
-Image name: springbox-base
+Image name: `springbox-base`
 
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring-Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
@@ -138,7 +138,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
 ### 7) Java Core Runtime Images
-Image name: springbox-openjdk
+Image name: `springbox-openjdk`
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
 This Docker image layer only adds
@@ -150,7 +150,7 @@ _These core images are designed to serve as top layer for custom builds and are 
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8-java-runner-containers---springbox-openjdk-runner) containers._
 
 ### 8) Java Runner Images
-Image name: springbox-openjdk-runner
+Image name: `springbox-openjdk-runner`
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
@@ -269,7 +269,7 @@ hello-service-1:
   - **/heap-dump:** Container to host, output. This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
 ### 9) Java Runtime with PostgreSQL Images
-Image name: springbox-openjdk-postgres-runner
+Image name: `springbox-openjdk-postgres-runner`
 
 This image is an extends of our base [Java Runner images](#8-java-runner-containers---springbox-openjdk-runner) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
 While everything detailed in the _Java Runner images_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
@@ -352,7 +352,7 @@ hello-service-1:
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
 ### 10) Java Omni Runtime Image
-Image name: springbox-openjdk-omni-runner
+Image name: `springbox-openjdk-omni-runner`
 
 This ultimate Omni image extends our [Java Runner with PostgreSQL image](#9-java-runtime-with-postgresql-images).
 It is our largest _Java Runner_ image, packed with additional tools and Linux packages required by specialized Java applications.
@@ -365,7 +365,7 @@ _Due to its large size, you should only use this image if your Java application 
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
 
 ### 11) HashiCorp Consul Integration
-Image name: springbox-consul-for-openjdk
+Image name: `springbox-consul-for-openjdk`
 
 HashiCorp Consul is an open-source, decentralized service networking platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
 In microservice architectures (like Spring Boot ecosystems), Consul acts as a central control plane.
@@ -412,7 +412,7 @@ Here is a typical `springbox-consul-for-openjdk` container configuration.
 #### 11.2) Configuration highlights
 
 ### 12) HashiCorp Vault Image
-Image name: springbox-vault
+Image name: `springbox-vault`
 
 HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
 It allows organizations to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
@@ -447,12 +447,12 @@ Here is a typical `springbox-vault` container configuration.
   * **Vault cluster port** (default: 8201): Handles internal server-to-server traffic for high-availability replication.
 
 ### 13) Hazelcast Cache Platform
-Image name: springbox-hazelcast
+Image name: `springbox-hazelcast`
 
 to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
 
 ### 14) Private Certificate Authority (PKI)
-Image name: springbox-private-ca
+Image name: `springbox-private-ca`
 
 to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
 
