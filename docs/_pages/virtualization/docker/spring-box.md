@@ -233,8 +233,9 @@ hello-service-1:
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * **JVM debug port** (default: 5005): External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
+  * **HTTP port** (default: 80): The default exposed HTTP port where Spring Boot REST controller endpoints listen for incoming traffic.
   * **HTTPS port** (default: 8443): The default exposed HTTPS port where Spring Boot REST controller endpoints listen for incoming traffic.
+  * **JVM debug port** (default: 5005): External Java IDEs (such as IntelliJ IDEA) can utilize this port to attach a remote debugger directly to the running application inside the container.
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
