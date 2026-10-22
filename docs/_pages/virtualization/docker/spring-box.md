@@ -141,13 +141,15 @@ _Please modify it with caution and only introduce changes that are globally requ
 Image name: `springbox-openjdk`
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
-This Docker image layer only adds
-* specific OpenJDK installations
-* OpenSSL to deal with keystores
 
 ⚠️ _**Important:**_
 _These core images are designed to serve as top layer for custom builds and are not recommended for running Java applications (*.jar) directly._
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8-java-runner-containers---springbox-openjdk-runner) containers._
+
+#### 7.1) Features
+This Docker image layer only adds
+* specific OpenJDK installations
+* OpenSSL to deal with keystores
 
 ### 8) Java Runner Images
 Image name: `springbox-openjdk-runner`
