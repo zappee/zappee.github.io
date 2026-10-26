@@ -56,8 +56,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 **Languages**
 <div style="display: inline-block;">
-  <img src="https://skillicons.dev/icons?i=java" alt="Headshot of John Doe">
-  <img src="https://skillicons.dev/icons?i=java" alt="Java">
+  <img src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
   <img src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
   <img src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
   <img src="https://skillicons.dev/icons?i=ts" title="TypeScript">
