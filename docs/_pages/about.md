@@ -52,6 +52,46 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Continuous learner
 * Financial domain expertise
 
+## Technical Skills
+
+**Languages**
+<div style="display: inline-block;">
+  <img src="https://skillicons.dev/icons?i=java" alt="Headshot of John Doe">
+  <img src="https://skillicons.dev/icons?i=java" alt="Java">
+  <img src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+  <img src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+  <img src="https://skillicons.dev/icons?i=ts" title="TypeScript">
+  <img src="https://skillicons.dev/icons?i=css" title="CSS, CSS3">
+  <img src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+</div>
+
+
+
+**Frameworks**
+<p>
+  <img src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
+</p>
+
+**Databases**
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis" />
+  <img src="https://img.shields.io/badge/Weaviate-1A1E22?style=for-the-badge&logo=weaviate&logoColor=white" />
+</p>
+
+**AI / ML**
+<p>
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
+</p>
+
+**Infra & Cloud**
+<p>
+  <img src="https://skillicons.dev/icons?i=kafka,rabbitmq,docker,aws,linux,bash,git,graphql" />
+  <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
+  <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+</p>
+
+
 
 ## Professional Career
 
