@@ -46,6 +46,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=js&theme=light" title="JavaScript" alt="JavaScript">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=docker&theme=light" title="Docker" alt="Docker">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
@@ -57,8 +58,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
-      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ai&theme=light" title="AI" alt="AI">
     </div>
 
 ## Personal Traits
