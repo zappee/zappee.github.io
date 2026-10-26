@@ -78,6 +78,11 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=visualstudio&theme=light" title="Visual Studio" alt="Visual Studio">
     </div>
 
+## Technical Leadership & Management
+
+* Technical Leadership: Guiding developers, mentoring juniors, and helping technical teams stay aligned and focused.
+* Team & People management: Directing cross-functional teams, managing technical professionals, and unblocking development bottlenecks.
+
 ## Personal Traits
 
 * Analytical & Detail-oriented
