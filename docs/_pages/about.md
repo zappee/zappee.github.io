@@ -53,7 +53,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Financial domain expertise
 
 ## Technical Skills
-
 * Programming languages
 
     <div class="skills-container">
@@ -75,21 +74,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img src="https://skillicons.dev/icons?i=git&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
       <img src="https://skillicons.dev/icons?i=graphql&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
     </p>
-
-
-* Languages 2
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
-    </div>
-
-
-
 
 * **Frameworks 4**
     <p class="skills-container">
