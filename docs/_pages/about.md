@@ -50,7 +50,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=git&theme=light" title="Git" alt="Git">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=github&theme=light" title="GitHub" alt="GitHub">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=grafana&theme=light" title="Grafana" alt="Grafana">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="Hibernate" alt="Hibernate">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA" alt="IntelliJ IDEA">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=js&theme=light" title="JavaScript" alt="JavaScript">
@@ -65,7 +65,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=prometheus&theme=light" title="Prometheus" alt="Prometheus">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=react&theme=light" title="React" alt="React">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="Spring" alt="Spring">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=vim&theme=light" title="Vim" alt="Vim">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=visualstudio&theme=light" title="Visual Studio" alt="Visual Studio">
