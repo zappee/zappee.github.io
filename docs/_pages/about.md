@@ -26,20 +26,20 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 ## Technical Skills
 
-* Back-end Development: Java ecosystems, core libraries, enterprise frameworks, and REST API design
-* Front-end Development: Angular, JavaScript, HTML, and CSS
-* Scripting: Unix Bash, Vim, and automated shell scripting
-* Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
-* Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic, and event-driven architectures
-* Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
-* Software Architecture: Enterprise middlewares, microservice architecture, and design patterns
-* AI Systems: AI-assisted software engineering and building autonomous AI agents
-* DevOps & CI/CD: End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning
-* Technical Writing & Architecture Design: Translating complex software structures into clear, actionable guides, data reports, and visual blueprints
-* Operations: Production deployment, system configurations, Tier-3 support for business-critical applications
-* Systems Analysis & Delivery: Functional design, data structures, and end-to-end application ownership from sketch to deployment
-* Institutional Environments: Familiarity with the European Commission's technical environment, IT tools, and security standards
-* Agile Frameworks: Scrum and Kanban methodologies, agile sprint tracking with Jira
+* _Back-end Development:_ Java ecosystems, core libraries, enterprise frameworks, and REST API design
+* _Front-end Development:_ Angular, JavaScript, HTML, and CSS
+* _Scripting:_ Unix Bash, Vim, and automated shell scripting
+* _Cloud & Virtualization:_ AWS cloud solutions, Docker containerization, and microservices deployment
+* _Messaging & Integration:_ Apache Kafka, JMS, Oracle WebLogic, and event-driven architectures
+* _Database Engineering:_ Logical / physical database design using PostgreSQL, Oracle, and SQL Server
+* _Software Architecture:_ Enterprise middlewares, microservice architecture, and design patterns
+* _AI Systems:_ AI-assisted software engineering and building autonomous AI agents
+* _DevOps & CI/CD:_ End-to-end CI/CD pipeline automation, infrastructure as code, automated code quality gates, vulnerability scanning
+* _Technical Writing & Architecture Design:_ Translating complex software structures into clear, actionable guides, data reports, and visual blueprints
+* _Operations:_ Production deployment, system configurations, Tier-3 support for business-critical applications
+* _Systems Analysis & Delivery:_ Functional design, data structures, and end-to-end application ownership from sketch to deployment
+* _Institutional Environments:_ Familiarity with the European Commission's technical environment, IT tools, and security standards
+* _Agile Frameworks:_ Scrum and Kanban methodologies, agile sprint tracking with Jira
 
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ai&theme=light" title="AI" alt="AI">
@@ -80,10 +80,10 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 ## Technical Leadership & Management
 
-* Technical Leadership: Guiding developers, mentoring juniors, and helping technical teams stay aligned and focused.
-* Team & People management: Directing cross-functional teams, managing technical professionals, and unblocking development bottlenecks.
-* Jira ecosystem management: Defining clear technical boundaries, and creating actionable task hierarchies for development teams.
-• Reporting: Translating sprint metrics into clear progress reports, delivery velocity charts, and bottleneck analyses for upper management.
+* _Technical Leadership:_ Guiding developers, mentoring juniors, and helping technical teams stay aligned and focused.
+* _Team & People management:_ Directing cross-functional teams, managing technical professionals, and unblocking development bottlenecks.
+* _Jira ecosystem management:_ Defining clear technical boundaries, and creating actionable task hierarchies for development teams.
+• _Reporting:_ Translating sprint metrics into clear progress reports, delivery velocity charts, and bottleneck analyses for upper management.
 
 
 ## Personal Traits
