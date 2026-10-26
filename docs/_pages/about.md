@@ -54,7 +54,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 ## Technical Skills
 
-* Languages 1
+* Programming languages
 
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
@@ -65,6 +65,14 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
     </div>
+
+* Infrastructure & Cloud
+    <p>
+      <img src="https://skillicons.dev/icons?i=kafka,rabbitmq,docker,aws,linux,bash,git,graphql" />
+      <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
+      <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+    </p>
+
 
 * Languages 2
     <div class="skills-container">
@@ -77,40 +85,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
     </div>
 
-* **Languages 3**
-
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
-    </div>
-
-* **Languages 4**
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
-    </div>
-
-#### Languages 7
-
-<div class="skills-container">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
-</div>
 
 
 
@@ -131,12 +105,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
 </p>
 
-**Infra & Cloud**
-<p>
-  <img src="https://skillicons.dev/icons?i=kafka,rabbitmq,docker,aws,linux,bash,git,graphql" />
-  <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
-  <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
-</p>
 
 
 
