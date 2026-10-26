@@ -82,6 +82,9 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 * Technical Leadership: Guiding developers, mentoring juniors, and helping technical teams stay aligned and focused.
 * Team & People management: Directing cross-functional teams, managing technical professionals, and unblocking development bottlenecks.
+* Jira ecosystem management: Defining clear technical boundaries, and creating actionable task hierarchies for development teams.
+• Reporting: Translating sprint metrics into clear progress reports, delivery velocity charts, and bottleneck analyses for upper management.
+
 
 ## Personal Traits
 
