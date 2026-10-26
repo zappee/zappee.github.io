@@ -76,7 +76,10 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 * Databases
     <p class="skills-container">
-      <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis&theme=light" title="Git" alt="Git">
+      <img src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
+      <img src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
+      <img src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
+      <img src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
     </p>
 
 
