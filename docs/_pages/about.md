@@ -67,33 +67,37 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 * Infrastructure & Cloud
 
-    <p class="skills-container">
+    <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=docker&theme=light" title="Docker" alt="Docker">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=linux&theme=light" title="Linux" alt="Linux">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=git&theme=light" title="Git" alt="Git">
-    </p>
+    </div>
 
 * Databases
 
-    <p class="skills-container">
+    <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
-    </p>
+    </div>
 
 * Frameworks
-    <p class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro&theme=light" title="MongoDB" alt="MongoDB">
-    </p>
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=django&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=express&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=nestjs&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring,&theme=light" title="MongoDB" alt="MongoDB">
+    </div>
 
 * AI / ML
-    <p>
+    <div class="skills-container">
       <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
       <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
-    </p>
+    </div>
 
 ## Professional Career
 
