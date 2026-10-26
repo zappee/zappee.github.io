@@ -54,15 +54,15 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 ## Technical Skills
 
-**Languages**
-<div class="skills-container">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
-  <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
-  <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
-  <img src="https://skillicons.dev/icons?i=css" title="CSS, CSS3" alt="CSS, CSS3">
-  <img src="https://skillicons.dev/icons?i=html" title="HTML, HTML5" alt="HTML, HTML5">
-</div>
+* **Languages**
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img src="https://skillicons.dev/icons?i=css" title="CSS, CSS3" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=html" title="HTML, HTML5" alt="HTML, HTML5">
+    </div>
 
 
 
