@@ -41,6 +41,25 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Institutional Environments: Familiarity with the European Commission's technical environment, IT tools, and security standards
 * Agile Frameworks: Scrum and Kanban methodologies, agile sprint tracking with Jira
 
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=docker&theme=light" title="Docker" alt="Docker">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=linux&theme=light" title="Linux" alt="Linux">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=git&theme=light" title="Git" alt="Git">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
+      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
+    </div>
 
 ## Personal Traits
 
@@ -51,50 +70,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Work well under pressure
 * Continuous learner
 * Financial domain expertise
-
-## Technical Skills
-* Programming languages
-
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" title="CSS, CSS3" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5" alt="HTML, HTML5">
-    </div>
-
-* Infrastructure & Cloud
-
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=docker&theme=light" title="Docker" alt="Docker">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=linux&theme=light" title="Linux" alt="Linux">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=git&theme=light" title="Git" alt="Git">
-    </div>
-
-* Databases
-
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
-    </div>
-
-* Frameworks
-    <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
-    </div>
-
-* AI / ML
-    <div class="skills-container">
-      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
-    </div>
 
 ## Professional Career
 
