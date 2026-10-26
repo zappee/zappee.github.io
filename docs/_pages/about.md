@@ -54,18 +54,79 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 ## Technical Skills
 
-* **Languages**
+* Languages 1
 
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
     </div>
 
-* **Frameworks**
+* Languages 2
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+    </div>
+
+* **Languages 3**
+
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+    </div>
+
+* **Languages 4**
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+    </div>
+
+#### Languages 5
+
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+    </div>
+
+* Languages 6
+    <div class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+    </div>
+
+
+
+
+* **Frameworks 4**
     <p class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
     </p>
