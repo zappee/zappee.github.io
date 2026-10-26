@@ -84,21 +84,16 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
     </p>
 
-
-* **Frameworks 4**
+* Frameworks
     <p class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro&theme=light" title="MongoDB" alt="MongoDB">
     </p>
 
-
-**AI / ML**
-<p>
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
-</p>
-
-
-
+* AI / ML
+    <p>
+      <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+      <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white" />
+    </p>
 
 ## Professional Career
 
