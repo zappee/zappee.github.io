@@ -28,7 +28,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 * Back-end Development: Java ecosystems, core libraries, enterprise frameworks, and REST API design
 * Front-end Development: Angular, JavaScript, HTML, and CSS
-* Scripting: Unix Bash, and automated shell scripting
+* Scripting: Unix Bash, Vim, and automated shell scripting
 * Cloud & Virtualization: AWS cloud solutions, Docker containerization, and microservices deployment
 * Messaging & Integration: Apache Kafka, JMS, Oracle WebLogic, and event-driven architectures
 * Database Engineering: Logical / physical database design using PostgreSQL, Oracle, and SQL Server
@@ -59,7 +59,9 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ai&theme=light" title="AI" alt="AI">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA." alt="IntelliJ IDEA.">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA" alt="IntelliJ IDEA">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=visualstudio&theme=light" title="Visual Studio" alt="Visual Studio">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=vim&theme=light" title="Vim" alt="Vim">
     </div>
 
 ## Personal Traits
