@@ -69,7 +69,6 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postman&theme=light" title="Postman" alt="Postman">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=prometheus&theme=light" title="Prometheus" alt="Prometheus">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=react&theme=light" title="React" alt="React">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="Spring" alt="Spring">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
       <img class="skill-icon" src="/assets/images/logos/tomcat.png" title="Apache Tomcat" alt="Apache Tomcat">
