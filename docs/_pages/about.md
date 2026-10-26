@@ -87,7 +87,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 * Frameworks
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring,&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
     </div>
 
 * AI / ML
