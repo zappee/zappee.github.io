@@ -123,6 +123,17 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
     </div>
 
+#### Languages 7
+
+<div class="skills-container">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=py" title="Python" alt="Python">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=angular" title="Angular" alt="Angular">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=css" alt="CSS, CSS3">
+  <img class="skill-icon" src="https://skillicons.dev/icons?i=html" title="HTML, HTML5">
+</div>
 
 
 
