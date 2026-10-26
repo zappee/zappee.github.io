@@ -62,6 +62,12 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA" alt="IntelliJ IDEA">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=visualstudio&theme=light" title="Visual Studio" alt="Visual Studio">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=vim&theme=light" title="Vim" alt="Vim">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=react&theme=light" title="React" alt="React">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=prometheus&theme=light" title="Prometheus" alt="Prometheus">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=postman&theme=light" title="Postman" alt="Postman">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=mint&theme=light" title="Linux Mint" alt="Linux Mint">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=grafana&theme=light" title="Grafana" alt="Grafana">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=github&theme=light" title="GitHub" alt="GitHub">
     </div>
 
 ## Personal Traits
