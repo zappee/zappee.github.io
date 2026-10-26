@@ -64,12 +64,10 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img src="https://skillicons.dev/icons?i=html" title="HTML, HTML5" alt="HTML, HTML5">
     </div>
 
-
-
-**Frameworks**
-<p>
-  <img src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
-</p>
+* **Frameworks**
+    <p class="skills-container">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
+    </p>
 
 **Databases**
 <p>
