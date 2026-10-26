@@ -62,15 +62,18 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
     </div>
 
 * Infrastructure & Cloud
     <p>
-      <img src="https://skillicons.dev/icons?i=kafka,rabbitmq,docker,aws,linux,bash,git,graphql" />
-      <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
-      <img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+      <img src="https://skillicons.dev/icons?i=kafka&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=docker&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=aws&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=linux&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=git&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img src="https://skillicons.dev/icons?i=graphql&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
     </p>
 
 
