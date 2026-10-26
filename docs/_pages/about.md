@@ -61,30 +61,30 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ts&theme=light" title="TypeScript" alt="TypeScript">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=css&theme=light" title="CSS, CSS3" alt="CSS, CSS3">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5" alt="HTML, HTML5">
     </div>
 
 * Infrastructure & Cloud
-    <p>
-      <img src="https://skillicons.dev/icons?i=kafka&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img src="https://skillicons.dev/icons?i=docker&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img src="https://skillicons.dev/icons?i=aws&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img src="https://skillicons.dev/icons?i=linux&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img src="https://skillicons.dev/icons?i=git&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
-      <img src="https://skillicons.dev/icons?i=graphql&theme=light" title="HTML, HTML5" alt="CSS, CSS3">
+    <p class="skills-container">
+      <img src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
+      <img src="https://skillicons.dev/icons?i=docker&theme=light" title="Docker" alt="Docker">
+      <img src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
+      <img src="https://skillicons.dev/icons?i=linux&theme=light" title="Linux" alt="Linux">
+      <img src="https://skillicons.dev/icons?i=git&theme=light" title="Git" alt="Git">
     </p>
+
+* Databases
+    <p class="skills-container">
+      <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis&theme=light" title="Git" alt="Git">
+    </p>
+
 
 * **Frameworks 4**
     <p class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi,django,express,nestjs,nextjs,laravel,spring,astro" />
     </p>
 
-**Databases**
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis" />
-  <img src="https://img.shields.io/badge/Weaviate-1A1E22?style=for-the-badge&logo=weaviate&logoColor=white" />
-</p>
 
 **AI / ML**
 <p>
