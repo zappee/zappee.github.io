@@ -59,7 +59,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mint&theme=light" title="Linux Mint" alt="Linux Mint">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
-      <img class="skill-icon" src="assets/images/logos/oracle.png" title="Oracle Database" alt="Oracle Database">
+      <img class="skill-icon" src="/assets/images/logos/oracle.png" title="Oracle Database" alt="Oracle Database">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postman&theme=light" title="Postman" alt="Postman">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=prometheus&theme=light" title="Prometheus" alt="Prometheus">
