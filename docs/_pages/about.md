@@ -55,6 +55,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 ## Technical Skills
 
 * **Languages**
+
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=java" title="Java" alt="Java">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=bash" title="Bash" alt="Bash">
