@@ -59,6 +59,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ai&theme=light" title="AI" alt="AI">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA." alt="IntelliJ IDEA.">
     </div>
 
 ## Personal Traits
