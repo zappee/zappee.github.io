@@ -86,10 +86,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
 * Frameworks
     <div class="skills-container">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=fastapi&theme=light" title="MongoDB" alt="MongoDB">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=django&theme=light" title="MongoDB" alt="MongoDB">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=express&theme=light" title="MongoDB" alt="MongoDB">
-      <img class="skill-icon" src="https://skillicons.dev/icons?i=nestjs&theme=light" title="MongoDB" alt="MongoDB">
+      <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring,&theme=light" title="MongoDB" alt="MongoDB">
     </div>
 
