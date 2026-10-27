@@ -7,7 +7,7 @@ classes: "wide smaller-text"
 ---
 
 ![Lst update](https://img.shields.io/github/last-commit/zappee/zappee.github.io?label=last%20update)
-
+![](https://komarev.com/ghpvc/?username=zappee)
 {% include like-button.html %}
 
 ## 🎯 About me
