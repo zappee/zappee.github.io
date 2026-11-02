@@ -134,6 +134,9 @@ publications_sidebar:
       - title: "<span class='sidebar-label'>Travel Stories</span>"
         url: ""
 
+      - title: "<span class='sidebar-bullet'>Spain</span>"
+        url: /publications/travel-stories/spain/
+
       - title: "<span class='sidebar-bullet'>Sri Lanka</span>"
         url: /publications/travel-stories/sri-lanka/
 
