@@ -125,14 +125,14 @@ publications_sidebar:
 
     # (6.1) PUBLICATIONS > IT TECHNICAL GUIDES
       - title: "<span class='sidebar-label'>IT Technical Guides</span>"
-        url: ""
+        url: "/publications/"
 
       - title: "<span class='sidebar-bullet'>Shell aliases for efficiency</span>"
         url: /publications/it/shell-aliases-for-efficiency/
 
     # (6.2) PUBLICATIONS > TRAVEL STORIES
       - title: "<span class='sidebar-label'>Travel Stories</span>"
-        url: ""
+        url: "/publications/"
 
       - title: "<span class='sidebar-bullet'>Spain</span>"
         url: /publications/travel-stories/spain/
