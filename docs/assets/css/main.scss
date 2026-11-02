@@ -178,11 +178,3 @@
   width: 45px;
   height: 45px;
 }
-
-/* prevents 'active' styles from applying to sidebar labels */
-a.active .sidebar-label {
-  color: inherit !important;
-  font-weight: normal !important;
-  background-color: transparent !important;
-  text-decoration: none !important;
-}

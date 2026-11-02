@@ -32,7 +32,6 @@ opensource_sidebar:
 
     # (3.1) OPEN SOURCE > AUTOMATION TOOLS
       - title: "<span class='sidebar-label'>Automation Tools</span>"
-        url: /opensource/
 
       - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
         url: /opensource/automation/file-backup-and-restore/
@@ -45,7 +44,6 @@ opensource_sidebar:
 
     # (3.2) OPEN SOURCE > SOFTWARE TOOLS
       - title: "<span class='sidebar-label'>Software Tools</span>"
-        url: /opensource/
 
       - title: "<span class='sidebar-bullet'>FIPS Checker</span>"
         url: /opensource/software/fips-checker/
@@ -61,7 +59,6 @@ opensource_sidebar:
 
     #(3.3)  OPEN SOURCE > RESEARCH AND DEVELOPMENT
       - title: "<span class='sidebar-label'>Research and Development</span>"
-        url: /opensource/
 
       - title: "<span class='sidebar-bullet'>Spiral</span>"
         url: /opensource/r-and-d/spiral/
@@ -78,7 +75,6 @@ virtualization_sidebar:
 
       # (4.1) VIRTUALIZATION > DOCKER
       - title: "<span class='sidebar-label'>Docker</span>"
-        url: /virtualization/
 
       - title: "<span class='sidebar-bullet'>Java-Box</span>"
         url: /virtualization/docker/java-box/
@@ -98,7 +94,6 @@ products_sidebar:
 
     # (5.1) PRODUCTS > REST API
       - title: "<span class='sidebar-label'>REST API</span>"
-        url: /products/
 
       - title: "<span class='sidebar-bullet'>CRM Rest</span>"
         url: /products/rest-apis/crm-rest/
@@ -108,7 +103,6 @@ products_sidebar:
 
     # (5.2) PRODUCTS > AI AGENTS
       - title: "<span class='sidebar-label'>AI Agents</span>"
-        url: /products/
 
       - title: "<span class='sidebar-bullet'>CRM AI</span>"
         url: /products/ai-agents/crm-ai/
@@ -125,14 +119,12 @@ publications_sidebar:
 
     # (6.1) PUBLICATIONS > IT TECHNICAL GUIDES
       - title: "<span class='sidebar-label'>IT Technical Guides</span>"
-        url: /publications/
 
       - title: "<span class='sidebar-bullet'>Shell aliases for efficiency</span>"
         url: /publications/it/shell-aliases-for-efficiency/
 
     # (6.2) PUBLICATIONS > TRAVEL STORIES
       - title: "<span class='sidebar-label'>Travel Stories</span>"
-        url: /publications/
 
       - title: "<span class='sidebar-bullet'>Spain</span>"
         url: /publications/travel-stories/spain/
