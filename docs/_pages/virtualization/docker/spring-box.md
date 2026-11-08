@@ -76,7 +76,11 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
   ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
 
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
-
+* **Automated service registry:** Keeps track of every active microservice automatically, making it easy for containers to find and talk to each other. It gives you a live map of your system and handles load balancing out of the box, so you don't have to manually manage IP addresses or ports.
+* **Production-ready Tomcat 10 server:** Provides a fully tuned web server that supports Web 2.0 experiences, single-page apps and native WebSocket support. It is optimized to handle heavy web traffic efficiently, saving you from messing with complex thread pools or server configurations.
+* **Self-managed PKI security:** Features a built-in Private Certificate Authority that handles security certificates automatically. It takes care of creating, renewing, and revoking TLS/SSL keys for your containers behind the scenes, giving you encrypted service-to-service communication without any manual work.
+* **Ready-to-run demo applications:** Comes with fully functional reference apps that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
+* 
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
