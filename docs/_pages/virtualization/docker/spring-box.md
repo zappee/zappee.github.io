@@ -87,13 +87,13 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
 
-### 6) The Spring-Box Base Image
+#### 5.1) The Spring-Box Base Image
 Image name: `springbox-base`
 
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring-Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
-#### 6.1) Features
+##### 5.1.1) Features
 * **System & Access Utilities:**
   * Lightweight Linux tools and common shell functions.
   * An SSH server, fully installed and configured.
@@ -112,7 +112,7 @@ This serves as the parent layer for all subsequent images in the ecosystem. Any 
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
-#### 6.2) Configuration highlights
+#### 5.1.2) Configuration highlights
 * **Ports used by the container**
   * **SSH Port** (default: 22):
     The embedded SSH server listens on the default port 22 for safe, remote shell management.
@@ -145,7 +145,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Initialization:** Scripts in `docker.init` directory run only _ONCE_ during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run _EVERY_ time the container starts up, including after restarts and reboots.
 
-### 7) Java Core Runtime Images
+#### 5.2) Java Core Runtime Images
 Image name: `springbox-openjdk`
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
