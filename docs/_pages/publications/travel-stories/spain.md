@@ -15,6 +15,8 @@ sidebar:
 
 ### 🔥 Shorts
 
+---
+
 <div markdown="0">
   <a href="https://www.youtube.com/shorts/UDThu4yQ-YA" target="_blank" class="video-thumbnail-card">
     <div class="video-thumbnail-container">
