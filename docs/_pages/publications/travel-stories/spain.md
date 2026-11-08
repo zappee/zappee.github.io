@@ -15,8 +15,4 @@ sidebar:
 
 ### Shorts
 
-<iframe width="300" height="400" src="https://www.youtube.com/embed/blqxzTTdycs" title="🔥 Gran Canaria Night Run 2026! 🏃‍♂️🌙 | Running Through Las Palmas at Night 🇪🇸 | Las Canteras 🌞" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-22
-
 <div class="sk-ww-youtube-channel-videos" data-embed-id="25728122"></div><script src="https://widgets.sociablekit.com/youtube-channel-videos/widget.js" defer></script>
