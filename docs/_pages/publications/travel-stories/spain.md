@@ -16,7 +16,7 @@ sidebar:
 ### 🔥 Shorts
 
 <div markdown="0">
-  <a href="https://youtube.com" target="_blank" class="video-thumbnail-card">
+  <a href="https://www.youtube.com/shorts/UDThu4yQ-YA" target="_blank" class="video-thumbnail-card">
     <div class="video-thumbnail-container">
       <img src="/assets/images/menu/publications/travel-stories/spain/thumbnail-night-run-720x1280-v1.jpg" alt="Running Through Las Palmas at Night" class="video-thumbnail-img">
       <div class="video-thumbnail-overlay"></div>
