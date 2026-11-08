@@ -29,7 +29,7 @@ sidebar:
 
 ### 1) Overview
 The **Remal Spring-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
-It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, service discovery, security, and real-time operational metrics.
+It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, cluster wide caching, service discovery, security, and real-time operational metrics.
 
 ### 2) Context & Problem Statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
@@ -70,11 +70,12 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Instant observability:**  Built-in time- and counter-based telemetry dashboards to measure real-time endpoint latency, call volumes, and Kafka consumption rates for strict SLA reporting.
 * **Architecture evolution:** Designed for zero-downtime scalability. The platform’s modular nature allows you to easily scale services horizontally or vertically, or swap out infrastructure components entirely as your application traffic and business needs grow.
 * **Configuration management:** The integrated _Distributed Key-Value Registry_ acts as a single source of truth for runtime configurations, making it effortless to manage environment states and synchronize changes across all active instances.
-* **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 * **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring-Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring-Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The Hazelcast-based architecture supports three different caching mechanisms: _Embedded Cache_, _Client-Server topology_, and _Near-Cache_:
 
   ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
+
+* **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
