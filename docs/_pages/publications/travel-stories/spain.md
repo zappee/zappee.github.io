@@ -27,8 +27,7 @@ sidebar:
     </div>
     
     <div class="video-thumbnail-info">
-      <h3 class="video-thumbnail-title">🔥 Gran Canaria Night Run 2026! 🏃‍♂️🌙 | Running Through Las Palmas at Night 🇪🇸 | Las Canteras 🌞</h3>
-      <span class="video-thumbnail-badge">Watch</span>
+      <h3 class="video-thumbnail-title">Running Through Las Palmas at Night</h3>
     </div>
   </div>
 </a>
