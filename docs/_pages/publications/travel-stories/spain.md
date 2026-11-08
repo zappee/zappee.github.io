@@ -13,7 +13,7 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl3pcF8JiPE?si=LM68jSYCu6j8tekI" title="Golden Hour in Gran Canaria, Spain" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Shorts
+### 🔥 Shorts
 
 <a href="https://youtube.com" target="_blank" class="video-thumbnail-card">
   <div class="video-thumbnail-container">
