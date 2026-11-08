@@ -149,21 +149,19 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Initialization:** Scripts in `docker.init` directory run only **ONCE** during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run **EVERY** time the container starts up, including after restarts and reboots.
   * **Naming convention of the lifecycle management scripts:** Scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
-
-  | Image Name | init/startup script range |
-  | :--- | :---: |
-  | springbox-base | 10000 |
-  | springbox-private-ca | 30100 |
-  | springbox-hashicorp-vault | 30500 |
-  | springbox-hashicorp-consul | 30700 |
-  | springbox-hazelcast | 30800 |
-  | springbox-prometheus | 40100 |
-  | springbox-grafana | 40200 |
-  | springbox-tomcat-10 | 50100 |
-  | springbox-openjdk-xy | 60100 |
-  | springbox-openjdk-xy-postgres-runner | 70200 |
-  | springbox-openjdk-xy-runner | 70300 |
-  | springbox-openjdk-xy-omni-runner | 70500 |
+  * **Init/Startup script range:**
+    * springbox-base: 10000
+    * springbox-grafana: 40200
+    * springbox-hashicorp-consul: 30700
+    * springbox-hashicorp-vault: 30500
+    * springbox-hazelcast: 30800
+    * springbox-openjdk-xy-omni-runner: 70500
+    * springbox-openjdk-xy-postgres-runner: 70200
+    * springbox-openjdk-xy-runner: 70300
+    * springbox-openjdk-xy: 60100
+    * springbox-private-ca: 30100
+    * springbox-prometheus: 40100
+    * springbox-tomcat-10: 50100
 
 * **Shutdown tasks execution:**
   Implements an automated lifecycle hook that triggers the `/shutdown-actions.sh` script right before Docker stops the container.
