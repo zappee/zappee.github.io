@@ -15,4 +15,20 @@ sidebar:
 
 ### Shorts
 
-<div class="sk-ww-youtube-channel-videos" data-embed-id="25728122"></div><script src="https://widgets.sociablekit.com/youtube-channel-videos/widget.js" defer></script>
+<a href="https://youtube.com" target="_blank" class="video-thumbnail-card">
+  <div class="video-thumbnail-container">
+    <img src="/assets/images/menu/publications/travel-stories/spain/thumbnail-night-run-720x1280-v1.jpg" alt="Gran Canaria Night Run 2026!" class="video-thumbnail-img">
+    <div class="video-thumbnail-overlay"></div>
+
+    <div class="video-thumbnail-play-btn">
+      <svg viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </div>
+    
+    <div class="video-thumbnail-info">
+      <h3 class="video-thumbnail-title">🔥 Gran Canaria Night Run 2026! 🏃‍♂️🌙</h3>
+      <span class="video-thumbnail-badge">Watch</span>
+    </div>
+  </div>
+</a>
