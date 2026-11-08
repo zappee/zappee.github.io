@@ -178,3 +178,13 @@
   width: 45px;
   height: 45px;
 }
+
+#sk-post-header p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--details-font-color);
+    font-size: 11px;
+}
