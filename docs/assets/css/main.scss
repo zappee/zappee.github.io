@@ -207,8 +207,8 @@ a.video-thumbnail-card[class*="video-thumbnail-card"] {
   box-shadow: none !important;
   color: inherit !important;
   font-family: sans-serif !important;
-  flex: 0 0 200px !important;
-  width: 200px !important;
+  flex: 1 1 0 !important;
+  min-width: 180px !important;
 }
 
 div.video-thumbnail-container[class*="video-thumbnail-container"] {
