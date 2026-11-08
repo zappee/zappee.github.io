@@ -209,6 +209,7 @@ a.video-thumbnail-card[class*="video-thumbnail-card"] {
   font-family: sans-serif !important;
   flex: 1 1 0 !important;
   min-width: 180px !important;
+  max-width: calc(25% - 12px) !important;
 }
 
 div.video-thumbnail-container[class*="video-thumbnail-container"] {

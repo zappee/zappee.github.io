@@ -35,4 +35,3 @@ sidebar:
   <!-- Video 3 -->
   <!-- Video 4 -->
 </div>
-
