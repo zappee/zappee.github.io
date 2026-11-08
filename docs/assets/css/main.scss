@@ -215,6 +215,7 @@ div.video-thumbnail-container[class*="video-thumbnail-container"] {
   position: relative !important;
   width: 100% !important;
   height: auto !important;
+  aspect-ratio: 720 / 1280 !important;
   background-color: #000 !important;
   border-radius: 8px !important;
   overflow: hidden !important;
