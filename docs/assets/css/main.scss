@@ -256,10 +256,14 @@ img.video-thumbnail-img[class*="video-thumbnail-img"] {
   a.video-thumbnail-card[class*="video-thumbnail-card"] {
     flex: 0 0 140px !important;
     width: 140px !important;
+    min-width: 140px !important;
+    max-width: 140px !important;
+    height: 249px !important;
   }
 
-  div.video-thumbnail-container[class*="video-thumbnail-container"] {
-    height: 240px !important;
+  div.video-thumbnail-container[class*="video-thumbnail-container"] {#
+    width: 140px !important;
+    height: 249px !important;
     border-radius: 6px !important;
   }
 
