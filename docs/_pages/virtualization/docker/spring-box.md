@@ -148,7 +148,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
   * **Initialization logic:** Scripts in `docker.init` directory run only **ONCE** during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run **EVERY** time the container starts up, including after restarts and reboots.
-  * **Naming convention of the lifecycle management scripts:** Scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
+  * **Naming convention:**  The lifecycle management scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
   * **Script ranges:**
     * `springbox-base`: 10000-19999
     * `springbox-grafana`: 40200-40299
