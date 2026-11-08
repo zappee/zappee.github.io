@@ -2,12 +2,13 @@
 # this two lines of triple-dashes tell Jekyll to process this file
 ---
 
-/* assets/css/main.scss */
-
 /* automatically loads all original layout rules, fonts, and structures */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* ==========================================================================
+   OVERWRITE ORIGINAL STYLES
+   ========================================================================== */
 /* light mode colors, defaults */
 :root {
   --sidebar-label-color: #0277BD;
@@ -49,7 +50,18 @@
   }
 }
 
-/* smaller text used in Jekyll headers */
+
+/* ==========================================================================
+   SPLIT HEADING LAYOUTS
+   ========================================================================== */
+.heading-right {
+  float: right;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   TEXT STYLES
+   ========================================================================== */
 .smaller-text {
   .page__content p {
     font-size: 0.8rem;
@@ -74,13 +86,6 @@
   }
 }
 
-/* split heading layouts */
-.heading-right {
-  float: right;
-  font-weight: bold;
-}
-
-/* text styles */
 .right-aligned-text {
   float: right;
   font-weight: normal;
@@ -90,7 +95,9 @@
   font-weight: normal;
 }
 
-/* sidebar styles */
+/* ==========================================================================
+   SIDEBAR STYLES
+   ========================================================================== */
 .sidebar-label {
   color: var(--sidebar-label-color);
   font-size: 1em;
@@ -109,7 +116,9 @@
   padding-right: 0.2rem;
 }
 
-/* GitHub chart */
+/* ==========================================================================
+   GITHUB CHART
+   ========================================================================== */
 .github-chart-container {
   display: block;
   margin: 0 auto;
@@ -133,7 +142,9 @@
   display: block;
 }
 
-/* positioning images */
+/* ==========================================================================
+   POSITIONING IMAGES
+   ========================================================================== */
 .align-to-list {
   display: flex;
   gap: 2%;
@@ -142,7 +153,9 @@
   margin-bottom: 20px;
 }
 
-/* table of content style */
+/* ==========================================================================
+   TABLE OF CONTENT STYLE
+   ========================================================================== */
 #markdown-toc a {
   text-decoration: none !important;
   border-bottom: none !important;
@@ -164,7 +177,9 @@
   padding-left: 25px !important;
 }
 
-/* technical-skills icons */
+/* ==========================================================================
+   TECHNICAL-SKILLS ICONS
+   ========================================================================== */
 .skills-container {
   display: inline-block;
   margin-bottom: -7px;
@@ -172,7 +187,9 @@
   margin-top: -10px;
 }
 
-/* video thumbnail */
+/* ==========================================================================
+   VIDEO THUMBNAIL
+   ========================================================================== */
 .video-row-container {
   display: flex;
   gap: 16px;
