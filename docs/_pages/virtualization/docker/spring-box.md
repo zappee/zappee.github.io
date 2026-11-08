@@ -80,7 +80,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Production-ready Tomcat 10 server:** Provides a fully tuned web server that supports Web 2.0 experiences, single-page apps and native WebSocket support. It is optimized to handle heavy web traffic efficiently, saving you from messing with complex thread pools or server configurations.
 * **Self-managed PKI security:** Features a built-in Private Certificate Authority that handles security certificates automatically. It takes care of creating, renewing, and revoking TLS/SSL keys for your containers behind the scenes, giving you encrypted service-to-service communication without any manual work.
 
-![TLS certificate lifecycle](/assets/images/menu/virtualization/docker/spring-box/tls-certificate-lifecycle.jpg)
+![TLS certificate lifecycle](/assets/images/menu/virtualization/docker/spring-box/tls-certificate-lifecycle.png)
 
 * **Ready-to-run demo applications:** Comes with fully functional reference apps that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
 * 
