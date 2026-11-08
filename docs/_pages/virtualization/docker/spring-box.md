@@ -150,18 +150,18 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Startup logic:** Scripts in `docker.startup` directory run **EVERY** time the container starts up, including after restarts and reboots.
   * **Naming convention of the lifecycle management scripts:** Scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
   * **Init/Startup script range:**
-    * springbox-base: 10000
-    * springbox-grafana: 40200
-    * springbox-hashicorp-consul: 30700
-    * springbox-hashicorp-vault: 30500
-    * springbox-hazelcast: 30800
-    * springbox-openjdk-xy-omni-runner: 70500
-    * springbox-openjdk-xy-postgres-runner: 70200
-    * springbox-openjdk-xy-runner: 70300
-    * springbox-openjdk-xy: 60100
-    * springbox-private-ca: 30100
-    * springbox-prometheus: 40100
-    * springbox-tomcat-10: 50100
+    * springbox-base: 10000-19999
+    * springbox-grafana: 40200-40299
+    * springbox-hashicorp-consul: 30700-30799
+    * springbox-hashicorp-vault: 30500-30599
+    * springbox-hazelcast: 30800-30899
+    * springbox-openjdk-xy-omni-runner: 70500-70599
+    * springbox-openjdk-xy-postgres-runner: 70200-70299
+    * springbox-openjdk-xy-runner: 70300-70399
+    * springbox-openjdk-xy: 60100-60199
+    * springbox-private-ca: 30100-30199
+    * springbox-prometheus: 40100-40199
+    * springbox-tomcat-10: 50100-50199
 
 * **Shutdown tasks execution:**
   Implements an automated lifecycle hook that triggers the `/shutdown-actions.sh` script right before Docker stops the container.
