@@ -276,3 +276,29 @@
   transform: translate(-50%, -50%) scale(1.1);
   background: #ffffff;
 }
+
+@media (max-width: 767px) {
+  .video-thumbnail-card {
+    width: 140px;
+  }
+
+  .video-thumbnail-container {
+    height: 250px;
+    border-radius: 6px;
+  }
+
+  .video-thumbnail-title {
+    font-size: 11px !important;
+    line-height: 1.2;
+  }
+
+  .video-thumbnail-play-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .video-thumbnail-play-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
