@@ -17,7 +17,7 @@ sidebar:
 
 <a href="https://youtube.com" target="_blank" class="video-thumbnail-card">
   <div class="video-thumbnail-container">
-    <img src="/assets/images/menu/publications/travel-stories/spain/thumbnail-night-run-720x1280-v1.jpg" alt="Gran Canaria Night Run 2026!" class="video-thumbnail-img">
+    <img src="/assets/images/menu/publications/travel-stories/spain/thumbnail-night-run-720x1280-v1.jpg" alt="Running Through Las Palmas at Night" class="video-thumbnail-img">
     <div class="video-thumbnail-overlay"></div>
 
     <div class="video-thumbnail-play-btn">
@@ -27,7 +27,7 @@ sidebar:
     </div>
     
     <div class="video-thumbnail-info">
-      <h3 class="video-thumbnail-title">🔥 Gran Canaria Night Run 2026! 🏃‍♂️🌙</h3>
+      <h3 class="video-thumbnail-title">🔥 Gran Canaria Night Run 2026! 🏃‍♂️🌙 | Running Through Las Palmas at Night 🇪🇸 | Las Canteras 🌞</h3>
       <span class="video-thumbnail-badge">Watch</span>
     </div>
   </div>
