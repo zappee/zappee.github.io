@@ -173,6 +173,14 @@
 }
 
 /* video thumbnail */
+.video-row-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
 .video-thumbnail-card {
   display: inline-block;
   text-decoration: none;
