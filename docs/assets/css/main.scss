@@ -211,7 +211,7 @@ a.video-thumbnail-card[class*="video-thumbnail-card"] {
   max-width: calc(25% - 12px) !important;
 }
 
-div.video-thumbnail-container[class*="video-thumbnail-container"] {
+div.video-thumbnail-container {
   position: relative !important;
   width: 100% !important;
   height: auto !important;
@@ -222,27 +222,34 @@ div.video-thumbnail-container[class*="video-thumbnail-container"] {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
 }
 
-img.video-thumbnail-img[class*="video-thumbnail-img"] {
+img.video-thumbnail-img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* Forces uniform crop boundaries */
+  object-fit: cover !important;
   display: block !important;
 }
 
 .video-thumbnail-overlay {
   position: absolute !important;
-  top: 0; left: 0; width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 100%) !important;
 }
 
 .video-thumbnail-play-btn {
   position: absolute !important;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) !important;
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 50% !important;
-  display: flex !important; align-items: center; justify-content: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
   transition: transform 0.2s ease, background-color 0.2s ease !important;
 }
@@ -276,18 +283,14 @@ img.video-thumbnail-img[class*="video-thumbnail-img"] {
   background: #ffffff !important;
 }
 
+/* mobile screens, smaller than 768px */
 @media screen and (max-width: 767px) {
-  a.video-thumbnail-card[class*="video-thumbnail-card"] {
+  a.video-thumbnail-card {
     flex: 0 0 140px !important;
-    width: 140px !important;
-    min-width: 140px !important;
     max-width: 140px !important;
-    height: 249px !important;
   }
 
-  div.video-thumbnail-container[class*="video-thumbnail-container"] {#
-    width: 140px !important;
-    height: 249px !important;
+  div.video-thumbnail-container {
     border-radius: 6px !important;
   }
 
