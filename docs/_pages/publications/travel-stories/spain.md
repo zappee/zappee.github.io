@@ -17,7 +17,7 @@ sidebar:
 
 ---
 
-<div markdown="0" class="video-row-container" style="display: flex; gap: 16px; flex-wrap: nowrap; overflow-x: auto; padding: 10px 0;">
+<div markdown="0" class="video-row-container">
   <!-- Video 1 -->
   <a href="https://www.youtube.com/shorts/UDThu4yQ-YA" target="_blank" class="video-thumbnail-card">
     <div class="video-thumbnail-container">
@@ -71,3 +71,4 @@ sidebar:
     </div>
   </a>
 </div>
+
