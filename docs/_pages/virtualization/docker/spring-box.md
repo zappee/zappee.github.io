@@ -150,7 +150,6 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Startup logic:** Scripts in `docker.startup` directory run **EVERY** time the container starts up, including after restarts and reboots.
   * **Naming convention of the lifecycle management scripts:** Scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
 
-
   | Image Name | init/startup script range |
   | :--- | :---: |
   | springbox-base | 10000 |
