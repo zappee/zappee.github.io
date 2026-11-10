@@ -166,25 +166,11 @@ _Please modify it with caution and only introduce changes that are globally requ
     | springbox-openjdk-xy-runner | 70300-70399 |
     | springbox-openjdk-xy-omni-runner | 70500-70599 |
 
-
-    * `springbox-base`: 10000-19999
-    * `springbox-private-ca`: 30100-30199
-    * `springbox-hashicorp-vault`: 30500-30599
-    * `springbox-hashicorp-consul`: 30700-30799
-    * `springbox-hazelcast`: 30800-30899
-    * `springbox-prometheus`: 40100-40199
-    * `springbox-grafana`: 40200-40299
-    * `springbox-tomcat-10`: 50100-50199
-    * `springbox-openjdk-xy`: 60100-60199
-    * `springbox-openjdk-xy-postgres-runner`: 70200-70299
-    * `springbox-openjdk-xy-runner`: 70300-70399
-    * `springbox-openjdk-xy-omni-runner`: 70500-70599
-
 * **Shutdown tasks execution:**
   Implements an automated lifecycle hook that triggers the `/shutdown-actions.sh` script right before Docker stops the container.
   When using this feature, make sure to give your cleanup tasks enough time to finish completely.
 
-  We highly recommend using the docker `stop --timeout 60 <container-id>` command if your shutdown tasks need more time than the default 10 second Docker grace period before a `SIGKILL` is sent.
+  We highly recommend using the docker `docker stop --timeout 60 <container-id>` command if your shutdown tasks need more time than the default 10 second Docker grace period before a `SIGKILL` is sent.
   Docker's native default timeout before sending a `SIGKILL` is 10 seconds,
 
 ### 7) Java Core Runtime Images
