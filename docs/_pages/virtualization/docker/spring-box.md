@@ -90,21 +90,21 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 6) The Spring-Box Base Image
 Image name: `springbox-base`
 
-This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring-Box** ecosystem.
+This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
 #### 6.1) Features
-* **Minimal Base OS:** Built on top of a lightweight, highly secure `Alpine Linux` image.
+* **Minimal Base OS:**
+  * Built on top of a lightweight, highly secure `Alpine Linux` image.
 * **System & Access Utilities:**
   * Lightweight Linux tools, including `coreutils`, `curl`, `openssh`, `socat`, `sshpass`.
   * Includes a fully installed and configured embedded SSH server.
 * **Environment Configurations:**
   * Uses `Bash` as the default system shell.
   * Provides pre-configured Docker bootstrap entrypoint scripts: `entrypoint.sh` and `wait-for-container.sh`.
-  * Offers a shared runtime functions library called `shared.sh`, accessible by all downstream Bash scripts.
+  * Offers a shared functions library called `shared.sh`, accessible by all downstream Bash scripts.
 * **Container Orchestration:**
-  * Leverages wait-for-container.sh to safely manage container startup sequencing.
-  * `wait-for-container.sh` to safely manage container startup sequencing and container dependencies.
+  * Manage container startup sequencing and dependencies between container safely with `wait-for-container.sh`.
   * Pre-configures `/docker.init/` and `/docker.startup/` directory structures.
 * **Self-Provisioned TLS Certificates:** A dedicated server certificate is automatically generated during the container's initial startup using the [Remal Private Certificate Authority (PKI) Infrastructure](#14-private-certificate-authority-pki).
   Applications running inside any _Spring-Box_ container can immediately use this certificate to enable secure communication and data encryption.
@@ -127,7 +127,7 @@ _Please modify it with caution and only introduce changes that are globally requ
     This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
     It functions as a health indicator to orchestrate the startup dependency order of your containers.
     The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
-    Without this check, a Spring Boot application would fail immediately, as it strictly requires an active `HashiCorp Consul` Key-Value store or a database server during its startup phase.
+    Without this check, a Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store or a database server during its startup phase.
     Once this check passes, the container triggers the original image entrypoint scripts.
 
     Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
@@ -143,25 +143,42 @@ _Please modify it with caution and only introduce changes that are globally requ
   ```
 
 * **Container lifecycle management**
-  The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring-Box_ containers.
-  Using the Linux [`run-parts` tool](https://www.unix.com/man_page/linux/8/run-parts/), the container executes initialization and startup scripts sequentially without hardcoded filenames.
+  The `/docker.init/` and `/docker.startup/` directories manage the lifecycle of all _Spring Box_ containers.
+  Using the Linux [`run-parts`](https://www.unix.com/man_page/linux/8/run-parts/) tool, the container executes initialization and startup scripts sequentially without hardcoded filenames.
   While downstream layers can easily extend container behavior by adding new scripts, place files carefully to avoid filename conflicts or accidental overrides.
   * **Initialization logic:** Scripts in `docker.init` directory run only **ONCE** during the container's very first boot. They will be skipped on subsequent container restarts.
   * **Startup logic:** Scripts in `docker.startup` directory run **EVERY** time the container starts up, including after restarts and reboots.
   * **Naming convention:**  The lifecycle management scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
-  * **Script ranges:**
+  * **Script ID ranges:**
+
+    | Component | Port Range |
+    | :--- | :---: |
+    | `springbox-base` | 10000-19999 |
+    | `springbox-private-ca` | 30100-30199 |
+    | `springbox-hashicorp-vault` | 30500-30599 |
+    | `springbox-hashicorp-consul` | 30700-30799 |
+    | `springbox-hazelcast` | 30800-30899 |
+    | `springbox-prometheus` | 40100-40199 |
+    | `springbox-grafana` | 40200-40299 |
+    | `springbox-tomcat-10` | 50100-50199 |
+    | `springbox-openjdk-xy` | 60100-60199 |
+    | `springbox-openjdk-xy-postgres-runner` | 70200-70299 |
+    | `springbox-openjdk-xy-runner` | 70300-70399 |
+    | `springbox-openjdk-xy-omni-runner` | 70500-70599 |
+
+
     * `springbox-base`: 10000-19999
-    * `springbox-grafana`: 40200-40299
-    * `springbox-hashicorp-consul`: 30700-30799
+    * `springbox-private-ca`: 30100-30199
     * `springbox-hashicorp-vault`: 30500-30599
+    * `springbox-hashicorp-consul`: 30700-30799
     * `springbox-hazelcast`: 30800-30899
-    * `springbox-openjdk-xy-omni-runner`: 70500-70599
+    * `springbox-prometheus`: 40100-40199
+    * `springbox-grafana`: 40200-40299
+    * `springbox-tomcat-10`: 50100-50199
+    * `springbox-openjdk-xy`: 60100-60199
     * `springbox-openjdk-xy-postgres-runner`: 70200-70299
     * `springbox-openjdk-xy-runner`: 70300-70399
-    * `springbox-openjdk-xy`: 60100-60199
-    * `springbox-private-ca`: 30100-30199
-    * `springbox-prometheus`: 40100-40199
-    * `springbox-tomcat-10`: 50100-50199
+    * `springbox-openjdk-xy-omni-runner`: 70500-70599
 
 * **Shutdown tasks execution:**
   Implements an automated lifecycle hook that triggers the `/shutdown-actions.sh` script right before Docker stops the container.
