@@ -314,11 +314,14 @@ img.video-thumbnail-img {
    TABLE
    ========================================================================== */
 table {
-  width: 100% !important;
+  width: 80% !important;
+  max-width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   display: table !important;
 }
 
 table th {
-  background-color: #24292e !important;
-  color: #ffffff !important;
+  background-color: transparent !important;
+  background: transparent !important;
 }

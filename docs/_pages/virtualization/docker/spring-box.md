@@ -174,7 +174,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   Docker's native default timeout before sending a `SIGKILL` is 10 seconds,
 
 ### 7) Java Core Runtime Images
-Image names: `springbox-openjdk-xy`
+Image names: `springbox-openjdk`
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
 
