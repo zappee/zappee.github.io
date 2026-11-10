@@ -189,7 +189,7 @@ This Docker image layer only adds
 * Sync Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
 
 #### 7.2) Build
-The build process for the `springbox-openjdk` core image uses a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
+The build process for the `springbox-openjdk` core images use a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
 
 The repository contains distinct shell scripts dedicated to configuring the runtime environment for each supported Long-Term Support (LTS) Java version:
 * `setenv-openjdk-11.sh`
