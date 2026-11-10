@@ -184,8 +184,9 @@ _To deploy and execute your Java applications, we highly recommend using our spe
 
 #### 7.1) Features
 This Docker image layer only adds
-* specific OpenJDK installations
-* OpenSSL to deal with keystores
+* Specific OpenJDK installations.
+* OpenSSL to deal with keystores.
+* Syncs Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
 
 ### 8) Java Runner Images
 Image name: `springbox-openjdk-runner`
