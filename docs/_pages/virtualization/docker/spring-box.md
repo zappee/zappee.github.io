@@ -186,7 +186,7 @@ _To deploy and execute your Java applications, we highly recommend using our spe
 This Docker image layer only adds
 * Specific OpenJDK installations.
 * OpenSSL to deal with keystores.
-* Syncs Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
+* Sync Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
 
 #### 7.2) Build
 The build process for the `springbox-openjdk` core image uses a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
