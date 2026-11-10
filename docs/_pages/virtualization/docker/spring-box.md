@@ -151,7 +151,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **Naming convention:**  The lifecycle management scripts must follow the `<id>_<task-short-name>.sh` naming pattern, such as `30101_configure-terminal.sh`.
   * **Script ID ranges:**
 
-    | Component | Port Range |
+    | Image | Filename ID range |
     | :--- | :---: |
     | springbox-base | 10000-19999 |
     | springbox-private-ca | 30100-30199 |
