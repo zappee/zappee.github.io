@@ -319,9 +319,10 @@ table {
   margin-left: auto !important;
   margin-right: auto !important;
   display: table !important;
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 table th {
-  background-color: transparent !important;
-  background: transparent !important;
+  background-color: #BBDEFB !important;
 }
