@@ -118,12 +118,12 @@ _Please modify it with caution and only introduce changes that are globally requ
 
 #### 6.2) Configuration highlights
 * **Ports used by the container**
-  * **SSH Port** (default: 22):
+  * **SSH Port** (default: `22`):
     The embedded SSH server listens on the default port 22 for safe, remote shell management.
     * User: `root`
     * Password: `password`
     * Connection string: `sshpass -p password ssh -oStrictHostKeyChecking=no root@localhost -p <port>`, where the `port` is mapped to `14012` in the example below.
-  * **Readiness signal port** (default: 1331):
+  * **Readiness signal port** (default: `1331`):
     This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
     It functions as a health indicator to orchestrate the startup dependency order of your containers.
     The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
@@ -179,7 +179,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   Variables utilized by this image:
   * **SSH_USER** (default: `root`): Defines the primary administrative user account permitted to establish remote secure shell sessions into the container.
   * **SSH_PASSWORD** (default: `password`): Sets the password for the SSH user.
-  * **UP_SIGNAL_PORT** (default: 1331): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
+  * **UP_SIGNAL_PORT** (default: `1331`): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
 
 ### 7) Java Core Runtime Images
 Image names: `springbox-openjdk`
@@ -228,7 +228,7 @@ _Use this container to deploy and run your Java application as executable JAR._
 * **Cluster-wide HashiCorp Consul integration:** Provides Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
 * **Cluster-wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
-* **Grafana analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
+* **Prometheus analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
 <div class="align-to-list">
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png" alt="Prometheus chart" style="width: 49%;" />
@@ -306,17 +306,17 @@ hello-service-1:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PKI_HOST** (default: pki.remal.com): Specifies the hostname of the _Private PKI Management_ container within the _Spring-Box_ network.
-  * **CONSUL_SERVER_HOSTNAME** (default: consul.remal.com): Defines the hostname of the _HashiCorp Consul_ container inside the platform.
-  * **HAZELCAST_CLUSTER_NAME** (default: springbox-dev): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
-  * **HAZELCAST_CLUSTER_MEMBERS** (default: hazelcast-1.remal.com, hazelcast-2.remal.com): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
-  * **JAVA_HOME** (default: /usr/lib/jvm/java-<version>-openjdk): One of the most critical environment variable in software development. It defines the absolute file system path to the directory where the Java Development Kit (JDK) or Java Runtime Environment (JRE) is installed.
-  * **JAVA_OPTS** (default: -Xms512m -Xmx512m -XX:+UseZGC): A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
-  * **JAVA_DEBUG** (default: true): If enabled, the `agentlib` JVM argument is automatically added during JVM startup.
-  * **JAVA_DEBUG_PORT** (default: 5005): Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
-  * **HEALTH_CHECK** (default: true): If it is true, a loop polls `HEALTH_CHECK_URI` every 0.5 seconds, blocks execution until the response matches `EXPECTED_HEALTH_CHECK_STATE`, ensuring the Java application is fully loaded before continuing.
-  * **HEALTH_CHECK_URI** (default: https://localhost:8443/actuator/health): Specifies the URL used to poll the application's status.
-  * **EXPECTED_HEALTH_CHECK_STATE** (default: '\"status\":\"UP\"'): Used to define the specific string or status code the script looks for to confirm the application is healthy.
+  * **PKI_HOST** (default: `pki.remal.com`): Specifies the hostname of the _Private PKI Management_ container within the _Spring-Box_ network.
+  * **CONSUL_SERVER_HOSTNAME** (default: `consul.remal.com`): Defines the hostname of the _HashiCorp Consul_ container inside the platform.
+  * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
+  * **HAZELCAST_CLUSTER_MEMBERS** (default: `hazelcast-1.remal.com, hazelcast-2.remal.com`): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
+  * **JAVA_HOME** (default: `/usr/lib/jvm/java-<version>-openjdk`): One of the most critical environment variable in software development. It defines the absolute file system path to the directory where the Java Development Kit (JDK) or Java Runtime Environment (JRE) is installed.
+  * **JAVA_OPTS** (default: `-Xms512m -Xmx512m -XX:+UseZGC`): A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
+  * **JAVA_DEBUG** (default: `true`): If enabled, the `agentlib` JVM argument is automatically added during JVM startup.
+  * **JAVA_DEBUG_PORT** (default: `5005`): Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
+  * **HEALTH_CHECK** (default: `true`): If it is true, a loop polls `HEALTH_CHECK_URI` every 0.5 seconds, blocks execution until the response matches `EXPECTED_HEALTH_CHECK_STATE`, ensuring the Java application is fully loaded before continuing.
+  * **HEALTH_CHECK_URI** (default: `https://localhost:8443/actuator/health`): Specifies the URL used to poll the application's status.
+  * **EXPECTED_HEALTH_CHECK_STATE** (default: `'\"status\":\"UP\"'`): Used to define the specific string or status code the script looks for to confirm the application is healthy.
 
     The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
