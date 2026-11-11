@@ -349,7 +349,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 9) <span class="rect-space color-app"></span> Java Runtime with PostgreSQL Images
+### 9) <span class="rect-space color-app"></span> Java Runtime with an embedded PostgreSQL server Images
 Image name: `springbox-openjdk-postgres-runner`
 
 The platform supports production-ready Runners with an embedded PostgreSQL database server for [OpenJDK 21 and 25](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner).
