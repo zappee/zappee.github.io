@@ -350,15 +350,12 @@ table th {
   margin-bottom: -2px;
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
   box-sizing: border-box;
-  transition: background 0.05s ease;
-
 }
 
-.rect-space:hover {
+a:hover .rect-space  {
   text-decoration: none !important;
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
 }
-
 
 .color-base    { --rect-color: #CCFF90; }
 .color-core    { --rect-color: #76FF03; }
