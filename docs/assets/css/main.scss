@@ -343,13 +343,13 @@ table th {
 /* ==========================================================================
    COLOR RECTANGLE IN THE HEADER
    ========================================================================== */
-.color-indicator-base-image {
-  content: "";
+.rect-space {
   display: inline-block;
-  width: 14px;
+  width: 24px;
   height: 24px;
-  background-color: #CCFF90;
-  margin-right: 10px;
   vertical-align: middle;
-  border-radius: 3px;
+  background-color: var(--rect-color, black);
 }
+
+.color-base { --rect-color: #CCFF90; }
+.color-core { --rect-color: #76FF03; }

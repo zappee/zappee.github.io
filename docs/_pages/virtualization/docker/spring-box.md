@@ -87,7 +87,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
 
-### 6) <span class="color-indicator-base-image"></span> The Spring-Box Base Image
+### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
 Image name: `springbox-base`
 
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
@@ -181,7 +181,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **SSH_PASSWORD** (default: `password`): Sets the password for the SSH user.
   * **UP_SIGNAL_PORT** (default: `1331`): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
 
-### 7) Java Core Runtime Images
+### 7) <span class="rect-space color-core"></span>Java Core Runtime Images
 Image names: `springbox-openjdk`
 
 The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
