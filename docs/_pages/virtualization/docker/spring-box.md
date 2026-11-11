@@ -217,6 +217,8 @@ These scripts handle the specific paths, environment variables, and configuratio
 ### 8) <span class="rect-space color-app"></span> Java Runner Images
 Image name: `springbox-openjdk-runner`
 
+The platform supports production-ready Runners for [OpenJDK 21 and 25](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner).
+
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box.
 
