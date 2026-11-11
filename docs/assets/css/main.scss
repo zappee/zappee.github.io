@@ -351,6 +351,10 @@ table th {
   background-color: var(--rect-color, black);
 }
 
+a:has(.rect-space):hover {
+  text-decoration: none !important;
+}
+
 a:hover .rect-space {
   text-decoration: none !important;
   border-bottom: 1px solid;
