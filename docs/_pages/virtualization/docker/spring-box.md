@@ -306,7 +306,7 @@ hello-service-1:
 
     The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
-  ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png){: .centered-image }
+    ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
 
 * **Container memory limit:**
   In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `docker-compose.yml` file.
