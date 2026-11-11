@@ -221,7 +221,7 @@ The **Java Runner** is an optimized Docker image designed specifically for runni
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box.
 
 ⚠️ _**Important:**_
-_Use this container to deploy and run your Java applications as executable JARs._
+_Use this container to deploy and run your Java application as executable JAR._
 
 #### 8.1) Features
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
