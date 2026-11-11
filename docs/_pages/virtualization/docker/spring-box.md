@@ -73,7 +73,9 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring-Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring-Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The Hazelcast-based architecture supports three different caching mechanisms: _Embedded Cache_, _Client-Server topology_, and _Near-Cache_:
 
+<div style="text-align: center;">
   ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
+</div>
 
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 * **Automated service registry:** Keeps track of every active microservice automatically, making it easy for containers to find and talk to each other. It gives you a live map of your system and handles load balancing out of the box, so you don't have to manually manage IP addresses or ports.
@@ -203,7 +205,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 Image name: `springbox-openjdk-runner`
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
-Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box:
+Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box.
 
 ⚠️ _**Important:**_
 _Use this container to deploy and run your Java applications as executable JARs._
@@ -264,7 +266,7 @@ hello-service-1:
   That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
   This strategy provides massive advantages when working with a _Central Container Runtime System_ that dynamically manages the execution and lifecycle of Docker containers.
 
-  The `${DOMAIN_NAME}` variable can be defined in a dedicated environment file, or as a shell variable, or CI/CD pipeline can provide.
+  The `${DOMAIN_NAME}` variable can be defined in a dedicated environment file, or as a shell variable, or CI/CD pipeline can provide:
   ```properties
   # arnold.env file
   DOMAIN_NAME=arnold.remal.com
@@ -272,7 +274,7 @@ hello-service-1:
   You can then spin up the stack using the following command:
 
   ```bash
-  $ docker compose --env-file=arnold.env -f <compose-file> up
+  $ docker compose --env-file=arnold.env up
   ```
 * **Container Orchestration:** Blocks container execution until pre-requirements and dependencies are fully ready. The `wait-for-container.sh` script expects exactly one parameter: the target container's hostname. It polls the target container's _Readiness Signal Port_ in a loop, safely pausing startup until the service is fully online.
 
