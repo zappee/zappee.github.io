@@ -351,8 +351,9 @@ table th {
   background-color: var(--rect-color, black);
 }
 
-a.rect-space:hover {
-  text-decoration: underline !important;
+a:hover .rect-space {
+  text-decoration: none !important;
+  box-shadow: 0 2px 0 0 var(--rect-color, black);
 }
 
 .color-base { --rect-color: #CCFF90; }
