@@ -173,6 +173,14 @@ _Please modify it with caution and only introduce changes that are globally requ
   We highly recommend using the docker `docker stop --timeout 60 <container-id>` command if your shutdown tasks need more time than the default 10 second Docker grace period before a `SIGKILL` is sent.
   Docker's native default timeout before sending a `SIGKILL` is 10 seconds,
 
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **SSH_USER** (default: `root`): Defines the primary administrative user account permitted to establish remote secure shell sessions into the container.
+  * **SSH_PASSWORD** (default: `password`): Sets the password for the SSH user.
+  * **UP_SIGNAL_PORT** (default: 1331): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
+
 ### 7) Java Core Runtime Images
 Image names: `springbox-openjdk`
 
