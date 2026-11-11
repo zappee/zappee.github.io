@@ -86,7 +86,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Ready-to-run demo applications:** Comes with fully functional _Spring Boot_ reference applications that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
 
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
-![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png)
+![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
 
 ### 6) The Spring-Box Base Image
 Image name: `springbox-base`
@@ -306,7 +306,8 @@ hello-service-1:
 
     The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
 
-    ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
+  ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png){: .centered-image }
+
 * **Container memory limit:**
   In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `docker-compose.yml` file.
   This helps prevent containers from consuming excessive resources, which can lead to system instability.
