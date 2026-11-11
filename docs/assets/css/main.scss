@@ -346,42 +346,26 @@ table th {
 .rect-space {
   display: inline-block;
   width: 13px;
-  height: 16px;
-  margin-bottom: -2px;
-  background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
-}
-
-
-/* ==========================================================================
-   2. Place (1): Inside the Table of Contents Links (Height: 16px)
-   ========================================================================== */
-a .rect-space {
-  height: 16px;
-  margin-bottom: -2px;
-  /* Top 15px is the main color, remaining 1px sits at the bottom */
-  background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
-}
-
-/* Hover state for Table of Contents Links (Draws 1px underline) */
-a:hover .rect-space {
-  text-decoration: none !important;
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
 }
 
-/* ==========================================================================
-   3. Place (2): Inside the Main Page Headings (Height: 20px)
-   ========================================================================== */
-h3 .rect-space {
-  height: 20px;
-  margin-bottom: -3px; /* Slightly adjusted to keep it centered with larger text */
-  /* Top 18px is the main color, remaining 2px sits at the bottom */
-  background: linear-gradient(to bottom, var(--rect-color, black) 18px, var(--rect-color, black) 18px) no-repeat;
+/* Inside the 'Table of Contents' links */
+a .rect-space {
+  height: 16px;
+  margin-bottom: -2px;
+  --box-h: 15px;
 }
 
-/* Hover state for Headings (Draws a slightly thicker 2px underline when hovering the h3 line) */
-h3:hover .rect-space {
+/* Inside the 'Main Page' headings */
+h3 .rect-space {
+  height: 20px;
+  margin-bottom: -3px;
+  --box-h: 18px;
+}
+
+a:hover .rect-space, h3:hover .rect-space {
   text-decoration: none !important;
-  background: linear-gradient(to bottom, var(--rect-color, black) 18px, #000000 18px) no-repeat !important;
+  --bg-bottom: #000000;
 }
 
 .color-base    { --rect-color: #CCFF90; }
