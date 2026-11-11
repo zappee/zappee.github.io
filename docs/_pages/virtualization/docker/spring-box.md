@@ -451,11 +451,16 @@ _Due to its large size, you should only use this image if your Java application 
 
 ### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
 Image name: `springbox-consul-for-openjdk`
+
+
 Check out the [View Source](https://github.com){: .src-link } file.
+
 
 Explore the [GitHub Repository](https://github.com){: .github-link }.
 
+
 [Source Code](https://github.com){: .src-link .doc-pill }
+
 
 [View on GitHub](https://github.com){: .github-link .doc-pill target="_blank" rel="noopener" }
 
