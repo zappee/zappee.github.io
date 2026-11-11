@@ -349,6 +349,11 @@ table th {
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
 }
 
+a:hover .rect-space, h3:hover .rect-space {
+  text-decoration: none !important;
+  --bg-bottom: #000000;
+}
+
 /* Inside the 'Table of Contents' links */
 a .rect-space {
   height: 16px;
@@ -361,11 +366,6 @@ h3 .rect-space {
   height: 20px;
   margin-bottom: -3px;
   --box-h: 18px;
-}
-
-a:hover .rect-space, h3:hover .rect-space {
-  text-decoration: none !important;
-  --bg-bottom: #000000;
 }
 
 .color-base    { --rect-color: #CCFF90; }
