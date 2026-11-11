@@ -348,17 +348,17 @@ table th {
   width: 13px;
   height: 16px;
   margin-bottom: -2px;
-  background-color: var(--rect-color, black);
+  background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
+  box-sizing: border-box;
+  transition: background 0.05s ease;
+
 }
 
-a:has(.rect-space):hover {
+.rect-space:hover {
   text-decoration: none !important;
+  background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
 }
 
-a:hover .rect-space {
-  text-decoration: none !important;
-  border-bottom: 1px solid;
-}
 
 .color-base    { --rect-color: #CCFF90; }
 .color-core    { --rect-color: #76FF03; }
