@@ -343,7 +343,7 @@ table th {
 /* ==========================================================================
    COLOR RECTANGLE IN THE HEADER
    ========================================================================== */
-.color-indicator-base-image::before {
+.color-indicator-base-image {
   content: "";
   display: inline-block;
   width: 14px;
