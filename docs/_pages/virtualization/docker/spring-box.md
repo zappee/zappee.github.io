@@ -381,7 +381,7 @@ hello-service-1:
     environment:
         PKI_HOST: pki.${DOMAIN_NAME}
         CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
-        HAZELCAST_CLUSTER_NAME: renal-dev
+        HAZELCAST_CLUSTER_NAME: remal-dev
         HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
         START_DB: true
         DB_APP_DATABASE: default_db
@@ -412,22 +412,22 @@ hello-service-1:
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * **PostgreSQL port** (default: 5432): The standard, default network port used by PostgreSQL relational database system.
+  * **PostgreSQL port** (default: `5432`): The standard, default network port used by PostgreSQL relational database system.
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **POSTGRES_HOME** (default: /var/lib/postgresql): Standard environment variable used in containerized environments to define the installation path of the PostgreSQL database server. It serves as a central reference point for scripts, applications, and system paths.
-  * **POSTGRES_DATA** (default: /var/lib/postgresql/data): Used to specify the absolute path to the directory where the PostgreSQL database stores its actual data files, transaction logs, and configuration files.
-  * **POSTGRES_LOG_DIR** (default: /var/log/postgresql): Specifies the absolute path to the directory where PostgreSQL runtime logs, error entries, and query logs are stored. Isolating this directory allows for easier troubleshooting, integration with external log rotators, or mounting to high-performance log-aggregation storage.
-  * **POSTGRES_CONFIG** (default: /var/lib/postgresql/data/postgresql.conf): Specifies the absolute file path for the custom PostgreSQL configuration file.
-  * **START_DB** (default: false): To trigger or bypass the PostgreSQL database server startup process.
-  * **DB_ADMIN_USER** (default: postgres): Specifies the username of the PostgreSQL database superuser account.
-  * **DB_ADMIN_PASSWORD** (default: password): Specifies the password for the PostgreSQL database superuser account.
-  * **DB_APP_DATABASE** (default: app): Define the name of the application database created at startup.
-  * **DB_APP_USER** (default: application): Specifies the username that the application layer uses to connect to the database.
-  * **DB_APP_PASSWORD** (default: password): Specifies the password used by the application layer to authenticate against the database.
+  * **POSTGRES_HOME** (default: `/var/lib/postgresql`): Standard environment variable used in containerized environments to define the installation path of the PostgreSQL database server. It serves as a central reference point for scripts, applications, and system paths.
+  * **POSTGRES_DATA** (default: `/var/lib/postgresql/data`): Used to specify the absolute path to the directory where the PostgreSQL database stores its actual data files, transaction logs, and configuration files.
+  * **POSTGRES_LOG_DIR** (default: `/var/log/postgresql`): Specifies the absolute path to the directory where PostgreSQL runtime logs, error entries, and query logs are stored. Isolating this directory allows for easier troubleshooting, integration with external log rotators, or mounting to high-performance log-aggregation storage.
+  * **POSTGRES_CONFIG** (default: `/var/lib/postgresql/data/postgresql.conf`): Specifies the absolute file path for the custom PostgreSQL configuration file.
+  * **START_DB** (default: `false`): To trigger or bypass the PostgreSQL database server startup process.
+  * **DB_ADMIN_USER** (default: `postgres`): Specifies the username of the PostgreSQL database superuser account.
+  * **DB_ADMIN_PASSWORD** (default: `password`): Specifies the password for the PostgreSQL database superuser account.
+  * **DB_APP_DATABASE** (default: `app`): Define the name of the application database created at startup.
+  * **DB_APP_USER** (default: `application`): Specifies the username that the application layer uses to connect to the database.
+  * **DB_APP_PASSWORD** (default: `password`): Specifies the password used by the application layer to authenticate against the database.
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
   _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
