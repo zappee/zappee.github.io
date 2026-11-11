@@ -214,7 +214,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 8) Java Runner Images
+### 8) <span class="rect-space color-app"></span> Java Runner Images
 Image name: `springbox-openjdk-runner`
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.

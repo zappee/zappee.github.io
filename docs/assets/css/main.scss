@@ -345,7 +345,7 @@ table th {
    ========================================================================== */
 .rect-space {
   display: inline-block;
-  width: 24px;
+  width: 18px;
   height: 24px;
   vertical-align: middle;
   background-color: var(--rect-color, black);
@@ -353,3 +353,4 @@ table th {
 
 .color-base { --rect-color: #CCFF90; }
 .color-core { --rect-color: #76FF03; }
+.color-app  { --rect-color: #00E5FF; }
