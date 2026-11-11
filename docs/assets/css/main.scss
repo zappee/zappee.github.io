@@ -351,37 +351,23 @@ table th {
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
 }
 
-
-/* ==========================================================================
-   2. Place (1): Inside the Table of Contents Links (Height: 16px)
-   ========================================================================== */
+/* Inside the 'Table of Contents' Links */
 a .rect-space {
   height: 16px;
   margin-bottom: -2px;
-  /* Top 15px is the main color, remaining 1px sits at the bottom */
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
 }
 
-/* Hover state for Table of Contents Links (Draws 1px underline) */
 a:hover .rect-space {
   text-decoration: none !important;
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
 }
 
-/* ==========================================================================
-   3. Place (2): Inside the Main Page Headings (Height: 20px)
-   ========================================================================== */
+/* Inside the 'Main Page' headings */
 h3 .rect-space {
   height: 20px;
-  margin-bottom: -3px; /* Slightly adjusted to keep it centered with larger text */
-  /* Top 18px is the main color, remaining 2px sits at the bottom */
+  margin-bottom: -3px;
   background: linear-gradient(to bottom, var(--rect-color, black) 18px, var(--rect-color, black) 18px) no-repeat;
-}
-
-/* Hover state for Headings (Draws a slightly thicker 2px underline when hovering the h3 line) */
-h3:hover .rect-space {
-  text-decoration: none !important;
-  background: linear-gradient(to bottom, var(--rect-color, black) 18px, #000000 18px) no-repeat !important;
 }
 
 .color-base    { --rect-color: #CCFF90; }
