@@ -352,11 +352,6 @@ table th {
 }
 
 /* Inside the 'Table of Contents' Links */
-a .rect-space {
-  height: 16px;
-  margin-bottom: -2px;
-}
-
 a:hover .rect-space {
   text-decoration: none !important;
   background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
