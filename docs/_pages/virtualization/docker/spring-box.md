@@ -352,7 +352,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 ### 9) <span class="rect-space color-app"></span> Java Runtime with PostgreSQL Images
 Image name: `springbox-openjdk-postgres-runner`
 
-The platform supports production-ready Runners with PostgreSQL database server for [OpenJDK 21 and 25](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner).
+The platform supports production-ready Runners with an embedded PostgreSQL database server for [OpenJDK 21 and 25](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner).
 
 This image is an extends of our base [Java Runner images](#8--java-runner-images) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
 While everything detailed in the _Java Runner images_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
@@ -437,7 +437,9 @@ hello-service-1:
 ### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
 
-This ultimate Omni image extends our [Java Runner with PostgreSQL image](#9-java-runtime-with-postgresql-images).
+The platform currently supports production-ready Omni Runners with an embedded PostgreSQL database server exclusively for [OpenJDK 21](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner).
+
+The ultimate Omni image extends our [Java Runner with PostgreSQL image](#9--java-runtime-with-postgresql-images).
 It is our largest _Java Runner_ image, packed with additional tools and Linux packages required by specialized Java applications.
 
 ⚠️ _**Important:**_
