@@ -353,9 +353,11 @@ table th {
 
 a:hover .rect-space {
   text-decoration: none !important;
-  box-shadow: 0 2px 0 0 var(--rect-color, black);
+  border-bottom: 1px solid;
 }
 
-.color-base { --rect-color: #CCFF90; }
-.color-core { --rect-color: #76FF03; }
-.color-app  { --rect-color: #00E5FF; }
+.color-base    { --rect-color: #CCFF90; }
+.color-core    { --rect-color: #76FF03; }
+.color-infra   { --rect-color: #84FFFF; }
+.color-app     { --rect-color: #00E5FF; }
+.color-monitor { --rect-color: #FF80AB; }
