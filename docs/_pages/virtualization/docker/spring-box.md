@@ -446,10 +446,10 @@ It is our largest _Java Runner_ image, packed with additional tools and Linux pa
 _Due to its large size, you should only use this image if your Java application explicitly requires the additional tools and pre-installed packages._
 
 #### 10.1) Features
-* **fonts-dejavu Linux package:** This is a system-level TrueType fonts (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
+* **fonts-dejavu Linux package:** This is a system-level TrueType font (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
 
-### 11) HashiCorp Consul Integration
+### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
 Image name: `springbox-consul-for-openjdk`
 
 HashiCorp Consul is an open-source, decentralized service networking platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
