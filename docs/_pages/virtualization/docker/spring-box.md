@@ -363,7 +363,7 @@ It is recommended to usie this image if your application requires a dedicated da
 _Because this image runs both the Java application and the database server inside a single container, it may require higher memory and CPU allocations._
 
 #### 9.1) Features
-* **PostgreSQL database server ready:** Fully configured and ready for the application inside this container.
+* **PostgreSQL database server:** Fully configured and ready for the application inside this container.
 
 Here is a typical `springbox-openjdk-postgres-runner` container configuration:
 
@@ -555,3 +555,6 @@ containers and data scraper container** that periodically pulls (scrapes) the fo
 ### 21) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
+
+### Appendix 1) How to scalable horizontally the Java Runner containers
+Database ID: Use UUID reference instead of ID.
