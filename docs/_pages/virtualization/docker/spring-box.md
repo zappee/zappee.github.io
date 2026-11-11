@@ -87,9 +87,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 5) Docker Containers in the _Spring-Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
 
-### 6) The Spring-Box Base Image
-{: .color-indicator}
-
+### 6) <span class="color-indicator-base-image"></span> The Spring-Box Base Image
 Image name: `springbox-base`
 
 This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.

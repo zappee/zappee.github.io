@@ -340,9 +340,10 @@ table th {
   background-color: #BBDEFB !important;
 }
 
-
-
-.color-indicator::before {
+/* ==========================================================================
+   COLOR RECTANGLE IN THE HEADER
+   ========================================================================== */
+.color-indicator-base-image::before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -350,5 +351,5 @@ table th {
   background-color: #CCFF90;
   margin-right: 10px;
   vertical-align: middle;
-  border-radius: 3px; /* Optional: adds slightly rounded corners to the rectangle */
+  border-radius: 3px;
 }
