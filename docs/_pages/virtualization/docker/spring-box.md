@@ -430,7 +430,7 @@ hello-service-1:
   * **DB_APP_PASSWORD** (default: `password`): Specifies the password used by the application layer to authenticate against the database.
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
-  _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
+  This image requires an extra Docker volumes to share files between the host machine and the container.
 
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
