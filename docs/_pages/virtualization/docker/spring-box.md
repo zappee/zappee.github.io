@@ -314,7 +314,7 @@ hello-service-1:
   * **JAVA_DEBUG** (default: `true`): If enabled, the `agentlib` JVM argument is automatically added during JVM startup (`-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:$JAVA_DEBUG_PORT"`).
   * **JAVA_DEBUG_PORT** (default: `5005`): Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
   * **HEALTH_CHECK** (default: `true`): If it is true, a loop polls `HEALTH_CHECK_URI` every 0.5 seconds, blocks execution until the response matches `EXPECTED_HEALTH_CHECK_STATE`, ensuring the Java application is fully loaded before continuing.
-  * **HEALTH_CHECK_URI** (default: `https://localhost:8443/actuator/health`): Specifies the URL used to poll the application's status.
+  * **HEALTH_CHECK_URI** (default: `https://localhost:8443/actuator/health`): Specifies the URL used to poll the application's status. It is exclusively used by the `wait_for_http_response` Bash function within the `shared.sh` functions library.
   * **EXPECTED_HEALTH_CHECK_STATE** (default: `'\"status\":\"UP\"'`): Used to define the specific string or status code the script looks for to confirm the application is healthy.
 
     The following diagram illustrates the JVM memory structure and its corresponding configuration flags:
