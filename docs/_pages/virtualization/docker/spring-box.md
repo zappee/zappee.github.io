@@ -196,7 +196,14 @@ This Docker image layer only adds
 * OpenSSL to deal with keystores.
 * Sync Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
 
-#### 7.2) Build
+#### 7.2) Configuration highlights
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **JAVA_HOME** (default: `NA`): Defines the absolute file system path to the active OpenJDK installation directory.
+
+#### 7.3) Build
 The build process for the `springbox-openjdk` core images use a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
 
 The repository contains distinct shell scripts dedicated to configuring the runtime environment for each supported Long-Term Support (LTS) Java version:
