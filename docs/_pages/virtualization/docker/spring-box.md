@@ -329,7 +329,8 @@ hello-service-1:
 
   The container memory limits defined here must align precisely with the internal JVM configurations (`JAVA_OPTS` variable).
 
-  ⚠️ _Important:_ Allocating a memory limit that is too low can prevent the application from starting entirely or cause Java to throw runtime memory exceptions (such as `OutOfMemoryError`).
+  ⚠️ _**Important:**_
+  _Allocating a memory limit that is too low can prevent the application from starting entirely or cause Java to throw runtime memory exceptions (such as `OutOfMemoryError`)._
 
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
