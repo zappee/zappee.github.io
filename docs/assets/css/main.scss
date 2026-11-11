@@ -339,3 +339,16 @@ table {
 table th {
   background-color: #BBDEFB !important;
 }
+
+
+
+color-indicator::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 24px;
+  background-color: #CCFF90;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 3px; /* Optional: adds slightly rounded corners to the rectangle */
+}
