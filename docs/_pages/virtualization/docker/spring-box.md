@@ -456,13 +456,8 @@ Image name: `springbox-consul-for-openjdk`
 Check out the [View Source](https://github.com){: .src-link } file.
 
 
-Explore the [GitHub Repository](https://github.com){: .github-link }.
+[Source Code](https://github.com){: .src-link }
 
-
-[Source Code](https://github.com){: .src-link .doc-pill }
-
-
-[View on GitHub](https://github.com){: .github-link .doc-pill target="_blank" rel="noopener" }
 
 
 HashiCorp Consul is an open-source, decentralized service platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
