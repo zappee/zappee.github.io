@@ -322,10 +322,10 @@ hello-service-1:
     ![JVM memory space](/assets/images/menu/virtualization/docker/spring-box/jvm-memory-space.png)
 
 * **Container memory limit:**
-  In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `docker-compose.yml` file.
+  In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `compose.yml` file.
   This helps prevent containers from consuming excessive resources, which can lead to system instability.
   
-  The container memory limits defined here must align precisely with the internal JVM configurations.
+  The container memory limits defined here must align precisely with the internal JVM configurations (`JAVA_OPTS` variable).
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
   _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
