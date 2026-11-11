@@ -349,7 +349,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 ### 9) <span class="rect-space color-app"></span> Java Runtime with PostgreSQL Images
 Image name: `springbox-openjdk-postgres-runner`
 
-This image is an extends of our base [Java Runner images](#8-java-runner-containers---springbox-openjdk-runner) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
+This image is an extends of our base [Java Runner images](#8--java-runner-images) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
 While everything detailed in the _Java Runner images_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
 
 It is recommended to usie this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
