@@ -324,8 +324,11 @@ hello-service-1:
 * **Container memory limit:**
   In Docker Compose, you can manage memory usage for your containers by defining memory limits and reservations in your `compose.yml` file.
   This helps prevent containers from consuming excessive resources, which can lead to system instability.
-  
+
   The container memory limits defined here must align precisely with the internal JVM configurations (`JAVA_OPTS` variable).
+
+  ⚠️ _Important:_ Allocating a memory limit that is too low can prevent the application from starting entirely or cause Java to throw runtime memory exceptions (such as `OutOfMemoryError`).
+
 * **Docker volume configuration:**
   Docker volumes store persistent data outside a container’s writable disk, ensuring data remains intact even after the container is removed.
   _Spring-Box_ uses three Docker volumes to share files between the host machine and the container.
