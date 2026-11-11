@@ -73,9 +73,8 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring-Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring-Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The Hazelcast-based architecture supports three different caching mechanisms: _Embedded Cache_, _Client-Server topology_, and _Near-Cache_:
 
-<div style="text-align: center;">
-  ![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png)
-</div>
+![Supported caching architectures](/assets/images/menu/virtualization/docker/spring-box/hazelcast-caching-strategies.png){: .centered-image }
+
 
 * **Automated load balancing:** The _Distributed Service Registry_ tracks active microservice instances codelessly, dynamically routing traffic and balancing loads across healthy containers without manual network mapping.
 * **Automated service registry:** Keeps track of every active microservice automatically, making it easy for containers to find and talk to each other. It gives you a live map of your system and handles load balancing out of the box, so you don't have to manually manage IP addresses or ports.
