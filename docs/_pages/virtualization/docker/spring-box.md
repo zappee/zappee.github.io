@@ -704,7 +704,7 @@ And the corresponding `application.properties` file to configure the Spring Boot
   * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Unique name assigned to the Hazelcast cluster. Only nodes and Spring Boot clients configured with the exact same cluster name can discover each other and join the grid.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: `NA`): Comma-separated list of hostnames or IP addresses (with optional ports, e.g., `hazelcast-1:5701,hazelcast-2:5701`) used for TCP/IP static cluster discovery. When left empty, the node starts as a standalone single-member cluster.
 
-### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI)
+### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI) Server
 Image name: `springbox-private-ca`
 
 to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
@@ -716,13 +716,9 @@ containers and data scraper container** that periodically pulls (scrapes) the fo
 
 ### 17) Grafana
 
-### 18) LDAP Server
+### 18) How to build the Docker images
 
-### 20) Source core
-
-[https://github.com/zappee/spring-box](https://github.com/zappee/spring-box)
-
-### 21) Contributing
+### 19) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
 
