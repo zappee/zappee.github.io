@@ -184,7 +184,7 @@
 }
 
 /* ==========================================================================
-   TECHNICAL-SKILLS ICONS
+   ICONS
    ========================================================================== */
 .skills-container {
   display: inline-block;
@@ -199,6 +199,23 @@
   width: 45px;
   height: 45px;
 }
+
+.src-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+}
+
+.src-link::before {
+  content: "";
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  background-image: url("/assets/images/icons/code-black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 /* ==========================================================================
    VIDEO THUMBNAIL RESPONSIVE GRID LAYOUT
@@ -369,34 +386,3 @@ h3 .rect-space {
 .color-infra   { --rect-color: #84FFFF; }
 .color-app     { --rect-color: #00E5FF; }
 .color-monitor { --rect-color: #FF80AB; }
-
-/* ==========================================================================
-   SOURCE CODE ICONS
-   ========================================================================== */
-.src-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45em;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.src-link::before {
-  content: "";
-  display: inline-block;
-  width: 1.15em;
-  height: 1.15em;
-  flex-shrink: 0;
-  background-color: currentColor;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-}
-
-.src-link::before {
-  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBvbHlsaW5lIHBvaW50cz0iMTYgMTggMjIgMTIgMTYgNiIvPjxwb2x5bGluZSBwb2ludHM9IjggNiAyIDEyIDggMTgiLz48bGluZSB4MT0iMTQiIHkxPSI0IiB4Mj0iMTAiIHkyPSIyMCIvPjwvc3ZnPg==");
-  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyLjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBvbHlsaW5lIHBvaW50cz0iMTYgMTggMjIgMTIgMTYgNiIvPjxwb2x5bGluZSBwb2ludHM9IjggNiAyIDEyIDggMTgiLz48bGluZSB4MT0iMTQiIHkxPSI0IiB4Mj0iMTAiIHkyPSIyMCIvPjwvc3ZnPg==");
-}
