@@ -1,0 +1,116 @@
+[DEBUG] ====> Executing script "/docker.init/70302_generate-server-cert.sh"...
+[INFO ] Generating a server certificate...
+[DEBUG]        PKI_HOST: "pki.remal.com"
+[DEBUG]        SSH_USER: "root"
+[DEBUG]    SSH_PASSWORD: "password"
+[DEBUG]       Cert Type: "serverClient"
+[DEBUG]          Domain: "user-service-2.remal.com"
+[DEBUG]             SAN: "DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1"
+[DEBUG]         Command: "bash -lc '/opt/easy-rsa/generate-cert.sh serverClient user-service-2.remal.com DNS:user-service-2.remal.com\,DNS:localhost\,IP:127.0.0.1'"
+Warning: Permanently added 'pki.remal.com' (ED25519) to the list of known hosts.
+[INFO ] Generating certificate using Easy-RSA...
+[INFO ] Running 'generate-cert.sh' script on host 'pki.remal.com'...
+[DEBUG] Context:
+[DEBUG]           EASYRSA_HOME: '/opt/easy-rsa'
+[DEBUG]         EASYRSA_REQ_CN: 'remal.com'
+[DEBUG]    EASYRSA_REQ_COUNTRY: 'DK'
+[DEBUG]   EASYRSA_REQ_PROVINCE: 'Region Hovedstaden'
+[DEBUG]       EASYRSA_REQ_CITY: 'Copenhagen'
+[DEBUG]        EASYRSA_REQ_ORG: 'Remal Software'
+[DEBUG]      EASYRSA_REQ_EMAIL: 'arnold.somogyi@gmail.com'
+[DEBUG]         EASYRSA_REQ_OU: 'IT Department'
+[DEBUG]           EASYRSA_ALGO: 'ec'
+[DEBUG]         EASYRSA_DIGEST: 'sha256'
+[DEBUG]       EASYRSA_KEY_SIZE: '2048'
+[DEBUG]           EASYRSA_PASS: 'changeit'
+[INFO ] Arguments for script 'generate-cert.sh':
+[INFO ]    Certificate Type: 'serverClient'
+[INFO ]              Domain: 'user-service-2.remal.com'
+[INFO ]                 SAN: 'DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1'
+[INFO ] Generating a certificate request and private key...
+[DEBUG]    EASYRSA_HOME: '/opt/easy-rsa'
+[DEBUG]    EASYRSA_PASS: 'changeit'
+[DEBUG]          Domain: 'user-service-2.remal.com'
+[DEBUG]             SAN: 'DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1'
+[DEBUG]        Work Dir: '/opt/easy-rsa'
+[DEBUG] Checking for the existence of certificate: 'user-service-2.remal.com'...
+Using Easy-RSA 'vars' configuration:
+* /opt/easy-rsa/pki/vars
+
+EasyRSA version 3.2.7
+
+Error
+-----
+No certificate found for the input:
+* '/opt/easy-rsa/pki/issued/user-service-2.remal.com.crt'
+
+[INFO ] No existing certificate found for domain 'user-service-2.remal.com'.
+[INFO ] Generating certificate request with SAN: 'DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1'...
+Using Easy-RSA 'vars' configuration:
+* /opt/easy-rsa/pki/vars
+-----
+
+Notice
+------
+Private-Key and Public-Certificate-Request files created.
+Your files are:
+* req: /opt/easy-rsa/pki/reqs/user-service-2.remal.com.req
+* key: /opt/easy-rsa/pki/private/user-service-2.remal.com.key
+
+[INFO ] Signing the certificate request...
+[DEBUG]    Cert Type: 'serverClient'
+[DEBUG]       Domain: 'user-service-2.remal.com'
+[DEBUG]     Work Dir: '/opt/easy-rsa'
+Using Easy-RSA 'vars' configuration:
+* /opt/easy-rsa/pki/vars
+  Using configuration from /opt/easy-rsa/pki/90587f85/temp.03
+  Check that the request matches the signature
+  Signature ok
+  The Subject's Distinguished Name is as follows
+  commonName            :ASN.1 12:'user-service-2.remal.com'
+  Certificate is to be certified until Feb 14 16:26:21 2029 GMT (825 days)
+
+Write out database with 1 new entries
+Database updated
+
+WARNING
+=======
+INCOMPLETE Inline file created:
+* /opt/easy-rsa/pki/inline/private/user-service-2.remal.com.inline
+
+Missing TLS Key, see 'easyrsa help gen-tls'
+
+
+Notice
+------
+Certificate created at:
+* /opt/easy-rsa/pki/issued/user-service-2.remal.com.crt
+
+Using Easy-RSA 'vars' configuration:
+* /opt/easy-rsa/pki/vars
+
+Notice
+------
+A BASE64 encoded inline file has also been created at:
+* /opt/easy-rsa/pki/inline/private/user-service-2.remal.com.p12-inline
+
+
+Notice
+------
+Successful export of p12 file. Your exported file is at:
+* /opt/easy-rsa/pki/private/user-service-2.remal.com.p12
+
+[INFO ] Importing certificate "/opt/easy-rsa/pki/ca.crt" into keystore "/opt/easy-rsa/pki/private/user-service-2.remal.com.p12" (alias: "ca-cert"), keystore-password: "changeit"...
+Certificate was added to keystore
+[DEBUG] scp root@pki.remal.com:/opt/easy-rsa/pki/private/user-service-2.remal.com.key /tmp
+[DEBUG] scp root@pki.remal.com:/opt/easy-rsa/pki/issued/user-service-2.remal.com.crt /tmp
+[DEBUG] scp root@pki.remal.com:/opt/easy-rsa/pki/ca.crt /tmp
+[INFO ] Decrypting the private key...
+[DEBUG]        PKI_HOST: "pki.remal.com"
+[DEBUG]        SSH_USER: "root"
+[DEBUG]    SSH_PASSWORD: "password"
+[DEBUG]       Host Name: "user-service-2.remal.com"
+[DEBUG]   Keystore Pass: "changeit"
+[DEBUG]         Command: "bash -lc 'openssl pkey -in /opt/easy-rsa/pki/private/user-service-2.remal.com.key -out /opt/easy-rsa/pki/private/user-service-2.remal.com.pem -passin pass:changeit'"
+[DEBUG] scp root@pki.remal.com:/opt/easy-rsa/pki/private/user-service-2.remal.com.pem /tmp
+[DEBUG] <-- Finished script: "/docker.init/70302_generate-server-cert.sh"

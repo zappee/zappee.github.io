@@ -743,6 +743,39 @@ pki:
         - springbox-net
 ```
 
+#### 12.2) Configuration highlights
+* **Automatic Root CA Self-Signed Certificate Generation:**
+  During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
+  Issued files:
+  * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
+  * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
+
+* **Remote Server Certificate Generation Script:**
+  The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to dynamically request a server certificate.
+  This script expects three inputs:
+  * Type of the certificate:  `server`, `client`, `serverClient`
+  * Hostname of the machine that requested the certificate: for example `user-service-2.remal.com`
+  * SAN: empty or for example `DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1`
+  
+  Once generated, the certificate files are immediately available to the requesting container.
+  The following files are issued automatically when a container requests a certificate:
+  * `<hostname>.crt`: The public X.509 server certificate issued for the specific container hostname, signed by the Root CA.
+  * `<hostname>.key`: The private key paired with `.crt`, used by the server to decrypt incoming TLS traffic and prove its identity.
+  * `<hostname>.p12`: A PKCS#12 bundle that packages both the server certificate and its private key (along with the CA chain) into a single password-protected binary file, commonly used by Java and Spring Boot keystores.
+  * `<hostname>.pem`: A Privacy-Enhanced Mail (Base64-encoded ASCII) certificate file containing the public certificate used by tools and services that expect PEM-formatted TLS credentials.
+
+  Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt)
+
+* **Safe certificate transfer between the containers:**
+  Once the server certificates are issued they transferred to the requested Docker container using secure file copy (`scp`)
+
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
+  * **VAULT_FILE_STORE** (default: `/opt/vault/data`): Directory path used by Vault's file storage backend to persist encrypted secrets, policies, and metadata. Mount a persistent volume here to prevent data loss across container restarts.
+
 ### 15) Apache Tomcat 10 Image
 
 ### 16) Prometheus Time-Series Database Server
