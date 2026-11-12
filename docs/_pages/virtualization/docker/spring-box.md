@@ -587,6 +587,18 @@ docker compose --env-file=remal.com.env up
   * **API & Web UI port** (default: `8200`): The primary port used by applications (like Spring Boot), the Vault CLI, and users accessing the Vault Web UI over HTTP or HTTPS.
   * **Cluster Communication port** (default: `8201`): Used for server-to-server cluster traffic, request forwarding from standby nodes to the active leader, and Raft integrated storage replication.
 
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
+  * **VAULT_FILE_STORE** (default: `/opt/vault/data`): Directory path used by Vault's file storage backend to persist encrypted secrets, policies, and metadata. Mount a persistent volume here to prevent data loss across container restarts.
+  * **VAULT_CLUSTER_NAME** (default: `springbox-vault-cluster`): Human-readable identifier assigned to the Vault cluster, visible in cluster status responses, metrics, and the Vault Web UI.
+  * **VAULT_LOG_LEVEL** (default: `info`): Controls the verbosity of Vault's operational logs. Supported values include `trace`, `debug`, `info`, `warn`, and `err`.
+  * **VAULT_INIT_LOG** (default: `/var/log/vault-tokens.txt`): File path where initial unseal keys and the root token are written when the Vault server is initialized for the first time. Secure or remove this file after storing the credentials safely.
+  * **VAULT_LOG** (default: `/var/log/vault.log`): File path where Vault writes standard operational and server runtime logs.
+  * **VAULT_AUDIT_LOG** (default: `/var/log/vault-audit.log`): File path where Vault's audit device records detailed logs of every incoming request and outgoing response for security auditing.
+
 ### 13) Hazelcast Cache Platform
 Image name: `springbox-hazelcast`
 
