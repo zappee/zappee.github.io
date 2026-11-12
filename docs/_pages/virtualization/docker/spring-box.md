@@ -743,6 +743,19 @@ pki:
         - springbox-net
 ```
 
+Here is the content of the environment file used in the Docker Compose configuration:
+```properties
+# arnold.env file
+# environment
+DOMAIN_NAME=arnold.remal.com
+
+# pki
+EASYRSA_REQ_COUNTRY="DK"
+EASYRSA_REQ_PROVINCE="Region Hovedstaden"
+EASYRSA_REQ_CITY="Copenhagen"
+EASYRSA_REQ_ORG="Remal Software"
+```
+
 #### 12.2) Configuration highlights
 * **Automatic Root CA Self-Signed Certificate Generation:**
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
