@@ -484,11 +484,27 @@ _Orchestrate your Docker container dependencies accordingly using `entrypoint: [
 * **Automated Service Registration:** Integration works seamlessly with HashiCorp Consul and Spring Boot. Microservices register themselves with Consul automatically upon startup. When an application in the Remal Box ecosystem needs to call a REST endpoint, it queries the cluster-wide Service Registry at runtime to get an active service URL. During each request, Consul returns a healthy, low-traffic instance URL.
 * **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking Spring Boot Actuator endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
 * **Key-Value (KV) Store:** Consul includes a highly available, distributed Key-Value (KV) store that acts as a central hub for dynamic application configurations. Tools like Spring Cloud Consul Config read these values at runtime, allowing you to update feature flags, API endpoints, or database connection strings across the cluster without restarting your containers.
-* **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS) and sidecar proxies.
+* **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS).
 
-Here is a typical `springbox-consul-for-openjdk` container configuration.
+Here is a typical `springbox-hashicorp-consul` container configuration.
 
 ```yaml
+consul:
+    image: springbox-hashicorp-consul:0.8.0
+    container_name: consul.${DOMAIN_NAME}
+    hostname: consul.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
+    ports:
+        - "13102:22"   # SSH
+        - "13103:8501" # Consul web console, HTTPS
+    environment:
+        - PKI_HOST=pki.${DOMAIN_NAME}
+    deploy:
+        resources:
+            limits:
+                memory: 128M
+    networks:
+        - springbox-net
 ```
 
 #### 11.2) Configuration highlights
