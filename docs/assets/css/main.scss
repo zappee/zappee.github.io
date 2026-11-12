@@ -371,20 +371,22 @@ table th {
   width: 13px;
   height: 16px;
   margin-bottom: -2px;
-  background: linear-gradient(to bottom, var(--rect-color, black) 15px, var(--rect-color, black) 15px) no-repeat;
+  box-sizing: border-box;
+  background: transparent !important;
+  border-top: 15px solid var(--rect-color, black);
 }
 
 /* Inside the 'Table of Contents' Links */
 a:hover .rect-space {
   text-decoration: none !important;
-  background: linear-gradient(to bottom, var(--rect-color, black) 15px, #000000 15px) no-repeat !important;
-}
+  border-top: 15px solid var(--rect-color, black);
+  border-bottom: 1px solid #000000;}
 
 /* Inside the 'Main Page' headings */
 h3 .rect-space {
   height: 20px;
   margin-bottom: -3px;
-  background: linear-gradient(to bottom, var(--rect-color, black) 18px, var(--rect-color, black) 18px) no-repeat;
+  border-top: 18px solid var(--rect-color, black);
 }
 
 .color-base    { --rect-color: #CCFF90; }

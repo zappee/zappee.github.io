@@ -755,7 +755,7 @@ EASYRSA_REQ_CITY="Copenhagen"
 EASYRSA_REQ_ORG="Remal Software"
 ```
 
-#### 12.2) Configuration highlights
+#### 14.2) Configuration highlights
 * **Automatic Root CA Self-Signed Certificate Generation:**
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
 
