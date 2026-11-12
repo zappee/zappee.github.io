@@ -759,20 +759,22 @@ EASYRSA_REQ_ORG="Remal Software"
 * **Automatic Root CA Self-Signed Certificate Generation:**
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
 
-  Issued files:
+  **Issued files:**
+  {: .sub-list-title }
   * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
 * **Remote Server Certificate Generation Script:**
   The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a TLS certificate on demand.
 
-  This script expects three arguments:
+  **This script expects three arguments:**
   * Certificate type: Defines the role of the certificate. Supported values are `server`, `client`, or `serverClient`.
   * Hostname: The hostname of the requesting container, for example, `user-service-2.remal.com`.
   * SAN (Subject Alternative Name): Optional. Leave empty or provide a comma-separated list, for example, `DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1`.
   
   Once generated, the certificate files are immediately available to the requesting container.
-  The following files are issued automatically:
+
+  **The following files are issued automatically:**
   * `<hostname>.crt`: The public X.509 server certificate issued for the specific container hostname, signed by the Root CA.
   * `<hostname>.key`: The private key paired with `.crt`, used by the server to decrypt incoming TLS traffic and prove its identity.
   * `<hostname>.p12`: A PKCS#12 bundle that packages both the server certificate and its private key (along with the CA chain) into a single password-protected binary file, commonly used by Java and Spring Boot keystores.
@@ -789,6 +791,22 @@ EASYRSA_REQ_ORG="Remal Software"
   Variables utilized by this image:
   * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
   * **VAULT_FILE_STORE** (default: `/opt/vault/data`): Directory path used by Vault's file storage backend to persist encrypted secrets, policies, and metadata. Mount a persistent volume here to prevent data loss across container restarts.
+
+    EASYRSA_HOME="/opt/easy-rsa" \
+    EASYRSA_INSTALL_KIT="EasyRSA-3.2.7.tgz" \
+    \
+    EASYRSA_REQ_CN="remal.com" \
+    EASYRSA_REQ_COUNTRY="HU" \
+    EASYRSA_REQ_PROVINCE="Central Hungary" \
+    EASYRSA_REQ_CITY="Budapest" \
+    EASYRSA_REQ_ORG="Remal Software" \
+    EASYRSA_REQ_EMAIL="arnold.somogyi@gmail.com" \
+    EASYRSA_REQ_OU="IT Department" \
+    EASYRSA_ALGO="ec" \
+    EASYRSA_DIGEST="sha256" \
+    EASYRSA_KEY_SIZE=2048 \
+    EASYRSA_PASS="changeit"
+
 
 ### 15) Apache Tomcat 10 Image
 
