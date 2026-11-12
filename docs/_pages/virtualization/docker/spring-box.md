@@ -570,6 +570,16 @@ Here is a typical `springbox-vault` container configuration.
         - PKI_HOST=pki.${DOMAIN_NAME}
 ```
 
+The following Docker Compose file provides a complete example of how to run HashiCorp Vault within the Spring Box environment:
+* Docker Compose file: [compose.yml](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/compose.yml)
+* Environment file: [remal.com.env](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/remal.com.env)
+
+To start the complete environment, run:
+
+```bash
+docker compose --env-file=remal.com.env up
+```
+
 #### 12.2) Configuration highlights
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
