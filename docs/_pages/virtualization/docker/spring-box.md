@@ -620,7 +620,7 @@ In microservices architectures like Spring Box, it acts as a fast, scalable data
 * **Distributed Data Structures:** Offers familiar, thread-safe Java data structuresm such as `IMap`, `IQueue`, `ISet`, `IList`, `MultiMap`, and `Ringbuffer` that automatically partition and replicate data across cache cluster members.
 * **High Availability & Data Partitioning:** Automatically splits data into partitions across Hazelcast Nodes and maintains configurable synchronous or asynchronous backups. If a Hazelcast server crashes, the cluster automatically rebalances partitions and recovers data without downtime.
 
-Here is a typical `springbox-hazelcast` cluster container set configuration.
+Here is a typical multi-container configuration for a `springbox-hazelcast` cluster:
 
 ```yaml
 hazelcast-1:
