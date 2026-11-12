@@ -278,6 +278,8 @@ hello-service-1:
         resources:
             limits:
                 memory: 256M
+    networks:
+        - springbox-net
     volumes:
         - $HOME/springbox/volumes/hello-service-1/jar-to-run:/jar-to-run
         - $HOME/springbox/volumes/hello-service-1/logs:/logs
@@ -413,6 +415,8 @@ hello-service-1:
         resources:
             limits:
                 memory: 512M
+    networks:
+        - springbox-net
     volumes:
         - $HOME/Java/springbox/volumes/hello-service-1/jar-to-run:/jar-to-run
         - $HOME/Java/springbox/volumes/hello-service-1/logs:/logs
@@ -476,7 +480,6 @@ This image is an extends of [OpenJDK 25 Core Runtime Image](#7--java-core-runtim
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
 Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
 
-
 ⚠️ _**Important:**_
 _The Consul container must start first in the Spring Box network because Spring Boot applications require a ready-to-use Key-Value registry at startup to read their configuration parameters._
 _Consul must be fully operational before any Spring Boot applications start in the Runner containers._
@@ -489,7 +492,7 @@ _Orchestrate your Docker container dependencies accordingly using `entrypoint: [
 * **Key-Value (KV) Store:** Consul includes a highly available, distributed Key-Value (KV) store that acts as a central hub for dynamic application configurations. Tools like Spring Cloud Consul Config read these values at runtime, allowing you to update feature flags, API endpoints, or database connection strings across the cluster without restarting your containers.
 * **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS).
 
-Here is a typical `springbox-hashicorp-consul` container configuration.
+Here is a typical `springbox-hashicorp-consul` container configuration:
 
 ```yaml
 consul:
