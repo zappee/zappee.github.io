@@ -25,14 +25,14 @@ In this article, I have collected the most effective and useful shell aliases th
 
 | Alias | Command                                                                                                   | Description                      |
 | :--- |:-----------------------------------------------------------------------------------------------------------|:---------------------------------|
-| `li` | `docker image ls \| (sed -u 1q; sort -n -k1)`                                                              | List docker images               |
-| `lc` | `docker ps -a`                                                                                             | List docker containers           |
-| `sc` | `docker container stop $(docker ps -a -q)`                                                                 | Stop docker containers           |
-| `dc` | `docker container rm $(docker ps -a -q)`                                                                   | Delete docker containers         |
-| `rmc` | `yes \| docker container prune`                                                                           | Delete docker containers         |
-| `lv` | `docker volume ls`                                                                                         | List volumes                     |
-| `rmv` | `yes \| docker volume prune -a`                                                                           | Remove volumes                   |
-| `rmi` | `docker volume rm $(docker volume ls -qf dangling=true); docker rmi $(docker image ls -qf dangling=true)` | Remove unused images and volumes |
+| li | `docker image ls \| (sed -u 1q; sort -n -k1)`                                                              | List docker images               |
+| lc | `docker ps -a`                                                                                             | List docker containers           |
+| sc | `docker container stop $(docker ps -a -q)`                                                                 | Stop docker containers           |
+| dc | `docker container rm $(docker ps -a -q)`                                                                   | Delete docker containers         |
+| rmc | `yes \| docker container prune`                                                                           | Delete docker containers         |
+| lv | `docker volume ls`                                                                                         | List volumes                     |
+| rmv | `yes \| docker volume prune -a`                                                                           | Remove volumes                   |
+| rmi | `docker volume rm $(docker volume ls -qf dangling=true); docker rmi $(docker image ls -qf dangling=true)` | Remove unused images and volumes |
 
 <a href="{{ '/assets/downloads/aliases.sh' | relative_url }}" download="aliases.sh">📥 Download aliases.sh</a>
 
