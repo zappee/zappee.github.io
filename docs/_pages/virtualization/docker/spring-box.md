@@ -84,7 +84,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 
 * **Ready-to-run demo applications:** Comes with fully functional _Spring Boot_ reference applications that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
 
-### 5) Docker Containers in the _Spring-Box_ Ecosystem
+### 5) Docker Containers in the _Spring Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
 
 ### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
@@ -532,6 +532,8 @@ Image name: `springbox-vault`
 {: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" }
+
+Vault image is an extends of [Spring Box Base Image](#6--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
 
 HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
 It allows us to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
