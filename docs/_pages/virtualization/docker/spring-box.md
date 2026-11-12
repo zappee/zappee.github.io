@@ -764,7 +764,7 @@ EASYRSA_REQ_ORG="Remal Software"
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
 * **Remote Server Certificate Generation Script:**
-  The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to dynamically request a server certificate.
+  The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a server certificate.
   This script expects three inputs:
   * Type of the certificate:  `server`, `client`, `serverClient`
   * Hostname of the machine that requested the certificate: for example `user-service-2.remal.com`
