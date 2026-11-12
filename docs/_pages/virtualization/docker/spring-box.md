@@ -612,7 +612,7 @@ In microservices architectures like Spring Box, it acts as a fast, scalable data
 
 #### 13.1) Features
 * **Spring Boot Native Support:** Spring Boot integrates natively with Hazelcast and fully supports working with the cluster-wide cache infrastructure out of the box, without requiring any third-party dependencies.
-* **Distributed In-Memory Data Grid (IMDG):** Stores data in RAM across a cluster of nodes rather than on disk, providing microsecond-level read and write speeds while significantly reducing load on primary databases.
+* **Distributed In-Memory Data Grid (IMDG):** Hazelcast stores data in RAM across a cluster of nodes rather than on disk, providing microsecond-level read and write speeds while significantly reducing load on primary databases.
   * **Flexible Deployment Topologies:** Supports Embedded-Cache, Client-Server, and Near-Cache.
   * **Embedded-Cache Topology:** Runs the Hazelcast node directly inside the Spring Boot application JVM, offering ultra-low-latency data access without extra network hops.
   * **Client-Server Cache Topology:** Separates the Hazelcast cluster from your Spring Boot applications, allowing the cache tier and microservices to scale independently while sharing cached data across Java applications.
