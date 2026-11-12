@@ -547,11 +547,13 @@ Consul manages where services are and how they talk to each other, while Vault m
 * **Vault can use Consul as Storage:** In production clusters, Vault actually uses Consul behind the scenes as its high-availability storage backend (so Vault's encrypted data stays replicated across nodes), while Consul relies on Vault to issue and rotate mTLS certificates for its service mesh.
 
 #### 12.1) Features
-* **Secured Vault server with HTTPS:** Pre-configured Vault to use HTTPS (TLS/SSL) to protects Secrets in transit, defends against Man-in-the-Middle attacks, and enables Secure Client Authentication (Mutual TLS / mTLS).
-* **Secrets Management:** Securely stores static credentials (like database passwords or API keys) in a centrally encrypted key-value store.
-* **Dynamic Secrets:** Generates programmatic, on-demand credentials with tight time-to-live (TTL) limits (e.g., creating a temporary PostgreSQL user account that automatically expires after 15 minutes).
-* **Data Encryption:** Encrypts data in transit and at rest, allowing developers to encrypt application text without building custom cryptography pipelines.
-* **Leasing and Revocation:** Tracks every credential it hands out, allowing administrators to immediately revoke access keys sitewide if a security breach occurs.
+* **Secure Secret Storage (Key-Value Store):** Vault encrypts sensitive data—such as API keys, database passwords, and environment variables before writing them to persistent storage. Even if an attacker gains access to the underlying storage disk or database, the data remains unreadable without Vault's master encryption key.
+* **Dynamic Secrets:** Instead of storing long-lived, static passwords, Vault can generate temporary, on-demand credentials for databases (PostgreSQL, MySQL, MongoDB) or cloud providers (AWS, Azure, GCP). Each service gets unique credentials with a strict Time-to-Live (TTL), and Vault automatically revokes them when the lease expires.
+* **Encryption as a Service (Transit Secrets Engine):** Vault allows applications to encrypt and decrypt data in transit and at rest via a simple REST API without exposing the raw encryption keys to the application developers or code. It also handles key rotation automatically.
+* **PKI & Certificate Management:** Vault can act as an automated Certificate Authority (CA) as well, generating and renewing short-lived X.509 TLS/SSL certificates on the fly—eliminating manual certificate renewals and expired SSL outages.
+* **Identity-Based Authentication & Fine-Grained Policies:** Before accessing any secret, a user or container must authenticate using trusted identity providers (such as Kubernetes service accounts, AppRole, LDAP, GitHub, or OIDC). Access is then restricted by strict ACL policies following the principle of least privilege.
+* **Leasing, Renewal, and Revocation:** Every secret issued by Vault comes with a lease duration. Vault automatically revokes access when the lease ends, and administrators can immediately revoke single secrets or entire groups of credentials if a container or developer account is compromised.
+* **Comprehensive Audit Logging:** Vault records a detailed, cryptographically signed audit log of every request and response—tracking who accessed which secret, from what IP address, and at what exact timestamp.
 
 Here is a typical `springbox-vault` container configuration.
 
