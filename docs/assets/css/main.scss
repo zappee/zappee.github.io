@@ -383,8 +383,23 @@ a:hover .rect-space {
 
 /* inside the 'Main Page' headings */
 h3 .rect-space {
-  height: 18px;
+  height: 20px;
   margin-bottom: -3px;
+}
+
+/* mobile sizes */
+@media (max-width: 768px) {
+  .rect-space {
+    width: 10px;
+    height: 12px;
+    margin-bottom: -1px;
+  }
+
+  h3 .rect-space {
+    width: 11px;
+    height: 14px;
+    margin-bottom: -2px;
+  }
 }
 
 .color-base    { content: url("/assets/images/icons/color-box-base.png"); }
