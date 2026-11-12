@@ -25,7 +25,7 @@ The Remal **Java-Box** is an open-source development and production platform eng
 
 ### 2) Documentation
 
-For complete implementation details and guides, visit the [Spring-Box](/virtualization/docker/spring-box/) documentation.
+For complete implementation details and guides, visit the [**Spring Box**](/virtualization/docker/spring-box/) documentation.
 
 ### 3) Source core
 
