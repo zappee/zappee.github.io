@@ -763,7 +763,6 @@ EASYRSA_REQ_ORG="Remal Software"
   * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
-
 * **Remote Server Certificate Generation Script:**
   The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a TLS certificate on demand.
 
@@ -789,24 +788,18 @@ EASYRSA_REQ_ORG="Remal Software"
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
-  * **VAULT_FILE_STORE** (default: `/opt/vault/data`): Directory path used by Vault's file storage backend to persist encrypted secrets, policies, and metadata. Mount a persistent volume here to prevent data loss across container restarts.
-
-    EASYRSA_HOME="/opt/easy-rsa" \
-    EASYRSA_INSTALL_KIT="EasyRSA-3.2.7.tgz" \
-    \
-    EASYRSA_REQ_CN="remal.com" \
-    EASYRSA_REQ_COUNTRY="HU" \
-    EASYRSA_REQ_PROVINCE="Central Hungary" \
-    EASYRSA_REQ_CITY="Budapest" \
-    EASYRSA_REQ_ORG="Remal Software" \
-    EASYRSA_REQ_EMAIL="arnold.somogyi@gmail.com" \
-    EASYRSA_REQ_OU="IT Department" \
-    EASYRSA_ALGO="ec" \
-    EASYRSA_DIGEST="sha256" \
-    EASYRSA_KEY_SIZE=2048 \
-    EASYRSA_PASS="changeit"
-
+  * **EASYRSA_HOME** (default: `/opt/easy-rsa`): Path to the base directory where Easy-RSA is installed, containing its scripts, configuration files, and generated PKI store.
+  * **EASYRSA_REQ_CN** (default: `remal.com`): Common Name (CN) assigned to the Root Certificate Authority (CA), typically set to your internal domain name.
+  * **EASYRSA_REQ_COUNTRY** (default: `HU`): Two-letter ISO country code embedded in the Root CA certificate's subject field.
+  * **EASYRSA_REQ_PROVINCE** (default: `Central Hungary`): State or province name embedded in the Root CA certificate's subject field.
+  * **EASYRSA_REQ_CITY** (default: `Budapest`): City or locality name embedded in the Root CA certificate's subject field.
+  * **EASYRSA_REQ_ORG** (default: `Remal Software`): Organization or company name embedded in the Root CA certificate's subject field.
+  * **EASYRSA_REQ_EMAIL** (default: `arnold.somogyi@gmail.com`): Administrator contact email address included in the Root CA certificate metadata.
+  * **EASYRSA_REQ_OU** (default: `IT Department`): Organizational Unit (department or team name) embedded in the Root CA certificate's subject field.
+  * **EASYRSA_ALGO** (default: `ec`): Cryptographic key algorithm used when generating key pairs. Common supported values are `ec` (Elliptic Curve) and `rsa`.
+  * **EASYRSA_DIGEST** (default: `sha256`): Cryptographic hash algorithm used to sign certificates, for example, `sha256`, `sha384`, or `sha512`.
+  * **EASYRSA_KEY_SIZE** (default: `2048`): Key length in bits used when `EASYRSA_ALGO` is set to `rsa` (ignored when using `ec`, which relies on elliptic curve parameters).
+  * **EASYRSA_PASS** (default: `changeit`): Password used to encrypt the Root CA private key (`ca.key`) and protect exported PKCS#12 (`.p12`) certificate bundles.
 
 ### 15) Apache Tomcat 10 Image
 
