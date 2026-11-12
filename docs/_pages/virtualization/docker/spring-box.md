@@ -704,9 +704,9 @@ Image name: `springbox-private-ca`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/easy-rsa-pki){: .src-link target="_blank" }
 
-This image is built on top of the [OpenJDK 71 Core Runtime image](#8--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
+This image is built on top of the [OpenJDK 17 Core Runtime image](#8--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
 
-[Easy-RSA](https://github.com/OpenVPN/easy-rsa) is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
+[Easy-RSA](https://github.com/OpenVPN/easy-rsa){: target="_blank" } is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
 Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
 
 This component plays an important role in the Spring Box ecosystem.
