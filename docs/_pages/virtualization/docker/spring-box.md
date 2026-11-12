@@ -527,8 +527,13 @@ consul:
   * **CONSUL_CONFIG_DIR** (default: `/tmp/consul-config`): Directory path containing Consul's .json configuration files loaded at startup.
   * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key-Value (KV) store entries, registered services, and cluster metadata.
 
-### 12) HashiCorp Vault Image
+### 12) <span class="rect-space color-infra"></span> HashiCorp Vault Image
 Image name: `springbox-vault`
+{: .docker-link }
+
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" }
+
+
 
 HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
 It allows organizations to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
