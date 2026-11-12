@@ -219,6 +219,25 @@
   background-repeat: no-repeat;
 }
 
+.docker-link {
+  display: flex;
+  color: black;
+  align-items: center;
+  gap: 0.45em;
+  margin-top: -22px;
+  margin-bottom: 0px;
+}
+
+.docker::before {
+  content: "";
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  background-image: url("/assets/images/icons/brand-docker.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* ==========================================================================
    VIDEO THUMBNAIL RESPONSIVE GRID LAYOUT
    ========================================================================== */

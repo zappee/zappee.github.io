@@ -90,6 +90,8 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
 Image name: `springbox-base`
 
+[Image name: `springbox-base`](){: .src-link target="_blank" }
+
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/base/base){: .src-link target="_blank" }
 
 This ultra-minimal `Base image` serves as the foundation for the entire **Remal Spring Box** ecosystem.
