@@ -320,6 +320,7 @@ hello-service-1:
 
   Variables utilized by this image:
   * **PKI_HOST** (default: `pki.remal.com`): Specifies the hostname of the _Private PKI Management_ container within the _Spring-Box_ network.
+  * **KEYSTORE_HOME** (default: `/tmp`): Path to the directory containing the TLS/SSL certificates used to secure encrypted communication across services.
   * **CONSUL_SERVER_HOSTNAME** (default: `consul.remal.com`): Defines the hostname of the _HashiCorp Consul_ container inside the platform.
   * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: `hazelcast-1.remal.com, hazelcast-2.remal.com`): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
@@ -485,7 +486,7 @@ _The Consul container must start first in the Spring Box network because Spring 
 _Consul must be fully operational before any Spring Boot applications start in the Runner containers._
 _Orchestrate your Docker container dependencies accordingly using `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`._
 
-#### 10.1) Features
+#### 11.1) Features
 * **Service Discovery:** Applications running within the Remal Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
 * **Automated Service Registration:** Integration works seamlessly with HashiCorp Consul and Spring Boot. Microservices register themselves with Consul automatically upon startup. When an application in the Remal Box ecosystem needs to call a REST endpoint, it queries the cluster-wide Service Registry at runtime to get an active service URL. During each request, Consul returns a healthy, low-traffic instance URL.
 * **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking Spring Boot Actuator endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
@@ -517,15 +518,14 @@ consul:
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * **PostgreSQL port** (default: `5432`): The standard, default network port used by PostgreSQL relational database system.
+  * **HTTPS API & Web UI port** (default: `8501`): The TLS-encrypted port used by applications (like Spring Boot) to read/write Key-Value pairs, register services, and serve the Consul Web UI.
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **POSTGRES_HOME** (default: `/var/lib/postgresql`): Standard environment variable used in containerized environments to define the installation path of the PostgreSQL database server. It serves as a central reference point for scripts, applications, and system paths.
-
-
+  * **CONSUL_CONFIG_DIR** (default: `/tmp/consul-config`): Directory path containing Consul's .json configuration files loaded at startup.
+  * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key-Value (KV) store entries, registered services, and cluster metadata.
 
 ### 12) HashiCorp Vault Image
 Image name: `springbox-vault`
