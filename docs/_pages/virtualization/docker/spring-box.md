@@ -248,7 +248,6 @@ _Use this container to deploy and run your Java application as executable JAR._
 
 Here is a typical `springbox-openjdk-runner` container configuration.
 Don't worry, we will break down the entire Docker Compose setup in the next section.
-
 ```yaml
 hello-service-1:
     image: springbox-openjdk-25-runner:0.8.0
@@ -381,7 +380,6 @@ _Because this image runs both the Java application and the database server insid
 * **PostgreSQL database server:** Fully configured and ready for the application inside this container.
 
 Here is a typical `springbox-openjdk-postgres-runner` container configuration:
-
 ```yaml
 hello-service-1:
     image: springbox-openjdk-25-postgres-runner:0.8.0
@@ -494,7 +492,6 @@ _Orchestrate your Docker container dependencies accordingly using `entrypoint: [
 * **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS).
 
 Here is a typical `springbox-hashicorp-consul` container configuration:
-
 ```yaml
 consul:
     image: springbox-hashicorp-consul:0.8.0
@@ -555,8 +552,7 @@ Consul manages where services are and how they talk to each other, while Vault m
 * **Leasing, Renewal, and Revocation:** Every secret issued by Vault comes with a lease duration. Vault automatically revokes access when the lease ends, and administrators can immediately revoke single secrets or entire groups of credentials if a container or developer account is compromised.
 * **Comprehensive Audit Logging:** Vault records a detailed, cryptographically signed audit log of every request and response—tracking who accessed which secret, from what IP address, and at what exact timestamp.
 
-Here is a typical `springbox-vault` container configuration.
-
+Here is a typical `springbox-vault` container configuration:
 ```yaml
 vault:
     image: springbox-vault:0.8.0
@@ -621,7 +617,6 @@ In microservices architectures like Spring Box, it acts as a fast, scalable data
 * **High Availability & Data Partitioning:** Automatically splits data into partitions across Hazelcast Nodes and maintains configurable synchronous or asynchronous backups. If a Hazelcast server crashes, the cluster automatically rebalances partitions and recovers data without downtime.
 
 Here is a typical multi-container configuration for a `springbox-hazelcast` cluster:
-
 ```yaml
 hazelcast-1:
     image: springbox-hazelcast:0.8.0
@@ -661,7 +656,6 @@ hazelcast-2:
 ```
 
 This is how to configure a Java Runner container so that the Spring Boot application uses the Hazelcast cache grid:
-
 ```yaml
 counter-service-1:
     image: springbox-openjdk-25-runner:0.8.0
@@ -706,8 +700,48 @@ And the corresponding `application.properties` file to configure the Spring Boot
 
 ### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI) Server
 Image name: `springbox-private-ca`
+{: .docker-link }
 
-to issue and revoke server and encryption keys using _OpenVPN_ and _EasyRSA_.
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/easy-rsa-pki){: .src-link target="_blank" }
+
+This image is built on top of the [OpenJDK 71 Core Runtime image](#8--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
+
+[Easy-RSA](https://github.com/OpenVPN/easy-rsa) is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
+Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
+
+This component plays an important role in the Spring Box ecosystem.
+It acts as the internal trust store and manages the X.509 Public Key Infrastructure (PKI) used by all infrastructure services, Spring Boot applications, and servers across the environment.
+
+#### 14.1) Features
+* **Root Certificate Authority (CA) Creation:** Initializes a self-signed root CA (`ca.crt`) and secures its private key, establishing an internal trust anchor for your environment.
+* **Key Pair & CSR Generation:** Automates the generation of private keys and Certificate Signing Requests (CSRs) for servers, microservices, and clients.
+* **Certificate Signing & Issuance:** Signs incoming CSRs using your internal CA to produce valid X.509 server and client certificates (`server.crt`, `server.pem`) with configurable expiration periods.
+* **Certificate Revocation Lists (CRLs):** Revokes compromised or retired certificates and generates updated CRL files so services know which certificates are no longer trusted.
+* **Batch & Non-Interactive Automation:** Supports batch mode and environment variables to generate certificates automatically inside Docker containers and CI/CD pipelines without manual prompts.
+* **Customizable Cryptographic Settings:** Lets you configure key algorithms (RSA or Elliptic Curve/EC), key sizes, digest algorithms (such as SHA-256), and Subject Alternative Names (SANs) via a central vars file or environment variables.
+* **Cross-Platform & Lightweight:** Built as portable shell scripts on top of standard OpenSSL, running with minimal memory overhead in lightweight Linux containers.
+
+Here is a typical Docker Compose configuration:
+```yaml
+pki:
+    image: springbox-private-ca:0.8.0
+    container_name: pki.${DOMAIN_NAME}
+    hostname: pki.${DOMAIN_NAME}
+    ports:
+        - "12012:22"   # SSH
+    environment:
+        - EASYRSA_REQ_CN=${DOMAIN_NAME}
+        - EASYRSA_REQ_COUNTRY=${EASYRSA_REQ_COUNTRY}
+        - EASYRSA_REQ_PROVINCE=${EASYRSA_REQ_PROVINCE}
+        - EASYRSA_REQ_CITY=${EASYRSA_REQ_CITY}
+        - EASYRSA_REQ_ORG=${EASYRSA_REQ_ORG}
+    deploy:
+        resources:
+            limits:
+                memory: 64M
+    networks:
+        - springbox-net
+```
 
 ### 15) Apache Tomcat 10 Image
 
