@@ -660,7 +660,7 @@ hazelcast-2:
         - springbox-net
 ```
 
-Here is how to configure a Java Runner container so that the Spring Boot application uses the Hazelcast cache grid:
+This is how to configure a Java Runner container so that the Spring Boot application uses the Hazelcast cache grid:
 
 ```yaml
 counter-service-1:
