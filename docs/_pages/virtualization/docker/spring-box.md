@@ -471,8 +471,7 @@ Image name: `springbox-hashicorp-consul`
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
-Consul is an open-source, decentralized service networking platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
-It tracks REST endpoints and infrastructure service URLs, such as Prometheus.
+Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
 Additionally, Spring Boot applications leverage Consul’s Key-Value (KV) store to centralize configuration management, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
 
 
