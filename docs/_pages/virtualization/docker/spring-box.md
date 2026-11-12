@@ -758,6 +758,7 @@ EASYRSA_REQ_ORG="Remal Software"
 #### 12.2) Configuration highlights
 * **Automatic Root CA Self-Signed Certificate Generation:**
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
+
   Issued files:
   * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
