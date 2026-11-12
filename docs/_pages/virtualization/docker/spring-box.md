@@ -764,20 +764,21 @@ EASYRSA_REQ_ORG="Remal Software"
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
 * **Remote Server Certificate Generation Script:**
-  The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a server certificate.
-  This script expects three inputs:
-  * Type of the certificate:  `server`, `client`, `serverClient`
-  * Hostname of the machine that requested the certificate: for example `user-service-2.remal.com`
-  * SAN: empty or for example `DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1`
+  The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a TLS certificate on demand.
+
+  This script expects three arguments:
+  * Certificate type: Defines the role of the certificate. Supported values are `server`, `client`, or `serverClient`.
+  * Hostname: The hostname of the requesting container, for example, `user-service-2.remal.com`.
+  * SAN (Subject Alternative Name): Optional. Leave empty or provide a comma-separated list, for example, `DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1`.
   
   Once generated, the certificate files are immediately available to the requesting container.
-  The following files are issued automatically when a container requests a certificate:
+  The following files are issued automatically:
   * `<hostname>.crt`: The public X.509 server certificate issued for the specific container hostname, signed by the Root CA.
   * `<hostname>.key`: The private key paired with `.crt`, used by the server to decrypt incoming TLS traffic and prove its identity.
   * `<hostname>.p12`: A PKCS#12 bundle that packages both the server certificate and its private key (along with the CA chain) into a single password-protected binary file, commonly used by Java and Spring Boot keystores.
   * `<hostname>.pem`: A Privacy-Enhanced Mail (Base64-encoded ASCII) certificate file containing the public certificate used by tools and services that expect PEM-formatted TLS credentials.
 
-  Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt)
+  Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt){: target="_blank" rel="noopener" }
 
 * **Safe certificate transfer between the containers:**
   Once the server certificates are issued they transferred to the requested Docker container using secure file copy (`scp`)
