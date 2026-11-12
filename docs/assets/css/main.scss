@@ -373,16 +373,12 @@ table th {
   margin-bottom: -2px;
   vertical-align: baseline;
   object-fit: fill;
-  background: transparent !important;
-  padding: 0 !important;
-  border: none !important;
-  border-radius: 0 !important;
 }
 
 /* Inside the 'Table of Contents' Links */
 a:hover .rect-space {
   text-decoration: none !important;
-  border-bottom: 1px solid currentColor !important;
+  border-bottom: 1px solid currentColor;
 }
 
 /* Inside the 'Main Page' headings */
@@ -390,3 +386,9 @@ h3 .rect-space {
   height: 18px;
   margin-bottom: -3px;
 }
+
+.color-base    { content: url("/assets/images/icons/color-box-base.png"); }
+.color-core    { content: url("/assets/images/icons/color-box-core.png"); }
+.color-infra   { content: url("/assets/images/icons/color-box-infra.png"); }
+.color-app     { content: url("/assets/images/icons/color-box-app.png"); }
+.color-monitor { content: url("/assets/images/icons/color-box-monitor.png"); }
