@@ -368,7 +368,7 @@ table th {
    ========================================================================== */
 .rect-space {
   display: inline-block;
-  width: 13px;
+  width: 14px;
   height: 15px;
   margin-bottom: -2px;
   vertical-align: baseline;
@@ -383,6 +383,7 @@ a:hover .rect-space {
 
 /* inside the 'Main Page' headings */
 h3 .rect-space {
+  width: 16px;
   height: 20px;
   margin-bottom: -3px;
 }
