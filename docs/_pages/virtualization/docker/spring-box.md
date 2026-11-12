@@ -709,7 +709,7 @@ This image is built on top of the [OpenJDK 17 Core Runtime image](#8--java-runne
 [Easy-RSA](https://github.com/OpenVPN/easy-rsa){: target="_blank" rel="noopener"} is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
 Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
 
-This component plays an important role in the Spring Box ecosystem.
+This component plays an important role in the Spring Box.
 It acts as the internal trust store and manages the X.509 Public Key Infrastructure (PKI) used for infrastructure services, Spring Boot applications, and servers across the ecosystem.
 
 #### 14.1) Features
