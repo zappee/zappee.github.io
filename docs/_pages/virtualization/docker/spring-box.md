@@ -90,7 +90,9 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
 Image name: `springbox-base`
 
-This ultra-minimal [Base image](https://github.com/zappee/spring-box/tree/main/docker/base/base) serves as the foundation for the entire **Remal Spring Box** ecosystem.
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/base/base){: .src-link target="_blank" }
+
+This ultra-minimal `Base image` serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
 #### 6.1) Features
@@ -184,7 +186,9 @@ _Please modify it with caution and only introduce changes that are globally requ
 ### 7) <span class="rect-space color-core"></span> Java Core Runtime Images
 Image names: `springbox-openjdk`
 
-The platform supports production-ready runtimes for [OpenJDK 11, 17, 21, and 25](https://github.com/zappee/spring-box/tree/main/docker/core).
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" }
+
+The platform supports production-ready runtimes for OpenJDK 11, 17, 21, and 25.
 
 ⚠️ _**Important:**_
 _These core images are designed to serve as top layer for custom builds and are not recommended for running Java applications (*.jar) directly._
@@ -217,7 +221,9 @@ These scripts handle the specific paths, environment variables, and configuratio
 ### 8) <span class="rect-space color-app"></span> Java Runner Images
 Image name: `springbox-openjdk-runner`
 
-The platform supports production-ready Runners for [OpenJDK 21 and 25](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner).
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner){: .src-link target="_blank" }
+
+The platform supports production-ready Runners for OpenJDK 21 and 25.
 
 The **Java Runner** is an optimized Docker image designed specifically for running containerized Java applications, particularly **Spring Boot** executable JAR files.
 Its advanced design accelerates development velocity by providing pre-configured, enterprise-level infrastructure features out of the box.
