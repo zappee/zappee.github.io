@@ -608,7 +608,7 @@ Image name: `springbox-hazelcast`
 This image is built on top of the [OpenJDK 21 Core Runtime image](#8--java-runner-images) by adding a pre-installed, ready-to-use Hazelcast Platform.
 
 Hazelcast Platform is an open-source, distributed in-memory computing and caching platform designed to deliver ultra-low-latency data access and real-time stream processing across clustered environments.
-In microservices architectures, it acts as a fast, scalable data grid that reduces database load and keeps shared application state synchronized across nodes and applications especially when using horizontal scaling to run multiple instances of the same service.
+In microservices architectures like Spring Box, it acts as a fast, scalable data grid that reduces database load and keeps shared application state synchronized across nodes and applications especially when using horizontal scaling to run multiple instances of the same service.
 
 #### 13.1) Features
 * **Spring Boot Native Support:** Spring Boot integrates natively with Hazelcast and fully supports working with the cluster-wide cache infrastructure out of the box, without requiring any third-party dependencies.
