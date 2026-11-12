@@ -54,6 +54,7 @@ The project provides the following Docker images:
 * Splunk 8.2 server
 
 ![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
+{: .centered-image }
 
 ### 5) Source core
 
