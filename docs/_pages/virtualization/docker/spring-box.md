@@ -91,7 +91,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 Image name: `springbox-base`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/base/base){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/base/base){: .src-link target="_blank" rel="noopener" }
 
 This ultra-minimal `Base image` serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
@@ -188,7 +188,7 @@ _Please modify it with caution and only introduce changes that are globally requ
 Image name: `springbox-openjdk`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" rel="noopener" }
 
 The platform supports production-ready runtimes for OpenJDK 11, 17, 21, and 25.
 
@@ -224,7 +224,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 Image name: `springbox-openjdk-runner`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner){: .src-link target="_blank" rel="noopener" }
 
 The platform supports production-ready Runners for OpenJDK 21 and 25.
 
@@ -364,7 +364,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 Image name: `springbox-openjdk-postgres-runner`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner){: .src-link target="_blank" rel="noopener" }
 
 The platform supports production-ready Runners with an embedded PostgreSQL database server for OpenJDK 21 and 25.
 
@@ -453,7 +453,7 @@ hello-service-1:
 Image name: `springbox-openjdk-omni-runner`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link target="_blank" rel="noopener" }
 
 The platform currently supports production-ready Omni Runners with an embedded PostgreSQL database server exclusively for OpenJDK 21.
 
@@ -471,7 +471,7 @@ _Due to its large size, you should only use this image if your Java application 
 Image name: `springbox-hashicorp-consul`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" rel="noopener" }
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
 This image is an extends of [OpenJDK 25 Core Runtime image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
@@ -528,7 +528,7 @@ consul:
 Image name: `springbox-vault`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" rel="noopener" }
 
 Vault image is an extends of [Spring Box Base image](#6--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
 
@@ -599,7 +599,7 @@ docker compose --env-file=remal.com.env up
 Image name: `springbox-hazelcast`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hazelcast-platform){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hazelcast-platform){: .src-link target="_blank" rel="noopener" }
 
 This image is built on top of the [OpenJDK 21 Core Runtime image](#8--java-runner-images) by adding a pre-installed, ready-to-use Hazelcast Platform.
 
@@ -702,11 +702,11 @@ And the corresponding `application.properties` file to configure the Spring Boot
 Image name: `springbox-private-ca`
 {: .docker-link }
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/easy-rsa-pki){: .src-link target="_blank" }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/easy-rsa-pki){: .src-link target="_blank" rel="noopener" }
 
 This image is built on top of the [OpenJDK 17 Core Runtime image](#8--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
 
-[Easy-RSA](https://github.com/OpenVPN/easy-rsa){: target="_blank" } is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
+[Easy-RSA](https://github.com/OpenVPN/easy-rsa){: target="_blank" rel="noopener"} is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
 Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
 
 This component plays an important role in the Spring Box ecosystem.
