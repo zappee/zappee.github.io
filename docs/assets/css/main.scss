@@ -201,11 +201,12 @@
 }
 
 .src-link {
-display: flex;
+  display: flex;
+  color: black;
   align-items: center;
   gap: 0.45em;
-  margin-top: -15px;
-  margin-bottom: -10px;
+  margin-top: -22px;
+  margin-bottom: 0px;
 }
 
 .src-link::before {
