@@ -471,7 +471,7 @@ Image name: `springbox-hashicorp-consul`
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
-This image is an extends of [Java Core Runtime Image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
+This image is an extends of [OpenJDK 25 Core Runtime Image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
 
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
 Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
