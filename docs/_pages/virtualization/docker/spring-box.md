@@ -471,8 +471,11 @@ Image name: `springbox-hashicorp-consul`
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
+This image is an extends of [Java Core Runtime Image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
+
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
 Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
+
 
 ⚠️ _**Important:**_
 _The Consul container must start first in the Spring Box network because Spring Boot applications require a ready-to-use Key-Value registry at startup to read their configuration parameters._
@@ -508,6 +511,18 @@ consul:
 ```
 
 #### 11.2) Configuration highlights
+* **Ports used by the container:**
+  The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
+
+  * **PostgreSQL port** (default: `5432`): The standard, default network port used by PostgreSQL relational database system.
+
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **POSTGRES_HOME** (default: `/var/lib/postgresql`): Standard environment variable used in containerized environments to define the installation path of the PostgreSQL database server. It serves as a central reference point for scripts, applications, and system paths.
+
+
 
 ### 12) HashiCorp Vault Image
 Image name: `springbox-vault`
