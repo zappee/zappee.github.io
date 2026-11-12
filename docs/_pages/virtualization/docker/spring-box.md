@@ -715,10 +715,10 @@ It acts as the internal trust store and manages the X.509 Public Key Infrastruct
 #### 14.1) Features
 * **Root Certificate Authority (CA) Creation:** Initializes a self-signed root CA (`ca.crt`) and secures its private key, establishing an internal trust anchor for your environment.
 * **Key Pair & CSR Generation:** Automates the generation of private keys and Certificate Signing Requests (CSRs) for servers, microservices, and clients.
-* **Certificate Signing & Issuance:** Signs incoming CSRs using your internal CA to produce valid X.509 server and client certificates (`server.crt`, `server.pem`) with configurable expiration periods.
+* **Certificate Signing & Issuance:** Signs incoming CSRs using our internal CA to produce valid X.509 server and client certificates (`server.crt`, `server.pem`) with configurable expiration periods.
 * **Certificate Revocation Lists (CRLs):** Revokes compromised or retired certificates and generates updated CRL files so services know which certificates are no longer trusted.
 * **Batch & Non-Interactive Automation:** Supports batch mode and environment variables to generate certificates automatically inside Docker containers and CI/CD pipelines without manual prompts.
-* **Customizable Cryptographic Settings:** Lets you configure key algorithms (RSA or Elliptic Curve/EC), key sizes, digest algorithms (such as SHA-256), and Subject Alternative Names (SANs) via a central vars file or environment variables.
+* **Customizable Cryptographic Settings:** Lets you configure key algorithms (RSA or Elliptic Curve/EC), key sizes, digest algorithms (such as SHA-256), and Subject Alternative Names (SANs) via a central `vars` file or environment variables.
 * **Cross-Platform & Lightweight:** Built as portable shell scripts on top of standard OpenSSL, running with minimal memory overhead in lightweight Linux containers.
 
 Here is a typical Docker Compose configuration:
