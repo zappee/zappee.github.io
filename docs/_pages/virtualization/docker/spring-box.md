@@ -539,7 +539,7 @@ It allows us to securely store, manage, and tightly control access to highly sen
 HashiCorp Consul and HashiCorp Vault solve completely different problems in a microservices architecture, though they are often used together.
 Consul manages where services are and how they talk to each other, while Vault manages sensitive secrets and encryption.
 
-How They Work Together in the Spring Box /Spring Boot ecosystem:
+**How They Work Together in the Spring Box /Spring Boot ecosystem:**
 * **Use Consul for App Config & Routing:** Store your service URLs, Prometheus endpoints, logging levels, and feature flags in Consul so microservices can find each other and stay in sync.
 * **Use Vault for Passwords & Certificates:** Never store database passwords, JWT signing keys, or private SSL keys in Consul's Key-Value store. Keep those in Vault so they are encrypted, audited, and rotated safely.
 * **Vault Can Use Consul as Storage:** In production clusters, Vault actually uses Consul behind the scenes as its high-availability storage backend (so Vault's encrypted data stays replicated across nodes), while Consul relies on Vault to issue and rotate mTLS certificates for its service mesh.
