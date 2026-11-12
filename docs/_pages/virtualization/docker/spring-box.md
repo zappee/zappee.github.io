@@ -660,8 +660,53 @@ hazelcast-2:
         - springbox-net
 ```
 
+Here is how to configure a Java Runner container so that the Spring Boot application uses the Hazelcast cache grid:
 
+```yaml
+counter-service-1:
+    image: springbox-openjdk-25-runner:0.8.0
+    container_name: counter-service-1.${DOMAIN_NAME}
+    hostname: counter-service-1.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+    ...
+    environment:
+        PKI_HOST: pki.${DOMAIN_NAME}
+        CONSUL_SERVER_HOSTNAME: consul.${DOMAIN_NAME}
+        HAZELCAST_CLUSTER_NAME: springbox-dev
+        HAZELCAST_CLUSTER_MEMBERS: hazelcast-1.${DOMAIN_NAME}, hazelcast-2.${DOMAIN_NAME}
+        JAVA_OPTS: ...
+    deploy:
+        resources:
+            limits:
+                memory: 256M
+```
 
+And the corresponding `application.properties` file to configure the Spring Boot application:
+
+```properties
+################################################################################
+# Hazelcast Configuration
+# Programmatic configuration is handled directly in Java code. The properties
+# below serve as commented-out placeholders for environment-driven overrides.
+################################################################################
+#hazelcast.cluster.name=${HAZELCAST_CLUSTER_NAME}
+#hazelcast.network.join.multicast.enabled=false
+#hazelcast.network.join.tcp-ip.enabled=true
+#hazelcast.network.join.tcp-ip.members=${HAZELCAST_CLUSTER_MEMBERS}
+```
+
+#### 13.2) Configuration highlights
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
+    HAZELCAST_HOME="/opt/hazelcast" \
+    HAZELCAST_CONFIG_TEMPLATE_DIR="/tmp/hazelcast-config-template" \
+    HAZELCAST_INSTALL_KIT="hazelcast-5.7.0-slim.tar.gz" \
+    HAZELCAST_CLUSTER_NAME="springbox-dev"
+    HAZELCAST_CLUSTER_MEMBERS
+* 
 ### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI)
 Image name: `springbox-private-ca`
 
