@@ -9,11 +9,6 @@
 /* ==========================================================================
    OVERWRITE ORIGINAL STYLES
    ========================================================================== */
-/* light mode colors, defaults */
-:root {
-  --sidebar-label-color: #0277BD;
-}
-
 @include breakpoint($large) {
   /* center the author avatar container and layout elements */
   .author__avatar {
