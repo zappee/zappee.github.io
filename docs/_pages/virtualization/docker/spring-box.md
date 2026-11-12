@@ -710,7 +710,7 @@ This image is built on top of the [OpenJDK 17 Core Runtime image](#8--java-runne
 Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
 
 This component plays an important role in the Spring Box.
-It acts as the internal trust store and manages the X.509 Public Key Infrastructure (PKI) used for infrastructure services, Spring Boot applications, and servers across the ecosystem.
+It acts as the internal trust store and manages the X.509 Public Key Infrastructure (PKI) used by infrastructure services, Spring Boot applications, and servers across the ecosystem.
 
 #### 14.1) Features
 * **Root Certificate Authority (CA) Creation:** Initializes a self-signed root CA (`ca.crt`) and secures its private key, establishing an internal trust anchor for your environment.
