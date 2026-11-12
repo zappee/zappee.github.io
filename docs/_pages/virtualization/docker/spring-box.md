@@ -700,12 +700,9 @@ And the corresponding `application.properties` file to configure the Spring Boot
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **VAULT_CONFIG_FILE** (default: `/etc/vault.hcl`): Path to the main HashiCorp configuration file loaded by the Vault server at startup.
-    HAZELCAST_HOME="/opt/hazelcast" \
-    HAZELCAST_CONFIG_TEMPLATE_DIR="/tmp/hazelcast-config-template" \
-    HAZELCAST_INSTALL_KIT="hazelcast-5.7.0-slim.tar.gz" \
-    HAZELCAST_CLUSTER_NAME="springbox-dev"
-    HAZELCAST_CLUSTER_MEMBERS
+  * **HAZELCAST_HOME** (default: `/opt/hazelcast`): Path to the base directory where Hazelcast is installed, containing its binaries, startup scripts, and configuration files.
+  * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Unique name assigned to the Hazelcast cluster. Only nodes and Spring Boot clients configured with the exact same cluster name can discover each other and join the grid.
+  * **HAZELCAST_CLUSTER_MEMBERS** (default: `NA`): Comma-separated list of hostnames or IP addresses (with optional ports, e.g., `hazelcast-1:5701,hazelcast-2:5701`) used for TCP/IP static cluster discovery. When left empty, the node starts as a standalone single-member cluster.
 * 
 ### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI)
 Image name: `springbox-private-ca`
