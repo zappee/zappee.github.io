@@ -201,9 +201,11 @@
 }
 
 .src-link {
-  display: inline-flex;
+display: flex;
   align-items: center;
   gap: 0.45em;
+  margin-top: -15px;
+  margin-bottom: -10px;
 }
 
 .src-link::before {
