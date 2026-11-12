@@ -437,7 +437,7 @@ hello-service-1:
 ### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link target="_blank" }
 
 The platform currently supports production-ready Omni Runners with an embedded PostgreSQL database server exclusively for OpenJDK 21.
 
@@ -454,7 +454,7 @@ _Due to its large size, you should only use this image if your Java application 
 ### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
 Image name: `springbox-consul-for-openjdk`
 
-[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link }
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
 HashiCorp Consul is an open-source, decentralized service platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
 In Spring Box architectures, Consul acts as a central control component that keep info about REST endpoints and other services like Prometheus service URL.
