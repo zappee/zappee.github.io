@@ -781,7 +781,7 @@ EASYRSA_REQ_ORG="Remal Software"
   Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt){: target="_blank" rel="noopener" }
 
 * **Safe certificate transfer between the containers:**
-  Once the server certificates are issued they transferred to the requested Docker container using secure file copy (`scp`)
+  Once the server certificates are issued they transferred to the requested Docker container using secure file copy (`scp`).
 
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
