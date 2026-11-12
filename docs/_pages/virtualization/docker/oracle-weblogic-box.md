@@ -50,7 +50,7 @@ The project provides the following Docker images:
 * Java 8
 * Apache Tomcat 10.0
 * Oracle Database Enterprise 12.2.0.1
-* Oracle WebLogic 12.2.1.4 dmin and managed servers
+* Oracle WebLogic 12.2.1.4 Admin and Managed servers
 * Splunk 8.2 server
 
 ![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
