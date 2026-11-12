@@ -480,14 +480,11 @@ _Consul must be fully operational before any Spring Boot applications start in t
 _Orchestrate your Docker container dependencies accordingly using `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`._
 
 #### 10.1) Features
-* **Service Discovery:** Applications running within the Remal-Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
-* Microservices in the Remal-Box network dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime 
-* **Service Discovery:** Instead of hardcoding fixed IP addresses and ports for your microservices, applications register themselves with Consul upon startup. Then is someone wanna call the REST endpoint, then it gets the service URL from the cluster wide Service Registry.
-* **Automated Service Registration:** Integrates seamlessly with HashiCorp Consul to automatically discover and register your Spring Boot microservice endpoints at startup, eliminating the need for manual network configurations.
-* **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking an HTTP / Spring Boot Actuator / health endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
-* **Key-Value (KV) Store:** Consul includes a highly available, distributed key-value store. Teams use this to store dynamic application configurations centrally. Tools like Spring Cloud Consul Config can read these values at runtime, allowing you to update feature flags or database strings without restarting your containers.
-* **Service Mesh (Consul Connect):** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS) and sidecar proxies.
-
+* **Service Discovery:** Applications running within the Remal Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
+* **Automated Service Registration:** Integration works seamlessly with HashiCorp Consul and Spring Boot. Microservices register themselves with Consul automatically upon startup. When an application in the Remal Box ecosystem needs to call a REST endpoint, it queries the cluster-wide Service Registry at runtime to get an active service URL. During each request, Consul returns a healthy, low-traffic instance URL.
+* **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking Spring Boot Actuator endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
+* **Key-Value (KV) Store:** Consul includes a highly available, distributed Key-Value store. Teams use this to store dynamic application configurations centrally. Tools like _Spring Cloud Consul Config_ can read these values at runtime, allowing you to update feature flags or database strings without restarting your containers.
+* **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS) and sidecar proxies.
 
 Here is a typical `springbox-consul-for-openjdk` container configuration.
 
