@@ -477,7 +477,7 @@ Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to ce
 ⚠️ _**Important:**_
 _The Consul container must start first in the Spring Box network because Spring Boot applications require a ready-to-use Key-Value registry at startup to read their configuration parameters._
 _Consul must be fully operational before any Spring Boot applications start in the Runner containers._
-_Orchestrate your Docker container dependencies accordingly using entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]._
+_Orchestrate your Docker container dependencies accordingly using `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`._
 
 #### 10.1) Features
 * **Service Discovery:** Applications running within the Remal-Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
