@@ -763,6 +763,7 @@ EASYRSA_REQ_ORG="Remal Software"
   * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
+
 * **Remote Server Certificate Generation Script:**
   The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a TLS certificate on demand.
 
