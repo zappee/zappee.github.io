@@ -760,7 +760,6 @@ EASYRSA_REQ_ORG="Remal Software"
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
 
   Issued files:
-  {: .sub-list-title }
   * `ca.crt`: The public Root CA certificate distributed to services and clients so they can verify and trust certificates signed by this CA.
   * `ca.key`: The private key of the Root CA used to cryptographically sign server and client certificates. This file must remain strictly confidential inside the PKI container.
 
@@ -768,7 +767,6 @@ EASYRSA_REQ_ORG="Remal Software"
   The `/opt/easy-rsa/generate-cert.sh` script included in this image allows any container in the Spring Box environment to request a TLS certificate on demand.
 
   This script expects three arguments:
-  {: .sub-list-title }
   * Certificate type: Defines the role of the certificate. Supported values are `server`, `client`, or `serverClient`.
   * Hostname: The hostname of the requesting container, for example, `user-service-2.remal.com`.
   * SAN (Subject Alternative Name): Optional. Leave empty or provide a comma-separated list, for example, `DNS:user-service-2.remal.com,DNS:localhost,IP:127.0.0.1`.
@@ -776,7 +774,6 @@ EASYRSA_REQ_ORG="Remal Software"
   Once generated, the certificate files are immediately available to the requesting container.
 
   The following files are issued automatically:
-  {: .sub-list-title }
   * `<hostname>.crt`: The public X.509 server certificate issued for the specific container hostname, signed by the Root CA.
   * `<hostname>.key`: The private key paired with `.crt`, used by the server to decrypt incoming TLS traffic and prove its identity.
   * `<hostname>.p12`: A PKCS#12 bundle that packages both the server certificate and its private key (along with the CA chain) into a single password-protected binary file, commonly used by Java and Spring Boot keystores.
