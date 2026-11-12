@@ -617,7 +617,7 @@ In microservices architectures like Spring Box, it acts as a fast, scalable data
   * **Embedded-Cache Topology:** Runs the Hazelcast node directly inside the Spring Boot application JVM, offering ultra-low-latency data access without extra network hops.
   * **Client-Server Cache Topology:** Separates the Hazelcast cluster from your Spring Boot applications, allowing the cache tier and microservices to scale independently while sharing cached data across Java applications.
   * **Near-Cache Topology:** Combines the Client-Server model with a local in-memory cache on the Spring Boot client side, delivering near-instant read performance for frequently accessed data.
-* **Distributed Data Structures:** Offers familiar, thread-safe Java data structures—such as `IMap`, `IQueue`, `ISet`, `IList`, `MultiMap`, and `Ringbuffer` that automatically partition and replicate data across cluster members.
+* **Distributed Data Structures:** Offers familiar, thread-safe Java data structuresm such as `IMap`, `IQueue`, `ISet`, `IList`, `MultiMap`, and `Ringbuffer` that automatically partition and replicate data across cluster members.
 * ++High Availability & Data Partitioning:** Automatically splits data into partitions across Hazelcast Nodes and maintains configurable synchronous or asynchronous backups. If a Hazelcast server crashes, the cluster automatically rebalances partitions and recovers data without downtime.
 
 Here is a typical `springbox-hazelcast` cluster container set configuration.
