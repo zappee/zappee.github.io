@@ -452,13 +452,7 @@ _Due to its large size, you should only use this image if your Java application 
 ### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
 Image name: `springbox-consul-for-openjdk`
 
-
-Check out the [View Source](https://github.com){: .src-link } file.
-
-
 [Source Code](https://github.com){: .src-link }
-
-
 
 HashiCorp Consul is an open-source, decentralized service platform designed to manage secure traffic, handle service discovery, and automate network configurations across cloud and containerized environments.
 In Spring Box architectures, Consul acts as a central control component that keep info about REST endpoints and other services like Prometheus service URL.
