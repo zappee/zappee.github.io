@@ -745,7 +745,6 @@ pki:
 
 Here is the content of the environment file used in the Docker Compose configuration:
 ```properties
-# arnold.env file
 # environment
 DOMAIN_NAME=arnold.remal.com
 
