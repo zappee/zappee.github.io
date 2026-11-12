@@ -53,8 +53,7 @@ The project provides the following Docker images:
 * Oracle WebLogic 12.2.1.4 Admin and Managed servers
 * Splunk 8.2 server
 
-![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png)
-{: .centered-image }
+![docker image hierarchy](/assets/images/menu/virtualization/docker/weblogic-box/docker-images.png){: .centered-image }
 
 ### 5) Source core
 
