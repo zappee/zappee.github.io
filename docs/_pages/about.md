@@ -43,7 +43,7 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
 
     <div class="skills-container">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=ai&theme=light" title="AI" alt="AI">
-      <img class="skill-icon" src="/assets/images/logos/tomcat.png" title="Apache Tomcat" alt="Apache Tomcat">
+      <img class="skill-icon" src="/assets/images/icons/tomcat.png" title="Apache Tomcat" alt="Apache Tomcat">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=angular&theme=light" title="Angular" alt="Angular">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=aws&theme=light" title="AWS" alt="AWS">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=bash&theme=light" title="Bash" alt="Bash">
@@ -52,26 +52,26 @@ My advanced knowledge of Linux systems and scripting languages allows me to coll
       <img class="skill-icon" src="https://skillicons.dev/icons?i=github&theme=light" title="GitHub" alt="GitHub">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=gradle&theme=light" title="Gradle" alt="Gradle">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=grafana&theme=light" title="Grafana" alt="Grafana">
-      <img class="skill-icon" src="/assets/images/logos/hashicorp-consul.png" title="HashiCorp Consul" alt="HashiCorp Consul">
-      <img class="skill-icon" src="/assets/images/logos/hashicorp-vault.png" title="HashiCorp Vault" alt="HashiCorp Vault">
+      <img class="skill-icon" src="/assets/images/icons/hashicorp-consul.png" title="HashiCorp Consul" alt="HashiCorp Consul">
+      <img class="skill-icon" src="/assets/images/icons/hashicorp-vault.png" title="HashiCorp Vault" alt="HashiCorp Vault">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=hibernate&theme=light" title="Hibernate" alt="Hibernate">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=html&theme=light" title="HTML, HTML5" alt="HTML, HTML5">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=idea&theme=light" title="IntelliJ IDEA" alt="IntelliJ IDEA">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=java&theme=light" title="Java" alt="Java">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=js&theme=light" title="JavaScript" alt="JavaScript">
-      <img class="skill-icon" src="/assets/images/logos/jira.png" title="Jira" alt="Jira">
+      <img class="skill-icon" src="/assets/images/icons/jira.png" title="Jira" alt="Jira">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=kafka&theme=light" title="Kafka" alt="Kafka">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=linux&theme=light" title="Linux" alt="Linux">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mint&theme=light" title="Linux Mint" alt="Linux Mint">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=maven&theme=light" title="Maven" alt="Maven">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mongodb&theme=light" title="MongoDB" alt="MongoDB">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=mysql&theme=light" title="MySQL" alt="MySQL">
-      <img class="skill-icon" src="/assets/images/logos/oracle.png" title="Oracle Database" alt="Oracle Database">
+      <img class="skill-icon" src="/assets/images/icons/oracle.png" title="Oracle Database" alt="Oracle Database">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postgres&theme=light" title="PostgreSQL" alt="PostgreSQL">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=postman&theme=light" title="Postman" alt="Postman">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=prometheus&theme=light" title="Prometheus" alt="Prometheus">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=py&theme=light" title="Python" alt="Python">
-      <img class="skill-icon" src="/assets/images/logos/sonar-qube.png" title="SonarQube" alt="SonarQube">
+      <img class="skill-icon" src="/assets/images/icons/sonar-qube.png" title="SonarQube" alt="SonarQube">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=spring&theme=light" title="Spring" alt="Spring">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=sqlite&theme=light" title="SQLite" alt="SQLite">
       <img class="skill-icon" src="https://skillicons.dev/icons?i=vim&theme=light" title="Vim" alt="Vim">
