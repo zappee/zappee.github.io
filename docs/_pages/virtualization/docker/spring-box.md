@@ -476,7 +476,7 @@ Image name: `springbox-hashicorp-consul`
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
-This image is an extends of [OpenJDK 25 Core Runtime Image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
+This image is an extends of [OpenJDK 25 Core Runtime image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
 
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
 Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
@@ -533,7 +533,7 @@ Image name: `springbox-vault`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" }
 
-Vault image is an extends of [Spring Box Base Image](#6--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
+Vault image is an extends of [Spring Box Base image](#6--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
 
 HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
 It allows us to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
@@ -599,10 +599,26 @@ docker compose --env-file=remal.com.env up
   * **VAULT_LOG** (default: `/var/log/vault.log`): File path where Vault writes standard operational and server runtime logs.
   * **VAULT_AUDIT_LOG** (default: `/var/log/vault-audit.log`): File path where Vault's audit device records detailed logs of every incoming request and outgoing response for security auditing.
 
-### 13) Hazelcast Cache Platform
+### 13) <span class="rect-space color-infra"></span> Hazelcast Cache Platform
 Image name: `springbox-hazelcast`
+{: .docker-link }
 
-to support _Embedded-Cache_, _Client-Server Cache_, and  _Near-Cache_ topologies with zero configuration.
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hazelcast-platform){: .src-link target="_blank" }
+
+This image is built on top of the [OpenJDK 21 Core Runtime image](#8--java-runner-images) by adding a pre-installed, ready-to-use Hazelcast Platform.
+
+Hazelcast Platform is an open-source, distributed in-memory computing and caching platform designed to deliver ultra-low-latency data access and real-time stream processing across clustered environments.
+In microservices architectures, it acts as a fast, scalable data grid that reduces database load and keeps shared application state synchronized across nodes and applications especially when using horizontal scaling to run multiple instances of the same service.
+
+#### 13.1) Features
+* **Spring Boot Native Support:** Spring Boot integrates natively with Hazelcast and fully supports working with the cluster-wide cache infrastructure out of the box, without requiring any third-party dependencies.
+* **Embedded-Cache Topology:** Runs the Hazelcast node directly inside the Spring Boot application JVM, offering ultra-low-latency data access without extra network hops.
+* **Client-Server Cache Topology:** Separates the Hazelcast cluster from your Spring Boot applications, allowing the cache tier and microservices to scale independently while sharing cached data across Java applications.
+* **Near-Cache Topology:** Combines the Client-Server model with a local in-memory cache on the Spring Boot client side, delivering near-instant read performance for frequently accessed data.
+
+
+
+
 
 ### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI)
 Image name: `springbox-private-ca`
