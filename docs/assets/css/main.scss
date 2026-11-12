@@ -12,14 +12,6 @@
 /* light mode colors, defaults */
 :root {
   --sidebar-label-color: #0277BD;
-  color-scheme: only light;
-}
-
-/* dark mode colors overrides */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sidebar-label-color: #0277BD;
-  }
 }
 
 @include breakpoint($large) {
