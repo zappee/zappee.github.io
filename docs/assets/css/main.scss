@@ -371,26 +371,34 @@ table th {
   width: 13px;
   height: 16px;
   margin-bottom: -2px;
-  box-sizing: border-box;
-  background: transparent !important;
-  border-top: 15px solid var(--rect-color, black);
+  vertical-align: baseline;
 }
 
+.rect-space::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 15px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 /* Inside the 'Table of Contents' Links */
 a:hover .rect-space {
   text-decoration: none !important;
-  border-top: 15px solid var(--rect-color, black);
-  border-bottom: 1px solid #000000;}
+  border-bottom: 1px solid currentColor;
+}
 
 /* Inside the 'Main Page' headings */
 h3 .rect-space {
   height: 20px;
   margin-bottom: -3px;
-  border-top: 18px solid var(--rect-color, black);
 }
 
-.color-base    { --rect-color: #CCFF90; }
-.color-core    { --rect-color: #76FF03; }
-.color-infra   { --rect-color: #84FFFF; }
-.color-app     { --rect-color: #00E5FF; }
-.color-monitor { --rect-color: #FF80AB; }
+h3 .rect-space::before {
+  height: 18px;
+}
+.color-base::before    { background-image: url("/assets/images/icons/color-box-base.png"); }
+.color-core::before    { background-image: url("/assets/images/icons/color-box-core.png"); }
+.color-infra::before   { background-image: url("/assets/images/icons/color-box-infra.png"); }
+.color-app::before     { background-image: url("/assets/images/icons/color-box-app.png"); }
+.color-monitor::before { background-image: url("/assets/images/icons/color-box-monitor.png"); }
