@@ -472,26 +472,14 @@ Image name: `springbox-hashicorp-consul`
 
 In the Spring Box ecosystem, HashiCorp Consul acts as an important central component.
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
-Additionally, Spring Boot applications leverage Consul’s Key-Value (KV) store to centralize configuration management, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
-
-
-Distributed service registry and key-value store based on HashiCorp Consul.
-Cluster wide
-
-
+Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
 
 ⚠️ _**Important:**_
 _Consul container must start before the Spring Boot applications in the OpenJDK Runner containers as Spring Boot applications require a ready for use Key/Value registry durint the startup to read configuration parameters from the Key-Value store. ensure you orchestra your docker environment accordingly._
 Consul must be fully operational before starting any Spring Boot applications in the _Java Runner_ containers. During startup, Spring Boot applications require a ready-to-use Service Registry to read vital configuration parameters from the Key-Value store. Ensure you orchestrate your Docker environment dependencies accordingly (e.g., using proper health check gates).
 
-
-
-
-#### 11.1) Features
-
+#### 10.1) Features
 * **Service Discovery:** Applications running within the Remal-Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
-
-* 
 * Microservices in the Remal-Box network dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime 
 * **Service Discovery:** Instead of hardcoding fixed IP addresses and ports for your microservices, applications register themselves with Consul upon startup. Then is someone wanna call the REST endpoint, then it gets the service URL from the cluster wide Service Registry.
 * **Automated Service Registration:** Integrates seamlessly with HashiCorp Consul to automatically discover and register your Spring Boot microservice endpoints at startup, eliminating the need for manual network configurations.
