@@ -584,8 +584,8 @@ docker compose --env-file=remal.com.env up
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
-  * **Vault client API port** (default: 8200): Handles connections from applications, the Vault CLI, and the Web UI.
-  * **Vault cluster port** (default: 8201): Handles internal server-to-server traffic for high-availability replication.
+  * **API & Web UI port** (default: `8200`): The primary port used by applications (like Spring Boot), the Vault CLI, and users accessing the Vault Web UI over HTTP or HTTPS.
+  * **Cluster Communication port** (default: `8201`): Used for server-to-server cluster traffic, request forwarding from standby nodes to the active leader, and Raft integrated storage replication.
 
 ### 13) Hazelcast Cache Platform
 Image name: `springbox-hazelcast`
