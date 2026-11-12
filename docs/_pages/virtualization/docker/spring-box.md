@@ -87,7 +87,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 5) Docker Containers in the _Spring Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
 
-### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
+### 6) <img src="/assets/images/icons/color-box-base.png" class="rect-space" alt=""> The Spring-Box Base Image
 Image name: `springbox-base`
 {: .docker-link }
 
@@ -184,7 +184,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **SSH_PASSWORD** (default: `password`): Sets the password for the SSH user.
   * **UP_SIGNAL_PORT** (default: `1331`): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
 
-### 7) <span class="rect-space color-core"></span> Java Core Runtime Images
+### 7) <img src="/assets/images/icons/color-box-core.png" class="rect-space" alt=""> Java Core Runtime Images
 Image name: `springbox-openjdk`
 {: .docker-link }
 
@@ -220,7 +220,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 8) <span class="rect-space color-app"></span> Java Runner Images
+### 8) <img src="/assets/images/icons/color-box-app.png" class="rect-space" alt=""> Java Runner Images
 Image name: `springbox-openjdk-runner`
 {: .docker-link }
 
@@ -360,7 +360,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 9) <span class="rect-space color-app"></span> Java Runtime with an embedded PostgreSQL server Images
+### 9) <img src="/assets/images/icons/color-box-app.png" class="rect-space" alt=""> Java Runtime with an embedded PostgreSQL server Images
 Image name: `springbox-openjdk-postgres-runner`
 {: .docker-link }
 
@@ -449,7 +449,7 @@ hello-service-1:
 
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
-### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
+### 10) <img src="/assets/images/icons/color-box-app.png" class="rect-space" alt=""> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
 {: .docker-link }
 
@@ -467,7 +467,7 @@ _Due to its large size, you should only use this image if your Java application 
 * **fonts-dejavu Linux package:** This is a system-level TrueType font (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
 
-### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
+### 11) <img src="/assets/images/icons/color-box-infra.png" class="rect-space" alt=""> HashiCorp Consul Integration
 Image name: `springbox-hashicorp-consul`
 {: .docker-link }
 
@@ -524,7 +524,7 @@ consul:
   * **CONSUL_CONFIG_DIR** (default: `/tmp/consul-config`): Directory path containing Consul's .json configuration files loaded at startup.
   * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key-Value (KV) store entries, registered services, and cluster metadata.
 
-### 12) <span class="rect-space color-infra"></span> HashiCorp Vault Image
+### 12) <img src="/assets/images/icons/color-box-infra.png" class="rect-space" alt=""> HashiCorp Vault Image
 Image name: `springbox-vault`
 {: .docker-link }
 
@@ -595,7 +595,7 @@ docker compose --env-file=remal.com.env up
   * **VAULT_LOG** (default: `/var/log/vault.log`): File path where Vault writes standard operational and server runtime logs.
   * **VAULT_AUDIT_LOG** (default: `/var/log/vault-audit.log`): File path where Vault's audit device records detailed logs of every incoming request and outgoing response for security auditing.
 
-### 13) <span class="rect-space color-infra"></span> Hazelcast Cache Platform
+### 13) <img src="/assets/images/icons/color-box-infra.png" class="rect-space" alt=""> Hazelcast Cache Platform
 Image name: `springbox-hazelcast`
 {: .docker-link }
 
@@ -698,7 +698,7 @@ And the corresponding `application.properties` file to configure the Spring Boot
   * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Unique name assigned to the Hazelcast cluster. Only nodes and Spring Boot clients configured with the exact same cluster name can discover each other and join the grid.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: `NA`): Comma-separated list of hostnames or IP addresses (with optional ports, e.g., `hazelcast-1:5701,hazelcast-2:5701`) used for TCP/IP static cluster discovery. When left empty, the node starts as a standalone single-member cluster.
 
-### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI) Server
+### 14) <img src="/assets/images/icons/color-box-infra.png" class="rect-space" alt=""> Private Certificate Authority (PKI) Server
 Image name: `springbox-private-ca`
 {: .docker-link }
 

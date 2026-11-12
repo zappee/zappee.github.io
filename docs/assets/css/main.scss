@@ -369,36 +369,24 @@ table th {
 .rect-space {
   display: inline-block;
   width: 13px;
-  height: 16px;
+  height: 15px;
   margin-bottom: -2px;
   vertical-align: baseline;
+  object-fit: fill;
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
-.rect-space::before {
-  content: "";
-  display: block;
-  width: 13px;
-  height: 15px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
 /* Inside the 'Table of Contents' Links */
 a:hover .rect-space {
   text-decoration: none !important;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid currentColor !important;
 }
 
 /* Inside the 'Main Page' headings */
 h3 .rect-space {
-  height: 20px;
+  height: 18px;
   margin-bottom: -3px;
 }
-
-h3 .rect-space::before {
-  height: 18px;
-}
-.color-base::before    { background-image: url("/assets/images/icons/color-box-base.png"); }
-.color-core::before    { background-image: url("/assets/images/icons/color-box-core.png"); }
-.color-infra::before   { background-image: url("/assets/images/icons/color-box-infra.png"); }
-.color-app::before     { background-image: url("/assets/images/icons/color-box-app.png"); }
-.color-monitor::before { background-image: url("/assets/images/icons/color-box-monitor.png"); }
