@@ -185,7 +185,8 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **UP_SIGNAL_PORT** (default: `1331`): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
 
 ### 7) <span class="rect-space color-core"></span> Java Core Runtime Images
-Image names: `springbox-openjdk`
+Image name: `springbox-openjdk`
+{: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" }
 
@@ -221,6 +222,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 
 ### 8) <span class="rect-space color-app"></span> Java Runner Images
 Image name: `springbox-openjdk-runner`
+{: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-runner){: .src-link target="_blank" }
 
@@ -358,6 +360,7 @@ These scripts handle the specific paths, environment variables, and configuratio
 
 ### 9) <span class="rect-space color-app"></span> Java Runtime with an embedded PostgreSQL server Images
 Image name: `springbox-openjdk-postgres-runner`
+{: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-postgres-runner){: .src-link target="_blank" }
 
@@ -445,6 +448,7 @@ hello-service-1:
 
 ### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
+{: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link target="_blank" }
 
@@ -461,7 +465,8 @@ _Due to its large size, you should only use this image if your Java application 
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
 
 ### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
-Image name: `springbox-consul-for-openjdk`
+Image name: `springbox-hashicorp-consul`
+{: .docker-link }
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-consul){: .src-link target="_blank" }
 
