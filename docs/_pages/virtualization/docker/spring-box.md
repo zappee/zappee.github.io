@@ -436,7 +436,6 @@ hello-service-1:
 
 ### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
-
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/application/java-omni-runner){: .src-link target="_blank" }
 
 The platform currently supports production-ready Omni Runners with an embedded PostgreSQL database server exclusively for OpenJDK 21.
