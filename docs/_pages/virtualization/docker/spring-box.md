@@ -558,15 +558,15 @@ Consul manages where services are and how they talk to each other, while Vault m
 Here is a typical `springbox-vault` container configuration.
 
 ```yaml
-    vault:
-      image: springbox-vault:0.8.0
-      container_name: vault.${DOMAIN_NAME}
-      hostname: vault.${DOMAIN_NAME}
-      entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
-      ports:
+vault:
+    image: springbox-vault:0.8.0
+    container_name: vault.${DOMAIN_NAME}
+    hostname: vault.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
+    ports:
         - "14012:22"   # SSH
         - "14016:8200" # vault client API port
-      environment:
+    environment:
         - PKI_HOST=pki.${DOMAIN_NAME}
 ```
 
@@ -619,6 +619,46 @@ In microservices architectures, it acts as a fast, scalable data grid that reduc
   * **Near-Cache Topology:** Combines the Client-Server model with a local in-memory cache on the Spring Boot client side, delivering near-instant read performance for frequently accessed data.
 * **Distributed Data Structures:** Offers familiar, thread-safe Java data structures—such as `IMap`, `IQueue`, `ISet`, `IList`, `MultiMap`, and `Ringbuffer` that automatically partition and replicate data across cluster members.
 * ++High Availability & Data Partitioning:** Automatically splits data into partitions across Hazelcast Nodes and maintains configurable synchronous or asynchronous backups. If a Hazelcast server crashes, the cluster automatically rebalances partitions and recovers data without downtime.
+
+Here is a typical `springbox-hazelcast` cluster container set configuration.
+
+```yaml
+hazelcast-1:
+    image: springbox-hazelcast:0.8.0
+    container_name: hazelcast-1.${DOMAIN_NAME}
+    hostname: hazelcast-1.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
+    ports:
+        - "13062:22"   # SSH
+        - "13063:5701" # Hazelcast client port
+    environment:
+        - PKI_HOST=pki.${DOMAIN_NAME}
+        - HAZELCAST_CLUSTER_NAME=springbox-dev
+    deploy:
+        resources:
+            limits:
+                memory: 256M
+    networks:
+        - springbox-net
+
+hazelcast-2:
+    image: springbox-hazelcast:0.8.0
+    container_name: hazelcast-2.${DOMAIN_NAME}
+    hostname: hazelcast-2.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "pki.${DOMAIN_NAME}"]
+    ports:
+        - "13072:22"   # SSH
+        - "13073:5701" # Hazelcast client port
+    environment:
+        - PKI_HOST=pki.${DOMAIN_NAME}
+        - HAZELCAST_CLUSTER_NAME=springbox-dev
+    deploy:
+        resources:
+            limits:
+                memory: 256M
+    networks:
+        - springbox-net
+```
 
 
 
