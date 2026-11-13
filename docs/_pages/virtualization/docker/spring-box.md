@@ -856,7 +856,7 @@ Image name: `springbox-prometheus`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/monitoring/prometheus){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [Spring Box base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
+This image is built on top of the [Spring Box Base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
 
 Prometheus is a leading open-source monitoring and alerting toolkit for applications, infrastructure, and services maintained by the Cloud Native Computing Foundation (CNCF).
 It collects and stores real-time numeric metrics from servers, containers, and applications as time-series data storing them in a high-performance time-series database.
