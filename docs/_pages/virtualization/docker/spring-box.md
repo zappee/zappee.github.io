@@ -858,7 +858,22 @@ Image name: `springbox-prometheus`
 
 This image is built on top of the [Spring Box base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
 
-containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
+Prometheus is a leading open-source monitoring and alerting toolkit for applications, infrastructure, and services maintained by the Cloud Native Computing Foundation (CNCF).
+It collects and stores real-time numeric metrics from servers, containers, and applications as time-series data storing them in a high-performance time-series database.
+With built-in service discovery and a flexible query language, Prometheus helps engineering teams track system health, analyze performance trends, and catch issues before they impact users.
+
+Prometheus plays an important role in the Spring Boot ecosystem, helping teams monitor service availability and performance, identify performance bottlenecks, and diagnose system-wide issues.
+
+#### 16.1) Features
+* **Time-series metrics:** Records timestamped measurements to help track system and application performance over time.
+* **Multi-Dimensional Data Model:** Metrics are identified by a name and custom key-value pairs called labels, allowing to slice, filter, and aggregate performance data by service, instance, or environment. Spring Box metrics can be found under the `remal*` prefix.
+* **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
+* **Automated Pull-Based metric collection:** Prometheus periodically scrapes metrics from configured HTTP endpoints and automatically discovers dynamic targets in environments like Kubernetes and major cloud providers.
+* **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
+* **Service discovery:** Finds monitoring targets automatically or uses static configuration.
+* **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
+* **Spring Boot integrations:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
+
 
 ### 17) Grafana
 
