@@ -190,6 +190,7 @@ Image name: `springbox-openjdk`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" rel="noopener" }
 
+This image is an extends of our base [Java Base image](#6--the-spring-box-base-image).
 The platform supports production-ready runtimes for OpenJDK 11, 17, 21, and 25.
 
 ⚠️ _**Important:**_
@@ -801,9 +802,62 @@ EASYRSA_REQ_ORG="Remal Software"
   * **EASYRSA_KEY_SIZE** (default: `2048`): Key length in bits used when `EASYRSA_ALGO` is set to `rsa` (ignored when using `ec`, which relies on elliptic curve parameters).
   * **EASYRSA_PASS** (default: `changeit`): Password used to encrypt the Root CA private key (`ca.key`) and protect exported PKCS#12 (`.p12`) certificate bundles.
 
-### 15) Apache Tomcat 10 Image
+### 15) <span class="rect-space color-infra"></span> Apache Tomcat 10 Image
+Image name: `springbox-tomcat-10`
+{: .docker-link }
 
-### 16) Prometheus Time-Series Database Server
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/tomcat-10){: .src-link target="_blank" rel="noopener" }
+
+This image is built on top of the [OpenJDK 11 Core Runtime image](#8--java-runner-images) and includes a pre-installed, pre-configured Apache Tomcat 10 server.
+
+Apache Tomcat 10 is an open-source, lightweight Java servlet container and HTTP web server.
+In the _Spring Box_ ecosystem, it serves as a dedicated runtime environment for hosting and serving Java web archives (`.war`) and web-based applications over HTTP and HTTPS.
+
+#### 15.1) Features
+* **Pre-Configured Administrator User:** Includes a pre-configured user account with remote administrative access to both the `host-manager` and `manager` web applications.
+* **Non-Blocking I/O:** Uses asynchronous, non-blocking network connectors to handle thousands of concurrent HTTP requests and REST API calls with minimal thread overhead.
+* **HTTP/2 & WebSocket Support:** Supports multiplexed, low-latency HTTP/2 streams for faster Angular/React frontend loading alongside native WebSocket support for real-time communication.
+* **Static Asset & SPA Hosting:** Efficiently serves compiled frontend bundles (Angular, React, Vue) directly from disk with built-in Gzip/Brotli compression, caching headers, and custom rewrite rules for client-side routing.
+* **Virtual Threads Support:** Supports Java Virtual Threads on modern JVMs (Java 21+), enabling high-throughput microservices without complex reactive programming.
+* **Built-In TLS/SSL & OpenSSL Integration:** Provides native HTTPS termination using standard Java keystores (.p12) or PEM certificates (.crt, .key), with optional native OpenSSL acceleration.
+* **Lightweight & Container-Optimized:** Starts up rapidly with low memory consumption and simple XML driven configuration, making it ideal for Docker containers and horizontal scaling.
+
+Here is a typical Docker Compose configuration:
+```yaml
+tomcat:
+  image: springbox-tomcat-10:0.8.0
+  container_name: tomcat.${DOMAIN_NAME}
+  hostname: tomcat.${DOMAIN_NAME}
+  ports:
+    - "13302:22"   # SSH
+    - "13303:8080" # HTTP
+    - "13304:8443" # HTTPS
+  deploy:
+    resources:
+      limits:
+        memory: 512M
+  networks:
+    - springbox-net
+```
+
+#### 15.2) Configuration highlights
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **CATALINA_HOME** (default: `/opt/tomcat`): Path to the root installation directory of Apache Tomcat, containing its binaries, configuration files, logs, and web application deployment folder (`webapps/`).
+  * **CATALINA_USER** (default: `admin`): Username created at container startup with administrative privileges to access the Tomcat `manager` and `host-manager` web interfaces.
+  * **CATALINA_PASSWORD** (default: `password`): Password assigned to the administrator account.
+  * **JAVA_OPTIONS** (default: `-Xms512m -Xmx1024m -XX:+UseParallelGC -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties`): JVM startup arguments passed to the Tomcat runtime to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
+
+### 16) <span class="rect-space color-monitor"></span> Prometheus Time-Series Database Server
+Image name: `springbox-prometheus`
+{: .docker-link }
+
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/monitoring/prometheus){: .src-link target="_blank" rel="noopener" }
+
+This image is built on top of the [Spring Box base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
+
 containers and data scraper container** that periodically pulls (scrapes) the formatted metric data from Micrometer and stores it securely, allowing you to run complex queries against your historical application performance data.
 
 ### 17) Grafana
