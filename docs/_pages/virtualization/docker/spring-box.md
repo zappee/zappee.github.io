@@ -848,7 +848,7 @@ tomcat:
   * **CATALINA_HOME** (default: `/opt/tomcat`): Path to the root installation directory of Apache Tomcat, containing its binaries, configuration files, logs, and web application deployment folder (`webapps/`).
   * **CATALINA_USER** (default: `admin`): Username created at container startup with administrative privileges to access the Tomcat `manager` and `host-manager` web interfaces.
   * **CATALINA_PASSWORD** (default: `password`): Password assigned to the administrator account.
-  * **JAVA_OPTIONS** (default: `-Xms512m -Xmx1024m -XX:+UseParallelGC -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties`): JVM startup arguments passed to the Tomcat runtime to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
+  * **JAVA_OPTIONS** (default: `-Xms512m -Xmx1024m -XX:+UseParallelGC -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties`): JVM startup arguments passed to the Tomcat to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
 
 ### 16) <span class="rect-space color-monitor"></span> Prometheus Time-Series Database Server
 Image name: `springbox-prometheus`
