@@ -870,9 +870,33 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
 * **Automated Pull-Based metric collection:** Prometheus periodically scrapes metrics from configured HTTP endpoints and automatically discovers dynamic targets in environments like Kubernetes and major cloud providers.
 * **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
-* **Service discovery:** Finds monitoring targets automatically or uses static configuration.
+* **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#8--java-runner-images) containers.
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
 * **Spring Boot integrations:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
+* **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#14--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
+
+Here is a typical Docker Compose configuration:
+```yaml
+prometheus:
+  image: springbox-prometheus:0.8.0
+  container_name: prometheus.${DOMAIN_NAME}
+  hostname: prometheus.${DOMAIN_NAME}
+  entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+  ports:
+    - "13082:22"   # SSH
+    - "13083:9090" # HTTPS Web console
+  environment:
+    - PKI_HOST=pki.${DOMAIN_NAME}
+    - CONSUL_HOST=consul.${DOMAIN_NAME}
+  deploy:
+    resources:
+      limits:
+        memory: 128M
+  networks:
+    - springbox-net
+```
+
+#### 16.2) Configuration highlights
 
 
 ### 17) Grafana
