@@ -325,7 +325,7 @@ hello-service-1:
   * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Specifies the unique identifier for the distributed Hazelcast cluster topology. This variable allows the container to seamlessly discover, authenticate, and join the correct cluster network. When deploying multi-tenant environments or multiple independent clusters within the same infrastructure, ensure this name matches across all desired cluster members to prevent accidental node isolation or split-brain scenarios.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: `hazelcast-1.remal.com, hazelcast-2.remal.com`): Defines a comma-separated list of IP addresses or hostnames (with optional ports) representing the cluster members used for initial discovery. The container utilizes this list to bootstrap its connection to the distributed Hazelcast network.
   * **JAVA_OPTS** (default: `-Xms512m -Xmx512m -XX:+UseZGC`): A standard environment variable used to pass crucial startup arguments and optimization flags directly to the Java Virtual Machine (JVM) upon initialization.
-  * **JAVA_DEBUG** (default: `true`): If enabled, the `agentlib` JVM argument is automatically added during JVM startup (`-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:$JAVA_DEBUG_PORT"`).
+  * **JAVA_DEBUG** (default: `true`): If enabled, the `agentlib` JVM argument is automatically added during JVM startup.
   * **JAVA_DEBUG_PORT** (default: `5005`): Specifies the network port where the JVM listens for remote debugger connections. This setting is only active when `JAVA_DEBUG` is set to `true`.
   * **HEALTH_CHECK** (default: `true`): If it is true, a loop polls `HEALTH_CHECK_URI` every 0.5 seconds, blocks execution until the response matches `EXPECTED_HEALTH_CHECK_STATE`, ensuring the Java application is fully loaded before continuing.
   * **HEALTH_CHECK_URI** (default: `https://localhost:8443/actuator/health`): Specifies the URL used to poll the application's status. It is exclusively used by the `wait_for_http_response` Bash function within the `shared.sh` functions library.
@@ -848,7 +848,7 @@ tomcat:
   * **CATALINA_HOME** (default: `/opt/tomcat`): Path to the root installation directory of Apache Tomcat, containing its binaries, configuration files, logs, and web application deployment folder (`webapps/`).
   * **CATALINA_USER** (default: `admin`): Username created at container startup with administrative privileges to access the Tomcat `manager` and `host-manager` web interfaces.
   * **CATALINA_PASSWORD** (default: `password`): Password assigned to the administrator account.
-  * **JAVA_OPTIONS** (default: `-Xms512m -Xmx1024m -XX:+UseParallelGC -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties`): JVM startup arguments passed to the Tomcat to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
+  * **JAVA_OPTIONS**: JVM startup arguments passed to the Tomcat to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
 
 ### 16) <span class="rect-space color-monitor"></span> Prometheus Time-Series Database Server
 Image name: `springbox-prometheus`
