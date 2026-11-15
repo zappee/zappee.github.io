@@ -243,9 +243,6 @@ _Use this container to deploy and run your Java application as executable JAR._
 * **Prometheus analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
 <div class="align-to-list">
-
-
-
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_kafka-consumet-total.png" alt="Prometheus chart" style="width: 49%;" />
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_method-calls-total.png" alt="Prometheus table" style="width: 49%;" />
 </div>
@@ -898,6 +895,11 @@ prometheus:
   networks:
     - springbox-net
 ```
+
+<div class="align-to-list">
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
+</div>
 
 #### 16.2) Configuration highlights
 * **Container environment variables:**
