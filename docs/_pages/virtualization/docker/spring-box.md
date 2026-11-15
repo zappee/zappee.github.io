@@ -243,8 +243,11 @@ _Use this container to deploy and run your Java application as executable JAR._
 * **Prometheus analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
 <div class="align-to-list">
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-graph.png" alt="Prometheus chart" style="width: 49%;" />
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus-execution-time-of-rest-calls-table.png" alt="Prometheus table" style="width: 49%;" />
+
+
+
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_kafka-consumet-total.png" alt="Prometheus chart" style="width: 49%;" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_method-calls-total.png" alt="Prometheus table" style="width: 49%;" />
 </div>
 
 Here is a typical `springbox-openjdk-runner` container configuration.
@@ -897,6 +900,15 @@ prometheus:
 ```
 
 #### 16.2) Configuration highlights
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **PROMETHEUS_HOME** (default: `/opt/prometheus`): 
+  * **PROMETHEUS_CONFIG** (default: `/opt/prometheus/prometheus.yml`): 
+  * **PROMETHEUS_WEB_CONFIG** (default: `/opt/prometheus/web-config.yml`): 
+  * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`):  
+  * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): 
 
 
 ### 17) Grafana
