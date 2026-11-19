@@ -913,7 +913,18 @@ prometheus:
   * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): 
 
 
+job runs in each 1s
+Trafic generator
+
+
+
 ### 17) Grafana
+
+Prometheus data-sourse
+1s global redresh feature
+Remal Demo dashboard
+
+
 
 ### 18) How to build the Docker images
 
