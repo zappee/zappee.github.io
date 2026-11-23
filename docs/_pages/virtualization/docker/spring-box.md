@@ -896,7 +896,7 @@ prometheus:
     - springbox-net
 ```
 
-<div class="align-to-list">
+<div class="centered-image">
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
