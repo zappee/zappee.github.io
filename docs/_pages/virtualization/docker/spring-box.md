@@ -896,13 +896,15 @@ prometheus:
     - springbox-net
 ```
 
-All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh),
-For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
+The chart on the left below shows the total number of REST calls over a one-minute time frame within the Spring Box Demo environment, while the chart on the right breaks down the total REST calls by Docker container (host).
 
 <div class="centered-image">
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
+
+All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh),
+For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
 
 #### 16.2) Configuration highlights
 * **Container environment variables:**
