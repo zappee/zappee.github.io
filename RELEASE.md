@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.3.0] - dd/mm/2027
+
+### Changed
+* **`Home` section:** Complete.
+* **`About` section:** Complete.
+* **`Open Source` section:** Complete.
+* **`Virtualization` section:** Complete.
+* **`Publication` section:** Complete.
+
 ## [0.2.1] - 02/Oct/2026
 
 ### Changed
