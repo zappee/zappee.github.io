@@ -901,6 +901,10 @@ prometheus:
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
 
+The network traffic behind the charts was generated with this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh). 
+The Docker environment that is used behind the scene is described in [19) How to run the Spring Boot Demo]()
+
+
 #### 16.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
@@ -928,7 +932,9 @@ Remal Demo dashboard
 
 ### 18) How to build the Docker images
 
-### 19) Contributing
+### 19) How to run the Spring Boot Demo
+
+### 20) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
 
