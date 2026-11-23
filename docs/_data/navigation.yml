@@ -33,8 +33,8 @@ opensource_sidebar:
     # (3.1) OPEN SOURCE > AUTOMATION TOOLS
       - title: "<span class='sidebar-label'>Automation Tools</span>"
 
-      - title: "<span class='sidebar-bullet'>File Backup-Restore</span>"
-        url: /opensource/automation/file-backup-and-restore/
+      - title: "<span class='sidebar-bullet'>Backup-Restore Tool</span>"
+        url: /opensource/automation/backup-and-restore-tool/
 
       - title: "<span class='sidebar-bullet'>Shrinkit</span>"
         url: /opensource/automation/shrinkit/
