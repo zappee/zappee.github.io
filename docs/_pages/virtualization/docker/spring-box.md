@@ -914,7 +914,7 @@ For details on setting up the underlying Docker environment, see [How to run the
   * **PROMETHEUS_HOME** (default: `/opt/prometheus`): The base installation directory containing the server binaries, configuration files, and runtime assets.
   * **PROMETHEUS_CONFIG** (default: `/opt/prometheus/prometheus.yml`): Path to the main Prometheus configuration file that defines scrape targets, intervals, and alerting rules.
   * **PROMETHEUS_WEB_CONFIG** (default: `/opt/prometheus/web-config.yml`): Path to the web configuration file used to enable TLS/HTTPS encryption and basic authentication for the web UI and API.
- * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
+  * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
   * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
 
 ### 17) Grafana
