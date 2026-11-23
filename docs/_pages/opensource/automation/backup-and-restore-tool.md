@@ -38,7 +38,7 @@ It shows you a "preview" of exactly what files will be copied, changed, or delet
 * **Visual progress:** Displays clear progress bars and file sizes while copying so you never have to guess if the backup is frozen.
 * **Flexible sync job configuration:** Setting up or updating your backup jobs is effortless—just point to your `SOURCE` and `TARGET` folders and list the subfolders you want to include.
 
-  ![backup job configuration](screenshots/backup-job-configuration.png)
+  ![backup job configuration](assets/images/menu/opensource/backup-and-restore-tool/backup-job-configuration.png)
 
 ### 3) What's inside the box?
 * `sync-lib.sh`: The core execution engine containing script arguments validation, double-prompt safeguards, and the main rsync orchestration logic. You don't need to change this file.
@@ -158,7 +158,7 @@ When you start a backup or restore job, the tool stops and asks for your confirm
 1. **First prompt: Dry-run preview** The script simulates the sync without modifying any data, showing you the exact differences between your source and target folders. It displays a list of the upcoming changes and pauses for your approval.
 2. **Second prompt: Final confirmation** Once you review and approve the preview, the tool displays a final warning before writing any changes to the destination drive.
 
-   ![backup](screenshots/backup-workflow.png)
+   ![backup](assets/images/menu/opensource/backup-and-restore-tool/backup-workflow.png)
 
 ### 8) Understanding `rsync` outputs
 When the comparison table scrolls past during Step 1, you can read the structural shortcodes (`YXcstpoguax`) using this reference pattern:
