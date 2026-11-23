@@ -9,7 +9,7 @@ sidebar:
   nav: "opensource_sidebar"
 ---
 
-## 🐧 File Backup & Restore
+## 🐧 Backup & Restore Tool
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/file-backup-restore)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/file-backup-restore)
