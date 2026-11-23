@@ -896,7 +896,7 @@ prometheus:
     - springbox-net
 ```
 
-The chart on the left below shows the total number of REST calls over a one-minute time frame within the Spring Box Demo environment, while the chart on the right breaks down the total REST calls by Docker container (host).
+The chart on the left below shows the total number of REST calls over a one-minute time frame within the Spring Box Demo environment, while the chart on the right breaks down the total REST calls by Docker container (instance).
 
 <div class="centered-image">
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
