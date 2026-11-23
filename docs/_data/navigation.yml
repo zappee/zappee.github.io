@@ -61,10 +61,10 @@ opensource_sidebar:
       - title: "<span class='sidebar-label'>Research and Development</span>"
 
       - title: "<span class='sidebar-bullet'>Spiral</span>"
-        url: /opensource/r-and-d/spiral/
+        url: /opensource/research-and-dev/spiral/
 
       - title: "<span class='sidebar-bullet'>Telegram Bot</span>"
-        url: /opensource/r-and-d/telegram-bot/
+        url: /opensource/research-and-dev/telegram-bot/
 
 # (4) VIRTUALIZATION
 virtualization_sidebar:
