@@ -901,9 +901,8 @@ prometheus:
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
 
-The network traffic behind the charts was generated with this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh). 
-The Docker environment that is used behind the scene is described in [19) How to run the Spring Boot Demo]()
-
+All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh),
+For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
 
 #### 16.2) Configuration highlights
 * **Container environment variables:**
