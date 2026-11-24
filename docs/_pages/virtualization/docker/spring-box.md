@@ -982,7 +982,7 @@ grafana:
   * **GRAFANA_HOME** (default: `/opt/grafana`): Base installation directory containing the server binaries, static assets, and runtime files.
   * **GRAFANA_CUSTOM_CONFIG** (default: `${GRAFANA_HOME}/conf/custom.ini`): Path to the custom configuration file used to override default server settings.
   * **GRAFANA_PROVISIONING_DIR** (default: `${GRAFANA_HOME}/conf/provisioning`): Directory containing YAML provisioning files for automatically configuring data sources and dashboards at startup.
-  * **GRAFANA_STORAGE_DIR** (default: `/${GRAFANA_HOME}/data`): Directory where the embedded SQLite database, sessions, and persistent runtime data are stored.
+  * **GRAFANA_STORAGE_DIR** (default: `${GRAFANA_HOME}/data`): Directory where the embedded SQLite database, sessions, and persistent runtime data are stored.
   * **GRAFANA_PLUGINS_DIR** (default: `${GRAFANA_HOME}/data/plugins`): Directory where installed plugins are stored and loaded from.
   * **GRAFANA_DASHBOARDS_DIR** (default: `${GRAFANA_HOME}/dashboards`): Directory holding the pre-built JSON dashboard definitions loaded at startup.
   * **GRAFANA_LOG_DIR** (default: `/var/log/grafana`): Directory where server runtime and error logs are written.
