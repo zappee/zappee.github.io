@@ -996,47 +996,22 @@ grafana:
   * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): Shared authentication token used to secure communication between Grafana and the image renderer service.
 
 ### 18) How to build the Docker images
-#### 18.1) Get the source code
 
+#### 18.1) Get the source code
 ```bash
 git clone https://github.com/zappee/spring-box.git
 ```
 
 #### 18.2) Build the Images
-The Spring Box Docker images runs pre install servers that most of the time is installed from the official packaged file that was downloadat from Internet.
-The installation happens during the image build process.
-We try to keep the image sizes as small as possible. Spring Box images can be built on two different way:
+To keep image sizes under control, you can build Spring Box images in two different ways:
 * **fat:**
-  Use this build type if the image size is irrelevant and you do a quick build.
-  The install kits (for exampla prometheus-3.16.0.linux-amd64.tar.gz) are copied to the image during the build and after the installation the original install kit is deleted.
-  However, deleting the install kits will not freed the space in the image layers because once a file has been copied to the image using the `COPY` Docker command, it can not be removed from the layer despite you delete it later during the build.
-  Tht means, the final image size will be bigger then it is necessary.
-
+  Best for quick local builds where image size is not a concern.
+  During the build, installation archives (such as `prometheus-linux.tar.gz`) are copied into the container via Docker's `COPY` command, unpacked, installed, and then deleted.
+  However, because Docker layers are immutable, deleting a file in a later step does not reclaim space from the earlier `COPY` layer, resulting in a larger final image.
 * **slim*:*
-  Smaller Docker images requires less disk space and reducing Docker image size cuts the cost of your cloud.
-  Using this build type your Spring Box images will be as small as possible. Using this option is highly reccomended for production usage.
-  Building slim images you need to make the installation kits  downloadable during the build procass as we can not use the Docker's COPY comamnd for making available the install kit during the build.
-  Instead the build process downloads all necessary install kits on the lfy during the build using wget and after the installation we delete the package in the same docker layer.
-  This way the final image size will be as small as possible. 
-
-
-
-
-* 
-* you think about the followings then you can realize that it really matters.
-* Smaller Docker images take up less disk space.
-* Reducing Docker image size cuts the cost of your Google/Amazon Cloud.
-* A large Docker image is difficult (takes a lot of time) to upload.
-
-We build as slim images as possible and remove image layers that contains unused data like installation files.
-However, removing image layers is not easy because once a file has been copied to the image using the `COPY` Docker command, it can not be removed from the layer despite you delete it later during the build.
-That happens because the `COPY` command automatically adds a new layer.
-The only way to keep out install packages from the image is not using the `COPY` command.
-We can avoid it by downloading the files during the image from a webserver and deleted them after the usage in the same layer.
-
-So for building slim images you need to make the installation files downloadable.
-Thus, you need to set up a local web server before the build and make all files available via `HTTP`.
-The Remal slim image build process will download the files on-the-fly from your local web server using `wget` during the build instead of using the `COPY` command.
+  Recommended for production to save disk space and reduce cloud storage or bandwidth costs.
+  Instead of copying local archives into the image, the build process downloads the required installation packages on the fly using `wget`, unpacks them, and removes the archives within the same Docker `RUN` layer.
+  This prevents installation files from being persisted in any layer, keeping the final image as small as possible.
 
 
 
