@@ -938,11 +938,31 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
-* **Spring Box Integration:** Within the Spring Box ecosystem, Grafana connects automatically to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed to visualize metrics from the *Spring Box Demo*. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
+* **Spring Box Integration:** Within the Spring Box ecosystem, Grafana connects automatically to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed to visualize metrics from the *Spring Box Demo*. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments. • The default login credentials are `admin` / `password`.
 
-<div class="centered-image">
-  <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png" alt="Grafana Dashboard" style="width: 49%;" />
-</div>
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/assets/videos/menu/virtualization/docker/spring-box/grafana-dashboard.pngdemo.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Here is a typical Docker Compose configuration:
+```yaml
+grafana:
+    image: springbox-grafana:0.8.0
+    container_name: grafana.${DOMAIN_NAME}
+    hostname: grafana.${DOMAIN_NAME}
+    entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]
+    ports:
+        - "13082:22"   # SSH
+        - "13083:3000" # HTTPS
+    environment:
+        - PKI_HOST=pki.${DOMAIN_NAME}
+        - PROMETHEUS_HOST=prometheus.${DOMAIN_NAME}
+        - GRAFANA_USER=admin
+        - GRAFANA_PASSWORD=password
+    networks:
+        - springbox-net
+```
 
 ### 18) How to build the Docker images
 
