@@ -51,7 +51,7 @@ Building a modern microservices architecture with Spring Boot requires stitching
 
 Setting this up consistently across local development and production environments often leads to:
 * **Configuration drift:** Features working perfectly on a local developer machine but unexpectedly failing in production environments.
-* **Architecture overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key-Value store, database, service registry, cache, etc.) rather than writing core business logic.
+* **Architecture overhead:** Significant engineering time spent configuring base infrastructure (Kafka, LDAP, OAuth, Key/Value Store, database, service registry, cache, etc.) rather than writing core business logic.
 * **Distributed state challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
 * **"Works on my machine" dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
 
@@ -69,7 +69,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Plug-and-Play security:** Automates complex network security. The built-in _Private CA Infrastructure_ automatically manages certificates, giving you enterprise-grade, secure service-to-service communication out of the box without manual intervention.
 * **Instant observability:**  Built-in time- and counter-based telemetry dashboards to measure real-time endpoint latency, call volumes, and Kafka consumption rates for strict SLA reporting.
 * **Architecture evolution:** Designed for zero-downtime scalability. The platform’s modular nature allows you to easily scale services horizontally or vertically, or swap out infrastructure components entirely as your application traffic and business needs grow.
-* **Configuration management:** The integrated _Distributed Key-Value Registry_ acts as a single source of truth for runtime configurations, making it effortless to manage environment states and synchronize changes across all active instances.
+* **Configuration management:** The integrated _Distributed Key/Value Store_ acts as a single source of truth for runtime configurations, making it effortless to manage environment states and synchronize changes across all active instances.
 * **Distributed Caching:** The built-in, cluster-wide Hazelcast-based distributed cache solution offered by _Spring-Box_ simplifies the implementation of lightning-fast REST services. It can be used to maintain a persistent request context across separate instances. You can significantly reduce database load by utilizing different caching strategies. By pairing _Spring-Box_ with the _Bucket4j_ library, you can easily implement robust, multi-instance, IP-based rate limiting (throttling) and circuit breakers to protect your API endpoints against DDoS attacks.
   The Hazelcast-based architecture supports three different caching mechanisms: _Embedded Cache_, _Client-Server topology_, and _Near-Cache_:
 
@@ -130,7 +130,7 @@ _Please modify it with caution and only introduce changes that are globally requ
     This port opens automatically once the container has completely initialized and all `init` and `startup` scripts have executed successfully.
     It functions as a health indicator to orchestrate the startup dependency order of your containers.
     The `wait-for-container.sh` script queries this port to block downstream containers from launching until the dependencies are fully ready.
-    Without this check, a Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key-Value store or a database server during its startup phase.
+    Without this check, a Spring Boot application would fail immediately, as it strictly requires an active HashiCorp Consul Key/Value Store or a database server during its startup phase.
     Once this check passes, the container triggers the original image entrypoint scripts.
 
     Misconfiguring this port or its dependencies can cause an infinite port scan loop, preventing your container from booting entirely.
@@ -478,19 +478,31 @@ In the Spring Box ecosystem, HashiCorp Consul acts as an important central compo
 This image is an extends of [OpenJDK 25 Core Runtime image](#7--java-core-runtime-images) by adding a pre-installed, and ready-to-use HashiCorp Consul on top of that image.
 
 Consul tracks REST endpoints and infrastructure service URLs, such as Prometheus.
-Additionally, Spring Boot applications use Consul’s Key-Value (KV) store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
+Additionally, Spring Boot applications use Consul’s Key/Value Store to centralize application configuration, ensuring that configuration parameters stay synchronized across all service instances in the cluster.
 
 ⚠️ _**Important:**_
-_The Consul container must start first in the Spring Box network because Spring Boot applications require a ready-to-use Key-Value registry at startup to read their configuration parameters._
+_The Consul container must start first in the Spring Box network because Spring Boot applications require a ready-to-use Key/Value Store at startup to read their configuration parameters._
 _Consul must be fully operational before any Spring Boot applications start in the Runner containers._
 _Orchestrate your Docker container dependencies accordingly using `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`._
 
 #### 11.1) Features
-* **Service Discovery:** Applications running within the Remal Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
-* **Automated Service Registration:** Integration works seamlessly with HashiCorp Consul and Spring Boot. Microservices register themselves with Consul automatically upon startup. When an application in the Remal Box ecosystem needs to call a REST endpoint, it queries the cluster-wide Service Registry at runtime to get an active service URL. During each request, Consul returns a healthy, low-traffic instance URL.
+* **Service Discovery:** Acts as a centralized service catalog where microservices register themselves dynamically. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
+* **Java Spring Boot:** Integration works seamlessly with HashiCorp Consul and Spring Boot.
 * **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking Spring Boot Actuator endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
-* **Key-Value (KV) Store:** Consul includes a highly available, distributed Key-Value (KV) store that acts as a central hub for dynamic application configurations. Tools like Spring Cloud Consul Config read these values at runtime, allowing you to update feature flags, API endpoints, or database connection strings across the cluster without restarting your containers.
+* **Key/Value Store:** Consul includes a highly available, distributed Key/Value Store that acts as a central hub for dynamic application configurations. Tools like Spring Cloud Consul Config read these values at runtime, allowing you to update feature flags, API endpoints, or database connection strings across the cluster without restarting your containers.
 * **Service Mesh:** Consul automatically establish secure, encrypted network connections between microservices using Mutual TLS (mTLS).
+* **Remal Spring Box Integration:**
+  * **Automated Service Registration:** Containers and microservices register themselves with Consul automatically upon startup. When an application in the Remal Box ecosystem needs to call a REST endpoint, it queries the cluster-wide Service Registry at runtime to get an active service URL. During each request, Consul returns a healthy, low-traffic instance URL.
+  * **Service Discovery:** Applications running within the Remal Box ecosystem dynamically resolve REST endpoint URLs by querying the cluster-wide Service Registry at runtime. This eliminates the need for hardcoded network configurations and makes horizontal scaling of a service effortless.
+
+    ![Grafana Data Sources](/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-services.png){: .centered-image }
+
+  * **Dynamic Application Configuration:** Key/Value pairs defined in [config.properties](https://github.com/zappee/spring-box/blob/main/projects/springbox-welcome-service/src/main/resources/config.properties) are automatically inserted into the Consul Key/Value Store during container startup, allowing the Spring Boot application to read them immediately.
+
+  <div class="centered-image">
+    <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-1.png" alt="HashiCorp Consule K/V Store 1" style="width: 49%;" />
+    <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-1.png" alt="HashiCorp Consule K/V Store 2" style="width: 49%;" />
+  </div>
 
 Here is a typical `springbox-hashicorp-consul` container configuration:
 ```yaml
@@ -866,15 +878,15 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 
 #### 16.1) Features
 * **Time-series metrics:** Records timestamped measurements to help track system and application performance over time.
-* **Multi-Dimensional Data Model:** Metrics are identified by a name and custom key-value pairs called labels, allowing to slice, filter, and aggregate performance data by service, instance, or environment. Spring Box metrics can be found under the `remal*` prefix.
+* **Multi-Dimensional Data Model:** Metrics are identified by a name and custom Key/Value pairs called labels, allowing to slice, filter, and aggregate performance data by service, instance, or environment. Spring Box metrics can be found under the `remal*` prefix.
 * **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
 * **Automated Pull-Based metric collection:** Prometheus periodically scrapes metrics from configured HTTP endpoints and automatically discovers dynamic targets in environments like Kubernetes and major cloud providers.
 * **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
 * **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#8--java-runner-images) containers.
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
-* **Spring integrations:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
+* **Java Spring Boot:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#14--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
-* **Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml), we recommend increasing this to `15s` in production to avoid high CPU overhead.
+* **Remal Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml), we recommend increasing this to `15s` in production to avoid high CPU overhead.
 
 Here is a typical Docker Compose configuration:
 ```yaml
@@ -937,10 +949,10 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
-* **Spring Box Integration:**
+* **Remal Spring Box Integration:**
   * **Pre-configured Dashboard & Data Source:** Within the Spring Box ecosystem, Grafana automatically connects to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed for visualizing *Spring Box Demo* metrics. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
 
-    ![Grafana data sources](/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.jpg){: .centered-image }
+    ![Grafana data sources](/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.png){: .centered-image }
 
   * **Default Credentials:** The default login credentials are `admin` / `password`.
   * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){:target="_blank" rel="noopener noreferrer"}
