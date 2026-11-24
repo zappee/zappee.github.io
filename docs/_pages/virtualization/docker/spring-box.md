@@ -940,6 +940,13 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
 * **Spring Box Integration:**
   * **Pre-configured Dashboard & Data Source:** Within the Spring Box ecosystem, Grafana automatically connects to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed for visualizing *Spring Box Demo* metrics. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
+
+  <div class="centered-image">
+    <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-dashboards.jpg" alt="Grafana dashboards" style="width: 49%;" />
+    <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.jpg" alt="Grafana data sources" style="width: 49%;" />
+  </div>
+
+
   * **Default Credentials:** The default login credentials are `admin` / `password`.
   * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){:target="_blank" rel="noopener noreferrer"}
   <video autoplay loop muted playsinline width="100%">
@@ -993,6 +1000,49 @@ grafana:
   * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): Shared authentication token used to secure communication between Grafana and the image renderer service.
 
 ### 18) How to build the Docker images
+#### 18.1) Get the source code
+
+```bash
+git clone https://github.com/zappee/spring-box.git
+```
+
+#### 18.2) Build the Images
+The Spring Box Docker images runs pre install servers that most of the time is installed from the official packaged file that was downloadat from Internet.
+The installation happens during the image build process.
+We try to keep the image sizes as small as possible. Spring Box images can be built on two different way:
+* **fat:**
+  Use this build type if the image size is irrelevant and you do a quick build.
+  The install kits (for exampla prometheus-3.16.0.linux-amd64.tar.gz) are copied to the image during the build and after the installation the original install kit is deleted.
+  However, deleting the install kits will not freed the space in the image layers because once a file has been copied to the image using the `COPY` Docker command, it can not be removed from the layer despite you delete it later during the build.
+  Tht means, the final image size will be bigger then it is necessary.
+
+* **slim*:*
+  Smaller Docker images requires less disk space and reducing Docker image size cuts the cost of your cloud.
+  Using this build type your Spring Box images will be as small as possible. Using this option is highly reccomended for production usage.
+  Building slim images you need to make the installation kits  downloadable during the build procass as we can not use the Docker's COPY comamnd for making available the install kit during the build.
+  Instead the build process downloads all necessary install kits on the lfy during the build using wget and after the installation we delete the package in the same docker layer.
+  This way the final image size will be as small as possible. 
+
+
+
+
+* 
+* you think about the followings then you can realize that it really matters.
+* Smaller Docker images take up less disk space.
+* Reducing Docker image size cuts the cost of your Google/Amazon Cloud.
+* A large Docker image is difficult (takes a lot of time) to upload.
+
+We build as slim images as possible and remove image layers that contains unused data like installation files.
+However, removing image layers is not easy because once a file has been copied to the image using the `COPY` Docker command, it can not be removed from the layer despite you delete it later during the build.
+That happens because the `COPY` command automatically adds a new layer.
+The only way to keep out install packages from the image is not using the `COPY` command.
+We can avoid it by downloading the files during the image from a webserver and deleted them after the usage in the same layer.
+
+So for building slim images you need to make the installation files downloadable.
+Thus, you need to set up a local web server before the build and make all files available via `HTTP`.
+The Remal slim image build process will download the files on-the-fly from your local web server using `wget` during the build instead of using the `COPY` command.
+
+
 
 ### 19) How to run the Spring Boot Demo
 
