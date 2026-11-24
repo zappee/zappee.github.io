@@ -826,13 +826,14 @@ Apache Tomcat 10 is an open-source, lightweight Java servlet container and HTTP 
 In the _Spring Box_ ecosystem, it serves as a dedicated runtime environment for hosting and serving Java web archives (`.war`) and web-based applications over HTTP and HTTPS.
 
 #### 15.1) Features
-* **Pre-Configured Administrator User:** Includes a pre-configured user account with remote administrative access to both the `host-manager` and `manager` web applications.
 * **Non-Blocking I/O:** Uses asynchronous, non-blocking network connectors to handle thousands of concurrent HTTP requests and REST API calls with minimal thread overhead.
 * **HTTP/2 & WebSocket Support:** Supports multiplexed, low-latency HTTP/2 streams for faster Angular/React frontend loading alongside native WebSocket support for real-time communication.
 * **Static Asset & SPA Hosting:** Efficiently serves compiled frontend bundles (Angular, React, Vue) directly from disk with built-in Gzip/Brotli compression, caching headers, and custom rewrite rules for client-side routing.
 * **Virtual Threads Support:** Supports Java Virtual Threads on modern JVMs (Java 21+), enabling high-throughput microservices without complex reactive programming.
 * **Built-In TLS/SSL & OpenSSL Integration:** Provides native HTTPS termination using standard Java keystores (.p12) or PEM certificates (.crt, .key), with optional native OpenSSL acceleration.
 * **Lightweight & Container-Optimized:** Starts up rapidly with low memory consumption and simple XML driven configuration, making it ideal for Docker containers and horizontal scaling.
+* **Remal Spring Box Integration:**
+  * **Pre-Configured Administrator User:** Includes a pre-configured user account with remote administrative access to both the `host-manager` and `manager` web applications.
 
 Here is a typical Docker Compose configuration:
 ```yaml
