@@ -972,11 +972,24 @@ grafana:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PROMETHEUS_HOME** (default: `/opt/prometheus`): The base installation directory containing the server binaries, configuration files, and runtime assets.
-  * **PROMETHEUS_CONFIG** (default: `/opt/prometheus/prometheus.yml`): Path to the main Prometheus configuration file that defines scrape targets, intervals, and alerting rules.
-  * **PROMETHEUS_WEB_CONFIG** (default: `/opt/prometheus/web-config.yml`): Path to the web configuration file used to enable TLS/HTTPS encryption and basic authentication for the web UI and API.
-  * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
-  * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
+  * **PROMETHEUS_HOST** (default: `prometheus.remal.com`): 
+  * **PROMETHEUS_PORT** (default: `9090`): 
+  * **PROMETHEUS_PROTOCOL** (default: `https`): 
+  * **GRAFANA_PROTOCOL** (default: `https`): 
+  * **GRAFANA_PORT** (default: `3000`): 
+  * **GRAFANA_USER** (default: `admin`): 
+  * **GRAFANA_PASSWORD** (default: `password`): 
+  * **GRAFANA_HOME** (default: `/opt/grafana`): 
+  * **GRAFANA_CUSTOM_CONFIG** (default: `${GRAFANA_HOME}/conf/custom.ini`): 
+  * **GRAFANA_PROVISIONING_DIR** (default: `${GRAFANA_HOME}/conf/provisioning`): 
+  * **GRAFANA_STORAGE_DIR** (default: `/${GRAFANA_HOME}/data`): 
+  * **GRAFANA_PLUGINS_DIR** (default: `${GRAFANA_HOME}/data/plugins`): 
+  * **GRAFANA_DASHBOARDS_DIR** (default: `${GRAFANA_HOME}/dashboards`):
+  * **GRAFANA_LOG_DIR** (default: `/var/log/grafana`):
+  * **GRAFANA_IMAGE_RENDERER_BIN** (default: `grafana-image-renderer-linux-amd64-5.12.11`): 
+  * **GRAFANA_IMAGE_RENDERER_PORT** (default: `8081`): 
+  * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): 
+
 
 ### 18) How to build the Docker images
 
