@@ -85,7 +85,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 * **Ready-to-run demo applications:** Comes with fully functional _Spring Boot_ reference applications that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
 
 ### 5) Docker Containers in the _Spring Box_ Ecosystem
-![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/spring-box-image-hierarchy.png){: .centered-image }
+![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-image-hierarchy.png){: .centered-image }
 
 ### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
 Image name: `springbox-base`
