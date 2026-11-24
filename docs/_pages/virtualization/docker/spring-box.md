@@ -938,7 +938,10 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
-* **Spring Box Integration:** Within the Spring Box ecosystem, Grafana connects automatically to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed to visualize metrics from the *Spring Box Demo*. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments. • The default login credentials are `admin` / `password`.
+* **Spring Box Integration:**
+  * **Pre-configured Dashboard & Data Source:** Within the Spring Box ecosystem, Grafana automatically connects to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed for visualizing *Spring Box Demo* metrics. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
+  * **Default Credentials:** The default login credentials are `admin` / `password`.
+  * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing.
 
 <video autoplay loop muted playsinline width="100%">
   <source src="{{ '/assets/videos/menu/virtualization/docker/spring-box/grafana-dashboard.pngdemo.mp4' | relative_url }}" type="video/mp4">
@@ -963,6 +966,17 @@ grafana:
     networks:
         - springbox-net
 ```
+
+#### 18.2) Configuration highlights
+* **Container environment variables:**
+  These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
+
+  Variables utilized by this image:
+  * **PROMETHEUS_HOME** (default: `/opt/prometheus`): The base installation directory containing the server binaries, configuration files, and runtime assets.
+  * **PROMETHEUS_CONFIG** (default: `/opt/prometheus/prometheus.yml`): Path to the main Prometheus configuration file that defines scrape targets, intervals, and alerting rules.
+  * **PROMETHEUS_WEB_CONFIG** (default: `/opt/prometheus/web-config.yml`): Path to the web configuration file used to enable TLS/HTTPS encryption and basic authentication for the web UI and API.
+  * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
+  * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
 
 ### 18) How to build the Docker images
 
