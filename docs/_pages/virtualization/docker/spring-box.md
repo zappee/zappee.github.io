@@ -967,7 +967,7 @@ grafana:
         - springbox-net
 ```
 
-#### 18.2) Configuration highlights
+#### 17.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
