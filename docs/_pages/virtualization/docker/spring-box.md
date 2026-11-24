@@ -900,8 +900,8 @@ prometheus:
 The chart on the left below shows the total number of REST calls over a one-minute time frame within the Spring Box Demo environment, while the chart on the right breaks down the total REST calls by Docker container (instance).
 
 <div class="centered-image">
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" style="width: 49%;" />
-  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum+increase_method_calls-total.png" alt="Prometheus chart" />
+  <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" />
 </div>
 
 All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh),
@@ -940,6 +940,9 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
 * **Spring Box Integration:** Within the Spring Box ecosystem, Grafana connects automatically to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed to visualize metrics from the *Spring Box Demo*. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
 
+<div class="centered-image">
+  <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png" alt="Grafana Dashboard" style="width: 49%;" />
+</div>
 
 ### 18) How to build the Docker images
 
