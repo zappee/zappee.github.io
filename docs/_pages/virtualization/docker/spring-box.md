@@ -941,11 +941,7 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Spring Box Integration:**
   * **Pre-configured Dashboard & Data Source:** Within the Spring Box ecosystem, Grafana automatically connects to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed for visualizing *Spring Box Demo* metrics. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
 
-  <div class="centered-image">
-    <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-dashboards.jpg" alt="Grafana dashboards" style="width: 49%;" />
-    <img src="/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.jpg" alt="Grafana data sources" style="width: 49%;" />
-  </div>
-
+    ![Grafana data sources](/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.jpg){: .centered-image }
 
   * **Default Credentials:** The default login credentials are `admin` / `password`.
   * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){:target="_blank" rel="noopener noreferrer"}
