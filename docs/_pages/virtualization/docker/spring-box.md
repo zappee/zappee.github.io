@@ -918,7 +918,7 @@ For details on setting up the underlying Docker environment, see [How to run the
   * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
   * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
 
-### 17) Grafana
+### 17) <span class="rect-space color-monitor"></span> Grafana
 Image name: `springbox-grafana`
 {: .docker-link }
 
