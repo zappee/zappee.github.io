@@ -872,8 +872,9 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
 * **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#8--java-runner-images) containers.
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
-* **Spring Boot integrations:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
+* **Spring integrations:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#14--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
+* **Spring Box Integration:** :** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the Spring Box Service Registry, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml), we recommend increasing this to `15s` in production to avoid high CPU overhead.
 
 Here is a typical Docker Compose configuration:
 ```yaml
@@ -918,6 +919,31 @@ For details on setting up the underlying Docker environment, see [How to run the
   * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
 
 ### 17) Grafana
+Image name: `springbox-grafana`
+{: .docker-link }
+
+[Source Code](https://github.com/zappee/spring-box/tree/main/docker/monitoring/grafana){: .src-link target="_blank" rel="noopener" }
+
+This image is built on top of the [Spring Box Base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Grafana platform.
+
+Grafana is an open-source analytics and interactive visualization platform used to monitor applications, infrastructure, and microservices in real time.
+It connects directly to a wide range of data sources—such as Prometheus, InfluxDB, Elasticsearch, and SQL databases—without requiring you to migrate your data first.
+Through customizable dashboards, charts, and alerts, it helps teams track system performance, diagnose bottlenecks, and understand real-time metrics at a glance.
+
+In Spring Box, Grafana acts as the visual monitoring layer, giving you instant insight into live REST traffic, service performance, JVM and container health, and service activity.
+
+
+#### 17.1) Features
+* **Multi-Source Integration:** Connects natively to dozens of data sources—including Prometheus, Loki, Elasticsearch, InfluxDB, and SQL databases—allowing you to combine metrics, logs, and traces in one place.
+* **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
+* **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
+* **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
+* **Built-In Datasource:** In the Spring Box ecosystem Grafana is integrated with Promethaus in the bex and 
+
+
+* • Dynamic Variables & Templates: Supports dashboard variables (such as container name, service instance, or endpoint) so a single dashboard can dynamically filter across multiple services.
+• Provisioning as Code: Supports YAML and JSON provisioning so data sources and pre-built dashboards load automatically when the Docker container starts.
+
 
 Prometheus data-sourse
 1s global redresh feature
