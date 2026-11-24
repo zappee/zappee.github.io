@@ -932,7 +932,6 @@ Through customizable dashboards, charts, and alerts, it helps teams track system
 
 In Spring Box, Grafana acts as the visual monitoring layer, giving you instant insight into live REST traffic, service performance, JVM and container health, and service activity.
 
-
 #### 17.1) Features
 * **Multi-Source Integration:** Connects natively to dozens of data sources—including Prometheus, Loki, Elasticsearch, InfluxDB, and SQL databases—allowing you to combine metrics, logs, and traces in one place.
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
