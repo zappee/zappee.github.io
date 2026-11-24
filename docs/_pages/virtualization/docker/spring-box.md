@@ -1021,7 +1021,7 @@ To complete this setup, you will need the official release packages.
 
 You can download them individually from the respective product pages, or access all of them in one place via [this shared drive](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77).
 
-![Remal Spring Box nstallation archives](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-installation-archives.jpg){: .centered-image }
+![Remal Spring Box nstallation archives](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-installation-archives.png){: .centered-image }
 
 #### 18.3) Build the Images
 To keep image sizes under control, you can build Spring Box images in two different ways:
