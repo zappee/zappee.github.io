@@ -1035,7 +1035,28 @@ To keep image sizes under control, you can build Spring Box images in two differ
   Instead of copying local archives into the image, the build process uses `wget` to download the required installation packages on the fly from a local web server, unpacks them, and removes the archives within the same Docker `RUN` layer.
   This prevents installation files from being persisted in any layer, keeping the final image as small as possible.
 
+Steps
+1. Download [Apache Tomcat from here](https://tomcat.apache.org/download-10.cgi) and start it on your machine:
+   ```bash
+   cd /path/to/tomcat/bin
+   ./catalina.sh run
+   ```
+2. Copy the downloaded packages under the Tomcat's webapps folder:
+   ```bash
+└── apache-tomcat 
+    │
+    ├── webapps 
+    ├── docker-build
+        ├── EasyRSA-3.2.5.tgz
+        ├── apache-tomcat-9.0.71.tar.gz
+        ├── consul_1.22.5_linux_386.zip
+        ├── grafana-enterprise_12.4.0_22325204712_linux_amd64.tar.gz
+        ├── hazelcast-5.6.0-slim.tar.gz
+        ├── prometheus-3.10.0.linux-amd64.tar.gz
+        └── vault_1.21.4_linux_386.zip
+   ```
 
+3. 
 
 ### 19) How to run the Spring Boot Demo
 
