@@ -1030,9 +1030,9 @@ To keep image sizes under control, you can build Spring Box images in two differ
   Best for quick local builds where image size is not a concern.
   During the build, installation archives (such as `prometheus-linux.tar.gz`) are copied into the container via Docker's `COPY` command, unpacked, installed, and then deleted.
   However, because Docker layers are immutable, deleting a file in a later step does not reclaim space from the earlier `COPY` layer, resulting in a larger final image.
-* **slim*:*
+* **slim:**
   Recommended for production to save disk space and reduce cloud storage or bandwidth costs.
-  Instead of copying local archives into the image, the build process downloads the required installation packages on the fly using `wget`, unpacks them, and removes the archives within the same Docker `RUN` layer.
+  Instead of copying local archives into the image, the build process downloads the required installation packages on the fly using `wget` from a local web server, unpacks them, and removes the archives within the same Docker `RUN` layer.
   This prevents installation files from being persisted in any layer, keeping the final image as small as possible.
 
 
