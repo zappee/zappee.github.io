@@ -1002,7 +1002,16 @@ grafana:
 git clone https://github.com/zappee/spring-box.git
 ```
 
-#### 18.2) Build the Images
+#### 18.2) Downloads installation archives
+Spring Box Docker images come pre-installed with server software built directly from official release packages.
+During the build process, these packages are unpacked to install the required tools and servers from official sources.
+To complete this setup, you will need the official release packages.
+
+You can download them individually from the respective product pages, or access all of them in one place via [this shared drive](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77).
+
+![Remal Spring Box nstallation archives](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-installation-archives.jpg){: .centered-image }
+
+#### 18.3) Build the Images
 To keep image sizes under control, you can build Spring Box images in two different ways:
 * **fat:**
   Best for quick local builds where image size is not a concern.
