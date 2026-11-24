@@ -972,24 +972,23 @@ grafana:
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
-  * **PROMETHEUS_HOST** (default: `prometheus.remal.com`): 
-  * **PROMETHEUS_PORT** (default: `9090`): 
-  * **PROMETHEUS_PROTOCOL** (default: `https`): 
-  * **GRAFANA_PROTOCOL** (default: `https`): 
-  * **GRAFANA_PORT** (default: `3000`): 
-  * **GRAFANA_USER** (default: `admin`): 
-  * **GRAFANA_PASSWORD** (default: `password`): 
-  * **GRAFANA_HOME** (default: `/opt/grafana`): 
-  * **GRAFANA_CUSTOM_CONFIG** (default: `${GRAFANA_HOME}/conf/custom.ini`): 
-  * **GRAFANA_PROVISIONING_DIR** (default: `${GRAFANA_HOME}/conf/provisioning`): 
-  * **GRAFANA_STORAGE_DIR** (default: `/${GRAFANA_HOME}/data`): 
-  * **GRAFANA_PLUGINS_DIR** (default: `${GRAFANA_HOME}/data/plugins`): 
-  * **GRAFANA_DASHBOARDS_DIR** (default: `${GRAFANA_HOME}/dashboards`):
-  * **GRAFANA_LOG_DIR** (default: `/var/log/grafana`):
-  * **GRAFANA_IMAGE_RENDERER_BIN** (default: `grafana-image-renderer-linux-amd64-5.12.11`): 
-  * **GRAFANA_IMAGE_RENDERER_PORT** (default: `8081`): 
-  * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): 
-
+  * **PROMETHEUS_HOST** (default: `prometheus.remal.com`): Hostname or domain name of the Prometheus server used for data source configuration.
+  * **PROMETHEUS_PORT** (default: `9090`): Network port on which the Prometheus server listens.
+  * **PROMETHEUS_PROTOCOL** (default: `https`): Protocol (`http` or `https`) used to connect to the Prometheus.
+  * **GRAFANA_PROTOCOL** (default: `https`): Protocol (`http` or `https`) used by the Grafana web server.
+  * **GRAFANA_PORT** (default: `3000`): Network port exposed by the Grafana web interface and API.
+  * **GRAFANA_USER** (default: `admin`): Default administrator username created on initial startup.
+  * **GRAFANA_PASSWORD** (default: `password`): Default administrator password created on initial startup.
+  * **GRAFANA_HOME** (default: `/opt/grafana`): Base installation directory containing the server binaries, static assets, and runtime files.
+  * **GRAFANA_CUSTOM_CONFIG** (default: `${GRAFANA_HOME}/conf/custom.ini`): Path to the custom configuration file used to override default server settings.
+  * **GRAFANA_PROVISIONING_DIR** (default: `${GRAFANA_HOME}/conf/provisioning`): Directory containing YAML provisioning files for automatically configuring data sources and dashboards at startup.
+  * **GRAFANA_STORAGE_DIR** (default: `/${GRAFANA_HOME}/data`): Directory where the embedded SQLite database, sessions, and persistent runtime data are stored.
+  * **GRAFANA_PLUGINS_DIR** (default: `${GRAFANA_HOME}/data/plugins`): Directory where installed plugins are stored and loaded from.
+  * **GRAFANA_DASHBOARDS_DIR** (default: `${GRAFANA_HOME}/dashboards`): Directory holding the pre-built JSON dashboard definitions loaded at startup.
+  * **GRAFANA_LOG_DIR** (default: `/var/log/grafana`): Directory where server runtime and error logs are written.
+  * **GRAFANA_IMAGE_RENDERER_BIN** (default: `grafana-image-renderer-linux-amd64-5.12.11`): Filename of the standalone image renderer binary used to capture panels as PNG snapshots.
+  * **GRAFANA_IMAGE_RENDERER_PORT** (default: `8081`): Internal port on which the image renderer service listens for snapshot requests.
+  * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): Shared authentication token used to secure communication between Grafana and the image renderer service.
 
 ### 18) How to build the Docker images
 
