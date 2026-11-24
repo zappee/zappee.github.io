@@ -938,17 +938,7 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
-* **Built-In Datasource:** In the Spring Box ecosystem Grafana is integrated with Promethaus in the bex and 
-
-
-* • Dynamic Variables & Templates: Supports dashboard variables (such as container name, service instance, or endpoint) so a single dashboard can dynamically filter across multiple services.
-• Provisioning as Code: Supports YAML and JSON provisioning so data sources and pre-built dashboards load automatically when the Docker container starts.
-
-
-Prometheus data-sourse
-1s global redresh feature
-Remal Demo dashboard
-
+* **Spring Box Integration:** Within the Spring Box ecosystem, Grafana connects automatically to Prometheus through a pre-configured data source. It also ships with a built-in dashboard designed to visualize metrics from the *Spring Box Demo*. By default, the dashboard refresh interval is set to `1s` for real-time local observation, though we recommend changing it to `15s` in production environments.
 
 
 ### 18) How to build the Docker images
