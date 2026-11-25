@@ -1055,10 +1055,41 @@ Steps
                ├── prometheus-3.16.0.linux-amd64.tar.gz
                └── vault_2.2.1_linux_386.zip
    ```
+   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip).
+3. As mentioned earlier, the `fat` build type relies on installation archives.
+   Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
+   Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
 
-3. 
+   Before building the Spring Box Docker images, copy the actual installation archives into the project to overwrite these placeholder files.
 
-### 19) How to run the Spring Boot Demo
+   Update the `REMAL_BINARY_HOME` and `PROJECT_HOME` variables inside the [update-binaries.sh]([update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh)) script, then run it in restore mode.
+   * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
+   * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
+
+   After updating the variables, run the script in restore mode to copy the installation archives into the project directories:
+   ```bash
+   ./update-binaries.sh 1
+   ```
+4. Build the Docker images using
+   ```bash
+   ./sb.sh abcde
+   ```
+
+💡 _**Note:**_
+_The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh)._
+_Running this script without parameters displays all supported commands._
+_For example, run `./sb.sh y` to remove all Docker volumes, or `./sb.sh wxy` to remove all Remal Docker containers, images, and volumes._
+
+### 19) Running the Spring Boot Demo
+1. cd projects/
+2. mvn clean packages
+3. update .env file
+4. sb.sh s
+
+clean up: sb.sh wxy
+
+
+
 
 ### 20) Contributing
 
