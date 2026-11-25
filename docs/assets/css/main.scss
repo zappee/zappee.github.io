@@ -206,8 +206,8 @@
 .src-link::before {
   content: "";
   display: inline-block;
-  width: 1.15em;
-  height: 1.15em;
+  width: 1em;
+  height: 1em;
   background-image: url("/assets/images/icons/code-black-rectangle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -222,8 +222,8 @@
 .docker-link::before {
   content: "";
   display: inline-block;
-  width: 1.15em;
-  height: 1.15em;
+  width: 1em;
+  height: 1em;
   background-image: url("/assets/images/icons/docker.png");
   background-size: contain;
   background-repeat: no-repeat;
