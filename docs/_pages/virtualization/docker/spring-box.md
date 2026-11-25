@@ -246,12 +246,12 @@ Image name: `springbox-openjdk`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/core){: .src-link target="_blank" rel="noopener" }
 
-This image is an extends of our base [Java Base image](#6--the-spring-box-base-image).
+This image is an extends of our base [Java Base image](#7--the-spring-box-base-image).
 The platform supports production-ready runtimes for OpenJDK 11, 17, 21, and 25.
 
 ⚠️ _**Important:**_
 _These core images are designed to serve as top layer for custom builds and are not recommended for running Java applications (*.jar) directly._
-_To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8--java-runner-images) containers._
+_To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#9--java-runner-images) containers._
 
 #### 8.1) Features
 This Docker image layer only adds
@@ -425,7 +425,7 @@ Image name: `springbox-openjdk-postgres-runner`
 
 The platform supports production-ready Runners with an embedded PostgreSQL database server for OpenJDK 21 and 25.
 
-This image is an extends of our base [Java Runner images](#8--java-runner-images) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
+This image is an extends of our base [Java Runner images](#9--java-runner-images) layer by adding a pre-installed, and ready-to-use PostgreSQL database server on top of that image.
 While everything detailed in the _Java Runner images_ section applies to this image as well, this image requires a few extra configuration steps to operate the embedded database engine.
 
 It is recommended to usie this image if your application requires a dedicated database and follows a _database-per-container_ or _database-per-service_ design pattern.
@@ -599,7 +599,7 @@ Image name: `springbox-vault`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hcp-vault){: .src-link target="_blank" rel="noopener" }
 
-Vault image is an extends of [Spring Box Base image](#6--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
+Vault image is an extends of [Spring Box Base image](#7--the-spring-box-base-image) by adding a pre-installed, and ready-to-use HashiCorp Vault on top of that image.
 
 HashiCorp Vault is an open-source, enterprise-grade identity-based secrets management platform.
 It allows us to securely store, manage, and tightly control access to highly sensitive runtime tokens, passwords, certificates, encryption keys, and API credentials.
@@ -670,7 +670,7 @@ Image name: `springbox-hazelcast`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/hazelcast-platform){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [OpenJDK 21 Core Runtime image](#8--java-runner-images) by adding a pre-installed, ready-to-use Hazelcast Platform.
+This image is built on top of the [OpenJDK 21 Core Runtime image](#9--java-runner-images) by adding a pre-installed, ready-to-use Hazelcast Platform.
 
 Hazelcast Platform is an open-source, distributed in-memory computing and caching platform designed to deliver ultra-low-latency data access and real-time stream processing across clustered environments.
 In microservices architectures like Spring Box, it acts as a fast, scalable data grid that reduces database load and keeps shared application state synchronized across nodes and applications especially when using horizontal scaling to run multiple instances of the same service.
@@ -773,7 +773,7 @@ Image name: `springbox-private-ca`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/easy-rsa-pki){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [OpenJDK 17 Core Runtime image](#8--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
+This image is built on top of the [OpenJDK 17 Core Runtime image](#9--java-runner-images) and includes a pre-installed, ready-to-use _Easy-RSA_ utility for managing Public Key Infrastructure (PKI).
 
 [Easy-RSA](https://github.com/OpenVPN/easy-rsa){: target="_blank" rel="noopener"} is a lightweight, open-source command-line utility built on top of `OpenSSL` that simplifies the creation and management of a Public Key Infrastructure (PKI) and Certificate Authority (CA).
 Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA provides straightforward scripts to initialize a root CA, generate private keys, issue TLS/SSL certificates, and manage certificate revocations.
@@ -876,7 +876,7 @@ Image name: `springbox-tomcat-10`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/infrastructure/tomcat-10){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [OpenJDK 11 Core Runtime image](#8--java-runner-images) and includes a pre-installed, pre-configured Apache Tomcat 10 server.
+This image is built on top of the [OpenJDK 11 Core Runtime image](#9--java-runner-images) and includes a pre-installed, pre-configured Apache Tomcat 10 server.
 
 Apache Tomcat 10 is an open-source, lightweight Java servlet container and HTTP web server.
 In the _Spring Box_ ecosystem, it serves as a dedicated runtime environment for hosting and serving Java web archives (`.war`) and web-based applications over HTTP and HTTPS.
@@ -925,7 +925,7 @@ Image name: `springbox-prometheus`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/monitoring/prometheus){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [Spring Box Base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
+This image is built on top of the [Spring Box Base image](#7--the-spring-box-base-image) and adds a pre-installed, ready-to-use Prometheus server.
 
 Prometheus is a leading open-source monitoring and alerting toolkit for applications, infrastructure, and services maintained by the Cloud Native Computing Foundation (CNCF).
 It collects and stores real-time numeric metrics from servers, containers, and applications as time-series data storing them in a high-performance time-series database.
@@ -939,7 +939,7 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
 * **Automated Pull-Based metric collection:** Prometheus periodically scrapes metrics from configured HTTP endpoints and automatically discovers dynamic targets in environments like Kubernetes and major cloud providers.
 * **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
-* **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#8--java-runner-images) containers.
+* **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#9--java-runner-images) containers.
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
 * **Java Spring Boot:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#14--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
@@ -993,7 +993,7 @@ Image name: `springbox-grafana`
 
 [Source Code](https://github.com/zappee/spring-box/tree/main/docker/monitoring/grafana){: .src-link target="_blank" rel="noopener" }
 
-This image is built on top of the [Spring Box Base image](#6--the-spring-box-base-image) and adds a pre-installed, ready-to-use Grafana platform.
+This image is built on top of the [Spring Box Base image](#7--the-spring-box-base-image) and adds a pre-installed, ready-to-use Grafana platform.
 
 Grafana is an open-source analytics and interactive visualization platform used to monitor applications, infrastructure, and microservices in real time.
 It connects directly to a wide range of data sources—such as Prometheus, InfluxDB, Elasticsearch, and SQL databases—without requiring you to migrate your data first.
