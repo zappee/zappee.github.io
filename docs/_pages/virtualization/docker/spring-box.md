@@ -1076,7 +1076,7 @@ Spring Box Docker images come pre-installed with server software built directly 
 During the build process, these packages are unpacked to install the required tools and servers from official sources.
 To complete this setup, you will need the official release packages.
 
-You can download them individually from the respective product pages, or access all of them in one place via [this shared drive](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77).
+You can download them individually from the respective product pages, or access all of them in one place via [this shared drive](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77){: target="_blank" rel="noopener" }.
 
 ![Remal Spring Box nstallation archives](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-installation-archives.png){: .centered-image }
 
@@ -1092,7 +1092,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
   This prevents installation files from being persisted in any layer, keeping the final image as small as possible.
 
 **Steps**
-1. Download [Apache Tomcat from here](https://tomcat.apache.org/download-10.cgi) and start it on your machine:
+1. Download [Apache Tomcat from here](https://tomcat.apache.org/download-10.cgi){: target="_blank" rel="noopener" } and start it on your machine:
 
    ```bash
    cd /path/to/tomcat/bin
@@ -1113,7 +1113,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
                ├── prometheus-3.16.0.linux-amd64.tar.gz
                └── vault_2.2.1_linux_386.zip
    ```
-   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip).
+   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip){: target="_blank" rel="noopener" }.
 3. As mentioned earlier, the `fat` build type relies on installation archives.
    Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
