@@ -1062,16 +1062,17 @@ To keep image sizes under control, you can build Spring Box images in two differ
    Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
    
-   Before building the Spring Box Docker images, copy the actual installation archives into the project to overwrite the placeholder files.
+   Before building the Spring Box Docker images, you must replace the zero-byte placeholder files in the project with the actual installation archives.
    The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh) script automates this process by copying each installation package to its target directory.
-   Before running the script, update the `REMAL_BINARY_HOME` and `PROJECT_HOME` variables inside the file, then execute it in restore mode.
-   * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
-   * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
 
-   After updating the variables, run the script in restore mode to copy the installation archives into the project directories:
-   ```bash
-   ./update-binaries.sh 1
-   ```
+   1. Open `update-binaries.sh` and update the following variables to match your local setup:
+      * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
+      * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
+
+   2. Run the script in restore mode to copy the installation archives into the project directories:
+      ```bash
+      ./update-binaries.sh 1
+      ```
 4. Build the Docker images using
    ```bash
    ./sb.sh abcde
