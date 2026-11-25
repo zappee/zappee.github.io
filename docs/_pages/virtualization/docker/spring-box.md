@@ -31,6 +31,63 @@ sidebar:
 The **Remal Spring-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
 It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, cluster wide caching, service discovery, security, and real-time operational metrics.
 
+### 2) Quick Start (TL;DR)
+Already familiar with *Docker* and *Remal Spring Box* and want to jump straight into running the *Spring Box Demo*?
+
+**Follow these steps:**
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/zappee/spring-box.git
+   cd spring-box
+   ```
+
+2. **Prepare the installation archives**
+   
+   * Download the required server archives from [here](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77), host them on your local Tomcat server under `webapps/docker-build`.
+   * Configure the paths in [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh), and run:
+
+     ```bash
+     ./update-binaries.sh 1
+     ```
+
+3. **Build the Docker images**
+
+   ```bash
+   ./sb.sh abcde
+   ```
+
+4. **Build the Demo applications**
+
+   ```bash
+   cd projects
+   mvn clean package
+   cd ..
+   ```
+   
+5. **Configure the environment**
+   
+  Update the `remal.com.env` file: Set `PROJECT_HOME` to point to the project home folder, for examlpe `$HOME/Java/spring-box`.
+  Open [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env) and set `PROJECT_HOME` to your local repository path (for example, `$HOME/Java/spring-box`).
+   
+6. **Start the demo stack**
+
+   ```bash
+   ./sb.sh s
+   ```
+   
+7. **Generate HTTP traffic (optional)**
+   
+   Run [projects/bin/traffic-generator.sh](https://github.com/zappee/spring-box/blob/projects/bin/traffic-generator.sh) to simulate realistic load and inspect real-time metrics.
+   
+8. **Explore the services & Dashboards**
+   Open the [index.html](https://github.com/zappee/spring-box/blob/main/projects/index.html) in your web browser then navigato forward to [Grafana dashboard (admin/password)](https://localhost:13093/).
+   Open [projects/index.html](https://github.com/zappee/spring-box/blob/main/projects/index.html) in your browser for a directory of all running endpoints, or jump straight to the [Grafana Dashboard](https://localhost:13093) (admin / password).
+
+**Detailed Guides**
+* [How to build the Docker images](#18-how-to-build-the-docker-images)
+* [Running the Spring Boot Demo](#19-running-the-spring-boot-demo)
+
 ### 2) Context & Problem Statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
 * Service registries
