@@ -1079,25 +1079,25 @@ To keep image sizes under control, you can build Spring Box images in two differ
    ```
 5. Ready-to-Use Docker Images
 
-| IMAGE | DISK USAGE | CONTENT SIZE |
-| :--- | ---: | ---: |
-| `springbox-base:0.8.0` | 35.6MB | 10.6MB |
-| `springbox-grafana:0.8.0` | 3.42GB | 906MB |
-| `springbox-hashicorp-consul:0.8.0` | 838MB | 263MB |
-| `springbox-hashicorp-vault:0.8.0` | 762MB | 202MB |
-| `springbox-hazelcast:0.8.0` | 615MB | 220MB |
-| `springbox-openjdk-11:0.8.0` | 443MB | 151MB |
-| `springbox-openjdk-17:0.8.0` | 477MB | 160MB |
-| `springbox-openjdk-21-omni-runner:0.8.0` | 597MB | 200MB |
-| `springbox-openjdk-21-postgres-runner:0.8.0` | 572MB | 191MB |
-| `springbox-openjdk-21-runner:0.8.0` | 516MB | 174MB |
-| `springbox-openjdk-21:0.8.0` | 516MB | 174MB |
-| `springbox-openjdk-25-postgres-runner:0.8.0` | 636MB | 210MB |
-| `springbox-openjdk-25-runner:0.8.0` | 581MB | 193MB |
-| `springbox-openjdk-25:0.8.0`  | 581MB | 193MB |
-| `springbox-private-ca:0.8.0` | 477MB | 161MB |
-| `springbox-prometheus:0.8.0` | 420MB | 126MB |
-| `springbox-tomcat-10:0.8.0` | 473MB | 165MB |
+   | IMAGE | DISK USAGE | CONTENT SIZE |
+   | :--- | ---: | ---: |
+   | `springbox-base:0.8.0` | 35.6MB | 10.6MB |
+   | `springbox-grafana:0.8.0` | 3.42GB | 906MB |
+   | `springbox-hashicorp-consul:0.8.0` | 838MB | 263MB |
+   | `springbox-hashicorp-vault:0.8.0` | 762MB | 202MB |
+   | `springbox-hazelcast:0.8.0` | 615MB | 220MB |
+   | `springbox-openjdk-11:0.8.0` | 443MB | 151MB |
+   | `springbox-openjdk-17:0.8.0` | 477MB | 160MB |
+   | `springbox-openjdk-21-omni-runner:0.8.0` | 597MB | 200MB |
+   | `springbox-openjdk-21-postgres-runner:0.8.0` | 572MB | 191MB |
+   | `springbox-openjdk-21-runner:0.8.0` | 516MB | 174MB |
+   | `springbox-openjdk-21:0.8.0` | 516MB | 174MB |
+   | `springbox-openjdk-25-postgres-runner:0.8.0` | 636MB | 210MB |
+   | `springbox-openjdk-25-runner:0.8.0` | 581MB | 193MB |
+   | `springbox-openjdk-25:0.8.0`  | 581MB | 193MB |
+   | `springbox-private-ca:0.8.0` | 477MB | 161MB |
+   | `springbox-prometheus:0.8.0` | 420MB | 126MB |
+   | `springbox-tomcat-10:0.8.0` | 473MB | 165MB |
 
 💡 _**Note:**_
 _The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh)._
