@@ -943,7 +943,7 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
 * **Java Spring Boot:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#15--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
-* **Remal Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml){: .src-link target="_blank" rel="noopener" }, we recommend increasing this to `15s` in production to avoid high CPU overhead.
+* **Remal Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml){: target="_blank" rel="noopener" }, we recommend increasing this to `15s` in production to avoid high CPU overhead.
 
 Here is a typical Docker Compose configuration:
 ```yaml
@@ -973,7 +973,7 @@ The chart on the left below shows the total number of REST calls over a one-minu
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
 
-All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
+All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
 For details on setting up the underlying Docker environment, see [Running the Spring Boot Demo](#20-running-the-spring-boot-demo).
 
 #### 17.2) Configuration highlights
