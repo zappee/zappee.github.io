@@ -1012,7 +1012,7 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
     ![Grafana data sources](/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.png){: .centered-image }
 
   * **Default Credentials:** The default login credentials are `admin` / `password`.
-  * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){: target="_blank" rel="noopener noreferrer" }
+  * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-remal-box-dashboard-screenshot.png' | relative_url }}){: target="_blank" rel="noopener noreferrer" }
 
     <video autoplay loop muted playsinline width="100%">
       <source src="{{ '/assets/videos/menu/virtualization/docker/spring-box/grafana-dashboard-demo.mp4' | relative_url }}" type="video/mp4">
