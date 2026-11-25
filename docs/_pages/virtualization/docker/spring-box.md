@@ -67,8 +67,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
    
 5. **Configure the environment**
    
-   Update the [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env){: target="_blank" rel="noopener" } file. Set `PROJECT_HOME` to point to the project home folder, for examlpe `$HOME/Java/spring-box`.
-   Open [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env) and set `PROJECT_HOME` to your local repository path (for example, `$HOME/Java/spring-box`).
+   Open [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env){: target="_blank" rel="noopener" } and set `PROJECT_HOME` to your local repository path (for example, `$HOME/Java/spring-box`).
    
 6. **Start the demo stack**
 
