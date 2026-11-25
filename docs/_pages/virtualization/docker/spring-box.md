@@ -165,7 +165,7 @@ It contains only essential system utilities and bootstrap configurations.
 * **Container Orchestration:**
   * Manage container startup sequencing and dependencies between container safely with `wait-for-container.sh`.
   * Pre-configures `/docker.init/` and `/docker.startup/` directory structures.
-* **Self-Provisioned TLS Certificates:** A dedicated server certificate is automatically generated during the container's initial startup using the [Remal Private Certificate Authority (PKI) Infrastructure](#14--private-certificate-authority-pki).
+* **Self-Provisioned TLS Certificates:** A dedicated server certificate is automatically generated during the container's initial startup using the [Remal Private Certificate Authority (PKI) Infrastructure](#15--private-certificate-authority-pki).
   Applications running inside any _Spring-Box_ container can immediately use this certificate to enable secure communication and data encryption.
 
 We keep this layer footprint as small as possible because it serves as the parent layer for all subsequent images in the ecosystem.
