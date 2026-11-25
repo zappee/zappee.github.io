@@ -15,7 +15,7 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/spring-box)
 
-#### ⭐⭐ Like this project? Support my work by giving it a star on [GitHub](https://github.com/zappee/spring-box/){: .src-link target="_blank" rel="noopener" } ⭐⭐
+#### ⭐⭐ Like this project? Support my work by giving it a star on [GitHub](https://github.com/zappee/spring-box/){: target="_blank" rel="noopener" } ⭐⭐
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
@@ -45,7 +45,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
 2. **Prepare the installation archives**
    
    * Download the required server archives [from here](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77){: target="_blank" rel="noopener" }, host them on your local Tomcat server under `webapps/docker-build`.
-   * Configure the paths in [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: .src-link target="_blank" rel="noopener" }, and run:
+   * Configure the paths in [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: target="_blank" rel="noopener" }, and run:
 
      ```bash
      ./update-binaries.sh 1
@@ -67,7 +67,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
    
 5. **Configure the environment**
    
-   Open [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env){: .src-link target="_blank" rel="noopener" } environment file and set `PROJECT_HOME` to your local repository path (for example, `$HOME/Java/spring-box`).
+   Open [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env){: target="_blank" rel="noopener" } environment file and set `PROJECT_HOME` to your local repository path (for example, `$HOME/Java/spring-box`).
    
 6. **Start the demo stack**
 
@@ -77,7 +77,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
    
 7. **Generate HTTP traffic (optional)**
    
-   Run [projects/bin/traffic-generator.sh](https://github.com/zappee/spring-box/blob/main/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" } to simulate realistic HTTP load and inspect real-time metrics.
+   Run [projects/bin/traffic-generator.sh](https://github.com/zappee/spring-box/blob/main/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" } to simulate realistic HTTP load and inspect real-time metrics.
    
 8. **Explore the services & Dashboards**
 
@@ -636,8 +636,8 @@ vault:
 ```
 
 The following Docker Compose file provides a complete example of how to run HashiCorp Vault within the Spring Box environment:
-* Docker Compose file: [compose.yml](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/compose.yml){: .src-link target="_blank" rel="noopener" }
-* Environment file: [remal.com.env](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/remal.com.env){: .src-link target="_blank" rel="noopener" }
+* Docker Compose file: [compose.yml](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/compose.yml){: target="_blank" rel="noopener" }
+* Environment file: [remal.com.env](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/remal.com.env){: target="_blank" rel="noopener" }
 
 To start the complete environment, run:
 
@@ -943,7 +943,7 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
 * **Java Spring Boot:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#15--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
-* **Remal Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml){: .src-link target="_blank" rel="noopener" }, we recommend increasing this to `15s` in production to avoid high CPU overhead.
+* **Remal Spring Box Integration:** Prometheus automatically scrapes metrics from all Docker containers, services, and hosts registered in the *Spring Box Service Registry*, letting you monitor Spring Boot applications out of the box with zero extra code. Note that the scrape interval is set to an aggressive `1s` for responsive local testing in the [prometheus.yml](https://github.com/zappee/spring-box/blob/main/docker/monitoring/prometheus/config/prometheus.yml){: target="_blank" rel="noopener" }, we recommend increasing this to `15s` in production to avoid high CPU overhead.
 
 Here is a typical Docker Compose configuration:
 ```yaml
@@ -973,7 +973,7 @@ The chart on the left below shows the total number of REST calls over a one-minu
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
 
-All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
+All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" },
 For details on setting up the underlying Docker environment, see [Running the Spring Boot Demo](#20-running-the-spring-boot-demo).
 
 #### 17.2) Configuration highlights
@@ -1012,14 +1012,14 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
     ![Grafana data sources](/assets/images/menu/virtualization/docker/spring-box/grafana-datasources.png){: .centered-image }
 
   * **Default Credentials:** The default login credentials are `admin` / `password`.
-  * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){:target="_blank" rel="noopener noreferrer"}
+  * **Ready-to-Use Image Renderer:** While Grafana does not include image rendering out of the box, Spring Box comes with the Grafana Image Renderer pre-configured and ready to convert dashboards and panels into static PNG snapshots for alerts and sharing. [View sample PNG]({{ '/assets/images/menu/virtualization/docker/spring-box/grafana-dashboard.png' | relative_url }}){: target="_blank" rel="noopener noreferrer" }
 
     <video autoplay loop muted playsinline width="100%">
       <source src="{{ '/assets/videos/menu/virtualization/docker/spring-box/grafana-dashboard-demo.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
-    All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
+    All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" },
     For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
 
 Here is a typical Docker Compose configuration:
@@ -1119,7 +1119,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
    
    Before building the Spring Box Docker images, you must replace the zero-byte placeholder files in the project with the actual installation archives.
-   The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: .src-link target="_blank" rel="noopener" } script automates this process by copying each installation package to its target directory.
+   The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: target="_blank" rel="noopener" } script automates this process by copying each installation package to its target directory.
 
    1. Open `update-binaries.sh` and update the following variables to match your local setup:
       * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
@@ -1158,7 +1158,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
    | `springbox-tomcat-10:0.8.0` | 473MB | 165MB |
 
 💡 _**Note:**_
-_The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh){: .src-link target="_blank" rel="noopener" }._
+_The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh){: target="_blank" rel="noopener" }._
 _Running this script without parameters displays all supported commands._
 _For example, run `./sb.sh y` to remove all Docker volumes, or `./sb.sh wxy` to remove all Remal Docker containers, images, and volumes._
 

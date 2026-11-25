@@ -192,6 +192,7 @@
 .src-link, .src-link:visited {
   display: inline-flex;;
   color: black;
+  align-items: center;
   gap: 0.45em;
   margin-top: -22px;
   margin-bottom: 0px;
@@ -205,8 +206,8 @@
 .src-link::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.15em;
+  height: 1.15em;
   background-image: url("/assets/images/icons/code-black-rectangle.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -221,8 +222,8 @@
 .docker-link::before {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.15em;
+  height: 1.15em;
   background-image: url("/assets/images/icons/docker.png");
   background-size: contain;
   background-repeat: no-repeat;
