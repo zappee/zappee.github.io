@@ -29,7 +29,7 @@ sidebar:
 
 ### 1) Overview
 The **Remal Spring-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
-It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, cluster wide caching, service discovery, security, and real-time operational metrics.
+It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, cluster wide caching, service discovery, centralized configuration, application security, and real-time operational metrics.
 
 ### 2) Quick Start (TL;DR)
 Already familiar with *Docker* and *Remal Spring Box* and want to jump straight into running the *Spring Box Demo*?
@@ -44,8 +44,8 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
 
 2. **Prepare the installation archives**
    
-   * Download the required server archives from [here](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77), host them on your local Tomcat server under `webapps/docker-build`.
-   * Configure the paths in [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh), and run:
+   * Download the required server archives from [here](https://drive.google.com/drive/u/0/folders/1RUkp1vwSX0aTdlQ2zgyOUKQexHovHY77){: target="_blank" rel="noopener" }, host them on your local Tomcat server under `webapps/docker-build`.
+   * Configure the paths in [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: target="_blank" rel="noopener" }, and run:
 
      ```bash
      ./update-binaries.sh 1
