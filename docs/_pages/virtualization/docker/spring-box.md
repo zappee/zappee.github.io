@@ -1070,10 +1070,12 @@ To keep image sizes under control, you can build Spring Box images in two differ
       * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
 
    2. Run the script in restore mode to copy the installation archives into the project directories:
+
       ```bash
       ./update-binaries.sh 1
       ```
 4. Build the Docker images using
+
    ```bash
    ./sb.sh abcde
    ```
