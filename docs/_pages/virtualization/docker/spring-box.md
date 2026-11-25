@@ -1042,18 +1042,18 @@ Steps
    ./catalina.sh run
    ```
 2. Copy the downloaded packages under the Tomcat's webapps folder:
-   ```bash
-└── apache-tomcat 
-    │
-    ├── webapps 
-    ├── docker-build
-        ├── EasyRSA-3.2.5.tgz
-        ├── apache-tomcat-9.0.71.tar.gz
-        ├── consul_1.22.5_linux_386.zip
-        ├── grafana-enterprise_12.4.0_22325204712_linux_amd64.tar.gz
-        ├── hazelcast-5.6.0-slim.tar.gz
-        ├── prometheus-3.10.0.linux-amd64.tar.gz
-        └── vault_1.21.4_linux_386.zip
+   ```BASH
+   └── tomcat
+       └── webapps 
+           └── docker-build
+               ├── apache-tomcat-10.1.61.tar.gz
+               ├── consul_2.1.0_linux_386.zip
+               ├── EasyRSA-3.2.7.tgz
+               ├── grafana-enterprise_13.3.0_40412481033_linux_amd64.tar.gz
+               ├── grafana-image-renderer-linux-amd64-5.12.11
+               ├── hazelcast-5.7.0-slim.tar.gz
+               ├── prometheus-3.16.0.linux-amd64.tar.gz
+               └── vault_2.2.1_linux_386.zip
    ```
 
 3. 
