@@ -1041,7 +1041,7 @@ Steps
    cd /path/to/tomcat/bin
    ./catalina.sh run
    ```
-2. Copy the downloaded packages under the Tomcat's webapps folder:
+2. Copy the downloaded packages under the Tomcat's `webapps` folder:
    ```bash
    └── tomcat
        └── webapps 
