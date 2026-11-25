@@ -84,8 +84,8 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
    Open [projects/index.html](https://github.com/zappee/spring-box/blob/main/projects/index.html){: target="_blank" rel="noopener" } in your browser for a directory of all running endpoints, or jump straight to the [Grafana Dashboard](https://localhost:13093){: target="_blank" rel="noopener" } (admin / password).
 
 **Detailed Guides**
-* [How to build the Docker images](#18-how-to-build-the-docker-images)
-* [Running the Spring Boot Demo](#19-running-the-spring-boot-demo)
+* [How to build the Docker images](#19-how-to-build-the-docker-images)
+* [Running the Spring Boot Demo](#20-running-the-spring-boot-demo)
 
 ### 3) Context & Problem Statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
