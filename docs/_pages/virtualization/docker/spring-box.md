@@ -1042,7 +1042,7 @@ Steps
    ./catalina.sh run
    ```
 2. Copy the downloaded packages under the Tomcat's webapps folder:
-   ```BASH
+   ```bash
    └── tomcat
        └── webapps 
            └── docker-build
