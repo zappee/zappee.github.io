@@ -1074,6 +1074,28 @@ Steps
    ```bash
    ./sb.sh abcde
    ```
+5. Ready-to-Use Docker Images
+    | IMAGE | ID | DISK USAGE | CONTENT SIZE | EXTRA |
+    | :--- | :--- | ---: | ---: | :--- |
+    | `springbox-base:0.8.0` | `5485ec46f93c` | 35.6MB | 10.6MB | |
+    | `springbox-grafana:0.8.0` | `d19d6f922d2a` | 3.42GB | 906MB | |
+    | `springbox-hashicorp-consul:0.8.0` | `e5675b2645e5` | 838MB | 263MB | |
+    | `springbox-hashicorp-vault:0.8.0` | `108ab4d5f525` | 762MB | 202MB | |
+    | `springbox-hazelcast:0.8.0` | `170b0cbe5ae0` | 615MB | 220MB | |
+    | `springbox-openjdk-11:0.8.0` | `53df646e1d7a` | 443MB | 151MB | |
+    | `springbox-openjdk-17:0.8.0` | `1d9c36f1d371` | 477MB | 160MB | |
+    | `springbox-openjdk-21-omni-runner:0.8.0` | `4827cef1fa8f` | 597MB | 200MB | |
+    | `springbox-openjdk-21-postgres-runner:0.8.0` | `b09736a473b4` | 572MB | 191MB | |
+    | `springbox-openjdk-21-runner:0.8.0` | `87063c005727` | 516MB | 174MB | |
+    | `springbox-openjdk-21:0.8.0` | `42bf9c3566ed` | 516MB | 174MB | |
+    | `springbox-openjdk-25-postgres-runner:0.8.0` | `4acf6d3403fd` | 636MB | 210MB | |
+    | `springbox-openjdk-25-runner:0.8.0` | `e61b655afa18` | 581MB | 193MB | |
+    | `springbox-openjdk-25:0.8.0` | `c56650800a7f` | 581MB | 193MB | |
+    | `springbox-private-ca:0.8.0` | `b8b555261208` | 477MB | 161MB | |
+    | `springbox-prometheus:0.8.0` | `6b4dad5b5589` | 420MB | 126MB | |
+    | `springbox-tomcat-10:0.8.0` | `8b70f567e785` | 473MB | 165MB | |
+
+
 
 💡 _**Note:**_
 _The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh)._
