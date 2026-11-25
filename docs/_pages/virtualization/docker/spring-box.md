@@ -996,13 +996,13 @@ Image name: `springbox-grafana`
 This image is built on top of the [Spring Box Base image](#7--the-spring-box-base-image) and adds a pre-installed, ready-to-use Grafana platform.
 
 Grafana is an open-source analytics and interactive visualization platform used to monitor applications, infrastructure, and microservices in real time.
-It connects directly to a wide range of data sources—such as Prometheus, InfluxDB, Elasticsearch, and SQL databases—without requiring you to migrate your data first.
+It connects directly to a wide range of data sources — such as Prometheus, InfluxDB, Elasticsearch, and SQL databases — without requiring you to migrate your data first.
 Through customizable dashboards, charts, and alerts, it helps teams track system performance, diagnose bottlenecks, and understand real-time metrics at a glance.
 
 In Spring Box, Grafana acts as the visual monitoring layer, giving you instant insight into live REST traffic, service performance, JVM and container health, and service activity.
 
 #### 18.1) Features
-* **Multi-Source Integration:** Connects natively to dozens of data sources—including Prometheus, Loki, Elasticsearch, InfluxDB, and SQL databases—allowing you to combine metrics, logs, and traces in one place.
+* **Multi-Source Integration:** Connects natively to dozens of data sources (including Prometheus, Loki, Elasticsearch, InfluxDB, and SQL databases) allowing you to combine metrics, logs, and traces in one place.
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
 * **Unified Alerting:** Allows you to define threshold-based alert rules directly on panels and route notifications to Slack, email, PagerDuty, or webhooks.
