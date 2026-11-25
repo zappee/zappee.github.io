@@ -1020,7 +1020,7 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
     </video>
 
     All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" },
-    For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
+    For details on setting up the underlying Docker environment, see [Running the Spring Boot Demo](#20-running-the-spring-boot-demo).
 
 Here is a typical Docker Compose configuration:
 ```yaml
