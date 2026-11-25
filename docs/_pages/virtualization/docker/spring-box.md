@@ -87,7 +87,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
 * [How to build the Docker images](#18-how-to-build-the-docker-images)
 * [Running the Spring Boot Demo](#19-running-the-spring-boot-demo)
 
-### 2) Context & Problem Statement
+### 3) Context & Problem Statement
 Building a modern microservices architecture with Spring Boot requires stitching together dozens of complex infrastructure components:
 * Service registries
 * Load balancers
@@ -111,14 +111,14 @@ Setting this up consistently across local development and production environment
 * **Distributed state challenges:** The complexity of managing databases using the popular database-per-service pattern while keeping primary keys synchronized across isolated instances.
 * **"Works on my machine" dilemma:** Environmental gaps between team members' laptops and live clusters that turn environment debugging into a massive time sink.
 
-### 3) The Remal Solution
+### 4) The Remal Solution
 That’s where the **Remal Spring-Box** comes in.
 It bridges this gap by offering a containerized pre-configured set of _Docker_ images that act as ready-to-go building blocks for both local development and production environment.
 
 By abstracting away complex infrastructure, it cuts out configuration overhead entirely.
 This lets start-ups and small-to-medium teams to eliminate configuration overhead, stop worrying about setup, and focus on what matters most: shipping features fast.
 
-### 4) Key Benefits
+### 5) Key Benefits
 * **Embedded SSH server:** Offers standard secure access to active instances. Running containers can be connected to using native SSH clients, allowing to execute standard shell commands inside the container environments seamlessly.
 * **Production-Identical local dev:** Eliminates environmental mismatches entirely. By using the exact same containerized runtime building blocks on local machines and production clusters, if it works on your laptop, it will work in production.
 * **Instant feature delivery:** Saves weeks of foundational engineering. Startups and small teams can skip the tedious process of configuring Kafka brokers, security certificates, service registries, cache solutions, etc., and start writing business logic on day one.
@@ -140,10 +140,10 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 
 * **Ready-to-run demo applications:** Comes with fully functional _Spring Boot_ reference applications that show you exactly how everything fits together. These examples give your team a head start by demonstrating how to use the platform's caching, service discovery, databases, and metrics in a real-world setup.
 
-### 5) Docker Containers in the _Spring Box_ Ecosystem
+### 6) Docker Containers in the _Spring Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-image-hierarchy.png){: .centered-image }
 
-### 6) <span class="rect-space color-base"></span> The Spring-Box Base Image
+### 7) <span class="rect-space color-base"></span> The Spring-Box Base Image
 Image name: `springbox-base`
 {: .docker-link }
 
@@ -152,7 +152,7 @@ Image name: `springbox-base`
 This ultra-minimal `Base image` serves as the foundation for the entire **Remal Spring Box** ecosystem.
 It contains only essential system utilities and bootstrap configurations.
 
-#### 6.1) Features
+#### 7.1) Features
 * **Minimal Base OS:**
   * Built on top of a lightweight, highly secure `Alpine Linux` image.
 * **System & Access Utilities:**
@@ -175,7 +175,7 @@ Any Linux package or file added here will cascade down the entire stack, unneces
 _Modifying this layer directly impacts every image downstream in the ecosystem._
 _Please modify it with caution and only introduce changes that are globally required._
 
-#### 6.2) Configuration highlights
+#### 7.2) Configuration highlights
 * **Ports used by the container**
   * **SSH Port** (default: `22`):
     The embedded SSH server listens on the default port 22 for safe, remote shell management.
@@ -240,7 +240,7 @@ _Please modify it with caution and only introduce changes that are globally requ
   * **SSH_PASSWORD** (default: `password`): Sets the password for the SSH user.
   * **UP_SIGNAL_PORT** (default: `1331`): Configures the specific network readiness port that opens automatically once all bootstrap initialization scripts complete, signaling to downstream containers that this service is fully ready.
 
-### 7) <span class="rect-space color-core"></span> Java Core Runtime Images
+### 8) <span class="rect-space color-core"></span> Java Core Runtime Images
 Image name: `springbox-openjdk`
 {: .docker-link }
 
@@ -253,20 +253,20 @@ The platform supports production-ready runtimes for OpenJDK 11, 17, 21, and 25.
 _These core images are designed to serve as top layer for custom builds and are not recommended for running Java applications (*.jar) directly._
 _To deploy and execute your Java applications, we highly recommend using our specialized [Java Runner](#8--java-runner-images) containers._
 
-#### 7.1) Features
+#### 8.1) Features
 This Docker image layer only adds
 * Specific OpenJDK installations.
 * OpenSSL to deal with keystores.
 * Sync Java's truststore with the host OS certificates, so outbound HTTPS connections stay secure and up to date automatically.
 
-#### 7.2) Configuration highlights
+#### 8.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
   Variables utilized by this image:
   * **JAVA_HOME** (default: `NA`): Defines the absolute file system path to the active OpenJDK installation directory.
 
-#### 7.3) Build
+#### 8.3) Build
 The build process for the `springbox-openjdk` core images use a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
 
 The repository contains distinct shell scripts dedicated to configuring the runtime environment for each supported Long-Term Support (LTS) Java version:
@@ -277,7 +277,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 8) <span class="rect-space color-app"></span> Java Runner Images
+### 9) <span class="rect-space color-app"></span> Java Runner Images
 Image name: `springbox-openjdk-runner`
 {: .docker-link }
 
@@ -291,7 +291,7 @@ Its advanced design accelerates development velocity by providing pre-configured
 ⚠️ _**Important:**_
 _Use this container to deploy and run your Java application as executable JAR._
 
-#### 8.1) Features
+#### 9.1) Features
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
 * **Cluster-wide HashiCorp Consul integration:** Provides Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
 * **Cluster-wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
@@ -342,7 +342,7 @@ hello-service-1:
         - $HOME/springbox/volumes/hello-service-1/heap-dump:/heap-dump
 ```
 
-#### 8.2) Configuration highlights
+#### 9.2) Configuration highlights
 * **Containers naming convention:**
   It is highly recommended to use the exact same name for both `hostname` and `container_name` to prevent internal network routing conflicts. We use Fully Qualified Domain Names (FQDN) by expanding the container name with a base domain.
   That way container name remains unique per environment. For instance, the production domain can align with the company's officially registered domain name, while development environments can use the developer's nickname.
@@ -408,7 +408,7 @@ hello-service-1:
   - **/logs** (container to host machine): Application and server log files generated by the active processes inside the container are streamed out the host machine via this shared folder.
   - **/heap-dump** (container to host machine): This is the place where the JVM outputs binary memory snapshots upon a critical failure.
 
-#### 8.3) Build
+#### 9.3) Build
 The build process for the `springbox-openjdk-runner` images use a single unified Dockerfile that dynamically adapts to different Java environments using version-specific environment setup scripts.
 
 The repository contains distinct shell scripts dedicated to configuring the runtime environment for each supported Long-Term Support (LTS) Java version:
@@ -417,7 +417,7 @@ The repository contains distinct shell scripts dedicated to configuring the runt
 
 These scripts handle the specific paths, environment variables, and configurations unique to each Java version during the image build phase.
 
-### 9) <span class="rect-space color-app"></span> Java Runtime with an embedded PostgreSQL server Images
+### 10) <span class="rect-space color-app"></span> Java Runtime with an embedded PostgreSQL server Images
 Image name: `springbox-openjdk-postgres-runner`
 {: .docker-link }
 
@@ -433,7 +433,7 @@ It is recommended to usie this image if your application requires a dedicated da
 ⚠️ _**Important:**_
 _Because this image runs both the Java application and the database server inside a single container, it may require higher memory and CPU allocations._
 
-#### 9.1) Features
+#### 10.1) Features
 * **PostgreSQL database server:** Fully configured and ready for the application inside this container.
 
 Here is a typical `springbox-openjdk-postgres-runner` container configuration:
@@ -480,7 +480,7 @@ hello-service-1:
         - $HOME/Java/springbox/volumes/hello-service-1/data:/var/lib/postgresql/data
  ```
 
-#### 9.2) Configuration highlights
+#### 10.2) Configuration highlights
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
@@ -506,7 +506,7 @@ hello-service-1:
 
   * **/var/lib/postgresql/data:** Maps the standard, internal directory where PostgreSQL expects to write its data, tables, and system catalogs. It guarantees your PostgreSQL data persists even if the container is stopped, deleted, or upgraded.
 
-### 10) <span class="rect-space color-app"></span> Java Omni Runtime Image
+### 11) <span class="rect-space color-app"></span> Java Omni Runtime Image
 Image name: `springbox-openjdk-omni-runner`
 {: .docker-link }
 
@@ -520,11 +520,11 @@ It is our largest _Java Runner_ image, packed with additional tools and Linux pa
 ⚠️ _**Important:**_
 _Due to its large size, you should only use this image if your Java application explicitly requires the additional tools and pre-installed packages._
 
-#### 10.1) Features
+#### 11.1) Features
 * **fonts-dejavu Linux package:** This is a system-level TrueType font (.ttf) required by Java graphics engines, reporting libraries (e.g., JasperReports), and PDF/Excel/Word generators (e.g., Apache POI) to render text correctly without crashing.
   If your containerized Java app tries to generate a chart, Excel sheet, or PDF without these fonts installed in the OS layer, it will crash with a `NullPointerException` or an `AWTError` stating that it cannot instantiate the font manager.
 
-### 11) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
+### 12) <span class="rect-space color-infra"></span> HashiCorp Consul Integration
 Image name: `springbox-hashicorp-consul`
 {: .docker-link }
 
@@ -541,7 +541,7 @@ _The Consul container must start first in the Spring Box network because Spring 
 _Consul must be fully operational before any Spring Boot applications start in the Runner containers._
 _Orchestrate your Docker container dependencies accordingly using `entrypoint: ["/wait-for-container.sh", "consul.${DOMAIN_NAME}"]`._
 
-#### 11.1) Features
+#### 12.1) Features
 * **Service Discovery:** Acts as a centralized service catalog where microservices register themselves dynamically. When invoking an endpoint, Consul always provides a healthy, low-traffic service URL, seamlessly acting as an intelligent load balancer.
 * **Java Spring Boot:** Integration works seamlessly with HashiCorp Consul and Spring Boot.
 * **Health Checking:** Consul continuously monitors the health of registered services and nodes using custom probes, like checking Spring Boot Actuator endpoint or testing a TCP port. It removes the reference to the unhealthy service from its service registry and never provide the dead service url to clients.
@@ -580,7 +580,7 @@ consul:
         - springbox-net
 ```
 
-#### 11.2) Configuration highlights
+#### 12.2) Configuration highlights
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
@@ -593,7 +593,7 @@ consul:
   * **CONSUL_CONFIG_DIR** (default: `/tmp/consul-config`): Directory path containing Consul's .json configuration files loaded at startup.
   * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key-Value (KV) store entries, registered services, and cluster metadata.
 
-### 12) <span class="rect-space color-infra"></span> HashiCorp Vault Image
+### 13) <span class="rect-space color-infra"></span> HashiCorp Vault Image
 Image name: `springbox-vault`
 {: .docker-link }
 
@@ -612,7 +612,7 @@ Consul manages where services are and how they talk to each other, while Vault m
 * **Use Vault for Passwords & Certificates:** Never store database passwords, JWT signing keys, or private SSL keys in Consul's Key-Value store. Keep those in Vault so they are encrypted, audited, and rotated safely.
 * **Vault can use Consul as Storage:** In production clusters, Vault actually uses Consul behind the scenes as its high-availability storage backend (so Vault's encrypted data stays replicated across nodes), while Consul relies on Vault to issue and rotate mTLS certificates for its service mesh.
 
-#### 12.1) Features
+#### 13.1) Features
 * **Secure Secret Storage (Key-Value Store):** Vault encrypts sensitive data—such as API keys, database passwords, and environment variables before writing them to persistent storage. Even if an attacker gains access to the underlying storage disk or database, the data remains unreadable without Vault's master encryption key.
 * **Dynamic Secrets:** Instead of storing long-lived, static passwords, Vault can generate temporary, on-demand credentials for databases (PostgreSQL, MySQL, MongoDB) or cloud providers (AWS, Azure, GCP). Each service gets unique credentials with a strict Time-to-Live (TTL), and Vault automatically revokes them when the lease expires.
 * **Encryption as a Service (Transit Secrets Engine):** Vault allows applications to encrypt and decrypt data in transit and at rest via a simple REST API without exposing the raw encryption keys to the application developers or code. It also handles key rotation automatically.
@@ -645,7 +645,7 @@ To start the complete environment, run:
 docker compose --env-file=remal.com.env up
 ```
 
-#### 12.2) Configuration highlights
+#### 13.2) Configuration highlights
 * **Ports used by the container:**
   The parent image ports were covered previously. Listed below are the extra ports opened specifically by this layer.
 
@@ -664,7 +664,7 @@ docker compose --env-file=remal.com.env up
   * **VAULT_LOG** (default: `/var/log/vault.log`): File path where Vault writes standard operational and server runtime logs.
   * **VAULT_AUDIT_LOG** (default: `/var/log/vault-audit.log`): File path where Vault's audit device records detailed logs of every incoming request and outgoing response for security auditing.
 
-### 13) <span class="rect-space color-infra"></span> Hazelcast Cache Platform
+### 14) <span class="rect-space color-infra"></span> Hazelcast Cache Platform
 Image name: `springbox-hazelcast`
 {: .docker-link }
 
@@ -675,7 +675,7 @@ This image is built on top of the [OpenJDK 21 Core Runtime image](#8--java-runne
 Hazelcast Platform is an open-source, distributed in-memory computing and caching platform designed to deliver ultra-low-latency data access and real-time stream processing across clustered environments.
 In microservices architectures like Spring Box, it acts as a fast, scalable data grid that reduces database load and keeps shared application state synchronized across nodes and applications especially when using horizontal scaling to run multiple instances of the same service.
 
-#### 13.1) Features
+#### 14.1) Features
 * **Spring Boot Native Support:** Spring Boot integrates natively with Hazelcast and fully supports working with the cluster-wide cache infrastructure out of the box, without requiring any third-party dependencies.
 * **Distributed In-Memory Data Grid (IMDG):** Hazelcast stores data in RAM across a cluster of nodes rather than on disk, providing microsecond-level read and write speeds while significantly reducing load on primary databases.
 * **Flexible Deployment Topologies:** Supports Embedded-Cache, Client-Server, and Near-Cache.
@@ -758,7 +758,7 @@ And the corresponding `application.properties` file to configure the Spring Boot
 #hazelcast.network.join.tcp-ip.members=${HAZELCAST_CLUSTER_MEMBERS}
 ```
 
-#### 13.2) Configuration highlights
+#### 14.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
@@ -767,7 +767,7 @@ And the corresponding `application.properties` file to configure the Spring Boot
   * **HAZELCAST_CLUSTER_NAME** (default: `springbox-dev`): Unique name assigned to the Hazelcast cluster. Only nodes and Spring Boot clients configured with the exact same cluster name can discover each other and join the grid.
   * **HAZELCAST_CLUSTER_MEMBERS** (default: `NA`): Comma-separated list of hostnames or IP addresses (with optional ports, e.g., `hazelcast-1:5701,hazelcast-2:5701`) used for TCP/IP static cluster discovery. When left empty, the node starts as a standalone single-member cluster.
 
-### 14) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI) Server
+### 15) <span class="rect-space color-infra"></span> Private Certificate Authority (PKI) Server
 Image name: `springbox-private-ca`
 {: .docker-link }
 
@@ -781,7 +781,7 @@ Instead of running complex, error-prone OpenSSL commands manually, Easy-RSA prov
 This component plays an important role in the Spring Box.
 It acts as the internal trust store and manages the X.509 Public Key Infrastructure (PKI) used by infrastructure services, Spring Boot applications, and servers across the ecosystem.
 
-#### 14.1) Features
+#### 15.1) Features
 * **Root Certificate Authority (CA) Creation:** Initializes a self-signed root CA (`ca.crt`) and secures its private key, establishing an internal trust anchor for your environment.
 * **Key Pair & CSR Generation:** Automates the generation of private keys and Certificate Signing Requests (CSRs) for servers, microservices, and clients.
 * **Certificate Signing & Issuance:** Signs incoming CSRs using our internal CA to produce valid X.509 server and client certificates (`server.crt`, `server.pem`) with configurable expiration periods.
@@ -824,7 +824,7 @@ EASYRSA_REQ_CITY="Copenhagen"
 EASYRSA_REQ_ORG="Remal Software"
 ```
 
-#### 14.2) Configuration highlights
+#### 15.2) Configuration highlights
 * **Automatic Root CA Self-Signed Certificate Generation:**
   During the container's very first boot, the root Certificate Authority (CA) is generated automatically.
 
@@ -870,7 +870,7 @@ EASYRSA_REQ_ORG="Remal Software"
   * **EASYRSA_KEY_SIZE** (default: `2048`): Key length in bits used when `EASYRSA_ALGO` is set to `rsa` (ignored when using `ec`, which relies on elliptic curve parameters).
   * **EASYRSA_PASS** (default: `changeit`): Password used to encrypt the Root CA private key (`ca.key`) and protect exported PKCS#12 (`.p12`) certificate bundles.
 
-### 15) <span class="rect-space color-infra"></span> Apache Tomcat 10 Image
+### 16) <span class="rect-space color-infra"></span> Apache Tomcat 10 Image
 Image name: `springbox-tomcat-10`
 {: .docker-link }
 
@@ -881,7 +881,7 @@ This image is built on top of the [OpenJDK 11 Core Runtime image](#8--java-runne
 Apache Tomcat 10 is an open-source, lightweight Java servlet container and HTTP web server.
 In the _Spring Box_ ecosystem, it serves as a dedicated runtime environment for hosting and serving Java web archives (`.war`) and web-based applications over HTTP and HTTPS.
 
-#### 15.1) Features
+#### 16.1) Features
 * **Non-Blocking I/O:** Uses asynchronous, non-blocking network connectors to handle thousands of concurrent HTTP requests and REST API calls with minimal thread overhead.
 * **HTTP/2 & WebSocket Support:** Supports multiplexed, low-latency HTTP/2 streams for faster Angular/React frontend loading alongside native WebSocket support for real-time communication.
 * **Static Asset & SPA Hosting:** Efficiently serves compiled frontend bundles (Angular, React, Vue) directly from disk with built-in Gzip/Brotli compression, caching headers, and custom rewrite rules for client-side routing.
@@ -909,7 +909,7 @@ tomcat:
     - springbox-net
 ```
 
-#### 15.2) Configuration highlights
+#### 16.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
@@ -919,7 +919,7 @@ tomcat:
   * **CATALINA_PASSWORD** (default: `password`): Password assigned to the administrator account.
   * **JAVA_OPTIONS**: JVM startup arguments passed to the Tomcat to configure initial/maximum heap memory, garbage collection behavior, and logging properties.
 
-### 16) <span class="rect-space color-monitor"></span> Prometheus Time-Series Database Server
+### 17) <span class="rect-space color-monitor"></span> Prometheus Time-Series Database Server
 Image name: `springbox-prometheus`
 {: .docker-link }
 
@@ -933,7 +933,7 @@ With built-in service discovery and a flexible query language, Prometheus helps 
 
 Prometheus plays an important role in the Spring Boot ecosystem, helping teams monitor service availability and performance, identify performance bottlenecks, and diagnose system-wide issues.
 
-#### 16.1) Features
+#### 17.1) Features
 * **Time-series metrics:** Records timestamped measurements to help track system and application performance over time.
 * **Multi-Dimensional Data Model:** Metrics are identified by a name and custom Key/Value pairs called labels, allowing to slice, filter, and aggregate performance data by service, instance, or environment. Spring Box metrics can be found under the `remal*` prefix.
 * **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
@@ -976,7 +976,7 @@ The chart on the left below shows the total number of REST calls over a one-minu
 All network traffic behind these charts comes from this t[raffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh),
 For details on setting up the underlying Docker environment, see [How to run the Spring Boot Demo](#19-how-to-run-the-spring-boot-demo).
 
-#### 16.2) Configuration highlights
+#### 17.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
@@ -987,7 +987,7 @@ For details on setting up the underlying Docker environment, see [How to run the
   * **PROMETHEUS_LOG** (default: `/var/log/prometheus.log`): File path where standard runtime and error logs are written.
   * **PROMETHEUS_STORAGE** (default: `/opt/prometheus/data`): Directory path for Prometheus's local Time Series Database (TSDB) where scraped metrics data is persisted.
 
-### 17) <span class="rect-space color-monitor"></span> Grafana
+### 18) <span class="rect-space color-monitor"></span> Grafana
 Image name: `springbox-grafana`
 {: .docker-link }
 
@@ -1001,7 +1001,7 @@ Through customizable dashboards, charts, and alerts, it helps teams track system
 
 In Spring Box, Grafana acts as the visual monitoring layer, giving you instant insight into live REST traffic, service performance, JVM and container health, and service activity.
 
-#### 17.1) Features
+#### 18.1) Features
 * **Multi-Source Integration:** Connects natively to dozens of data sources—including Prometheus, Loki, Elasticsearch, InfluxDB, and SQL databases—allowing you to combine metrics, logs, and traces in one place.
 * **Interactive Dashboards:** Offers rich visualization panels (time-series graphs, gauges, heatmaps, tables, and stat cards) with dynamic time-range filtering and drill-down views.
 * **Visual Query Builder (PromQL):** Includes an interactive query editor with autocomplete and syntax highlighting to build and test Prometheus queries on the fly.
@@ -1041,7 +1041,7 @@ grafana:
         - springbox-net
 ```
 
-#### 17.2) Configuration highlights
+#### 18.2) Configuration highlights
 * **Container environment variables:**
   These configuration keys are injected directly into the container's runtime environment, becoming active shell variables inside the container so that your application (such as Spring Boot) can seamlessly read them.
 
@@ -1064,14 +1064,14 @@ grafana:
   * **GRAFANA_IMAGE_RENDERER_PORT** (default: `8081`): Internal port on which the image renderer service listens for snapshot requests.
   * **GRAFANA_IMAGE_RENDERER_TOKEN** (default: `secret-render-token`): Shared authentication token used to secure communication between Grafana and the image renderer service.
 
-### 18) How to build the Docker images
+### 19) How to build the Docker images
 
-#### 18.1) Get the source code
+#### 19.1) Get the source code
 ```bash
 git clone https://github.com/zappee/spring-box.git
 ```
 
-#### 18.2) Downloads installation archives
+#### 19.2) Downloads installation archives
 Spring Box Docker images come pre-installed with server software built directly from official release packages.
 During the build process, these packages are unpacked to install the required tools and servers from official sources.
 To complete this setup, you will need the official release packages.
@@ -1080,7 +1080,7 @@ You can download them individually from the respective product pages, or access 
 
 ![Remal Spring Box nstallation archives](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-installation-archives.png){: .centered-image }
 
-#### 18.3) Build the Images
+#### 19.3) Build the Images
 To keep image sizes under control, you can build Spring Box images in two different ways:
 * **fat:**
   Best for quick local builds where image size is not a concern.
@@ -1162,7 +1162,7 @@ _The project's main build script is [sb.sh](https://github.com/zappee/spring-box
 _Running this script without parameters displays all supported commands._
 _For example, run `./sb.sh y` to remove all Docker volumes, or `./sb.sh wxy` to remove all Remal Docker containers, images, and volumes._
 
-### 19) Running the Spring Boot Demo
+### 20) Running the Spring Boot Demo
 1. cd projects/
 2. mvn clean packages
 3. update .env file
@@ -1173,7 +1173,7 @@ clean up: sb.sh wxy
 
 
 
-### 20) Contributing
+### 21) Contributing
 
 Contributions, feature requests, optimization, and bug reports are always welcome!
 
