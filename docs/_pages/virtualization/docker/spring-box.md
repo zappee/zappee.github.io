@@ -1075,6 +1075,7 @@ Steps
    ./sb.sh abcde
    ```
 5. Ready-to-Use Docker Images
+
     | IMAGE | ID | DISK USAGE | CONTENT SIZE | EXTRA |
     | :--- | :--- | ---: | ---: | :--- |
     | `springbox-base:0.8.0` | `5485ec46f93c` | 35.6MB | 10.6MB | |
