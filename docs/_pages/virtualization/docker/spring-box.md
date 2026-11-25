@@ -1035,13 +1035,15 @@ To keep image sizes under control, you can build Spring Box images in two differ
   Instead of copying local archives into the image, the build process uses `wget` to download the required installation packages on the fly from a local web server, unpacks them, and removes the archives within the same Docker `RUN` layer.
   This prevents installation files from being persisted in any layer, keeping the final image as small as possible.
 
-Steps
+**Steps**
 1. Download [Apache Tomcat from here](https://tomcat.apache.org/download-10.cgi) and start it on your machine:
+
    ```bash
    cd /path/to/tomcat/bin
    ./catalina.sh run
    ```
 2. Copy the downloaded packages under the Tomcat's `webapps` folder:
+
    ```bash
    └── tomcat
        └── webapps 
@@ -1059,10 +1061,10 @@ Steps
 3. As mentioned earlier, the `fat` build type relies on installation archives.
    Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
-
-   Before building the Spring Box Docker images, copy the actual installation archives into the project to overwrite these placeholder files.
-
-   Update the `REMAL_BINARY_HOME` and `PROJECT_HOME` variables inside the [update-binaries.sh]([update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh)) script, then run it in restore mode.
+   
+   Before building the Spring Box Docker images, copy the actual installation archives into the project to overwrite the placeholder files.
+   The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh) script automates this process by copying each installation package to its target directory.
+   Before running the script, update the `REMAL_BINARY_HOME` and `PROJECT_HOME` variables inside the file, then execute it in restore mode.
    * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
    * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
 
