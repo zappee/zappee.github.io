@@ -77,7 +77,7 @@ Already familiar with *Docker* and *Remal Spring Box* and want to jump straight 
    
 7. **Generate HTTP traffic (optional)**
    
-   Run [projects/bin/traffic-generator.sh](https://github.com/zappee/spring-box/blob/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" } to simulate realistic load and inspect real-time metrics.
+   Run [projects/bin/traffic-generator.sh](https://github.com/zappee/spring-box/blob/main/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" } to simulate realistic load and inspect real-time metrics.
    
 8. **Explore the services & Dashboards**
 
