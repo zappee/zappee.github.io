@@ -514,7 +514,7 @@ Image name: `springbox-openjdk-omni-runner`
 
 The platform currently supports production-ready Omni Runners with an embedded PostgreSQL database server exclusively for OpenJDK 21.
 
-The ultimate Omni image extends our [Java Runtime with an embedded PostgreSQL server](#9--java-runtime-with-an-embedded-postgresql-server-images) image.
+The ultimate Omni image extends our [Java Runtime with an embedded PostgreSQL server](#10--java-runtime-with-an-embedded-postgresql-server-images) image.
 It is our largest _Java Runner_ image, packed with additional tools and Linux packages required by specialized Java applications.
 
 ⚠️ _**Important:**_
