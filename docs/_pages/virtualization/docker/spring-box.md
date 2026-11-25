@@ -15,7 +15,7 @@ sidebar:
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/spring-box)
 
-#### ⭐⭐ Like this project? Support my work by giving it a star on [GitHub](https://github.com/zappee/spring-box/) ⭐⭐
+#### ⭐⭐ Like this project? Support my work by giving it a star on [GitHub](https://github.com/zappee/spring-box/){: target="_blank" rel="noopener" } ⭐⭐
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/zappee/spring-box?style=flat)
 
