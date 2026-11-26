@@ -175,6 +175,7 @@
 /* ==========================================================================
    ICONS
    ========================================================================== */
+/* skill icons */
 .skills-container {
   display: inline-block;
   margin-bottom: -7px;
@@ -189,12 +190,12 @@
   height: 40px;
 }
 
+/* icons for links */
 .src-link, .src-link:visited, .docker-link, .docker-link:visited {
   display: inline-flex;
   align-items: center;
   gap: 0.45em;
   color: black;
-  vertical-align: middle;
 }
 
 .src-link::before, .docker-link::before {
