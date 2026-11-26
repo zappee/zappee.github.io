@@ -1204,7 +1204,7 @@ Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: targ
 
 **Contributions and pull requests are always welcome! 🚀**
 
-{% include like-button.html %}
+{% include buy-me-a-coffee.md %}
 
 ---
 
