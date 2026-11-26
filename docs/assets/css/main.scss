@@ -189,7 +189,7 @@
   height: 40px;
 }
 
-.src-link, .src-link:visited {
+.src-link, .src-link:visited, .docker-link {
   display: inline-flex;
   align-items: center;
   gap: 0.45em;
@@ -201,23 +201,14 @@
   content: "";
   width: 1.15em;
   height: 1.15em;
-  background: url("/assets/images/icons/code-black-rectangle.png") no-repeat center / contain;
-}
-
-.docker-link {
-  display: flex;
-  align-items: center;
-  gap: 0.45em;
+  background: url("/assets/images/icons/icon-code.png") no-repeat center / contain;
 }
 
 .docker-link::before {
   content: "";
-  display: inline-block;
   width: 1.15em;
   height: 1.15em;
-  background-image: url("/assets/images/icons/docker.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("/assets/images/icons/logo-docker.png") no-repeat center / contain;
 }
 
 /* ==========================================================================
