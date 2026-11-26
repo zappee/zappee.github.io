@@ -1019,7 +1019,7 @@ In Spring Box, Grafana acts as the visual monitoring layer, giving you instant i
       Your browser does not support the video tag.
     </video>
 
-    All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" },
+    All network traffic behind these charts comes from the [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
     For details on setting up the underlying Docker environment, see [Running the Spring Boot Demo](#20-running-the-spring-boot-demo).
 
 Here is a typical Docker Compose configuration:
@@ -1113,13 +1113,13 @@ To keep image sizes under control, you can build Spring Box images in two differ
                ├── prometheus-3.16.0.linux-amd64.tar.gz
                └── vault_2.2.1_linux_386.zip
    ```
-   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip){: target="_blank" rel="noopener" }.
+   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip){: .src-link target="_blank" rel="noopener" }.
 3. As mentioned earlier, the `fat` build type relies on installation archives.
    Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
    
    Before building the Spring Box Docker images, you must replace the zero-byte placeholder files in the project with the actual installation archives.
-   The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: target="_blank" rel="noopener" } script automates this process by copying each installation package to its target directory.
+   The [update-binaries.sh](https://github.com/zappee/spring-box/blob/main/update-binaries.sh){: .src-link target="_blank" rel="noopener" } script automates this process by copying each installation package to its target directory.
 
    1. Open `update-binaries.sh` and update the following variables to match your local setup:
       * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
@@ -1158,7 +1158,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
    | `springbox-tomcat-10:0.8.0` | 473MB | 165MB |
 
 💡 _**Note:**_
-_The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh){: target="_blank" rel="noopener" }._
+_The project's main build script is [sb.sh](https://github.com/zappee/spring-box/blob/main/sb.sh){: .src-link target="_blank" rel="noopener" }._
 _Running this script without parameters displays all supported commands._
 _For example, run `./sb.sh y` to remove all Docker volumes, or `./sb.sh wxy` to remove all Remal Docker containers, images, and volumes._
 
