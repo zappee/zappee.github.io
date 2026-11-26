@@ -1204,6 +1204,8 @@ Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: targ
 
 **Contributions and pull requests are always welcome! 🚀**
 
+---
+
 ### Appendix 1) How to Horizontally Scale Java Runner Containers
 
 Imagine you are building an application using a microservice architecture where each service persists its own data, for example, a *Customer Service* storing customer profiles and an *Order Service* storing orders.
