@@ -636,8 +636,8 @@ vault:
 ```
 
 The following Docker Compose file provides a complete example of how to run HashiCorp Vault within the Spring Box environment:
-* Docker Compose file: [compose.yml](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/compose.yml){: target="_blank" rel="noopener" }
-* Environment file: [remal.com.env](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/remal.com.env){: target="_blank" rel="noopener" }
+* Docker Compose file: [compose.yml](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/compose.yml){: .src-link target="_blank" rel="noopener" }
+* Environment file: [remal.com.env](https://github.com/zappee/spring-box/blob/main/docker/infrastructure/hcp-vault/remal.com.env){: .src-link target="_blank" rel="noopener" }
 
 To start the complete environment, run:
 
