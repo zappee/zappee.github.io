@@ -1230,5 +1230,6 @@ Each instance has its own separate database, and all REST endpoints sit behind a
   * **Reads (Query side):** `GET` requests are routed through the Service Registry (Consul) and served directly from any service instance's local database for fast, low-latency lookups.
   * **Writes (Command side):** Write operations are published as events to a **Kafka topic** rather than written to a single instance's database directly. Every service instance consumes from the topic to update its own database, ensuring durable persistence, reliable error handling and retries, and automatic state synchronization across all instances (including newly started ones).
 * **Distributed unique ID generation** using URL-friendly **Nano IDs** instead of database sequences.
+* **Cold-start initialization (New instances):** When a new service instance starts up with an empty database, it reads the historical event stream from the beginning of the Kafka topic (`auto.offset.reset=earliest`) to replay and populate its initial data, bringing its database state completely in sync with all other running instances before serving traffic.
 
 ![How to Horizontally Scale Java Runner Containers](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-scale-runner-containers.png){: .centered-image }
