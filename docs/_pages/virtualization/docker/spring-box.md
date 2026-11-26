@@ -848,7 +848,7 @@ EASYRSA_REQ_ORG="Remal Software"
   * `<hostname>.p12`: A PKCS#12 bundle that packages both the server certificate and its private key (along with the CA chain) into a single password-protected binary file, commonly used by Java and Spring Boot keystores.
   * `<hostname>.pem`: A Privacy-Enhanced Mail (Base64-encoded ASCII) certificate file containing the public certificate used by tools and services that expect PEM-formatted TLS credentials.
 
-  Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt){: target="_blank" rel="noopener" }
+  Here is an example of a successful certificate generation log: [server-certificate-generation.log](/assets/text/menu/virtualization/docker/spring-box/server-certificate-generation-log.txt){: .src-link target="_blank" rel="noopener" }
 
 * **Safe certificate transfer between the containers:**
   Once the server certificates are issued they transferred to the requested Docker container using secure file copy (`scp`).
