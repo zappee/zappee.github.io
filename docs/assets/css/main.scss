@@ -192,16 +192,16 @@
 
 /* icons for links */
 .src-link, .src-link:visited, .docker-link, .docker-link:visited {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45em;
   color: black;
 }
 
 .src-link::before, .docker-link::before {
   content: "";
+  display: inline-block;
   width: 1.15em;
   height: 1.15em;
+  margin-right: 0.45em;
+  vertical-align: -0.2em;
   background: no-repeat center / contain;
 }
 
