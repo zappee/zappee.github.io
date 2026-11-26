@@ -1098,7 +1098,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
    cd /path/to/tomcat/bin
    ./catalina.sh run
    ```
-2. Copy the downloaded packages under the Tomcat's `webapps` folder:
+2. Copy the downloaded packages under the Tomcat's `webapps/docker-build` folder:
 
    ```bash
    └── tomcat
