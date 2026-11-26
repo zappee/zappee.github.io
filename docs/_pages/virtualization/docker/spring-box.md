@@ -1234,4 +1234,4 @@ Each instance has its own separate database, and all REST endpoints sit behind a
 * **Distributed unique ID generation** using URL-friendly **Nano IDs** instead of database sequences.
 * **Cold-start initialization (New instances):** When a new service instance starts up with an empty database, it reads the historical event stream from the beginning of the Kafka topic (`auto.offset.reset=earliest`) to replay and populate its initial data, bringing its database state completely in sync with all other running instances before serving traffic.
 
-![How to Horizontally Scale Java Runner Containers](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-scale-runner-containers.png){: .centered-image }
+  ![How to Horizontally Scale Java Runner Containers](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-scale-runner-containers.png){: .centered-image }
