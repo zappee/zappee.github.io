@@ -1204,8 +1204,6 @@ Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: targ
 
 **Contributions and pull requests are always welcome! 🚀**
 
-{% include buy-me-a-coffee.md %}
-
 ---
 
 ### Appendix 1) How to Horizontally Scale Java Runner Containers
