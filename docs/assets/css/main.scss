@@ -189,26 +189,27 @@
   height: 40px;
 }
 
-.src-link, .src-link:visited, .docker-link {
+.src-link, .src-link:visited, .docker-link, .docker-link:visited {
   display: inline-flex;
   align-items: center;
   gap: 0.45em;
-  margin-top: -22px;
   color: black;
+  vertical-align: middle;
+}
+
+.src-link::before, .docker-link::before {
+  content: "";
+  width: 1.15em;
+  height: 1.15em;
+  background: no-repeat center / contain;
 }
 
 .src-link::before {
-  content: "";
-  width: 1.15em;
-  height: 1.15em;
-  background: url("/assets/images/icons/icon-code.png") no-repeat center / contain;
+  background-image: url("/assets/images/icons/icon-code.png");
 }
 
 .docker-link::before {
-  content: "";
-  width: 1.15em;
-  height: 1.15em;
-  background: url("/assets/images/icons/logo-docker.png") no-repeat center / contain;
+  background-image: url("/assets/images/icons/logo-docker.png");
 }
 
 /* ==========================================================================
