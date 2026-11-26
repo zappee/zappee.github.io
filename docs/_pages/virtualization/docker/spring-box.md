@@ -1199,6 +1199,7 @@ The Spring Box Demo is a collection of REST services that demonstrates:
 ### 21) 🤝 Contributing
 
 Whether it's a 💡 new feature, an ⚡ optimization, or a 🐛 bug report, your input makes this project better.
+
 Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: target="_blank" rel="noopener" } or submit a pull request anytime!
 
 **Contributions and pull requests are always welcome! 🚀**
