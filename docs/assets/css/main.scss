@@ -189,21 +189,12 @@
   height: 40px;
 }
 
-.src-link, .src-link:visited {
-  display: inline-flex;;
-  color: black;
-  align-items: center;
-  gap: 0.45em;
-  margin-top: -22px;
-  margin-bottom: 0px;
-}
-
 .src-link:focus {
   outline: none;
   box-shadow: none;
 }
 
-.src-link::before {
+.src-link, .src-link:visited, .src-link::before {
   content: "";
   display: inline-block;
   width: 1.15em;
@@ -211,6 +202,7 @@
   background-image: url("/assets/images/icons/code-black-rectangle.png");
   background-size: contain;
   background-repeat: no-repeat;
+  gap: 0.45em;
 }
 
 .docker-link {
