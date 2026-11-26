@@ -1203,3 +1203,32 @@ Whether it's a 💡 new feature, an ⚡ optimization, or a 🐛 bug report, your
 Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: target="_blank" rel="noopener" } or submit a pull request anytime!
 
 **Contributions and pull requests are always welcome! 🚀**
+
+### Appendix 1) How to Horizontally Scale Java Runner Containers
+
+Imagine you are building an application using a microservice architecture where each service persists its own data, for example, a *Customer Service* storing customer profiles and an *Order Service* storing orders.
+
+**Problem**
+
+Suppose the *Customer Service* faces high traffic, so you spin up 5 instances.
+Each instance has its own separate database, and all REST endpoints sit behind a load balancer (or service registry).
+
+1. A client sends a request to create a new customer.
+2. The request routes to **instance 3/5**, which persists the customer in its local database.
+3. Immediately after, the same client sends a `GET` request to confirm the creation and view the customer's details.
+4. This second request routes to **instance 1/5**, which does not have that customer in its database yet.
+
+**Challenges**
+* **Data synchronization:** How do you ensure instance `1/5` syncs the newly created customer from instance `3/5`'s database?
+* **Cold-start initialization:** How do you populate the empty database of a brand-new service instance when it first spins up?
+* **Primary key collisions:** How do you keep primary keys (`PK`) in sync across separate databases—especially after errors and rollbacks, if you rely on database sequences?
+* **Read/write separation:** How do you cleanly decouple read (`GET`) operations from write (`INSERT`/`UPDATE`) operations?
+
+**Solution**
+* **Database-per-Service** design pattern.
+* **Command Query Responsibility Segregation (CQRS) design pattern:** Decouples read (`GET`) and write (`POST`/`PUT`/`DELETE`) workloads so each can scale independently:
+  * **Reads (Query side):** `GET` requests are routed through the Service Registry (Consul) and served directly from any service instance's local database for fast, low-latency lookups.
+  * **Writes (Command side):** Write operations are published as events to a **Kafka topic** rather than written to a single instance's database directly. Every service instance consumes from the topic to update its own database, ensuring durable persistence, reliable error handling and retries, and automatic state synchronization across all instances (including newly started ones).
+* **Distributed unique ID generation** using URL-friendly **Nano IDs** instead of database sequences.
+
+![How to Horizontally Scale Java Runner Containers](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-scale-runner-containers.png){: .centered-image }
