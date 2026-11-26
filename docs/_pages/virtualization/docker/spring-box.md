@@ -1113,7 +1113,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
                ├── prometheus-3.16.0.linux-amd64.tar.gz
                └── vault_2.2.1_linux_386.zip
    ```
-   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the following URL: [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip){: .src-link target="_blank" rel="noopener" }.
+   Once you have started the Tomcat server and copied the files to the correct directory, verify your setup by downloading one of the archives from the URL [http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip](http://localhost:8080/docker-build/consul_2.1.0_linux_386.zip){: .src-link target="_blank" rel="noopener" }.
 3. As mentioned earlier, the `fat` build type relies on installation archives.
    Because these files are very large and exceed GitHub's default file size limits, they are not pushed to the repository.
    Instead, the Spring Box project uses zero-length placeholder files inside the `bin/` directories to indicate where each archive belongs.
