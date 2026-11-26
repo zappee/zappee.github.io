@@ -939,7 +939,7 @@ Prometheus plays an important role in the Spring Boot ecosystem, helping teams m
 * **PromQL Query Language:** The built Prometheus Query Language (PromQL) lets you analyze real-time data, calculate rates, and generate custom insights for dashboards or alerts.
 * **Automated Pull-Based metric collection:** Prometheus periodically scrapes metrics from configured HTTP endpoints and automatically discovers dynamic targets in environments like Kubernetes and major cloud providers.
 * **Rules and alerting:** Define custom alert rules in PromQL and route notifications to Slack, email, or PagerDuty through the Alertmanager component.
-* **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [`Runner`](#9--java-runner-images) containers.
+* **Service discovery:** Finds monitoring targets automatically or uses static configuration. • In the Spring Boot ecosystem, Prometheus integrates with HashiCorp Consul to effortlessly monitor Java applications running inside [Runner](#9--java-runner-images) containers.
 * **Visualization support:** Works with dashboards and graphing tools to help teams explore metrics.
 * **Java Spring Boot:** Prometheus integrates seamlessly with Spring Boot using _Spring Boot Actuator_ and the _Micrometer_ library.
 * **Secured Communication:** Integration with the [Private Certificate Authority (PKI)](#15--private-certificate-authority-pki-server) ensures that all communication channels between Prometheus and Java applications use encrypted HTTPS connections.
@@ -973,7 +973,7 @@ The chart on the left below shows the total number of REST calls over a one-minu
   <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_round+sum-by-instance+instance-increase_method-calls-total.png" alt="Prometheus chart" style="width: 49%;" />
 </div>
 
-All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: target="_blank" rel="noopener" },
+All network traffic behind these charts comes from this [traffic generator script](https://github.com/zappee/spring-box/blob/65-update-readme/projects/bin/traffic-generator.sh){: .src-link target="_blank" rel="noopener" },
 For details on setting up the underlying Docker environment, see [Running the Spring Boot Demo](#20-running-the-spring-boot-demo).
 
 #### 17.2) Configuration highlights
