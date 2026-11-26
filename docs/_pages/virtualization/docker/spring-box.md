@@ -591,7 +591,7 @@ consul:
 
   Variables utilized by this image:
   * **CONSUL_CONFIG_DIR** (default: `/tmp/consul-config`): Directory path containing Consul's .json configuration files loaded at startup.
-  * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key-Value (KV) store entries, registered services, and cluster metadata.
+  * **CONSUL_DATA_DIR** (default: `/tmp/consul-data`): The directory path where Consul persists its runtime state, including Key/Value Store entries, registered services, and cluster metadata.
 
 ### 13) <span class="rect-space color-infra"></span> HashiCorp Vault Image
 Image name: `springbox-vault`
@@ -1163,19 +1163,42 @@ _Running this script without parameters displays all supported commands._
 _For example, run `./sb.sh y` to remove all Docker volumes, or `./sb.sh wxy` to remove all Remal Docker containers, images, and volumes._
 
 ### 20) Running the Spring Boot Demo
-1. cd projects/
-2. mvn clean packages
-3. update .env file
-4. sb.sh s
+The Spring Box Demo is a collection of REST services that demonstrates:
+* RREST endpoint registration with the service registry
+* Service lookup
+* Kafka producers and consumers
+* Kafka message browser
+* Cluster-safe counter backed by Hazelcast cache
+* Central configuration using Consul Key/Value Store
+* Database-per-Service design pattern implementation
 
-clean up: sb.sh wxy
+[Link to the source code](https://github.com/zappee/spring-box/tree/65-update-readme/projects){: .src-link target="_blank" rel="noopener" }.
 
+**Steps**
+1. **Build the Java project with Maven**
 
+   ```bash
+   cd projects/
+   mvn clean packages
+   ```
 
+2. **Configure Docker volumes**
 
-### 21) Contributing
+   The runnable Spring Boot `.jar` files are mounted into the *Spring Box Runner* containers via Docker `volumes`.
+   Before starting the Remal Box Demo environment, set the path to the `.jar` files by updating the `PROJECT_HOME` variable in [remal.com.env](https://github.com/zappee/spring-box/blob/main/projects/remal.com.env){: .src-link target="_blank" rel="noopener" }.
 
-Contributions, feature requests, optimization, and bug reports are always welcome!
+3. **Start the demo stack**
 
-### Appendix 1) How to scalable horizontally the Java Runner containers
-Database ID: Use UUID reference instead of ID.
+   ```bash
+   ./sb.sh s
+   ```
+4. **Clean up your workspace**
+   * Delete Remal Docker images: `./sb.sh x`
+   * Delete all Remal images, stopped Remal containers, and used Docker volumes in one shot: `./sb.sh wxy`
+
+### 21) 🤝 Contributing
+
+Whether it's a 💡 new feature, an ⚡ optimization, or a 🐛 bug report, your input makes this project better.
+Feel free to [open an issue](https://github.com/zappee/spring-box/issues){: target="_blank" rel="noopener" } or submit a pull request anytime!
+
+**Contributions and pull requests are always welcome! 🚀**
