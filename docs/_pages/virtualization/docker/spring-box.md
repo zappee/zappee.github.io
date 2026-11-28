@@ -9,7 +9,7 @@ sidebar:
   nav: "virtualization_sidebar"
 ---
 
-## ☁️ Spring-Box: Ultimate Spring Boot Runner
+## ☁️ Spring Box: Ultimate Spring Boot Runner
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/spring-box)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/spring-box)
@@ -28,7 +28,7 @@ sidebar:
 ---
 
 ### 1) Overview
-The **Remal Spring-Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
+The **Remal Spring Box** is an open-source development and production platform engineered to simplify the creation, deployment, and monitoring of Java and Spring Boot applications.
 It eliminates enterprise boilerplate by offering a fully integrated environment featuring containerized runtimes, databases supporting the database-per-service pattern, data streaming, cluster wide caching, service discovery, centralized configuration, application security, and real-time operational metrics.
 
 ### 2) Quick Start (TL;DR)
@@ -143,7 +143,7 @@ This lets start-ups and small-to-medium teams to eliminate configuration overhea
 ### 6) Docker Containers in the _Spring Box_ Ecosystem
 ![Spring-Box image hierarchy](/assets/images/menu/virtualization/docker/spring-box/remal-springbox-image-hierarchy.png){: .centered-image }
 
-### 7) <span class="rect-space color-base"></span> The Spring-Box Base Image
+### 7) <span class="rect-space color-base"></span> The Spring Box Base Image
 Image name: `springbox-base`
 {: .docker-link }
 
@@ -1123,7 +1123,7 @@ To keep image sizes under control, you can build Spring Box images in two differ
 
    1. Open `update-binaries.sh` and update the following variables to match your local setup:
       * **REMAL_BINARY_HOME:** The path to the directory inside Tomcat's `webapps` folder where the installation archives are stored, for example, `$TOMCAT_HOME/webapps/docker-build`.
-      * **PROJECT_HOME:** The path to the local directory where you cloned the spring-box repository, for example, `$HOME/Java/spring-box`.
+      * **PROJECT_HOME:** The path to the local directory where you cloned the [Remal Spring Box repository](https://github.com/zappee/spring-box), for example, `$HOME/Java/spring-box`.
 
    2. Run the script in restore mode to copy the installation archives into the project directories:
 
