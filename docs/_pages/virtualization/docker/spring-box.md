@@ -298,7 +298,7 @@ _Use this container to deploy and run your Java application as executable JAR._
 * **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io) to easily track custom meters, counters, and timers.
 * **Prometheus analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
-  <div class="align-to-list">
+  <div>
     <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_kafka-consumer-total.png" alt="Prometheus chart" style="width: 49%;" />
     <img src="/assets/images/menu/virtualization/docker/spring-box/prometheus_method-calls-total.png" alt="Prometheus table" style="width: 49%;" />
   </div>
