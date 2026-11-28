@@ -556,8 +556,8 @@ _Orchestrate your Docker container dependencies accordingly using `entrypoint: [
   * **Dynamic Application Configuration:** Key/Value pairs defined in [config.properties](https://github.com/zappee/spring-box/blob/main/projects/springbox-welcome-service/src/main/resources/config.properties){: .src-link target="_blank" rel="noopener" } are automatically inserted into the Consul Key/Value Store during container startup, allowing the Spring Boot application to read them immediately.
 
     <div class="centered-image">
-      <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-1.png" alt="HashiCorp Consule K/V Store 1" style="width: 49%;" />
-      <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-2.png" alt="HashiCorp Consule K/V Store 2" style="width: 49%;" />
+      <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-1.png" alt="HashiCorp Consul K/V Store 1" style="width: 49%;" />
+      <img src="/assets/images/menu/virtualization/docker/spring-box/hashicorp-consul-kv-store-2.png" alt="HashiCorp Consul K/V Store 2" style="width: 49%;" />
     </div>
 
 Here is a typical `springbox-hashicorp-consul` container configuration:
