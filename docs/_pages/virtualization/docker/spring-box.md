@@ -295,7 +295,7 @@ _Use this container to deploy and run your Java application as executable JAR._
 * **OpenJDK 21 and 25 ready:** Optimized for running Spring Boot executable JAR files.
 * **Cluster-wide HashiCorp Consul integration:** Provides Dynamic Service Discovery, automated application Health Monitoring via Actuator endpoints, and dynamic runtime Configuration Management using the Consul Key/Value store.
 * **Cluster-wide Hazelcast integration:** Configured to instantly join to distributed topologies, seamlessly supporting Embedded Cache, Client-Server, and Near-Cache architectures.
-* **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io/) to easily track custom meters, counters, and timers.
+* **Built-in Prometheus metrics collector:** Pre-configured to automatically expose application and JVM telemetry, including CPU usage, memory utilization, and REST performance. It fully integrates with [Micrometer](https://micrometer.io) to easily track custom meters, counters, and timers.
 * **Prometheus analytics and visualization platform:** Features pre-configured visualization dashboards that transform raw metrics collected by Prometheus into real-time, intuitive charts.
 
 <div class="align-to-list">
